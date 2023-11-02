@@ -12,7 +12,7 @@
 
 ## Figma
 
-Coming Soon!
+[Figma File](https://www.figma.com/file/wUtznev8OmSCs4TfAzFRku/UI-UX-Designathon-THEME?type=design&node-id=0%3A1&mode=design&t=kIt4kPnYTljqB6pD-1)
 
 ## Node.js
 
