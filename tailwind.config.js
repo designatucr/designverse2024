@@ -11,6 +11,23 @@ module.exports = {
         poppins: ["var(--font-poppins)"],
       },
       colors: {
+        design: {
+          "brown-100": "#E8D9C6",
+          "brown-200": "#C5A687",
+          "brown-300": "#AD7D5E",
+          "brown-400": "#6E4F46",
+          "brown-500": "#53382D",
+          orange: "#C35927",
+          white: "#FDF9ED",
+          peach: "#F1B09E",
+          blue: "#69C1B1",
+          "green-100": "#B2CDAF",
+          "green-200": "#C2DE93",
+          "green-300": "#61934A",
+          "green-400": "#538B70",
+          "green-500": "#334E26",
+          "green-600": "#203018",
+        },
         hackathon: {
           "blue-100": "#38A3A5",
           "blue-200": "#22577A",
