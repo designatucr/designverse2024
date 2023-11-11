@@ -21,12 +21,12 @@ const Upcoming = () => {
             <p className="text-design-green-100 font-extrabold text-4xl">
               Design<span className="text-design-orange">@</span>UCR
             </p>
-            <p className="text-design-white font-extrabold text-6xl">
+            <div className="text-design-white font-extrabold text-6xl">
               DESIGN VERSE 2024
-            </p>
-            <p className="mt-3 text-design-white font-extrabold text-6xl">
-              COMING SOON
-            </p>
+              <p className="mt-3 text-design-white font-extrabold text-6xl">
+                COMING SOON
+              </p>
+            </div>
             <div className="text-design-white text-3xl font-medium">
               <div className="flex flex-row items-center">
                 <Image src={Pin} /> University of California Riverside
@@ -36,7 +36,7 @@ const Upcoming = () => {
               </div>
             </div>
             <div className="mt-8 flex flex-row w-full 2xl:w-2/3 justify-center md:justify-start md:gap-4 gap-8">
-              <Apply text="Interested" link="/form/participants" />
+              <Apply text="Interested" link="/form/interest" />
               <Apply text="Mentor" link="/form/mentor" />
               <Apply text="Volunteer" link="/form/volunteer" />
               <Apply text="Sponsor Us" link="/form/" />
@@ -51,7 +51,10 @@ const Upcoming = () => {
           <Image className="absolute mt-96" src={Animals} />
         </div>
       </div>
-      <Image className="bg-design-green-400 w-screen" src={Waterline} />
+      <Image
+        className="bg-design-green-400 w-screen border-0"
+        src={Waterline}
+      />
       <div className="bg-design-blue h-[28%] flex flex-row w-full">
         <Image className="w-5/12 -mt-40" src={Frog} />
         <Image className="w-7/12 p-24 ml-96 -mr-64 -mt-32" src={Lily} />
