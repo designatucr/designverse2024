@@ -13,7 +13,7 @@ import Lily from "../../../../public/lilly.svg";
 
 const Upcoming = () => {
   return (
-    <div className="w-full h-[100vh]">
+    <div className="w-full h-screen">
       <div className="flex h-[72%] flex-row overflow-hidden justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-400">
         <Image className="md:w-3/12 -ml-56 mt-52" src={Mushrooms2} />
         <div className="absolute w-[55%] flex flex-col left-[7.5%]">
@@ -23,7 +23,9 @@ const Upcoming = () => {
             </p>
             <p className="text-design-white font-extrabold text-6xl">
               DESIGN VERSE 2024
-              <p className="mt-3">COMING SOON</p>
+            </p>
+            <p className="mt-3 text-design-white font-extrabold text-6xl">
+              COMING SOON
             </p>
             <div className="text-design-white text-3xl font-medium">
               <div className="flex flex-row items-center">
@@ -34,7 +36,7 @@ const Upcoming = () => {
               </div>
             </div>
             <div className="mt-8 flex flex-row w-full 2xl:w-2/3 justify-center md:justify-start md:gap-4 gap-8">
-              <Apply text="Interested?" link="/form/participants" />
+              <Apply text="Interested" link="/form/participants" />
               <Apply text="Mentor" link="/form/mentor" />
               <Apply text="Volunteer" link="/form/volunteer" />
               <Apply text="Sponsor Us" link="/form/" />
@@ -49,7 +51,7 @@ const Upcoming = () => {
           <Image className="absolute mt-96" src={Animals} />
         </div>
       </div>
-      <Image className="bg-design-green-400" src={Waterline} />
+      <Image className="bg-design-green-400 w-screen" src={Waterline} />
       <div className="bg-design-blue h-[28%] flex flex-row w-full">
         <Image className="w-5/12 -mt-40" src={Frog} />
         <Image className="w-7/12 p-24 ml-96 -mr-64 -mt-32" src={Lily} />

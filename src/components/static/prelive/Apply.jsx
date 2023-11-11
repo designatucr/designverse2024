@@ -3,15 +3,15 @@ import Link from "next/link";
 
 const Apply = ({ text, link }) => {
   return (
-    <div className="text-sm md:text-2xl w-full min-w-fit justify-center bg-design-orange rounded-xl py-2 flex items-center text-design-white">
-      <Link
-        href={link}
-        className="text-white font-semibold no-underline mr-1 flex whitespace-nowrap"
-      >
+    <Link
+      href={link}
+      className="text-white font-semibold no-underline mr-1 flex whitespace-nowrap"
+    >
+      <div className="text-sm md:text-2xl w-fit bg-design-orange rounded-xl flex items-center text-design-white px-3 py-1">
         {text}
-      </Link>
-      <ImArrowUpRight2 />
-    </div>
+        <ImArrowUpRight2 className="ml-2" />
+      </div>
+    </Link>
   );
 };
 
