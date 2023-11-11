@@ -21,10 +21,10 @@ const Upcoming = () => {
             <p className="text-design-green-100 font-extrabold text-4xl">
               Design<span className="text-design-orange">@</span>UCR
             </p>
-            <p className="text-design-white font-extrabold text-6xl">
+            <div className="text-design-white font-extrabold text-6xl">
               DESIGN VERSE 2024
               <p className="mt-3">COMING SOON</p>
-            </p>
+            </div>
             <div className="text-design-white text-3xl font-medium">
               <div className="flex flex-row items-center">
                 <Image src={Pin} /> University of California Riverside
