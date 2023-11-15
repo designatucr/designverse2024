@@ -1,4 +1,3 @@
-"use client";
 import CountDown from "../Countdown";
 import Image from "next/image";
 import Apply from "../Apply";
