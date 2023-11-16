@@ -19,21 +19,20 @@ const Upcoming = () => {
         <Image className="w-5/6 md:w-3/12 -ml-56 mt-52" src={Mushrooms2} />
         <div className="absolute w-5/6 md:w-[55%] flex flex-col left-[8%] md:left-[7%] object-contain">
           <div className="flex rounded-3xl md:h-[60%] mt-8 items-center md:items-start bg-design-green-500/70 p-10 flex-col">
-            <p className="text-design-green-100 font-extrabold text-2xl md:text-4xl">
+            <div className="text-design-green-100 font-extrabold text-2xl md:text-4xl mb-3">
               Design<span className="text-design-orange">@</span>UCR
-            </p>
-            <div className="text-design-white font-extrabold text-2xl md:text-6xl">
+            </div>
+            <div className="text-design-white font-extrabold text-2xl flex whitespace-nowrap md:text-6xl">
               DESIGN VERSE 2024
             </div>
-            <p className="text-design-white font-extrabold text-2xl md:text-6xl md:mt-3">
-              {" "}
+            <div className="text-design-white font-extrabold text-2xl md:text-6xl mb-3 mt-1 md:mb-6 md:mt-3">
               COMING SOON
-            </p>
-            <div className="flex flex-row text-design-white text-sm md:text-3xl font-medium">
+            </div>
+            <div className="flex flex-row text-design-white text-sm md:text-3xl font-medium whitespace-nowrap">
               <IoPin className="mr-1 md:mr-2" /> University of California
               Riverside
             </div>
-            <div className="flex flex-row mt-2 text-design-white text-sm md:text-3xl font-medium">
+            <div className="flex flex-row mt-2 text-design-white text-sm md:text-3xl font-medium whitespace-nowrap">
               <BsCalendar3 className="mr-1 md:mr-2" /> May 11 - 12, 2024
             </div>
 
