@@ -5,7 +5,7 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      "Welcome to HACKATHON_NAME. Thank you for considering to become a volunteer, we appreciate your efforts to help support HACKATHON_NAME. HACKATHON_NAME is a DESCRIPTION hackathon spanning HACKATHON_LENGTH on HACKATHON_DATE.",
+      "Welcome to DesignVerse. Thank you for considering to become a volunteer, we appreciate your efforts to help support DesignVerse. DesignVerse is a DESCRIPTION hackathon spanning 24 hours on May 11, 2024.",
       "Volunteers are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
       "Volunteer duties include but are not limited to setup, workshop organization, food handling, cleanup and more.",
       "Note: Volunteers are not permitted to become participants for the hackathon.",
