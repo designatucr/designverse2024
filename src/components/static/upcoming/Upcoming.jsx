@@ -8,7 +8,6 @@ import Waterline from "../../../../public/svgs/waterline.svg";
 import Frog from "../../../../public/svgs/frog.svg";
 import Lily from "../../../../public/svgs/lilly.svg";
 import Logo from "../../../../public/svgs/logo.svg";
-import BearTurtle from "../../../../public/svgs/bearTurtle.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
 
@@ -44,9 +43,7 @@ const Upcoming = () => {
             </div>
           </div>
           <CountDown />
-          <div className="flex items-center justify-center">
-            <Image className="md:hidden flex w-7/12" src={BearTurtle} />
-          </div>
+          <div className="flex items-center justify-center"></div>
         </div>
         <div className="w-11/12 md:w-5/12 flex flex-col h-full">
           <div className="flex flex-row md:w-full justify-end">
