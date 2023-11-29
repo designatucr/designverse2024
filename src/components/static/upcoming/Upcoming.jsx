@@ -44,9 +44,7 @@ const Upcoming = () => {
               <Apply text="Sponsor Us" link="/form/" />
             </div>
           </div>
-          <div className="flex items-center justify-center ml-3.5">
-            <CountDown />
-          </div>
+          <CountDown />
           <div className="flex items-center justify-center">
             <Image className="md:hidden flex w-7/12" src={BearTurtle} />
           </div>
