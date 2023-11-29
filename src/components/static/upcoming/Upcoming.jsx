@@ -43,7 +43,7 @@ const Upcoming = () => {
               <Apply text="Sponsor Us" link="/form/" />
             </div>
           </div>
-          <div className="flex items-center justify-center md:ml-0 ml-3.5">
+          <div className="flex justify-center md:justify-start">
             <CountDown />
           </div>
           <div className="flex items-center justify-center">
