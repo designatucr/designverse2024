@@ -18,7 +18,7 @@ const Upcoming = () => {
       <div className="flex h-[72%] flex-row overflow-hidden justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-400">
         <Image className="w-5/6 md:w-3/12 -ml-56 mt-52" src={Mushrooms2} />
         <div className="absolute w-5/6 md:w-[55%] flex flex-col left-[8%] md:left-[7%] object-contain">
-          <div className="flex rounded-3xl md:h-[60%] mt-12 items-center md:items-start bg-design-green-500/70 p-10 flex-col">
+          <div className="flex rounded-3xl md:h-[60%] mt-8 items-center md:items-start bg-design-green-500/70 p-10 flex-col">
             <div className="text-design-green-100 font-extrabold text-2xl md:text-4xl mb-3">
               Design<span className="text-design-orange">@</span>UCR
             </div>
