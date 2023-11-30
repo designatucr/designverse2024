@@ -65,7 +65,7 @@ const Upcoming = () => {
         src={Waterline}
       />
       <div className="bg-design-blue h-[28%] flex flex-row w-full">
-        <Image className="w-11/12 md:w-5/12 -mt-20" src={Frog} />
+        <Image className="w-11/12 md:w-5/12 -mt-20 md:-mt-40" src={Frog} />
         <Image
           className="hidden md:block md:w-7/12 p-24 ml-96 -mr-64 -mt-32"
           src={Lily}
