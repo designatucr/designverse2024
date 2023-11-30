@@ -14,7 +14,7 @@ import { BsCalendar3 } from "react-icons/bs";
 
 const Upcoming = () => {
   return (
-    <div className="w-full h-screen overflow-hidden relative">
+    <div className="w-full h-screen overflow-hidden relative font-workSans">
       <div className="flex h-[72%] flex-row overflow-hidden justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-400">
         <Image className="w-5/6 md:w-3/12 -ml-56 mt-52" src={Mushrooms2} />
         <div className="absolute w-5/6 md:w-[55%] flex flex-col left-[8%] md:left-[7%] object-contain">
