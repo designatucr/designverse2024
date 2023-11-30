@@ -43,7 +43,6 @@ const Upcoming = () => {
             </div>
           </div>
           <CountDown />
-          <div className="flex items-center justify-center"></div>
         </div>
         <div className="w-11/12 md:w-5/12 flex flex-col h-full">
           <div className="flex flex-row md:w-full justify-end">
