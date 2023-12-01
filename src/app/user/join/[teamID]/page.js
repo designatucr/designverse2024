@@ -54,7 +54,7 @@ export default function page({ params }) {
   return (
     <div>
       {team && (
-        <div className="flex flex-col w-screen h-screen items-center justify-center font-poppins">
+        <div className="flex flex-col w-screen h-screen items-center justify-center font-workSans">
           <p className="text-3xl">
             Are you sure you want to join{" "}
             <span className="font-bold">{team.name}</span>
