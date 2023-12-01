@@ -13,7 +13,7 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      "Welcome to DesignVerse. Thank you for being on the organizing team, we appreciate your efforts to help support DesignVerse. DesignVerse is a DESCRIPTION hackathon spanning 24 hours on May 11, 2024.",
+      "Welcome to DesignVerse. Thank you for being on the organizing team, we appreciate your efforts to help support DesignVerse. On May 11, 2024 over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
       "Admins are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
       "Note: Admins are not permitted to become participants for the hackathon.",
     ],
