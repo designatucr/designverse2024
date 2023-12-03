@@ -25,7 +25,7 @@ const Input = ({
           maxLength={maxLength}
           placeholder={placeholder}
           type="text"
-          className="outline-none w-full font-poppins text-base py-1 bg-transparent px-2"
+          className="outline-none w-full font-workSans text-base py-1 bg-transparent px-2"
           onChange={handleInput}
         />
         {clear && (

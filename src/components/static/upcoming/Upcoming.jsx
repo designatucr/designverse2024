@@ -13,11 +13,11 @@ import { BsCalendar3 } from "react-icons/bs";
 
 const Upcoming = () => {
   return (
-    <div className="w-full h-screen overflow-hidden relative">
+    <div className="w-full h-screen overflow-hidden relative font-workSans">
       <div className="flex h-[72%] flex-row overflow-hidden justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-400">
         <Image className="w-5/6 md:w-3/12 -ml-56 mt-52" src={Mushrooms2} />
         <div className="absolute w-5/6 md:w-[55%] flex flex-col left-[8%] md:left-[7%] object-contain">
-          <div className="flex rounded-3xl md:h-[60%] mt-8 items-center md:items-start bg-design-green-500/70 p-10 flex-col">
+          <div className="flex rounded-3xl md:h-[60%] mt-28 md:mt-12 items-center md:items-start bg-design-green-500/70 p-10 flex-col">
             <div className="text-design-green-100 font-extrabold text-2xl md:text-4xl mb-3">
               Design<span className="text-design-orange">@</span>UCR
             </div>
@@ -28,11 +28,12 @@ const Upcoming = () => {
               COMING SOON
             </div>
             <div className="flex flex-row text-design-white text-sm md:text-3xl font-medium whitespace-nowrap">
-              <IoPin className="mr-1 md:mr-2" /> University of California
-              Riverside
+              <IoPin className="mr-0 md:mr-2 text-lg md:text-3xl" /> University
+              of California Riverside
             </div>
             <div className="flex flex-row mt-2 text-design-white text-sm md:text-3xl font-medium whitespace-nowrap">
-              <BsCalendar3 className="mr-1 md:mr-2" /> May 11 - 12, 2024
+              <BsCalendar3 className="mr-1 md:mr-2 text-lg md:text-3xl" /> May
+              11 - 12, 2024
             </div>
 
             <div className="mt-8 grid grid-cols-2 md:grid-cols-4 w-full gap-2 md:gap-4">
