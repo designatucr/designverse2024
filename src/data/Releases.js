@@ -1,7 +1,7 @@
 const DEV = {
   STATIC: {
     UPCOMING: {
-      START: new Date("01/08/2024"),
+      START: new Date("11/01/2023"),
       END: new Date("10/10/2024"),
     },
     PRELIVE: {
