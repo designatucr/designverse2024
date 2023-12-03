@@ -22,13 +22,13 @@ const Upcoming = () => {
             <div className="text-design-green-100 font-extrabold text-2xl md:text-4xl mb-3">
               <Image className="h-12 md:h-16 w-auto" src={Logo} />
             </div>
-            <div className="text-design-white font-extrabold text-2xl flex whitespace-nowrap md:text-6xl">
+            <div className="text-design-white font-extrabold text-2xl flex whitespace-nowrap md:text-4xl lg:text-5xl">
               DESIGN VERSE 2024
             </div>
-            <div className="text-design-white font-extrabold text-2xl md:text-6xl mb-3 mt-1 md:mb-6 md:mt-3">
+            <div className="text-design-white font-extrabold text-2xl md:text-4xl mb-3 mt-1 md:mb-6 md:mt-3 lg:text-5xl">
               COMING SOON
             </div>
-            <div className="flex flex-row text-design-white text-sm md:text-3xl font-medium whitespace-nowrap">
+            <div className="flex flex-row text-design-white text-sm md:text-3xl font-medium whitespace-normal">
               <IoPin className="mr-0 md:mr-2 text-lg md:text-3xl" /> University
               of California Riverside
             </div>
@@ -37,7 +37,7 @@ const Upcoming = () => {
               11 - 12, 2024
             </div>
 
-            <div className="mt-8 grid grid-cols-2 md:grid-cols-4 w-full gap-2 md:gap-4">
+            <div className="mt-8 grid grid-cols-2 lg:grid-cols-4 w-full gap-2 md:gap-4">
               <Apply text="Interested" link="/form/interest" />
               <Apply text="Mentor" link="/form/mentor" />
               <Apply text="Volunteer" link="/form/volunteer" />
@@ -68,7 +68,7 @@ const Upcoming = () => {
         src={Waterline}
       />
       <div className="bg-design-blue h-[28%] flex flex-row w-full">
-        <Image className="w-11/12 md:w-5/12 -mt-40" src={Frog} />
+        <Image className="w-11/12 md:w-5/12 -mt-20" src={Frog} />
         <Image
           className="hidden md:block md:w-7/12 p-24 ml-96 -mr-64 -mt-32"
           src={Lily}
