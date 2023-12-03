@@ -12,7 +12,7 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      "Welcome to DesignVerse. Thank you for considering to become a volunteer, we appreciate your efforts to help support DesignVerse. On May 11, 2024 over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
+      "Welcome to DesignVerse. Thank you for considering to become a volunteer, we appreciate your efforts to help support DesignVerse. DesignVerse is UCR’s first ever UI/UX Design-a-Thon! On May 11, 2024 over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
       "Judges are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
       "Judge duties include but are not limited to visiting various teams to access teams on their idea, technical complexities and overall presentation after which they will decide the winners.",
       "Note: Judges are not permitted to become participants for the hackathon.",
