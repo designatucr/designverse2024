@@ -7,10 +7,10 @@ import Mushrooms2 from "../../../../public/svgs/mushrooms2.svg";
 import Waterline from "../../../../public/svgs/waterline.svg";
 import Frog from "../../../../public/svgs/frog.svg";
 import Lily from "../../../../public/svgs/lilly.svg";
-import Logo from "../../../../public/svgs/logo.svg";
 import BearTurtle from "../../../../public/svgs/bearTurtle.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
+import Logo from "../../../../public/svgs/Logo1.svg";
 
 const Upcoming = () => {
   return (
@@ -20,7 +20,7 @@ const Upcoming = () => {
         <div className="absolute w-5/6 md:w-[55%] flex flex-col left-[8%] md:left-[7%] object-contain">
           <div className="flex rounded-3xl md:h-[60%] mt-28 md:mt-12 items-center md:items-start bg-design-green-500/70 p-10 flex-col">
             <div className="text-design-green-100 font-extrabold text-2xl md:text-4xl mb-3">
-              Design<span className="text-design-orange">@</span>UCR
+              <Image className="h-12 md:h-16 w-auto" src={Logo} />
             </div>
             <div className="text-design-white font-extrabold text-2xl flex whitespace-nowrap md:text-6xl">
               DESIGN VERSE 2024
@@ -53,7 +53,10 @@ const Upcoming = () => {
         </div>
         <div className="w-11/12 md:w-5/12 flex flex-col h-full">
           <div className="flex flex-row md:w-full justify-end">
-            <Image className="hidden md:block mr-4 mt-2" src={Logo} />
+            <Image
+              className="hidden md:block mr-4 mt-2 h-12 w-auto"
+              src={Logo}
+            />
           </div>
           <Image className="ml-40 mt-48 md:mt-0 md:w-11/12" src={Mushrooms1} />
           <Image className="hidden md:block absolute mt-96" src={Animals} />
