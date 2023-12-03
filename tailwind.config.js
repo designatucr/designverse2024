@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["var(--font-poppins)"],
+        workSans: ["var(--font-work_sans)"],
       },
       colors: {
         design: {

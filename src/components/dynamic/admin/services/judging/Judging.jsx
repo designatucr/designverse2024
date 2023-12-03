@@ -8,7 +8,7 @@ const Judging = () => {
   const [data, setData] = useState(null);
 
   return (
-    <div className="h-full font-poppins flex flex-col py-4 gap-3">
+    <div className="h-full font-workSans flex flex-col py-4 gap-3">
       <Title title="Judging" />
       <Toolbar data={data} setData={setData} />
       <Table data={data} />
