@@ -42,7 +42,9 @@ const Upcoming = () => {
               <Apply text="Sponsor Us" link="/form/" />
             </div>
           </div>
-          <CountDown />
+          <div>
+            <CountDown />
+          </div>
         </div>
         <div className="w-11/12 md:w-5/12 flex flex-col h-full">
           <div className="flex flex-row md:w-full justify-end">
