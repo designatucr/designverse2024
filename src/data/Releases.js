@@ -5,15 +5,15 @@ const DEV = {
       END: new Date("10/10/2024"),
     },
     PRELIVE: {
-      START: new Date("12/01/2023"),
+      START: new Date("01/08/2024"),
       END: new Date("10/10/2024"),
     },
     LIVE: {
-      START: new Date("12/01/2023"),
+      START: new Date("01/08/2024"),
       END: new Date("10/10/2024"),
     },
     POSTLIVE: {
-      START: new Date("12/01/2023"),
+      START: new Date("01/08/2024"),
       END: new Date("10/10/2024"),
     },
   },
@@ -39,6 +39,8 @@ const DEV = {
     "/form/mentor": new Date("10/01/2023"),
     "/form/admin": new Date("10/01/2023"),
     "/form/committee": new Date("10/01/2023"),
+    "/form/feedback": new Date("10/01/2023"),
+    "/form/interest": new Date("10/01/2023"),
 
     "/user/checkin": new Date("10/01/2023"),
     "/user/dashboard": new Date("10/01/2023"),
@@ -49,11 +51,11 @@ const DEV = {
 const PRODUCTION = {
   STATIC: {
     UPCOMING: {
-      START: new Date("10/01/2023"),
+      START: new Date("11/01/2023"),
       END: new Date("10/10/2024"),
     },
     PRELIVE: {
-      START: new Date("01/01/2024"),
+      START: new Date("01/08/2024"),
       END: new Date("10/10/2024"),
     },
     LIVE: {
@@ -87,6 +89,8 @@ const PRODUCTION = {
     "/form/mentor": new Date("10/01/2023"),
     "/form/admin": new Date("10/01/2023"),
     "/form/committee": new Date("10/01/2023"),
+    "/form/feedback": new Date("10/01/2023"),
+    "/form/interest": new Date("10/01/2023"),
 
     "/user/checkin": new Date("10/01/2023"),
     "/user/dashboard": new Date("10/01/2023"),
