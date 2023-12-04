@@ -61,7 +61,7 @@ const Questions = ({
                 {index === field.texts.length - 1 && (
                   <p>
                     Fields with
-                    <span className="text-hackathon-green-300"> * </span>
+                    <span className="text-design-green-900"> * </span>
                     are required.
                   </p>
                 )}
@@ -95,10 +95,10 @@ const Questions = ({
           )}
           {field.input === "checkboxes" && (
             <>
-              <p className="mb-1 font-semibold">
+              <p className="mb-1 font-semibold ">
                 {field.text}
                 {field.required && (
-                  <span className="text-hackathon-green-300">*</span>
+                  <span className="text-design-green-900">*</span>
                 )}
               </p>
               {field.options.map((option, i) => (
@@ -115,7 +115,7 @@ const Questions = ({
                         : [...object[field.field], option],
                     })
                   }
-                  color="bg-hackathon-green-300"
+                  color="bg-design-green-600"
                 />
               ))}
             </>
