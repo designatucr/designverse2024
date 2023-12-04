@@ -35,7 +35,7 @@ describe("Button", () => {
     cy.get('[data-cy="Check In-button"]').contains("Check In");
     cy.get('[data-cy="Check In-button"]').should(
       "have.class",
-      "bg-hackathon-green-300",
+      "bg-design-white",
       "text-xl",
       "hover:opacity-50"
     );
@@ -64,7 +64,7 @@ describe("Button", () => {
     cy.get('[data-cy="Confirm-button"]').contains("Confirm");
     cy.get('[data-cy="Confirm-button"]').should(
       "have.class",
-      "bg-hackathon-green-300",
+      "bg-design-white",
       "text-xl",
       "hover:opacity-50"
     );
