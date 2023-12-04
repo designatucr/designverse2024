@@ -48,7 +48,7 @@ const Select = ({
     <div className="flex flex-col">
       <p className="mb-1 font-semibold">
         {title}
-        {required && <span className="text-hackathon-green-300">*</span>}
+        {required && <span className="text-design-green-900">*</span>}
       </p>
       <div className="w-full m-0 relative" data-cy="select" ref={ref}>
         {editable ? (
@@ -94,7 +94,7 @@ const Select = ({
               .filter((opt) => !opt.hidden)
               .map((option, index) => (
                 <div
-                  className=" hover:!bg-hackathon-green-200 !bg-hackathon-green-100 overflow-hidden"
+                  className=" hover:!bg-design-green-600 !bg-design-green-700 overflow-hidden"
                   key={index}
                   onClick={() => {
                     setUser({ ...user, [field]: option.name });
