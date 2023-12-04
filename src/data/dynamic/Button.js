@@ -1,6 +1,6 @@
 export const COLORS = {
   green: {
-    bg: "bg-white",
+    bg: "bg-design-white",
     text: "text-design-green-800",
     border: "border-design-green-800 border-4",
   },

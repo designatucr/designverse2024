@@ -15,7 +15,7 @@ describe("Button", () => {
     cy.get('[data-cy="send-button"]').contains("send");
     cy.get('[data-cy="send-button"]').should(
       "have.class",
-      "bg-hackathon-green-300",
+      "bg-design-white",
       "text-base"
     );
     cy.get('[data-cy="send-button"]')
