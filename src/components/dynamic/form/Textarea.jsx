@@ -27,7 +27,7 @@ const Textarea = ({
     <div className="flex flex-col">
       <p className="mb-1 font-semibold">
         {title}
-        {required && <span className="text-hackathon-green-300">*</span>}
+        {required && <span className="text-design-orange">*</span>}
       </p>
       {editable && !edit && (
         <FaPencil className="hover:cursor-pointer" onClick={handleEdit} />
