@@ -65,6 +65,19 @@ module.exports = {
           },
         },
       },
+      animation: {
+        wiggle: "wiggle 2s ease-in-out infinite",
+      },
+      keyframes: {
+        wiggle: {
+          "0% 100%": {
+            translate: "10px",
+          },
+          "50%": {
+            translate: "-10px",
+          },
+        },
+      },
     },
   },
   plugins: [],
