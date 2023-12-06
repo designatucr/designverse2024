@@ -48,7 +48,7 @@ const Select = ({
     <div className="flex flex-col">
       <p className="mb-1 font-semibold">
         {title}
-        {required && <span className="text-design-green-900">*</span>}
+        {required && <span className="text-design-orange">*</span>}
       </p>
       <div className="w-full m-0 relative" data-cy="select" ref={ref}>
         {editable ? (

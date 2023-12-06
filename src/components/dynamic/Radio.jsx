@@ -15,7 +15,7 @@ const Radio = ({
     <div className="flex flex-col">
       <p className="mb-1 font-semibold">
         {text}
-        {required && <span className="text-design-green-900">*</span>}
+        {required && <span className="text-design-orange">*</span>}
       </p>
       {!editable && <div className="pl-3">{user[field]}</div>}
       {editable && (

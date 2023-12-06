@@ -22,7 +22,7 @@ const Form = ({
   );
 
   return (
-    <div className="w-full h-full overflow-scroll flex flex-col items-center bg-design-green-500 font-workSans">
+    <div className="w-full h-full overflow-y-scroll flex flex-col items-center bg-design-green-500 font-workSans font-semibold">
       <div className="text-white font-extrabold text-2xl md:text-4xl mt-5">
         <Image className="w-auto h-auto py-4 px-3" src={Logo} />
         <div className="flex justify-center ">DESIGN VERSE</div>
