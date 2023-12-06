@@ -14,10 +14,10 @@ import Logo from "../../../../public/svgs/Logo1.svg";
 const Upcoming = () => {
   return (
     <div className="w-full h-screen overflow-hidden relative font-workSans">
-      <div className="flex h-[72%] flex-row overflow-hidden justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-400">
+      <div className="flex h-[72%] flex-row overflow-hidden justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-300">
         <Image className="w-5/6 md:w-3/12 -ml-56 mt-52" src={Mushrooms2} />
         <div className="absolute w-5/6 md:w-[55%] flex flex-col left-[8%] md:left-[7%] object-contain">
-          <div className="flex rounded-3xl md:h-[60%] mt-28 md:mt-12 items-center md:items-start bg-design-green-500/70 p-10 flex-col">
+          <div className="flex rounded-3xl md:h-[60%] mt-28 md:mt-12 items-center md:items-start bg-design-green-400/70 p-10 flex-col">
             <div className="text-design-green-100 font-extrabold text-2xl md:text-4xl mb-3">
               <Image className="h-12 md:h-16 w-auto" src={Logo} />
             </div>
@@ -40,7 +40,7 @@ const Upcoming = () => {
               <Apply text="Interested" link="/form/interest" />
               <Apply text="Mentor" link="/form/mentor" />
               <Apply text="Volunteer" link="/form/volunteer" />
-              <Apply text="Sponsor Us" link="/form/" />
+              <Apply text="Sponsor Us" link="/form/sponsor" />
             </div>
           </div>
           <div className="flex justify-center md:justify-start">
@@ -60,10 +60,10 @@ const Upcoming = () => {
       </div>
 
       <Image
-        className="bg-design-green-400 w-screen border-0"
+        className="bg-design-green-300 w-screen border-0"
         src={Waterline}
       />
-      <div className="bg-design-blue h-[28%] flex flex-row w-full">
+      <div className="bg-design-blue-200 h-[28%] flex flex-row w-full">
         <Image
           className="w-11/12 md:w-5/12 -mt-20 md:-mt-40 animate-wiggle delay-1000"
           src={Frog}
