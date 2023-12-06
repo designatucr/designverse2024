@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Status from "./Status";
 import Questions from "./Questions";
 import Confirmation from "./Confirmation";
+import Logo from "../../../../public/svgs/Logo1.svg";
 
 const Form = ({
   object,
@@ -20,9 +22,14 @@ const Form = ({
   );
 
   return (
-    <div className="w-full h-full overflow-scroll flex flex-col items-center font-poppins">
-      <div className="w-10/12 md:w-1/2 xl:w-1/3 my-5">
-        <p className="text-xl bg-hackathon-green-300 font-semibold px-4 py-2 rounded-t-xl m-0">
+    <div className="w-full h-full overflow-scroll flex flex-col items-center bg-design-green-500 font-workSans">
+      <div className="text-white font-extrabold text-2xl md:text-4xl mt-5">
+        <Image className="w-auto h-auto py-4 px-3" src={Logo} />
+        <div className="flex justify-center ">DESIGN VERSE</div>
+        <div className="flex justify-center  text-xl md:text-2xl ">2024</div>
+      </div>
+      <div className="w-10/12 md:w-1/2 xl:w-1/3 my-4">
+        <p className="text-xl bg-design-green-800 font-semibold px-4 py-2 rounded-t-xl m-0">
           {header}
         </p>
         <div className="rounded-b-xl bg-white p-3">

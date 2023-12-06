@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["var(--font-poppins)"],
+        workSans: ["var(--font-work_sans)"],
       },
       colors: {
         design: {
@@ -25,6 +25,10 @@ module.exports = {
           "green-300": "#538B70",
           "green-400": "#769D6A",
           "green-500": "#334E26",
+          "green-600": "#9CC688",
+          "green-700": "#D9E7C2",
+          "green-800": "#61934A",
+          "green-900": "#334E26",
         },
         hackathon: {
           "blue-100": "#38A3A5",
@@ -58,6 +62,19 @@ module.exports = {
             "pink-bg": "#FFE3FB",
             "pink-text": "#F583F1",
             white: "#fff",
+          },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 2s ease-in-out infinite",
+      },
+      keyframes: {
+        wiggle: {
+          "0% 100%": {
+            translate: "10px",
+          },
+          "50%": {
+            translate: "-10px",
           },
         },
       },
