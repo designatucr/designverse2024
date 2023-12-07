@@ -21,17 +21,17 @@ const Upcoming = () => {
             <div className="text-design-green-100 font-extrabold text-2xl md:text-4xl mb-3">
               <Image className="h-12 md:h-16 w-auto" src={Logo} />
             </div>
-            <div className="text-design-white font-extrabold text-2xl flex whitespace-nowrap md:text-4xl lg:text-5xl">
+            <div className="text-white font-extrabold text-2xl flex whitespace-nowrap md:text-4xl lg:text-5xl">
               DESIGN VERSE 2024
             </div>
-            <div className="text-design-white font-extrabold text-2xl md:text-4xl mb-3 mt-1 md:mb-6 md:mt-3 lg:text-5xl">
+            <div className="text-white font-extrabold text-2xl md:text-4xl mb-3 mt-1 md:mb-6 md:mt-3 lg:text-5xl">
               COMING SOON
             </div>
-            <div className="flex flex-row text-design-white text-sm md:text-3xl font-medium whitespace-normal">
+            <div className="flex flex-row text-white text-sm md:text-3xl font-medium whitespace-normal">
               <IoPin className="mr-0 md:mr-2 text-lg md:text-3xl" /> University
               of California Riverside
             </div>
-            <div className="flex flex-row mt-2 text-design-white text-sm md:text-3xl font-medium whitespace-nowrap">
+            <div className="flex flex-row mt-2 text-white text-sm md:text-3xl font-medium whitespace-nowrap">
               <BsCalendar3 className="mr-1 md:mr-2 text-lg md:text-3xl" /> May
               11 - 12, 2024
             </div>
