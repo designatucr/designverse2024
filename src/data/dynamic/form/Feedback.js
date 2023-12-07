@@ -34,14 +34,14 @@ export const FIELDS = {
     name: "notBenficial",
     rows: 4,
     title:
-      "Was there anything that you did not find beneficial about the hackathon?",
+      "Was there anything that you did not find beneficial about the designathon?",
     placeholder: "N/A",
     width: 12,
     required: true,
   },
   rating: {
     input: "radio",
-    text: "Please rate the hackathon on a scale of 1 - 10. 1 being the worst experience and 10 being the best experience",
+    text: "Please rate the designathon on a scale of 1 - 10. 1 being the worst experience and 10 being the best experience",
     options: RATE,
     field: "rating",
     width: 12,

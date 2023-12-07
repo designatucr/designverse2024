@@ -51,7 +51,7 @@ const Questions = ({
   };
 
   return (
-    <div>
+    <div className="font-normal">
       {Object.values(fields).map((field, index) => (
         <div key={index}>
           {field.input === "description" &&
