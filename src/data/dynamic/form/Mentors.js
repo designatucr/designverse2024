@@ -7,8 +7,8 @@ export const FIELDS = {
     texts: [
       "Welcome to DesignVerse. Thank you for considering to become a mentor, we appreciate your efforts to help support DesignVerse. DesignVerse is UCR’s first ever UI/UX Design-a-Thon! On May 11, 2024 over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
       "Mentors are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
-      "Mentor duties include but are not limited to providing expertise and assistance to hackers throughout the hackathon without jeopardizing their chances at winning.",
-      "Note: Mentors are not permitted to become participants for the hackathon.",
+      "Mentor duties include but are not limited to providing expertise and assistance to hackers throughout the designathon without jeopardizing their chances at winning.",
+      "Note: Mentors are not permitted to become participants for the designathon.",
     ],
   },
   name: {

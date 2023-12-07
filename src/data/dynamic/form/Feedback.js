@@ -8,7 +8,7 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      `Hello! Thank you for your participation in ${CONFIG.name}. We hope you enjoyed and learned new things from this hackathon. Please fill out this anonymous feedback form below!`,
+      `Hello! Thank you for your participation in ${CONFIG.name}. We hope you enjoyed and learned new things from this designathon. Please fill out this anonymous feedback form below!`,
     ],
   },
   helpful: {
