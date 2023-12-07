@@ -51,7 +51,7 @@ const Questions = ({
   };
 
   return (
-    <div>
+    <div className="font-normal">
       {Object.values(fields).map((field, index) => (
         <div key={index}>
           {field.input === "description" &&
@@ -115,7 +115,7 @@ const Questions = ({
                         : [...object[field.field], option],
                     })
                   }
-                  color="bg-design-green-600"
+                  color="bg-design-green-200"
                 />
               ))}
             </>

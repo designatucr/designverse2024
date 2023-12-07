@@ -94,7 +94,7 @@ const Select = ({
               .filter((opt) => !opt.hidden)
               .map((option, index) => (
                 <div
-                  className=" hover:!bg-design-green-600 !bg-design-green-700 overflow-hidden"
+                  className=" hover:!bg-design-green-300 !bg-design-green-100 overflow-hidden px-2"
                   key={index}
                   onClick={() => {
                     setUser({ ...user, [field]: option.name });

@@ -10,8 +10,8 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      "Welcome to DESIGN VERSE. Thank you for being on the Sponsorship team, we appreciate your efforts to help support DESIGN VERSE. DESIGN VERSE is a UI/UX centric hackathon spanning 24 hours on MAY 11-12. ",
-      "By sponsoring  DESIGN VERSE, you help advocate to provide a community for more opportunities in deisgn eduction as well as showcase student talents.",
+      "Welcome to HACKATHON_NAME. Thank you for being on the Sponsorship team, we appreciate your efforts to help support HACKATHON_NAME. HACKATHON_NAME is a DESCRIPTION designathon spanning HACKATHON_LENGTH on HACKATHON_DATE. ",
+      "By sponsoring HAKCATHON_NAME, you help advocate for SPONSOR_REASONS.",
       "Sponsorship members are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
     ],
   },

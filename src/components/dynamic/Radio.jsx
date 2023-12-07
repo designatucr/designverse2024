@@ -30,7 +30,7 @@ const Radio = ({
                 <div
                   className={`rounded-full w-full aspect-square duration-100 ${
                     option === user[field]
-                      ? "bg-design-green-600"
+                      ? "bg-design-green-200"
                       : "bg-transparent"
                   }`}
                 />
