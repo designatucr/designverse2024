@@ -115,7 +115,7 @@ const Questions = ({
                         : [...object[field.field], option],
                     })
                   }
-                  color="bg-design-green-600"
+                  color="bg-design-green-200"
                 />
               ))}
             </>
