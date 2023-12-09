@@ -95,7 +95,7 @@ const Questions = ({
           )}
           {field.input === "checkboxes" && (
             <>
-              <p className="mb-1 font-semibold">
+              <p className="mb-2 font-regular">
                 {field.text}
                 {field.required && (
                   <span className="text-design-orange">*</span>
@@ -115,9 +115,10 @@ const Questions = ({
                         : [...object[field.field], option],
                     })
                   }
-                  color="bg-design-green-200"
+                  color="bg-design-green-light"
                 />
               ))}
+              <br />
             </>
           )}
           {field.input === "radio" && (
@@ -155,18 +156,18 @@ const Questions = ({
           )}
         </div>
       ))}
-      <div className="font-semibold">Resources</div>
+      <div className="font-regular">Resources</div>
       <Link
         href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
         target="_blank"
-        className="no-underline flex items-center"
+        className="no-underline flex items-center text-design-orange"
       >
         MLH Code of Conduct
         <FaLink className="mx-2" />
       </Link>
       <div className="flex justify-center">
         <Button
-          text="Submit"
+          text="submit"
           onClick={handleSubmit}
           loading={loading}
           color="green"
