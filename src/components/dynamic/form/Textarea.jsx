@@ -24,8 +24,8 @@ const Textarea = ({
   };
 
   return (
-    <div className="flex flex-col">
-      <p className="mb-1 font-semibold">
+    <div className="flex flex-col mb-4">
+      <p className="mb-1 font-regular">
         {title}
         {required && <span className="text-design-orange">*</span>}
       </p>
