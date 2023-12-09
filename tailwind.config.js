@@ -42,7 +42,7 @@ module.exports = {
             "red-text": "#F07167",
             "yellow-bg": "#FFF0BC",
             "yellow-text": "#FFB81C",
-            "green-bg": "#CFEDEA",
+            "green-bg": "#B7E4DC",
             "green-text": "#00AFB9",
             "gray-bg": "#E9E9E9",
             "gray-text": "#969696",

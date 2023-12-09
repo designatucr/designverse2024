@@ -15,14 +15,8 @@ describe("Checkbox", () => {
 
     cy.mount(<Parent />);
 
-    cy.get('[data-cy="checkbox-bg"]').should(
-      "have.class",
-      "bg-hackathon-gray-100"
-    );
-    cy.get('[data-cy="checkmark"]').should(
-      "have.class",
-      "text-hackathon-gray-100"
-    );
+    cy.get('[data-cy="checkbox-bg"]').should("have.class", "bg-white");
+    cy.get('[data-cy="checkmark"]').should("have.class", "text-white");
   });
 
   it("ON", () => {
@@ -59,15 +53,9 @@ describe("Checkbox", () => {
 
     cy.mount(<Parent />);
 
-    cy.get('[data-cy="checkbox-bg"]').should(
-      "have.class",
-      "bg-hackathon-gray-100"
-    );
+    cy.get('[data-cy="checkbox-bg"]').should("have.class", "bg-white");
     cy.get('[data-cy="checkbox"]').contains("Hello World");
-    cy.get('[data-cy="checkmark"]').should(
-      "have.class",
-      "text-hackathon-gray-100"
-    );
+    cy.get('[data-cy="checkmark"]').should("have.class", "text-white");
   });
 
   it("Toggle", () => {

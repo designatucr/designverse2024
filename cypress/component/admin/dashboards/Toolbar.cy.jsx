@@ -65,7 +65,7 @@ describe("Toolbar", () => {
 
     cy.get('[data-cy="checkbox-bg"]').should(
       "have.class",
-      "bg-hackathon-gray-100",
+      "bg-white",
       expect(admins.every((admin) => admin.selected === false)).to.be.true
     );
   });
