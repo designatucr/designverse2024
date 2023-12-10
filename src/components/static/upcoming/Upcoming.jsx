@@ -8,7 +8,7 @@ import Waterline from "../../../../public/svgs/waterline.svg";
 import Lily from "../../../../public/svgs/lilly.svg";
 import OnlyFrog from "../../../../public/svgs/OnlyFrog.svg";
 import Lillypad from "../../../../public/svgs/Lillypad.svg";
-import Lotus from "../../../../public/svgs/Lotus.svg";
+import Lotus from "../../../../public/svgs/lotus.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
 // import Logo from "../../../../public/svgs/Logo1.svg";
@@ -62,7 +62,7 @@ const Upcoming = () => {
         className="bg-design-green-300 w-screen border-0"
         src={Waterline}
       />
-      <div className=" h-[28%] flex flex-row w-full bg-design-blue-200">
+      <div className=" h-[28%] flex flex-row w-full bg-design-blue-200 relative">
         <div className="md:w-7/12 flex justify-start absolute">
           <Image
             className="md:w-3/12 -mt-24 ml-10 animate-wiggle3"
