@@ -70,20 +70,20 @@ const Upcoming = () => {
           />
         </div>
 
-        <div className="md:w-5/12 flex absolute">
+        <div className="md:w-5/12 absolute bottom-0">
           <Image
             className="hidden md:block w-10/12 ml-80 p-24 -mt-24 animate-wiggle2"
             src={Lillypad}
           />
         </div>
-        <div className="md:w-5/12 absolute">
+        <div className="md:w-5/12 absolute bottom-0">
           <Image
             className="hidden md:block w-7/12 ml-60 p-24 -mt-16 animate-wiggle2"
             src={Lotus}
           />
         </div>
 
-        <div className="md:w-5/12 flex-none absolute float-right -right-20">
+        <div className="md:w-5/12 absolute -right-20 -bottom-5">
           <Image
             className="hidden md:block w-10/12 ml-40 p-24 -mt-32 animate-wiggle1"
             src={Lily}
