@@ -19,7 +19,7 @@ export default function RootLayout({ children, session }) {
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${workSans.variable} flex flex-col lg:flex-row bg-design-green-100 h-full w-full`}
+        className={`${workSans.variable} flex flex-col lg:flex-row bg-inherit h-full w-full`}
       >
         <SessionProvider
           session={session}
