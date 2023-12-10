@@ -63,7 +63,7 @@ const Upcoming = () => {
         src={Waterline}
       />
       <div className=" h-[28%] flex flex-row w-full bg-design-blue-200 relative">
-        <div className="md:w-7/12 flex justify-start absolute">
+        <div className="md:w-7/12 justify-start absolute">
           <Image
             className="md:w-3/12 -mt-24 ml-10 animate-wiggle3"
             src={OnlyFrog}
