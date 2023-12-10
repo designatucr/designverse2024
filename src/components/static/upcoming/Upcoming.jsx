@@ -5,8 +5,10 @@ import Animals from "../../../../public/svgs/animals.svg";
 import Mushrooms1 from "../../../../public/svgs/mushrooms1.svg";
 import Mushrooms2 from "../../../../public/svgs/mushrooms2.svg";
 import Waterline from "../../../../public/svgs/waterline.svg";
-import Frog from "../../../../public/svgs/frog.svg";
 import Lily from "../../../../public/svgs/lilly.svg";
+import OnlyFrog from "../../../../public/svgs/OnlyFrog.svg";
+import Lillypad from "../../../../public/svgs/Lillypad.svg";
+import Lotus from "../../../../public/svgs/Lotus.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
 // import Logo from "../../../../public/svgs/Logo1.svg";
@@ -61,15 +63,29 @@ const Upcoming = () => {
         src={Waterline}
       />
       <div className=" h-[28%] flex flex-row w-full bg-design-blue-200">
-        <div className="md:w-11/12 flex justify-start ">
+        <div className="md:w-7/12 flex justify-start absolute">
           <Image
-            className="md:w-8/12 -mt-20 md:-mt-40 w-full animate-wiggle delay-1000"
-            src={Frog}
+            className="md:w-3/12 -mt-24 ml-10 animate-wiggle3"
+            src={OnlyFrog}
           />
         </div>
-        <div className="md:w-5/12 flex ">
+
+        <div className="md:w-5/12 flex absolute">
           <Image
-            className="hidden md:block w-full ml-40 p-24 -mt-32 animate-wiggle"
+            className="hidden md:block w-10/12 ml-80 p-24 -mt-24 animate-wiggle2"
+            src={Lillypad}
+          />
+        </div>
+        <div className="md:w-5/12 absolute">
+          <Image
+            className="hidden md:block w-7/12 ml-60 p-24 -mt-16 animate-wiggle2"
+            src={Lotus}
+          />
+        </div>
+
+        <div className="md:w-5/12 flex-none absolute float-right -right-20">
+          <Image
+            className="hidden md:block w-10/12 ml-40 p-24 -mt-32 animate-wiggle1"
             src={Lily}
           />
         </div>
