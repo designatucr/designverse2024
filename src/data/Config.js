@@ -2,7 +2,8 @@ export const CONFIG = {
   name: "Designverse",
   email: "designatucr@gmail.com",
   year: "2024",
-  date: new Date("May 11, 2024 8:00:00"),
+  date: new Date("November 4, 2023 9:00:00"),
+  packet: "",
 };
 
 export const MANIFEST = {
