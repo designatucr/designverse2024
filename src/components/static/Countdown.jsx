@@ -4,17 +4,17 @@ import { CONFIG } from "@/data/Config";
 
 const Digits = ({ value, text }) => {
   return (
-    <div className="flex flex-col items-center mr-1 md:mr-4 gap-2 text-white mt-4">
+    <div className="flex flex-col items-center mr-1 md:mr-4 gap-2 text-white mt-10">
       <div className="flex items-center">
         {value >= 100 && (
-          <p className="bg-design-green-100/80 mb-0 h-10 md:h-20 text-lg md:text-3xl font-bold w-8 md:w-16 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
+          <p className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-3xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
             {Math.floor(value / 100)}
           </p>
         )}
-        <p className="bg-design-green-100/80 mb-0 h-10 md:h-20 text-lg md:text-3xl font-bold w-8 md:w-16 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
+        <p className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-3xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
           {Math.floor(value / 10) % 10}
         </p>
-        <p className="bg-design-green-100/80 mb-0 h-10 md:h-20 text-lg md:text-3xl font-bold w-8 md:w-16 flex items-center justify-center rounded-lg drop-shadow-md">
+        <p className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-3xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md">
           {value % 10}
         </p>
       </div>
