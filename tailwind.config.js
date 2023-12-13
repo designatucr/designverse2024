@@ -64,15 +64,33 @@ module.exports = {
         },
       },
       animation: {
-        wiggle: "wiggle 2s ease-in-out infinite",
+        wiggle1: "wiggle1 5s ease-in-out infinite",
+        wiggle2: "wiggle2 5s ease-in-out infinite",
+        wiggle3: "wiggle3 12.5s ease-in-out infinite",
       },
       keyframes: {
-        wiggle: {
+        wiggle1: {
+          "0% 100%": {
+            translate: "25px",
+          },
+          "50%": {
+            translate: "-25px",
+          },
+        },
+        wiggle2: {
           "0% 100%": {
             translate: "10px",
           },
           "50%": {
             translate: "-10px",
+          },
+        },
+        wiggle3: {
+          "0% 100%": {
+            translate: "-17.5px",
+          },
+          "50%": {
+            translate: "17.5px",
           },
         },
       },

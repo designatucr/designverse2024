@@ -3,6 +3,8 @@ export const CONFIG = {
   email: "designatucr@gmail.com",
   year: "2024",
   date: new Date("May 11, 2024 8:00:00"),
+  packet:
+    "https://drive.google.com/file/d/1Gis3Ot-REsFpHQ4Q6DuVklUFMHtR92gG/view?usp=drivesdk",
 };
 
 export const MANIFEST = {
