@@ -45,8 +45,8 @@ const Select = ({
   };
 
   return (
-    <div className="flex flex-col">
-      <p className="mb-1 font-semibold">
+    <div className="flex flex-col mb-4">
+      <p className="mb-1 font-regular">
         {title}
         {required && <span className="text-design-orange">*</span>}
       </p>
@@ -85,7 +85,7 @@ const Select = ({
               <input
                 value={input}
                 autoFocus
-                className="mx-1.5 my-1 w-11/12 ring-0 outline-none px-2 py-1 bg-hackathon-green-100"
+                className="mx-1.5 my-1 w-11/12 ring-0 outline-none px-2 py-1 bg-hackathon-green-light"
                 placeholder="search"
                 onChange={handleInput}
               />
@@ -94,7 +94,7 @@ const Select = ({
               .filter((opt) => !opt.hidden)
               .map((option, index) => (
                 <div
-                  className=" hover:!bg-design-green-600 !bg-design-green-700 overflow-hidden"
+                  className=" hover:!bg-design-green-light !bg-design-beige overflow-hidden px-2"
                   key={index}
                   onClick={() => {
                     setUser({ ...user, [field]: option.name });

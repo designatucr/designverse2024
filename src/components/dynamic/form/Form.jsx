@@ -5,7 +5,7 @@ import Image from "next/image";
 import Status from "./Status";
 import Questions from "./Questions";
 import Confirmation from "./Confirmation";
-import Logo from "../../../../public/svgs/Logo1.svg";
+import Logo from "../../../../public/svgs/blackLogo.svg";
 
 const Form = ({
   object,
@@ -15,6 +15,7 @@ const Form = ({
   onSubmit,
   statuses,
   bypass = false,
+  packet = false,
 }) => {
   const [loading, setLoading] = useState(false);
   const [state, setState] = useState(
@@ -22,14 +23,14 @@ const Form = ({
   );
 
   return (
-    <div className="w-full h-full overflow-y-scroll flex flex-col items-center bg-design-green-400 font-workSans font-semibold">
-      <div className="text-white font-extrabold text-2xl md:text-4xl mt-5">
+    <div className="w-full h-full overflow-y-scroll flex flex-col items-center bg-design-white font-workSans font-semibold">
+      <div className="text-black font-extrabold text-2xl md:text-4xl mt-5">
         <Image className="w-auto h-auto py-4 px-3" src={Logo} />
-        <div className="flex justify-center ">DESIGN VERSE</div>
-        <div className="flex justify-center  text-xl md:text-2xl ">2024</div>
+        <div className="flex justify-center">DESIGN VERSE</div>
+        <div className="flex justify-center text-xl md:text-2xl ">2024</div>
       </div>
       <div className="w-10/12 md:w-1/2 xl:w-1/3 my-4">
-        <p className="text-xl bg-design-green-200 font-semibold px-4 py-2 rounded-t-xl m-0">
+        <p className="text-xl bg-design-green-200 text-white font-semibold px-4 py-2 rounded-t-xl m-0">
           {header}
         </p>
         <div className="rounded-b-xl bg-white p-3">
@@ -45,6 +46,7 @@ const Form = ({
                 fields={fields}
                 onSubmit={onSubmit}
                 setState={setState}
+                packet={packet}
               />
             ) : (
               <Confirmation />

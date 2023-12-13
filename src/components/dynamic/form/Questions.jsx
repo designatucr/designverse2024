@@ -9,6 +9,7 @@ import Upload from "@/components/dynamic/form/Upload";
 import toast from "react-hot-toast";
 import Link from "next/link";
 import { FaLink } from "react-icons/fa";
+import { CONFIG } from "@/data/Config";
 
 const Questions = ({
   fields,
@@ -18,6 +19,7 @@ const Questions = ({
   loading,
   setLoading,
   setState,
+  packet = false,
 }) => {
   const handleSubmit = () => {
     setLoading(true);
@@ -51,7 +53,7 @@ const Questions = ({
   };
 
   return (
-    <div>
+    <div className="font-normal">
       {Object.values(fields).map((field, index) => (
         <div key={index}>
           {field.input === "description" &&
@@ -95,7 +97,7 @@ const Questions = ({
           )}
           {field.input === "checkboxes" && (
             <>
-              <p className="mb-1 font-semibold">
+              <p className="mb-2 font-regular">
                 {field.text}
                 {field.required && (
                   <span className="text-design-orange">*</span>
@@ -115,9 +117,10 @@ const Questions = ({
                         : [...object[field.field], option],
                     })
                   }
-                  color="bg-design-green-600"
+                  color="bg-design-green-light"
                 />
               ))}
+              <br />
             </>
           )}
           {field.input === "radio" && (
@@ -155,18 +158,29 @@ const Questions = ({
           )}
         </div>
       ))}
-      <div className="font-semibold">Resources</div>
+      <div className="font-regular">Resources</div>
       <Link
         href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
         target="_blank"
-        className="no-underline flex items-center"
+        className="no-underline flex items-center text-design-orange"
       >
         MLH Code of Conduct
         <FaLink className="mx-2" />
       </Link>
+      {packet && (
+        <Link
+          href={CONFIG.packet}
+          target="_blank"
+          rel="noreferrer noopener"
+          className="no-underline flex items-center text-design-orange"
+        >
+          Sponsorship Packet
+          <FaLink className="mx-2" />
+        </Link>
+      )}
       <div className="flex justify-center">
         <Button
-          text="Submit"
+          text="submit"
           onClick={handleSubmit}
           loading={loading}
           color="green"

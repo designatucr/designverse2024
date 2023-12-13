@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsUpload } from "react-icons/bs";
+import { FaUpload } from "react-icons/fa";
 import { FaFilePdf, FaImage, FaTimes } from "react-icons/fa";
 import { toast } from "react-hot-toast";
 import { BYTES } from "@/data/dynamic/Bytes";
@@ -26,8 +26,8 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
   };
 
   return (
-    <div className="flex flex-col">
-      <p className="mb-0 font-semibold">
+    <div className="flex flex-col mb-4">
+      <p className="mb-2 font-normal">
         {text}
         {required && <span className="text-design-orange">*</span>}
       </p>
@@ -35,12 +35,12 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
         {!file && (
           <label
             htmlFor="dropzone-file"
-            className="flex flex-col items-center justify-center w-full h-fit border-2 border-gray-300 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100"
+            className="flex flex-col items-center justify-center w-full h-fit border-2 border-gray-300 rounded-lg cursor-pointer bg-design-white hover:bg-design-beige/50"
           >
             <div className="flex flex-col items-center justify-center pt-4">
-              <BsUpload className=" text-3xl mb-2 text-design-green-600" />
-              <p className="text-sm text-gray-500 font-semibold">
-                Upload from my computer
+              <FaUpload className="text-3xl mb-2 text-design-green-light" />
+              <p className="text-sm font-normal text-gray-500">
+                Upload From My Computer
               </p>
             </div>
             <div className="w-full" data-cy="upload-input">
@@ -56,7 +56,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
         )}
         {file && (
           <div
-            className="flex items-center justify-between w-full my-2 bg-gray-200 px-2 py-2"
+            className="flex items-center justify-between w-full my-2 bg-design-beige px-2 py-2"
             data-cy="upload-success"
           >
             <div className="flex items-center">
@@ -68,7 +68,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
               {file.name}
             </div>
             <FaTimes
-              className="text-gray-500 hover:cursor-pointer hover:text-red-600"
+              className="text-gray-500 hover:cursor-pointer hover:text-black"
               onClick={() => setFile(null)}
               data-cy="upload-cancel"
             />
