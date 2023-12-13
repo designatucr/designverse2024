@@ -172,7 +172,7 @@ const Questions = ({
           href={CONFIG.packet}
           target="_blank"
           rel="noreferrer noopener"
-          className="no-underline flex items-center"
+          className="no-underline flex items-center text-design-orange"
         >
           Sponsorship Packet
           <FaLink className="mx-2" />

@@ -1,8 +1,8 @@
 export const TIERS = [
-  "tier1", // change for different hackathons
-  "tier2",
-  "tier3",
-  "other",
+  "Bronze", // change for different hackathons
+  "Silver",
+  "Gold",
+  "Other",
 ];
 
 export const FIELDS = {
