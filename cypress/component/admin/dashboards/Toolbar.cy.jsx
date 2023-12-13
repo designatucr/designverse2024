@@ -47,16 +47,14 @@ describe("Toolbar", () => {
           setObjects={setAdmins}
           objects={admins}
           filters={FILTERS}
-          page="admins"
+          page="admin"
         />
       );
     };
-    cy.intercept("GET", `/api/admins`, {
+    cy.intercept("GET", `/api/admin`, {
       fixture: `admins.json`,
     }).as("GET");
-    cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
-    );
+    cy.intercept("PUT", `/api/admin`, { message: "OK", status: 200 }).as("GET");
     cy.mount(
       <MockNextRouter>
         <Parent />
@@ -70,55 +68,53 @@ describe("Toolbar", () => {
     );
   });
 
-  // it("Select and Delete all", () => {
-  //   let admins = adminData;
-  //   const setAdmins = (e) => {
-  //     admins = e;
-  //   };
+  it("Select and Delete all", () => {
+    let admins = adminData;
+    const setAdmins = (e) => {
+      admins = e;
+    };
 
-  //   const Parent = () => {
-  //     const [input, setInput] = useState({
-  //       input: "",
-  //     });
+    const Parent = () => {
+      const [input, setInput] = useState({
+        input: "",
+      });
 
-  //     return (
-  //       <Toolbar
-  //         input={input}
-  //         setInput={setInput}
-  //         tags={TAGS}
-  //         setObjects={setAdmins}
-  //         objects={admins}
-  //         filters={FILTERS}
-  //         page="admins"
-  //       />
-  //     );
-  //   };
-  //   cy.intercept("GET", `/api/admins`, {
-  //     fixture: `admins.json`,
-  //   }).as("GET");
-  //   cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-  //     "GET"
-  //   );
-  //   cy.mount(
-  //     <MockNextRouter>
-  //       <Parent />
-  //     </MockNextRouter>
-  //   );
+      return (
+        <Toolbar
+          input={input}
+          setInput={setInput}
+          tags={TAGS}
+          setObjects={setAdmins}
+          objects={admins}
+          filters={FILTERS}
+          page="admin"
+        />
+      );
+    };
+    cy.intercept("GET", `/api/admin`, {
+      fixture: `admins.json`,
+    }).as("GET");
+    cy.intercept("PUT", `/api/admin`, { message: "OK", status: 200 }).as("GET");
+    cy.mount(
+      <MockNextRouter>
+        <Parent />
+      </MockNextRouter>
+    );
 
-  //   cy.get('[data-cy="delete"]')
-  //     .click()
-  //     .then(
-  //       () =>
-  //         expect(admins.every((admin) => admin.selected === false)).to.be.true
-  //     );
-  //   cy.get('[data-cy="checkbox-bg"]')
-  //     .click()
-  //     .should("have.class", "bg-hackathon-blue-100");
-  //   cy.get('[data-cy="delete"]').click();
-  //   cy.get('[data-cy="confirm-button"]')
-  //     .click()
-  //     .then(() => expect(admins).to.be.empty);
-  // });
+    cy.get('[data-cy="delete"]')
+      .click()
+      .then(
+        () =>
+          expect(admins.every((admin) => admin.selected === false)).to.be.true
+      );
+    cy.get('[data-cy="checkbox-bg"]')
+      .click()
+      .should("have.class", "bg-hackathon-blue-100");
+    cy.get('[data-cy="delete"]').click();
+    cy.get('[data-cy="confirm-button"]')
+      .click()
+      .then(() => expect(admins).to.be.empty);
+  });
 
   it("Reject all", () => {
     let admins = adminData;
@@ -139,16 +135,14 @@ describe("Toolbar", () => {
           setObjects={setAdmins}
           objects={admins}
           filters={FILTERS}
-          page="admins"
+          page="admin"
         />
       );
     };
-    cy.intercept("GET", `/api/admins`, {
+    cy.intercept("GET", `/api/admin`, {
       fixture: `admins.json`,
     }).as("GET");
-    cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
-    );
+    cy.intercept("PUT", `/api/admin`, { message: "OK", status: 200 }).as("GET");
     cy.mount(
       <MockNextRouter>
         <Parent />
@@ -184,16 +178,14 @@ describe("Toolbar", () => {
           setObjects={setCommittee}
           objects={committee}
           filters={FILTERS}
-          page="admins"
+          page="admin"
         />
       );
     };
-    cy.intercept("GET", `/api/admins`, {
+    cy.intercept("GET", `/api/admin`, {
       fixture: `admins.json`,
     }).as("GET");
-    cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
-    );
+    cy.intercept("PUT", `/api/admin`, { message: "OK", status: 200 }).as("GET");
     cy.mount(
       <MockNextRouter>
         <Parent />
@@ -232,16 +224,14 @@ describe("Toolbar", () => {
           setObjects={setAdmins}
           objects={admins}
           filters={FILTERS}
-          page="admins"
+          page="admin"
         />
       );
     };
-    cy.intercept("GET", `/api/admins`, {
+    cy.intercept("GET", `/api/admin`, {
       fixture: `admins.json`,
     }).as("GET");
-    cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
-    );
+    cy.intercept("PUT", `/api/admin`, { message: "OK", status: 200 }).as("GET");
     cy.mount(
       <MockNextRouter>
         <Parent />
@@ -282,16 +272,14 @@ describe("Toolbar", () => {
           setObjects={setAdmins}
           objects={admins}
           filters={FILTERS}
-          page="admins"
+          page="admin"
         />
       );
     };
-    cy.intercept("GET", `/api/admins`, {
+    cy.intercept("GET", `/api/admin`, {
       fixture: `admins.json`,
     }).as("GET");
-    cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
-    );
+    cy.intercept("PUT", `/api/admin`, { message: "OK", status: 200 }).as("GET");
     cy.mount(
       <MockNextRouter>
         <Parent />
