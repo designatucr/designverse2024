@@ -12,48 +12,51 @@ import Lotus from "../../../../public/svgs/lotus.svg";
 import LillypadwithLotus from "../../../../public/svgs/lotuswithpad.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
-// import Logo from "../../../../public/svgs/Logo1.svg";
+import Logo from "../../../../public/svgs/BigLogo.svg";
 
 const Upcoming = () => {
   return (
     <div className="w-full h-screen overflow-hidden relative font-workSans">
       <div className="flex h-[68%] flex-row overflow-hidden justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-300">
-        <Image
-          className="w-5/6 md:w-1/4 flex -ml-56 items-end justify-end"
-          src={Mushrooms2}
-        />
-        <div className="absolute w-5/6 md:w-[55%] flex flex-col left-[8%] md:left-[7%] object-contain">
-          <div className="flex rounded-3xl mt-16 md:mt-20 items-center md:items-start bg-design-green-400/70 p-4 md:p-10 flex-col">
-            <div className="text-white font-extrabold text-2xl flex whitespace-nowrap md:text-4xl lg:text-5xl">
+        <div className="hidden md:block md:w-2/8 mt-28 z-10">
+          <Image className="w-5/6 md:w-full flex" src={Mushrooms2} />
+        </div>
+        <div className="absolute w-full md:w-full flex flex-col justify-start items-center md:justify-start md:items-center mt-14 object-contain">
+          <Image className="absolute w-4/6 md:w-3/12" src={Logo} />
+          <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-design-green-400/70 mt-24 md:mt-32 flex-col">
+            {/* <div className="text-white font-extrabold text-2xl flex whitespace-nowrap md:text-4xl lg:text-5xl">
               DESIGN VERSE 2024
             </div>
             <div className="text-white font-extrabold text-2xl md:text-4xl mb-3 mt-1 md:mb-6 md:mt-3 lg:text-5xl">
               COMING SOON
-            </div>
-            <div className="flex flex-row text-white text-sm md:text-2xl font-medium whitespace-normal">
+            </div> */}
+            <div className="flex flex-row text-white text-base md:text-2xl font-medium whitespace-normal mt-8">
               <IoPin className="mr-0 md:mr-2 text-lg md:text-2xl" /> University
               of California Riverside
             </div>
-            <div className="flex flex-row mt-2 text-white text-sm md:text-2xl font-medium whitespace-nowrap">
+            <div className="flex flex-row mt-2 text-white text-base md:text-2xl font-medium whitespace-nowrap">
               <BsCalendar3 className="mr-1 md:mr-2 md:mt-1 text-lg md:text-xl" />{" "}
               May 11 - 12, 2024
             </div>
 
-            <div className="mt-8 grid grid-cols-2 lg:grid-cols-4 w-full gap-4 md:gap-4">
-              <Apply text="Interested" link="/form/interest" />
-              <Apply text="Mentor" link="/form/mentor" />
-              <Apply text="Volunteer" link="/form/volunteer" />
-              <Apply text="Sponsor Us" link="/form/sponsor" />
+            <div className="flex justify-center md:justify-start  mt-3 md:mt-10w-full">
+              <CountDown />
             </div>
           </div>
-          <div className="flex justify-center md:justify-start">
-            <CountDown />
+          <div className="mt-8 grid grid-cols-2 lg:grid-cols-4 w-7/12 gap-2 md:gap-3 z-30">
+            <Apply text="Interested" link="/form/interest" />
+            <Apply text="Mentor" link="/form/mentor" />
+            <Apply text="Volunteer" link="/form/volunteer" />
+            <Apply text="Sponsor Us" link="/form/sponsor" />
           </div>
         </div>
-        <div className="w-11/12 md:w-4/12 flex flex-col h-full justify-center md:justify-end">
-          <Image className=" ml-28 md:ml-16 w-full" src={Mushrooms1} />
+        <div className="w-full md:w-4/12 flex flex-col h-full justify-end md:justify-end items-end md:items-end -z-5 md:z-10">
           <Image
-            className="hidden md:block absolute w-4/12 -mb-12 -ml-40"
+            className="hidden md:block md:-mr-16 md:w-full w-9/12"
+            src={Mushrooms1}
+          />
+          <Image
+            className="hidden md:block absolute -mb-8 w-3/12"
             src={Animals}
           />
         </div>

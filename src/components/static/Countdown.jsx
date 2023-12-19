@@ -4,17 +4,21 @@ import { CONFIG } from "@/data/Config";
 
 const Digits = ({ value, text }) => {
   return (
-    <div className="flex flex-col items-center mr-1 md:mr-4 gap-2 text-white mt-10">
-      <div className="flex items-center">
+    <div
+      className={`${
+        text === "seconds" ? "hidden md:block items-start" : ""
+      } flex flex-col items-center mr-1 w-full md:mr-4 gap-2 text-white`}
+    >
+      <div className="flex justify-center w-full ">
         {value >= 100 && (
-          <p className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-3xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
+          <p className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-4xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
             {Math.floor(value / 100)}
           </p>
         )}
-        <p className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-3xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
+        <p className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-4xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
           {Math.floor(value / 10) % 10}
         </p>
-        <p className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-3xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md">
+        <p className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-4xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md">
           {value % 10}
         </p>
       </div>
@@ -46,7 +50,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="flex w-full">
       {Object.entries(time).map(([text, value], index) => (
         <Digits key={index} text={text} value={value} />
       ))}
