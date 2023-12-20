@@ -2,10 +2,8 @@ import CountDown from "../Countdown";
 import Image from "next/image";
 import Apply from "../Apply";
 import Animals from "../../../../public/svgs/animals.svg";
-// import Mushrooms1 from "../../../../public/svgs/mushrooms1.svg";
 import Mushrooms2 from "../../../../public/svgs/mushrooms2.svg";
 import Waterline from "../../../../public/svgs/waterline.svg";
-// import Lily from "../../../../public/svgs/lilly.svg";
 import OnlyFrog from "../../../../public/svgs/onlyFrog.svg";
 import Lillypad from "../../../../public/svgs/lillypad.svg";
 import Lotus from "../../../../public/svgs/lotus.svg";
@@ -13,6 +11,7 @@ import LillypadwithLotus from "../../../../public/svgs/lotuswithpad.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
 import Logo from "../../../../public/svgs/BigLogo.svg";
+import Footer from "../Footer";
 import About from "../About";
 
 const Upcoming = () => {
@@ -87,6 +86,7 @@ const Upcoming = () => {
         </div>
       </div>
       <About />
+      <Footer />
     </div>
   );
 };
