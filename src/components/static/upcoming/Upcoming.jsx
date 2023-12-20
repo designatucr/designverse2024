@@ -13,6 +13,7 @@ import { BsCalendar3 } from "react-icons/bs";
 import Logo from "../../../../public/svgs/BigLogo.svg";
 import Footer from "../Footer";
 import About from "../About";
+import FAQ from "../FAQ";
 
 const Upcoming = () => {
   return (
@@ -86,6 +87,7 @@ const Upcoming = () => {
         </div>
       </div>
       <About />
+      <FAQ />
       <Footer />
     </div>
   );

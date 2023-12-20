@@ -6,7 +6,7 @@ import { FaEnvelope, FaHeart, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between bg-design-blue-200 text-white py-10">
+    <div className="flex justify-between bg-[#BCD7B9] text-white py-10">
       <Image src={mushroomsLeft} className="w-2/12" />
       <div className="flex flex-col items-center">
         <Image src={logo} />
