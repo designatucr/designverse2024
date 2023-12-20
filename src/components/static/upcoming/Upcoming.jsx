@@ -2,7 +2,7 @@ import CountDown from "../Countdown";
 import Image from "next/image";
 import Apply from "../Apply";
 import Animals from "../../../../public/svgs/animals.svg";
-import Mushrooms1 from "../../../../public/svgs/mushrooms1.svg";
+// import Mushrooms1 from "../../../../public/svgs/mushrooms1.svg";
 import Mushrooms2 from "../../../../public/svgs/mushrooms2.svg";
 import Waterline from "../../../../public/svgs/waterline.svg";
 // import Lily from "../../../../public/svgs/lilly.svg";
@@ -18,19 +18,16 @@ const Upcoming = () => {
   return (
     <div className="w-full h-screen overflow-hidden relative font-workSans">
       <div className="flex h-[68%] flex-row overflow-hidden justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-300">
-        <div className="hidden md:block md:w-2/8 mt-28 z-10">
-          <Image className="w-5/6 md:w-full flex" src={Mushrooms2} />
+        <div className=" flex md:-mb-6 -mb-8 items-end md:items-end">
+          <Image
+            className="flex absolute w-7/12 -ml-24 md:ml-0 md:w-3/12 md:z-10"
+            src={Mushrooms2}
+          />
         </div>
         <div className="absolute w-full md:w-full flex flex-col justify-start items-center md:justify-start md:items-center mt-14 object-contain">
-          <Image className="absolute w-4/6 md:w-3/12" src={Logo} />
-          <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-design-green-400/70 mt-24 md:mt-32 flex-col">
-            {/* <div className="text-white font-extrabold text-2xl flex whitespace-nowrap md:text-4xl lg:text-5xl">
-              DESIGN VERSE 2024
-            </div>
-            <div className="text-white font-extrabold text-2xl md:text-4xl mb-3 mt-1 md:mb-6 md:mt-3 lg:text-5xl">
-              COMING SOON
-            </div> */}
-            <div className="flex flex-row text-white text-base md:text-2xl font-medium whitespace-normal mt-8">
+          <Image className="absolute flex w-4/6 md:w-3/12" src={Logo} />
+          <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-design-green-400/70 mt-20 md:mt-24 flex-col">
+            <div className="flex flex-row text-white text-base md:text-2xl font-medium whitespace-normal mt-16">
               <IoPin className="mr-0 md:mr-2 text-lg md:text-2xl" /> University
               of California Riverside
             </div>
@@ -39,26 +36,19 @@ const Upcoming = () => {
               May 11 - 12, 2024
             </div>
 
-            <div className="flex justify-center md:justify-start  mt-3 md:mt-10w-full">
+            <div className="flex justify-center md:justify-start m-3 ">
               <CountDown />
             </div>
           </div>
-          <div className="mt-8 grid grid-cols-2 lg:grid-cols-4 w-7/12 gap-2 md:gap-3 z-30">
+          <div className="mt-8 grid grid-cols-2 lg:grid-cols-4 w-6/12 gap-2 md:gap-3">
             <Apply text="Interested" link="/form/interest" />
             <Apply text="Mentor" link="/form/mentor" />
             <Apply text="Volunteer" link="/form/volunteer" />
             <Apply text="Sponsor Us" link="/form/sponsor" />
           </div>
         </div>
-        <div className="w-full md:w-4/12 flex flex-col h-full justify-end md:justify-end items-end md:items-end -z-5 md:z-10">
-          <Image
-            className="hidden md:block md:-mr-16 md:w-full w-9/12"
-            src={Mushrooms1}
-          />
-          <Image
-            className="hidden md:block absolute -mb-8 w-3/12"
-            src={Animals}
-          />
+        <div className="w-4/12 flex flex-col h-full justify-end md:justify-right items-end md:items-right z-0 md:z-10 md:-mr-8">
+          <Image className="hidden absolute md:block" src={Animals} />
         </div>
       </div>
 

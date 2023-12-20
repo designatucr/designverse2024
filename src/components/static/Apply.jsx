@@ -8,7 +8,7 @@ const Apply = ({ text, link }) => {
       target="_blank"
       className="no-underline flex whitespace-nowrap min-w-fit justify-center hover:-translate-y-1 hover:bg-design-brown-400/80 duration-150 bg-design-brown-400 rounded-full"
     >
-      <div className="text-xs md:text-lg font-workSans font-regular flex items-center text-white py-2 px-6">
+      <div className="text-xs md:text-lg font-workSans font-regular flex items-center text-white py-1 px-2 md:px-0">
         {text}
         <ImArrowUpRight2 className="ml-2" />
       </div>
