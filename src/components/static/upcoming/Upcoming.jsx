@@ -18,9 +18,9 @@ const Upcoming = () => {
   return (
     <div className="w-full h-screen overflow-hidden relative font-workSans">
       <div className="flex h-[68%] flex-row overflow-hidden justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-300">
-        <div className=" flex md:-mb-6 -mb-8 items-end md:items-end">
+        <div className=" flex md:-mb-12 -mb-8 items-end md:items-end">
           <Image
-            className="flex absolute w-7/12 -ml-24 md:ml-0 md:w-3/12 md:z-10"
+            className="flex absolute w-7/12 -ml-24 md:-ml-8 md:w-[28%] md:z-10"
             src={Mushrooms2}
           />
         </div>
@@ -36,7 +36,7 @@ const Upcoming = () => {
               May 11 - 12, 2024
             </div>
 
-            <div className="flex justify-center md:justify-start m-3 ">
+            <div className="flex justify-center md:justify-start m-8">
               <CountDown />
             </div>
           </div>
@@ -54,9 +54,9 @@ const Upcoming = () => {
 
       <Image className="bg-design-green-300 w-full border-0" src={Waterline} />
       <div className=" h-[32%] flex flex-row w-full bg-design-blue-200 relative">
-        <div className="w-7/12 md:w-1/6 justify-start absolute">
+        <div className="w-4/12 md:w-1/6 justify-start absolute">
           <Image
-            className="md:w-full -mt-2 md:-mt-20 md:ml-10 animate-wiggle3"
+            className="md:w-full -mt-2 md:-mt-20 md:ml-0 ml-16 animate-wiggle3"
             src={OnlyFrog}
           />
         </div>
@@ -67,14 +67,14 @@ const Upcoming = () => {
             src={Lillypad}
           />
         </div>
-        <div className="md:w-1/4 absolute bottom-4">
+        <div className="md:w-1/4 absolute -bottom-2">
           <Image
             className="hidden md:block w-full ml-60 p-24 animate-wiggle2"
             src={Lotus}
           />
         </div>
 
-        <div className="md:w-3/12 absolute bottom-5 -right-2">
+        <div className="md:w-3/12 absolute -bottom-5 -right-2">
           <Image
             className="hidden md:block w-full p-24 animate-wiggle2"
             src={Lotus}
