@@ -6,6 +6,7 @@ import Status from "./Status";
 import Questions from "./Questions";
 import Confirmation from "./Confirmation";
 import Logo from "../../../../public/svgs/blackLogo.svg";
+import Link from "next/link";
 
 const Form = ({
   object,
@@ -25,7 +26,9 @@ const Form = ({
   return (
     <div className="w-full h-full overflow-y-scroll flex flex-col items-center bg-design-white font-workSans font-semibold">
       <div className="text-black font-extrabold text-2xl md:text-4xl mt-5">
-        <Image className="w-auto h-auto py-4 px-3" src={Logo} />
+        <Link href="/">
+          <Image className="w-auto h-auto py-4 px-3" src={Logo} />
+        </Link>
         <div className="flex justify-center">DESIGN VERSE</div>
         <div className="flex justify-center text-xl md:text-2xl ">2024</div>
       </div>
