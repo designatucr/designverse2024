@@ -13,6 +13,7 @@ import LillypadwithLotus from "../../../../public/svgs/lotuswithpad.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
 import Logo from "../../../../public/svgs/BigLogo.svg";
+import Footer from "../Footer";
 
 const Upcoming = () => {
   return (
@@ -87,6 +88,7 @@ const Upcoming = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
