@@ -86,19 +86,19 @@ const PRODUCTION = {
     "/admin/prizes": new Date("10/01/2023"),
     "/admin/statistics": new Date("10/01/2023"),
 
-    "/form/particpant": new Date("10/01/2023"),
-    "/form/judge": new Date("10/01/2023"),
+    "/form/particpant": new Date("01/20/2024"),
+    "/form/judge": new Date("01/20/2024"),
     "/form/volunteer": new Date("10/01/2023"),
     "/form/mentor": new Date("10/01/2023"),
     "/form/admin": new Date("10/01/2023"),
     "/form/committee": new Date("10/01/2023"),
     "/form/sponsor": new Date("10/01/2023"),
-    "/form/feedback": new Date("10/01/2023"),
+    "/form/feedback": new Date("01/20/2024"),
     "/form/interest": new Date("10/01/2023"),
 
-    "/user/checkin": new Date("10/01/2023"),
-    "/user/dashboard": new Date("10/01/2023"),
-    "/user/join": new Date("10/01/2023"),
+    "/user/checkin": new Date("01/20/2024"),
+    "/user/dashboard": new Date("01/20/2024"),
+    "/user/join": new Date("01/20/2024"),
   },
 };
 
