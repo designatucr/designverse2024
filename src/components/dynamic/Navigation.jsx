@@ -40,12 +40,9 @@ const Navigation = () => {
           <div className="hidden lg:flex items-center my-3">
             <Image
               src={LOGO}
-              className="w-10 h-10 mx-2"
+              className="w-11/12 mx-2"
               alt={`${CONFIG.name} Logo`}
             />
-            <p className="text-white font-bold text-lg pr-2 m-0">
-              {CONFIG.name.toUpperCase()}
-            </p>
           </div>
           <div className="w-full flex flex-col items-center h-full">
             {Object.entries(tabs)
