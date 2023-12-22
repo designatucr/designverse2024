@@ -68,7 +68,7 @@ export const FIELDS = {
   },
   tier: {
     input: "radio",
-    text: "Sponsorship Tier (check sponsorship packet)",
+    text: "Sponsorship Tier (please check the sponsorship packet)",
     options: TIERS,
     field: "tier",
     width: 12,
