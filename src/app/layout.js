@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Work_Sans } from "next/font/google";
 import { SessionProvider } from "next-auth/react";
 import { Toaster } from "react-hot-toast";
+import { usePathname } from "next/navigation";
 
 // eslint-disable-next-line camelcase
 const workSans = Work_Sans({
@@ -16,10 +17,13 @@ const workSans = Work_Sans({
 });
 
 export default function RootLayout({ children, session }) {
+  const color = RegExp(/\/form\//).test(usePathname())
+    ? "bg-design-white"
+    : "bg-design-green-100";
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${workSans.variable} flex flex-col lg:flex-row bg-inherit h-full w-full`}
+        className={`${workSans.variable} flex flex-col lg:flex-row ${color} h-full w-full`}
       >
         <SessionProvider
           session={session}
