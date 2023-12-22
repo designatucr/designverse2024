@@ -9,7 +9,7 @@ const Item = ({ question, answer, index }) => {
   return (
     <Accordion.Item
       eventKey={index}
-      className="!text-white bg-transparent !border-x-0 !border-t-0"
+      className="!text-white bg-transparent !border-x-0 !border-t-0 !border-b-2"
     >
       <Accordion.Button
         className="after:!bg-none !text-white !bg-transparent !shadow-none"

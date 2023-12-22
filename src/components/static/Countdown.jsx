@@ -7,7 +7,7 @@ const Digits = ({ value, text }) => {
     <div
       className={`${
         text === "seconds" ? "hidden md:flex" : ""
-      } flex flex-col items-center w-full  mx-3 gap-2 text-white`}
+      } flex flex-col items-center w-full  px-2 md:mx-2 gap-2 text-white`}
     >
       <div className="flex justify-center w-full ">
         {value >= 100 && (
