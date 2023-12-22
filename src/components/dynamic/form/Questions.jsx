@@ -53,15 +53,36 @@ const Questions = ({
   };
 
   return (
-    <div className="font-normal">
+    <div className="font-normal font-workSans">
       {Object.values(fields).map((field, index) => (
         <div key={index}>
           {field.input === "description" &&
             field.texts.map((description, index) => (
               <div key={index}>
-                <p>{description}</p>
+                <p>
+                  {description
+                    .split(" ")
+                    .map((word, wordIndex) =>
+                      word.includes("DesignVerse") ? (
+                        <em key={wordIndex}>{word} </em>
+                      ) : (
+                        <span key={wordIndex}>{word} </span>
+                      )
+                    )}
+                </p>
                 {index === field.texts.length - 1 && (
                   <p>
+                    {packet && (
+                      <Link
+                        href={CONFIG.packet}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="no-underline flex items-center text-design-orange"
+                      >
+                        Sponsorship Packet
+                        <FaLink className="mb-4" />
+                      </Link>
+                    )}
                     Fields with
                     <span className="text-design-orange"> * </span>
                     are required.
@@ -160,24 +181,13 @@ const Questions = ({
       ))}
       <div className="font-regular">Resources</div>
       <Link
-        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdfhttps://drive.google.com/file/d/1ZAzouqmOnEkbQaar_Dx1AlBiAmCo9hie/view"
         target="_blank"
         className="no-underline flex items-center text-design-orange"
       >
-        MLH Code of Conduct
+        DesignVerse Code Of Conduct
         <FaLink className="mx-2" />
       </Link>
-      {packet && (
-        <Link
-          href={CONFIG.packet}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="no-underline flex items-center text-design-orange"
-        >
-          Sponsorship Packet
-          <FaLink className="mx-2" />
-        </Link>
-      )}
       <div className="flex justify-center">
         <Button
           text="submit"

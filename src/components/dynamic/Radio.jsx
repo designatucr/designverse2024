@@ -12,7 +12,7 @@ const Radio = ({
   };
 
   return (
-    <div className="flex flex-col mb-4">
+    <div className="flex flex-col mb-4 font-workSans">
       <p className="mb-1 font-regular">
         {text}
         {required && <span className="text-design-orange">*</span>}

@@ -59,7 +59,7 @@ const Table = ({
   ) : (
     <div className="w-full rounded-xl overflow-hidden flex flex-col">
       {modal && <Modal data={modal} setModal={setModal} />}
-      <div className="w-full py-2 text-sm flex text-white bg-hackathon-blue-200 justify-evenly px-0 m-0">
+      <div className="w-full py-2 text-sm flex text-white bg-design-green-200 justify-evenly px-0 mx-0">
         <div className="w-1/12" />
         {headers.map((header, index) => (
           <div
@@ -93,7 +93,7 @@ const Table = ({
                 data-cy={object.uid}
                 key={index}
                 className={`first:border-0 border-t border-hackathon-gray-100 w-full grid grid-cols-1 py-2 ${
-                  object.selected ? "bg-green-100" : "bg-white"
+                  object.selected ? "bg-design-green-100/50" : "bg-white"
                 }`}
               >
                 <div className="flex justify-start items-center">
