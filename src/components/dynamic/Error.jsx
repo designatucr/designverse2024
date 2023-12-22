@@ -2,7 +2,7 @@ import React from "react";
 
 const Error = ({ code, error, message }) => {
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center fixed">
+    <div className="w-screen h-screen flex flex-col items-center justify-center fixed bg-design-green-100">
       <p className="text-center text-6xl font-extrabold text-hackathon-blue-100 m-0">
         {code}
       </p>
