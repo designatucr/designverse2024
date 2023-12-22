@@ -11,6 +11,7 @@ import LillypadwithLotus from "../../../../public/svgs/lotuswithpad.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
 import Logo from "../../../../public/svgs/BigLogo.svg";
+// import Logo from "../../../../public/svgs/BigLogo.png";
 // import Footer from "../Footer";
 // import About from "../About";
 // import FAQ from "../FAQ";
@@ -27,11 +28,11 @@ const Upcoming = () => {
         </div>
         <div className="absolute w-full flex flex-col justify-start items-center md:justify-start md:items-center mt-14">
           <Image
-            className="absolute flex w-3/6 md:w-3/12 2xl:w-2/12"
+            className="absolute flex w-6/12 sm:w-3/12 md:w-3/12 lg:w-3/12 2xl:w-2/12"
             src={Logo}
           />
           <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-design-green-400/70 mt-14 md:mt-24 2xl:mt-32 flex-col">
-            <div className="flex text-white text-base md:text-2xl font-medium whitespace-normal mt-10 md:mt-16">
+            <div className="flex text-white text-base md:text-2xl font-medium whitespace-normal mt-8 sm:mt-16 md:mt-20 ">
               <IoPin className="mr-0 md:mr-2 text-lg md:text-2xl" /> University
               of California Riverside
             </div>
@@ -44,7 +45,7 @@ const Upcoming = () => {
               <CountDown />
             </div>
           </div>
-          <div className="mt-8 grid grid-cols-2 lg:grid-cols-4 w-6/12 gap-2 md:gap-3">
+          <div className="mt-4 md:mt-8 grid grid-cols-2 lg:grid-cols-4 w-6/12 gap-2 md:gap-3">
             <Apply text="Interested" link="/form/interest" />
             <Apply text="Mentor" link="/form/mentor" />
             <Apply text="Volunteer" link="/form/volunteer" />

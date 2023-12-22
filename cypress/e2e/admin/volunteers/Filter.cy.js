@@ -14,13 +14,13 @@ describe("Volunteers Filters", () => {
   it("Default Filters", () => {
     cy.get('[data-cy="pending-filter"]')
       .get("div")
-      .should("have.class", "bg-hackathon-blue-100", "text-white");
+      .should("have.class", "bg-hackathon-tags-yellow-bg", "text-white");
     cy.get('[data-cy="rejected-filter"]')
       .get("div")
-      .should("have.class", "bg-hackathon-blue-100", "text-white");
+      .should("have.class", "bg-hackathon-tags-red-bg", "text-white");
     cy.get('[data-cy="accepted-filter"]')
       .get("div")
-      .should("have.class", "bg-hackathon-blue-100", "text-white");
+      .should("have.class", "bg-hackathon-tags-green-bg", "text-white");
   });
 
   it("Click Filters", () => {
