@@ -11,7 +11,7 @@ const Input = ({
   required,
 }) => {
   return (
-    <div className="flex flex-col w-full mb-4">
+    <div className="flex flex-col w-full mb-4 font-workSans">
       <p className="mb-1 font-regular">
         {title}
         {required && <span className="text-design-orange">*</span>}
