@@ -60,15 +60,18 @@ const Questions = ({
             field.texts.map((description, index) => (
               <div key={index}>
                 <p>
-                  {description
-                    .split(" ")
-                    .map((word, wordIndex) =>
-                      word.includes("DesignVerse") ? (
-                        <em key={wordIndex}>{word} </em>
-                      ) : (
-                        <span key={wordIndex}>{word} </span>
-                      )
-                    )}
+                  {description.split(" ").map((word, key) =>
+                    word.includes("DesignVerse") ? (
+                      <span
+                        className="font-workSans text-design-green-200"
+                        key={key}
+                      >
+                        {word}{" "}
+                      </span>
+                    ) : (
+                      <span key={key}>{word} </span>
+                    )
+                  )}
                 </p>
                 {index === field.texts.length - 1 && (
                   <p>
