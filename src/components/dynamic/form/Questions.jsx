@@ -59,11 +59,11 @@ const Questions = ({
           {field.input === "description" &&
             field.texts.map((description, index) => (
               <div key={index}>
-                <p>
+                <div>
                   {description.split(" ").map((word, key) =>
                     word.includes("DesignVerse") ? (
                       <span
-                        className="font-workSans text-design-green-200"
+                        className="font-workSans text-design-brown-400 font-semibold"
                         key={key}
                       >
                         {word}{" "}
@@ -72,24 +72,25 @@ const Questions = ({
                       <span key={key}>{word} </span>
                     )
                   )}
-                </p>
+                </div>
+                &nbsp;
                 {index === field.texts.length - 1 && (
-                  <p>
+                  <div>
                     {packet && (
                       <Link
                         href={CONFIG.packet}
                         target="_blank"
                         rel="noreferrer noopener"
-                        className="no-underline flex items-center text-design-orange"
+                        className="no-underline flex items-center text-design-orange mb-2"
                       >
                         Sponsorship Packet
-                        <FaLink className="mb-4" />
+                        <FaLink />
                       </Link>
                     )}
                     Fields with
                     <span className="text-design-orange"> * </span>
                     are required.
-                  </p>
+                  </div>
                 )}
               </div>
             ))}
@@ -184,7 +185,7 @@ const Questions = ({
       ))}
       <div className="font-regular">Resources</div>
       <Link
-        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdfhttps://drive.google.com/file/d/1ZAzouqmOnEkbQaar_Dx1AlBiAmCo9hie/view"
+        href="https://drive.google.com/file/d/1ZAzouqmOnEkbQaar_Dx1AlBiAmCo9hie/view"
         target="_blank"
         className="no-underline flex items-center text-design-orange"
       >
