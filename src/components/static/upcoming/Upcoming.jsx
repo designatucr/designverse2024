@@ -31,7 +31,7 @@ const Upcoming = () => {
             className="absolute flex w-6/12 sm:w-3/12 md:w-3/12 lg:w-3/12 2xl:w-2/12"
             src={Logo}
           />
-          <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-design-green-400/70 mt-14 md:mt-24 2xl:mt-32 flex-col">
+          <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-design-green-400/70 mt-16 md:mt-24 2xl:mt-32 flex-col">
             <div className="flex text-white text-base md:text-2xl font-medium whitespace-normal mt-8 sm:mt-16 md:mt-20 ">
               <IoPin className="mr-0 md:mr-2 text-lg md:text-2xl" /> University
               of California Riverside

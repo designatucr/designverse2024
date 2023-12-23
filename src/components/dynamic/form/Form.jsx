@@ -5,7 +5,7 @@ import Image from "next/image";
 import Status from "./Status";
 import Questions from "./Questions";
 import Confirmation from "./Confirmation";
-import Logo from "../../../../public/svgs/blackLogo.svg";
+import Logo from "../../../../public/svgs/FormLogo.svg";
 import Link from "next/link";
 
 const Form = ({
