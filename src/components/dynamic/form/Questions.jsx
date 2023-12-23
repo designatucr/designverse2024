@@ -84,7 +84,7 @@ const Questions = ({
                         className="no-underline flex items-center text-design-orange mb-2"
                       >
                         Sponsorship Packet
-                        <FaLink />
+                        <FaLink className="mx-2" />
                       </Link>
                     )}
                     Fields with
@@ -185,7 +185,7 @@ const Questions = ({
       ))}
       <div className="font-regular">Resources</div>
       <Link
-        href="https://drive.google.com/file/d/1ZAzouqmOnEkbQaar_Dx1AlBiAmCo9hie/view"
+        href="/files/DesignVerseCodeofConduct.pdf"
         target="_blank"
         className="no-underline flex items-center text-design-orange"
       >
