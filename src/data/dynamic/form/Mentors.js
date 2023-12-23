@@ -110,12 +110,11 @@ export const FIELDS = {
     field: "requirements",
     required: true,
     options: [
-      "I have read the DesignVerse code of conduct and agree to the terms and conditions listed",
+      "I have read the DesignVerse Code of Conduct and agree to the terms and conditions listed",
       "I consent to photographs being taken and being used for future marketing purposes",
-      "I consent to providing a safe space for designers to learn and grow their interests in designing",
-      "I consent to following the provided guidelines and rules instructed by the organizing team",
-      "I understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event",
-      "I understand this is an in person event taking place in UCR and I must attend in person in order to mentor",
+      "I consent to following the provided guidelines and rules instructed by the organizing team and understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event",
+      "I understand that my attendance is required either virtually or in person",
+      "I understand that I must not uphold any biases or unfairness to my mentees",
     ],
   },
 };
