@@ -8,6 +8,7 @@ import Upcoming from "@/components/static/upcoming/Upcoming";
 const Home = () => {
   return (
     <div className="w-full">
+      <title>DesignVerse 2024</title>
       <Release release={RELEASES.STATIC.UPCOMING}>
         <Upcoming />
       </Release>
