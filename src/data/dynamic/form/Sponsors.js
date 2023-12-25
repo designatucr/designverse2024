@@ -12,7 +12,7 @@ export const FIELDS = {
     texts: [
       "Welcome to DesignVerse. Thank you for considering to become a sponsor, we appreciate your efforts to help support DesignVerse.",
       "DesignVerse is UCR’s first ever UI/UX Design-a-Thon! On May 11, 2024 over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
-      "By sponsoring DesignVerse, you help advocate for SPONSOR_REASONS.",
+      "Supporting DesignVerse contributes significantly to the success of UCR's first annual Design-a-Thon, which ultimately advances our cause for design within the University of California, Riverside. This initiative directly benefits students across the university who have an interest in the field of web design, UI/UX, and design-like thinking. Your sponsorship not only strengthens this event but also provides valuable opportunities for designers, allowing both DesignVerse and Design at UCR to organize more impactful events in the future.      ",
       "Sponsors are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
     ],
   },
