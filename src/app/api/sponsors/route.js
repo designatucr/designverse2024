@@ -75,6 +75,7 @@ export async function GET() {
     snapshot.forEach((doc) => {
       const { name, email, phone, roles, company, position, tier, timestamp } =
         doc.data();
+      console.log({ tier });
       output.push({
         uid: doc.id,
         name: name,
