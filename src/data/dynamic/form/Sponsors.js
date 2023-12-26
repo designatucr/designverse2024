@@ -1,9 +1,4 @@
-export const TIERS = [
-  "Bronze", // change for different hackathons
-  "Silver",
-  "Gold",
-  "Other",
-];
+export const TIERS = ["bronze", "silver", "gold", "other"];
 
 export const FIELDS = {
   description: {

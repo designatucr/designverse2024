@@ -120,6 +120,7 @@ const Table = ({
                           >
                             {header.hasTag && object[header.text] !== "" && (
                               <div data-cy={header.text}>
+                                {console.log(object[header.text])}
                                 <Tag
                                   text={
                                     String(object[header.text]).includes(
