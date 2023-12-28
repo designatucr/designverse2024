@@ -8,7 +8,7 @@ import { IoIosMail } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between bg-gradient-to-b from-design-blue-200 via-[#18836F] to-[#18836F] text-white py-10">
+    <div className="flex justify-between bg-gradient-to-b bg-[#BCD7B9] text-white py-10">
       <Image src={mushroomsLeft} className="w-4/12 md:w-3/12" />
       <div className="flex flex-col items-center justify-end w-3/12 md:w-full">
         <Image src={logo} width={100} />
