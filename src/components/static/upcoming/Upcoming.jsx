@@ -11,14 +11,13 @@ import LillypadwithLotus from "../../../../public/svgs/lotuswithpad.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
 import Logo from "../../../../public/svgs/BigLogo.svg";
-// import Logo from "../../../../public/svgs/BigLogo.png";
-// import Footer from "../Footer";
-// import About from "../About";
-// import FAQ from "../FAQ";
+import Footer from "../Footer";
+import About from "../About";
+import FAQ from "../FAQ";
 
 const Upcoming = () => {
   return (
-    <div className="w-full h-screen overflow-x-hidden overflow-y-hidden relative font-workSans">
+    <div className="w-full h-screen overflow-x-hidden relative font-workSans">
       <div className="flex h-[68%] justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-300">
         <div className="flex md:-mb-12 -mb-8 items-end md:items-end">
           <Image
@@ -93,9 +92,9 @@ const Upcoming = () => {
           />
         </div>
       </div>
-      {/* <About />
+      <About />
       <FAQ />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };

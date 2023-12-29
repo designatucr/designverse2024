@@ -4,7 +4,7 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 // eslint-disable-next-line camelcase
 import { Work_Sans } from "next/font/google";
-import { SessionProvider } from "next-auth/react";
+import Session from "@/components/dynamic/Session";
 import { Toaster } from "react-hot-toast";
 import { usePathname } from "next/navigation";
 
@@ -25,16 +25,12 @@ export default function RootLayout({ children, session }) {
       <body
         className={`${workSans.variable} flex flex-col lg:flex-row ${color} h-full w-full`}
       >
-        <SessionProvider
-          session={session}
-          refetchInterval={5 * 60}
-          className="h-full"
-        >
+        <Session session={session} refetchInterval={5 * 60} className="h-full">
           <div className="flex w-full">
             <Toaster />
             {children}
           </div>
-        </SessionProvider>
+        </Session>
       </body>
     </html>
   );
