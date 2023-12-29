@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-end w-3/12 md:w-full">
         <Image src={logo} width={100} />
         <div className="flex space-x-1 md:gap-5 w-full justify-center items-center ">
-          <Link href="mailto:raidahf13@gmail.com">
+          <Link href="mailto:designverseucr@gmail.com ">
             {" "}
             <IoIosMail className="text-4xl hover:cursor-pointer text-white" />{" "}
           </Link>
