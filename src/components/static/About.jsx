@@ -6,8 +6,8 @@ const About = () => {
     <div className="bg-design-blue-200 flex">
       <div className="text-white font-workSans flex justify-center items-center">
         <div className="w-9/12">
-          <p className="font-bold text-5xl">ABOUT US</p>
-          <p className="text-lg">
+          <p className="font-bold lg:text-5xl md:text-md">ABOUT US</p>
+          <p className="lg:text-lg md:text-sm">
             DesignVerse is the first ever 24-hour beginner-friendly
             Design-a-Thon hosted by the University of California, Riverside.
             Designers are challenged to create the interface of an app or
@@ -26,7 +26,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <Image src={leaves} className="w-10/12" />
+      <Image src={leaves} className="w-10/12 hidden md:block" />
     </div>
   );
 };
