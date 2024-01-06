@@ -14,6 +14,7 @@ import Logo from "../../../../public/svgs/BigLogo.svg";
 import Footer from "../Footer";
 import About from "../About";
 import FAQ from "../FAQ";
+import Profile from "../Profile";
 
 const Upcoming = () => {
   return (
@@ -93,6 +94,11 @@ const Upcoming = () => {
         </div>
       </div>
       <About />
+      <Profile
+        image={OnlyFrog}
+        name="Rania Saber"
+        position="Software Engineer"
+      />
       <FAQ />
       <Footer />
     </div>
