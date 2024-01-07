@@ -14,6 +14,7 @@ import Logo from "../../../../public/svgs/BigLogo.svg";
 import Footer from "../Footer";
 import About from "../About";
 import FAQ from "../FAQ";
+import Tracks from "../Tracks";
 
 const Upcoming = () => {
   return (
@@ -93,6 +94,7 @@ const Upcoming = () => {
         </div>
       </div>
       <About />
+      <Tracks />
       <FAQ />
       <Footer />
     </div>
