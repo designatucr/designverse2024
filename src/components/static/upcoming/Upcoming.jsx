@@ -14,10 +14,12 @@ import Logo from "../../../../public/svgs/BigLogo.svg";
 import Footer from "../Footer";
 import About from "../About";
 import FAQ from "../FAQ";
+import Navigation from "../Navigation";
 
 const Upcoming = () => {
   return (
     <div className="w-full h-screen overflow-x-hidden relative font-workSans">
+      <Navigation />
       <div className="flex h-[68%] justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-300">
         <div className="flex md:-mb-12 -mb-8 items-end md:items-end">
           <Image
