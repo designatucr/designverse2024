@@ -14,28 +14,28 @@ describe("Committee Filters", () => {
   it("Default Filters", () => {
     cy.get('[data-cy="pending-filter"]')
       .get("div")
-      .should("have.class", "bg-hackathon-blue-100", "text-white");
-    cy.get('[data-cy="reject-filter"]')
+      .should("have.class", "bg-hackathon-tags-yellow-bg", "text-white");
+    cy.get('[data-cy="rejected-filter"]')
       .get("div")
-      .should("have.class", "bg-hackathon-blue-100", "text-white");
-    cy.get('[data-cy="accept-filter"]')
+      .should("have.class", "bg-hackathon-tags-red-bg", "text-white");
+    cy.get('[data-cy="accepted-filter"]')
       .get("div")
-      .should("have.class", "bg-hackathon-blue-100", "text-white");
+      .should("have.class", "bg-hackathon-tags-green-bg", "text-white");
   });
 
   it("Click Filters", () => {
     cy.get('[data-cy="pending-filter"]').click();
     cy.get('[data-cy="pending-filter"]')
       .get("div")
-      .should("have.class", "text-hackathon-blue-100", "bg-white");
-    cy.get('[data-cy="reject-filter"]').click();
-    cy.get('[data-cy="reject-filter"]')
+      .should("have.class", "text-design-brown-300", "bg-design-brown-100");
+    cy.get('[data-cy="rejected-filter"]').click();
+    cy.get('[data-cy="rejected-filter"]')
       .get("div")
-      .should("have.class", "text-hackathon-blue-100", "bg-white");
-    cy.get('[data-cy="accept-filter"]').click();
-    cy.get('[data-cy="accept-filter"]')
+      .should("have.class", "text-design-brown-300", "bg-design-brown-100");
+    cy.get('[data-cy="accepted-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]')
       .get("div")
-      .should("have.class", "text-hackathon-blue-100", "bg-white");
+      .should("have.class", "text-design-brown-300", "bg-design-brown-100");
   });
 
   it("Click Pending", () => {
@@ -48,7 +48,7 @@ describe("Committee Filters", () => {
   });
 
   it("Click Rejected", () => {
-    cy.get('[data-cy="reject-filter"]').click();
+    cy.get('[data-cy="rejected-filter"]').click();
     committees.forEach((committee) => {
       if (committee.status === -1)
         cy.get(`[data-cy="${committee.uid}"]`).should("not.exist");
@@ -57,7 +57,7 @@ describe("Committee Filters", () => {
   });
 
   it("Click Accepted", () => {
-    cy.get('[data-cy="accept-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]').click();
     committees.forEach((committee) => {
       if (committee.status === 1)
         cy.get(`[data-cy="${committee.uid}"]`).should("not.exist");
@@ -66,7 +66,7 @@ describe("Committee Filters", () => {
   });
 
   it("Click 2 Filters", () => {
-    cy.get('[data-cy="accept-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]').click();
     cy.get('[data-cy="pending-filter"]').click();
     committees.forEach((committee) => {
       if (committee.status === 1 || committee.status === 0)

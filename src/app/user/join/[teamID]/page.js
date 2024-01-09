@@ -1,11 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
-import axios from "axios";
 import Button from "@/components/dynamic/Button";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { useSession } from "next-auth/react";
 import Fault from "@/utils/error";
+import axios from "axios";
 
 export default function page({ params }) {
   const [team, setTeam] = useState(null);
@@ -19,7 +19,7 @@ export default function page({ params }) {
         sessionUpdate({
           team: params.teamID,
         });
-        router.push("/users");
+        router.push("/user");
       })
       .catch((response) => {
         if (response.data.message === "Excceed 4 People Limit")
@@ -54,7 +54,7 @@ export default function page({ params }) {
   return (
     <div>
       {team && (
-        <div className="flex flex-col w-screen h-screen items-center justify-center font-poppins">
+        <div className="flex flex-col w-screen h-screen items-center justify-center font-workSans">
           <p className="text-3xl">
             Are you sure you want to join{" "}
             <span className="font-bold">{team.name}</span>

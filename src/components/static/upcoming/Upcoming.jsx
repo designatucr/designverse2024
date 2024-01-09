@@ -2,72 +2,99 @@ import CountDown from "../Countdown";
 import Image from "next/image";
 import Apply from "../Apply";
 import Animals from "../../../../public/svgs/animals.svg";
-import Mushrooms1 from "../../../../public/svgs/mushrooms1.svg";
 import Mushrooms2 from "../../../../public/svgs/mushrooms2.svg";
 import Waterline from "../../../../public/svgs/waterline.svg";
-import Frog from "../../../../public/svgs/frog.svg";
-import Lily from "../../../../public/svgs/lilly.svg";
-import Logo from "../../../../public/svgs/logo.svg";
-import BearTurtle from "../../../../public/svgs/bearTurtle.svg";
+import OnlyFrog from "../../../../public/svgs/onlyFrog.svg";
+import Lillypad from "../../../../public/svgs/lillypad.svg";
+import Lotus from "../../../../public/svgs/lotus.svg";
+import LillypadwithLotus from "../../../../public/svgs/lotuswithpad.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
+import Logo from "../../../../public/svgs/BigLogo.svg";
+import Footer from "../Footer";
+import About from "../About";
+import FAQ from "../FAQ";
 
 const Upcoming = () => {
   return (
-    <div className="w-full h-screen overflow-hidden relative">
-      <div className="flex h-[72%] flex-row overflow-hidden justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-400">
-        <Image className="w-5/6 md:w-3/12 -ml-56 mt-52" src={Mushrooms2} />
-        <div className="absolute w-5/6 md:w-[55%] flex flex-col left-[8%] md:left-[7%] object-contain">
-          <div className="flex rounded-3xl md:h-[60%] mt-8 items-center md:items-start bg-design-green-500/70 p-10 flex-col">
-            <div className="text-design-green-100 font-extrabold text-2xl md:text-4xl mb-3">
-              Design<span className="text-design-orange">@</span>UCR
+    <div className="w-full h-screen overflow-x-hidden relative font-workSans">
+      <div className="flex h-[68%] justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-300">
+        <div className="flex md:-mb-12 -mb-8 items-end md:items-end">
+          <Image
+            className="flex absolute w-7/12 -ml-24 md:-ml-8 md:w-[28%] 2xl:w-1/4 md:z-10"
+            src={Mushrooms2}
+          />
+        </div>
+        <div className="absolute w-full flex flex-col justify-start items-center md:justify-start md:items-center mt-14">
+          <Image
+            className="absolute flex w-6/12 sm:w-3/12 md:w-3/12 lg:w-3/12 2xl:w-2/12"
+            src={Logo}
+          />
+          <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-design-green-400/70 mt-16 md:mt-24 2xl:mt-32 flex-col">
+            <div className="flex text-white text-base md:text-2xl font-medium whitespace-normal mt-8 sm:mt-16 md:mt-20 ">
+              <IoPin className="mr-0 md:mr-2 text-lg md:text-2xl" /> University
+              of California Riverside
             </div>
-            <div className="text-design-white font-extrabold text-2xl flex whitespace-nowrap md:text-6xl">
-              DESIGN VERSE 2024
-            </div>
-            <div className="text-design-white font-extrabold text-2xl md:text-6xl mb-3 mt-1 md:mb-6 md:mt-3">
-              COMING SOON
-            </div>
-            <div className="flex flex-row text-design-white text-sm md:text-3xl font-medium whitespace-nowrap">
-              <IoPin className="mr-1 md:mr-2" /> University of California
-              Riverside
-            </div>
-            <div className="flex flex-row mt-2 text-design-white text-sm md:text-3xl font-medium whitespace-nowrap">
-              <BsCalendar3 className="mr-1 md:mr-2" /> May 11 - 12, 2024
+            <div className="flex mt-2 text-white text-base md:text-2xl font-medium whitespace-nowrap">
+              <BsCalendar3 className="mr-1 md:mr-2 md:mt-1 text-lg md:text-xl" />{" "}
+              May 11 - 12, 2024
             </div>
 
-            <div className="mt-8 grid grid-cols-2 md:grid-cols-4 w-full gap-2 md:gap-4">
-              <Apply text="Interested" link="/form/interest" />
-              <Apply text="Mentor" link="/form/mentor" />
-              <Apply text="Volunteer" link="/form/volunteer" />
-              <Apply text="Sponsor Us" link="/form/" />
+            <div className="flex justify-center md:justify-start m-8">
+              <CountDown />
             </div>
           </div>
-          <CountDown />
-          <div className="flex items-center justify-center">
-            <Image className="md:hidden flex w-7/12" src={BearTurtle} />
+          <div className="mt-4 md:mt-8 grid grid-cols-2 lg:grid-cols-4 w-6/12 gap-2 md:gap-3">
+            <Apply text="Interested" link="/form/interest" />
+            <Apply text="Mentor" link="/form/mentor" />
+            <Apply text="Volunteer" link="/form/volunteer" />
+            <Apply text="Sponsor Us" link="/form/sponsor" />
           </div>
         </div>
-        <div className="w-11/12 md:w-5/12 flex flex-col h-full">
-          <div className="flex flex-row md:w-full justify-end">
-            <Image className="hidden md:block mr-4 mt-2" src={Logo} />
-          </div>
-          <Image className="ml-40 mt-48 md:mt-0 md:w-11/12" src={Mushrooms1} />
-          <Image className="hidden md:block absolute mt-96" src={Animals} />
+        <div className="flex flex-col justify-end md:justify-right items-end md:items-right z-0 md:z-10 md:-mr-8">
+          <Image
+            className="hidden absolute md:block w-[27%] 2xl:w-3/12"
+            src={Animals}
+          />
         </div>
       </div>
+      <Image className="bg-design-green-300 w-full border-0" src={Waterline} />
+      <div className=" h-[32%] flex w-full bg-design-blue-200 relative">
+        <div className="w-4/12 md:w-1/6 2xl:w-2/12 justify-start absolute">
+          <Image
+            className="md:w-full -mt-2 md:-mt-10 md:ml-0 ml-16 2xl:-mt-32 animate-wiggle3"
+            src={OnlyFrog}
+          />
+        </div>
+        <div className="w-11/12 md:w-4/12 2xl:w-3/12 absolute bottom-2 2xl:bottom-20">
+          <Image
+            className="w-full ml-40 md:ml-80 2xl:ml-96 p-24 animate-wiggle2"
+            src={Lillypad}
+          />
+        </div>
+        <div className="md:w-1/4 2xl:w-2/12 absolute -bottom-2 2xl:bottom-4">
+          <Image
+            className="hidden md:block w-full ml-60 2xl:ml-96 p-24 animate-wiggle2"
+            src={Lotus}
+          />
+        </div>
 
-      <Image
-        className="bg-design-green-400 w-screen border-0"
-        src={Waterline}
-      />
-      <div className="bg-design-blue h-[28%] flex flex-row w-full">
-        <Image className="w-11/12 md:w-5/12 -mt-40" src={Frog} />
-        <Image
-          className="hidden md:block md:w-7/12 p-24 ml-96 -mr-64 -mt-32"
-          src={Lily}
-        />
+        {/* <div className="md:w-3/12 absolute -bottom-5 -right-2">
+          <Image
+            className="hidden md:block w-full p-24 animate-wiggle2"
+            src={Lotus}
+          />
+        </div> */}
+        <div className="md:w-3/12 2xl:w-2/12 absolute bottom-24 -right-2">
+          <Image
+            className="hidden md:block w-full p-24 ml-32 animate-wiggle2"
+            src={LillypadwithLotus}
+          />
+        </div>
       </div>
+      <About />
+      <FAQ />
+      <Footer />
     </div>
   );
 };

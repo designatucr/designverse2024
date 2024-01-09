@@ -3,11 +3,11 @@ export const FILTERS = {
     state: true,
     value: 0,
   },
-  accept: {
+  accepted: {
     state: true,
     value: 1,
   },
-  reject: {
+  rejected: {
     state: true,
     value: -1,
   },
@@ -53,22 +53,6 @@ export const HEADERS = [
     },
   },
 ];
-
-export const AUTH = {
-  POST: {},
-  GET: {
-    admins: [1],
-    committees: [1],
-  },
-  PUT: {
-    admins: [1],
-    committees: [1],
-  },
-  DELETE: {
-    admins: [1],
-    committees: [1],
-  },
-};
 
 export const STATUSES = {
   1: "accepted",

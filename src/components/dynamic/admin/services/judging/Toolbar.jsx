@@ -7,11 +7,11 @@ import { COLORS } from "@/data/dynamic/Tags";
 import Popup from "../../Popup";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import axios from "axios";
+import { api } from "@/utils/api";
 
 const tags = ["professor", "industry", "student"];
 
-const Toolbar = ({ data, setData }) => {
+const Toolbar = ({ data, setData, view, setView, setJudgesView }) => {
   const router = useRouter();
 
   const [judges, setJudges] = useState(null);
@@ -84,14 +84,25 @@ const Toolbar = ({ data, setData }) => {
     let round = 0;
 
     // Assign Professors
-    for (let i = 0; i < teams.length; i += 1) {
-      if (round === parseInt(input.rotations)) continue;
-      teams[i].rounds[round].push(professors[judge]);
-      if (judge < professors.length - 1) {
-        judge += 1;
-      } else {
-        judge = 0;
-        round += 1;
+    for (let j = 0; j < input.rotations; j += 1) {
+      for (let i = 0; i < teams.length; i += 1) {
+        if (round === parseInt(input.rotations)) continue;
+        if (
+          teams[i].rounds.some((judges) =>
+            judges.some(
+              (individual) => individual.name === professors[judge].name
+            )
+          )
+        )
+          continue;
+        if (judge < professors.length) {
+          teams[i].rounds[round].push(professors[judge]);
+          judge += 1;
+        }
+        if (judge === professors.length) {
+          judge = 0;
+          round += 1;
+        }
       }
     }
 
@@ -99,14 +110,26 @@ const Toolbar = ({ data, setData }) => {
     round = 0;
 
     // Assign Students + Industry
-    for (let i = teams.length - 1; i > -1; i -= 1) {
-      if (round === parseInt(input.rotations)) continue;
-      teams[i].rounds[round].push(studentsAndIndustry[judge]);
-      if (judge < studentsAndIndustry.length - 1) {
-        judge += 1;
-      } else {
-        judge = 0;
-        round += 1;
+    for (let j = 0; j < input.rotations; j += 1) {
+      for (let i = teams.length - 1; i > -1; i -= 1) {
+        if (round === parseInt(input.rotations)) continue;
+        if (
+          teams[i].rounds.some((judges) =>
+            judges.some(
+              (individual) =>
+                individual.name === studentsAndIndustry[judge].name
+            )
+          )
+        )
+          continue;
+        if (judge < studentsAndIndustry.length) {
+          teams[i].rounds[round].push(studentsAndIndustry[judge]);
+          judge += 1;
+        }
+        if (judge === studentsAndIndustry.length) {
+          judge = 0;
+          round += 1;
+        }
       }
     }
 
@@ -133,7 +156,13 @@ const Toolbar = ({ data, setData }) => {
     }
 
     setData(teams);
-    axios.put("/api/judging", { teams }).then(() => toast("✅ Rounds Saved!"));
+
+    api({
+      method: "PUT",
+      url: "/api/judging",
+      body: { teams },
+    }).then(() => toast("✅ Rounds Saved!"));
+
     setInput({
       ...input,
       rotations: "",
@@ -154,17 +183,39 @@ const Toolbar = ({ data, setData }) => {
 
     const uids = data.map((team) => team.uid).join(",");
 
-    axios
-      .delete(`/api/judging?ids=${uids}`)
-      .then(() => toast("✅ Successfully Reset"));
+    api({
+      method: "DELETE",
+      url: `/api/judging?ids=${uids}`,
+    }).then(() => toast("✅ Successfully Reset"));
+  };
+
+  const handleView = () => {
+    setView(!view);
+    const totalJudges = [...judges];
+
+    totalJudges.forEach((judge) => {
+      judge.rounds = Array.from(Array(data[0].rounds.length), () => []);
+
+      data.forEach((team) => {
+        team.rounds.forEach((round, index) => {
+          if (round.some((individual) => individual.name === judge.name))
+            judge.rounds[index] = [{ name: team.name, affiliation: "student" }];
+        });
+      });
+    });
+
+    setJudgesView(totalJudges);
   };
 
   const load = () => {
-    axios.get("/api/judging").then((response) => {
-      setData(response.data.items.teams);
-      setJudges(response.data.items.judges);
+    api({
+      method: "GET",
+      url: "/api/judging",
+    }).then(({ items }) => {
+      setData(items.teams);
+      setJudges(items.judges);
 
-      if (response.data.items.judges.length === 0) {
+      if (items.judges.length === 0) {
         setPopup({
           title: "Insufficient Judges",
           text: "There are not enough judges to go around to each team. Please consider adding more judges via the judge dashboard. ",
@@ -208,8 +259,9 @@ const Toolbar = ({ data, setData }) => {
             color="red"
             text="reset"
             onClick={handleReset}
-            disabled={data === null || []}
+            disabled={!data || data.some(({ rounds }) => rounds.length === 0)}
           />
+          <Button color="green" text="view" onClick={handleView} />
         </div>
         <div className="flex">
           {tags.map((tag, index) => (

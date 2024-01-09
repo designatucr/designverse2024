@@ -12,10 +12,10 @@ const Radio = ({
   };
 
   return (
-    <div className="flex flex-col">
-      <p className="mb-1 font-semibold">
+    <div className="flex flex-col mb-4 font-workSans">
+      <p className="mb-1 font-regular">
         {text}
-        {required && <span className="text-hackathon-green-300">*</span>}
+        {required && <span className="text-design-orange">*</span>}
       </p>
       {!editable && <div className="pl-3">{user[field]}</div>}
       {editable && (
@@ -30,7 +30,7 @@ const Radio = ({
                 <div
                   className={`rounded-full w-full aspect-square duration-100 ${
                     option === user[field]
-                      ? "bg-hackathon-green-300"
+                      ? "bg-design-green-light"
                       : "bg-transparent"
                   }`}
                 />

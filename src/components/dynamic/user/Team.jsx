@@ -1,10 +1,11 @@
 import Button from "../Button";
 import Input from "../Input";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import toast from "react-hot-toast";
 import Loading from "../Loading";
 import { BiLink, BiSolidCopy } from "react-icons/bi";
+import axios from "axios";
+import { api } from "@/utils/api";
 
 const Team = ({ user, setUser }) => {
   const [team, setTeam] = useState(null);
@@ -13,7 +14,6 @@ const Team = ({ user, setUser }) => {
   });
   const [edit, setEdit] = useState(false);
   const defaultTeam = {
-    name: "",
     github: "",
     devpost: "",
     figma: "",
@@ -27,7 +27,7 @@ const Team = ({ user, setUser }) => {
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(
-      `${process.env.NEXT_PUBLIC_URL}users/join/${user.team}`
+      `${process.env.NEXT_PUBLIC_URL}user/join/${user.team}`
     );
     toast("✅ Successfully copied join link!");
   };
@@ -53,9 +53,11 @@ const Team = ({ user, setUser }) => {
         setUser({ ...user, team: id.team });
       })
       .catch(({ response: data }) => {
-        if (data.data.message === "Excceed 4 People Limit")
+        if (data.data.message === "Exceed 4 People Limit")
           toast("❌ Exceeded 4 People Limit");
-        else if (data.data.message === "Invalid Team ID")
+        else if (
+          data.data.message === "Internal Server Error: Error: Invalid Team ID"
+        )
           toast("❌ Invalid Team ID");
         else toast("❌ Internal Server Error");
       });
@@ -87,7 +89,12 @@ const Team = ({ user, setUser }) => {
       toast("❌ Invalid Figma Link");
       return;
     }
-    axios.put("/api/team", team).then(() => {
+
+    api({
+      method: "PUT",
+      url: "/api/team",
+      body: team,
+    }).then(() => {
       toast("✅ Successfully Updated!");
       setEdit(false);
     });
@@ -95,9 +102,11 @@ const Team = ({ user, setUser }) => {
 
   useEffect(() => {
     if (user.team) {
-      axios
-        .get(`/api/team?teamid=${user.team}`)
-        .then((response) => setTeam(response.data.items))
+      api({
+        method: "GET",
+        url: `/api/team?teamid=${user.team}`,
+      })
+        .then(({ items }) => setTeam(items))
         .catch(({ response: data }) => {
           if (data.message === "Invalid Team ID") toast("❌ Invalid Team ID");
           else toast("❌ Internal Server Error");
@@ -106,21 +115,10 @@ const Team = ({ user, setUser }) => {
   }, [user.team]);
 
   return (
-    <div className="bg-white rounded-lg p-4 gap-3 m-2 overflow-scroll max-h-[70vh]">
+    <div className="bg-white rounded-lg p-4 gap-3 m-2 overflow-scroll max-h-[70vh] flex flex-col justify-start">
       {user.team && !team && <Loading />}
       {team && (
         <>
-          <Input
-            name="name"
-            type="text"
-            title="Team Name"
-            value={team.name}
-            user={team}
-            setUser={setTeam}
-            editable={edit}
-            placeholder="no team name"
-          />
-
           <Input
             name="github"
             type="text"
@@ -164,8 +162,11 @@ const Team = ({ user, setUser }) => {
               </p>
             ))}
           </div>
-          <div className="mt-3 pt-2">
+          <div className="mt-3 pt-2 flex-grow">
             <p className="mb-1 font-semibold">Team ID</p>
+            <div className="text-hackathon-green-300">
+              share this team ID or join link to your teammates
+            </div>
             <p className="pl-3 mb-0 flex items-center">
               {user.team}{" "}
               <BiSolidCopy
@@ -181,17 +182,21 @@ const Team = ({ user, setUser }) => {
           <div className="flex items-center justify-end gap-4">
             <Button
               color="green"
-              size="xl"
+              size="lg"
               text={edit ? "done" : "edit"}
               onClick={edit ? handleSave : handleEdit}
             />
-            <Button color="red" text="leave" onClick={handleLeave} />
+            <Button color="red" size="lg" text="leave" onClick={handleLeave} />
           </div>
         </>
       )}
       {!user.team && (
-        <>
-          <div>
+        <div className="flex flex-col justify-between h-full">
+          <div className="text-hackathon-green-300">
+            ask your teammates to share team ID or join link with you to join
+            the team
+          </div>
+          <div className="flex-grow">
             <Input
               name="team"
               type="text"
@@ -202,20 +207,17 @@ const Team = ({ user, setUser }) => {
               editable={true}
               setUser={setId}
             />
+          </div>
+          <div className="flex justify-end gap-2">
+            <Button color="green" size="lg" text="join" onClick={handleJoin} />
             <Button
               color="green"
-              size="xl"
-              text="join team"
-              onClick={handleJoin}
+              size="lg"
+              text="create"
+              onClick={handleCreate}
             />
           </div>
-          <Button
-            color="green"
-            size="xl"
-            text="create new team"
-            onClick={handleCreate}
-          />
-        </>
+        </div>
       )}
     </div>
   );

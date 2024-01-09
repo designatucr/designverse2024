@@ -9,6 +9,7 @@ import Upload from "@/components/dynamic/form/Upload";
 import toast from "react-hot-toast";
 import Link from "next/link";
 import { FaLink } from "react-icons/fa";
+import { CONFIG } from "@/data/Config";
 
 const Questions = ({
   fields,
@@ -18,6 +19,7 @@ const Questions = ({
   loading,
   setLoading,
   setState,
+  packet = false,
 }) => {
   const handleSubmit = () => {
     setLoading(true);
@@ -51,21 +53,46 @@ const Questions = ({
   };
 
   return (
-    <div>
+    <div className="font-normal font-workSans">
       {Object.values(fields).map((field, index) => (
         <div key={index}>
           {field.input === "description" &&
             field.texts.map((description, index) => (
-              <>
-                <p key={index}>{description}</p>
+              <div key={index}>
+                <div>
+                  {description.split(" ").map((word, key) =>
+                    word.includes("DesignVerse") ? (
+                      <span
+                        className="font-workSans text-design-brown-400 font-semibold"
+                        key={key}
+                      >
+                        {word}{" "}
+                      </span>
+                    ) : (
+                      <span key={key}>{word} </span>
+                    )
+                  )}
+                </div>
+                &nbsp;
                 {index === field.texts.length - 1 && (
-                  <p>
+                  <div>
+                    {packet && (
+                      <Link
+                        href={CONFIG.packet}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="no-underline flex items-center text-design-orange mb-2"
+                      >
+                        Sponsorship Packet
+                        <FaLink className="mx-2" />
+                      </Link>
+                    )}
                     Fields with
-                    <span className="text-hackathon-green-300"> * </span>
+                    <span className="text-design-orange"> * </span>
                     are required.
-                  </p>
+                  </div>
                 )}
-              </>
+              </div>
             ))}
           {field.input === "input" && (
             <Input
@@ -95,10 +122,10 @@ const Questions = ({
           )}
           {field.input === "checkboxes" && (
             <>
-              <p className="mb-1 font-semibold">
+              <p className="mb-2 font-regular">
                 {field.text}
                 {field.required && (
-                  <span className="text-hackathon-green-300">*</span>
+                  <span className="text-design-orange">*</span>
                 )}
               </p>
               {field.options.map((option, i) => (
@@ -115,9 +142,10 @@ const Questions = ({
                         : [...object[field.field], option],
                     })
                   }
-                  color="bg-hackathon-green-300"
+                  color="bg-design-green-light"
                 />
               ))}
+              <br />
             </>
           )}
           {field.input === "radio" && (
@@ -155,18 +183,18 @@ const Questions = ({
           )}
         </div>
       ))}
-      <div className="font-semibold">Resources</div>
+      <div className="font-regular">Resources</div>
       <Link
-        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+        href="/files/DesignVerseCodeofConduct.pdf"
         target="_blank"
-        className="no-underline flex items-center"
+        className="no-underline flex items-center text-design-orange"
       >
-        MLH Code of Conduct
+        DesignVerse Code Of Conduct
         <FaLink className="mx-2" />
       </Link>
       <div className="flex justify-center">
         <Button
-          text="Submit"
+          text="submit"
           onClick={handleSubmit}
           loading={loading}
           color="green"

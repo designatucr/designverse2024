@@ -12,12 +12,11 @@ import { BiSolidDownArrow } from "react-icons/bi";
 const Navigation = () => {
   const [expand, setExpand] = useState(false);
   const pathName = usePathname();
-  const tabs = TABS[pathName.split("/")[1]];
-  const [dropdown, setDropdown] = useState(Object.keys(tabs)[0]);
+  const [tabs, setTabs] = useState(TABS[pathName.split("/")[1]]);
 
   return (
     <>
-      <div className="flex lg:hidden w-full bg-hackathon-blue-200 h-12 items-center fixed z-20">
+      <div className="flex lg:hidden w-full !bg-design-white h-12 items-center fixed z-20 font-workSans">
         <div
           className="flex items-center hover:cursor-pointer"
           onClick={() => setExpand(!expand)}
@@ -37,36 +36,38 @@ const Navigation = () => {
           expand ? "left-0 h-screen w-1/2 fixed pt-5" : `hidden`
         }`}
       >
-        <div className="bg-hackathon-blue-200 h-full flex flex-col justify-between items-center w-full">
+        <div className="bg-design-green-400 h-full flex flex-col justify-between items-center w-full">
           <div className="hidden lg:flex items-center my-3">
             <Image
               src={LOGO}
-              className="w-10 h-10 mx-2"
+              className="w-11/12 mx-2"
               alt={`${CONFIG.name} Logo`}
             />
-            <p className="text-white font-bold text-lg pr-2 m-0">
-              {CONFIG.name.toUpperCase()}
-            </p>
           </div>
           <div className="w-full flex flex-col items-center h-full">
             {Object.entries(tabs)
-              .filter(([title]) => title !== " ")
+              .filter(([title]) => title !== " " && title !== "dropdown")
               .map(([title, subTabs], index) => (
                 <div key={index} className="w-full">
                   <p
                     className={`text-white text-xl font-poppin font-bold w-full px-2 mb-0 flex items-center justify-between hover:cursor-pointer ${subTabs.mt}`}
-                    onClick={() => setDropdown(title === dropdown ? "" : title)}
+                    onClick={() =>
+                      setTabs({
+                        ...tabs,
+                        [title]: { ...subTabs, expand: !subTabs.expand },
+                      })
+                    }
                   >
                     {title}
-                    {subTabs.expand && (
+                    {tabs.dropdown && (
                       <BiSolidDownArrow
                         className={`text-sm duration-300 ${
-                          dropdown === title && "rotate-180"
+                          subTabs.expand && "rotate-180"
                         }`}
                       />
                     )}
                   </p>
-                  {(dropdown === title || !subTabs.expand) &&
+                  {(subTabs.expand || !tabs.dropdown) &&
                     subTabs.tabs.map((tab, index) => (
                       <Link
                         key={index}
@@ -77,8 +78,8 @@ const Navigation = () => {
                           onClick={() => setExpand(false)}
                           className={`w-full flex [&>*]:text-white items-center justify-start py-1 pl-[10%] ${
                             pathName.endsWith(tab.link)
-                              ? "bg-hackathon-blue-100"
-                              : "[&>*]:hover:text-hackathon-blue-100"
+                              ? "bg-design-green-200"
+                              : "[&>*]:hover:text-design-green-light"
                           }`}
                         >
                           {tab.icon}
@@ -101,8 +102,8 @@ const Navigation = () => {
                   onClick={() => setExpand(false)}
                   className={`w-full flex [&>*]:text-white items-center justify-start pl-[10%] py-1 ${
                     pathName.endsWith(tab.link)
-                      ? "bg-hackathon-blue-100"
-                      : "[&>*]:hover:text-hackathon-blue-100"
+                      ? "bg-design-white"
+                      : "[&>*]:hover:text-design-green-light"
                   }`}
                 >
                   {tab.icon}

@@ -13,9 +13,12 @@ describe("Admin Select", () => {
   });
 
   it("Select All", () => {
-    cy.get('[data-cy="select-all"]').click();
+    cy.get('[data-cy="toolbar"]').find('[data-cy="checkbox"]').click();
     admins.forEach((admin) => {
-      cy.get(`[data-cy="${admin.uid}"]`).should("have.class", "bg-green-100");
+      cy.get(`[data-cy="${admin.uid}"]`).should(
+        "have.class",
+        "bg-design-green-100/50"
+      );
     });
   });
 
@@ -25,7 +28,10 @@ describe("Admin Select", () => {
     );
     admins.forEach((admin, index) => {
       if (index < 5)
-        cy.get(`[data-cy="${admin.uid}"]`).should("have.class", "bg-green-100");
+        cy.get(`[data-cy="${admin.uid}"]`).should(
+          "have.class",
+          "bg-design-green-100/50"
+        );
       else cy.get(`[data-cy="${admin.uid}"]`).should("have.class", "bg-white");
     });
   });

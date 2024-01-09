@@ -59,7 +59,7 @@ const Table = ({
   ) : (
     <div className="w-full rounded-xl overflow-hidden flex flex-col">
       {modal && <Modal data={modal} setModal={setModal} />}
-      <div className="w-full py-2 text-sm flex text-white bg-hackathon-blue-200 justify-evenly px-0 m-0">
+      <div className="w-full py-2 text-sm flex text-white bg-design-green-200 justify-evenly px-0 mx-0">
         <div className="w-1/12" />
         {headers.map((header, index) => (
           <div
@@ -93,7 +93,7 @@ const Table = ({
                 data-cy={object.uid}
                 key={index}
                 className={`first:border-0 border-t border-hackathon-gray-100 w-full grid grid-cols-1 py-2 ${
-                  object.selected ? "bg-green-100" : "bg-white"
+                  object.selected ? "bg-design-green-100/50" : "bg-white"
                 }`}
               >
                 <div className="flex justify-start items-center">
@@ -120,12 +120,15 @@ const Table = ({
                           >
                             {header.hasTag && object[header.text] !== "" && (
                               <div data-cy={header.text}>
+                                {console.log(object[header.text])}
                                 <Tag
                                   text={
                                     String(object[header.text]).includes(
                                       "base64"
                                     )
                                       ? "view"
+                                      : typeof object[header.text] === "string"
+                                      ? object[header.text].toLowerCase()
                                       : object[header.text]
                                   }
                                   color={
@@ -133,7 +136,12 @@ const Table = ({
                                       "base64"
                                     )
                                       ? COLORS["view"]
-                                      : COLORS[object[header.text]]
+                                      : COLORS[
+                                          typeof object[header.text] ===
+                                          "string"
+                                            ? object[header.text].toLowerCase()
+                                            : object[header.text]
+                                        ]
                                   }
                                   onClick={
                                     header.onClick
@@ -204,7 +212,7 @@ const Table = ({
         )}
 
         {objects.filter((object) => !object.hidden).length === 0 && (
-          <p className="text-hackathon-gray-300 font-poppins pt-3 text-center rounded-b-2xl w-full">
+          <p className="text-hackathon-gray-300 font-workSans pt-3 text-center rounded-b-2xl w-full">
             {empty}
           </p>
         )}

@@ -13,11 +13,11 @@ describe("Participant Select", () => {
   });
 
   it("Select All", () => {
-    cy.get('[data-cy="select-all"]').click();
+    cy.get('[data-cy="toolbar"]').find('[data-cy="checkbox"]').click();
     participants.forEach((participant) => {
       cy.get(`[data-cy="${participant.uid}"]`).should(
         "have.class",
-        "bg-green-100"
+        "bg-design-green-100/50"
       );
     });
   });
@@ -33,7 +33,7 @@ describe("Participant Select", () => {
       if (index < 5)
         cy.get(`[data-cy="${participant.uid}"]`).should(
           "have.class",
-          "bg-green-100"
+          "bg-design-green-100/50"
         );
       else
         cy.get(`[data-cy="${participant.uid}"]`).should(

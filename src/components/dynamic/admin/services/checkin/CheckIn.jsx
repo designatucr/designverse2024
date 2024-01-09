@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Title from "../../Title";
 import Scanner from "./Scanner";
-import DropDown from "../DropDown";
+import Dropdown from "../Dropdown";
 import Button from "../../Button";
 import toast from "react-hot-toast";
 import axios from "axios";
@@ -47,9 +47,12 @@ const CheckIn = () => {
 
     // TODO: CHANGE TO 5 SECONDS ONCE DEPLOYED
     if (delta < 5000) {
-      const response = await axios.get(`/api/checkin?uid=${user}`);
+      const { items } = await api({
+        method: "GET",
+        url: `/api/checkin?uid=${user}`,
+      });
 
-      if (response.data.items.includes(event.id)) {
+      if (items.includes(event.id)) {
         toast("❌ Already Checked In!");
         return;
       }
@@ -64,12 +67,12 @@ const CheckIn = () => {
   };
 
   return (
-    <div className="h-full font-poppins flex flex-col py-4 gap-3">
+    <div className="h-full font-workSans flex flex-col py-4 gap-3">
       <Title title="Check In" />
       <div className="grid grid-cols-1">
         <div className="p-3 flex flex-col items-center">
           {events && (
-            <DropDown
+            <Dropdown
               option={event}
               setOption={setEvent}
               options={events}
