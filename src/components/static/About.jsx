@@ -6,7 +6,9 @@ const About = () => {
     <div className="bg-design-blue-200 flex">
       <div className="text-white font-workSans flex justify-center items-center">
         <div className="w-9/12">
-          <p className="font-bold lg:text-5xl md:text-md">ABOUT US</p>
+          <div className="flex justify-center md:justify-start font-bold text-3xl lg:text-5xl">
+            ABOUT US
+          </div>
           <br />
           <p className="lg:text-lg md:text-sm">
             DesignVerse is the first ever 24-hour beginner-friendly
