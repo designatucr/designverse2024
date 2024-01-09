@@ -12,7 +12,7 @@ const Footer = () => {
       <Image src={mushroomsLeft} className="w-4/12 md:w-3/12" />
       <div className="flex flex-col items-center justify-end w-3/12 md:w-full">
         <Image src={logo} width={100} />
-        <div className="flex space-x-1 md:gap-5 w-full justify-center items-center ">
+        <div className="flex space-x-1 md:gap-5 w-full justify-center items-center mt-3">
           <Link href="mailto:designverseucr@gmail.com ">
             {" "}
             <IoIosMail className="text-4xl hover:cursor-pointer text-white" />{" "}
