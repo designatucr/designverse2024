@@ -17,7 +17,7 @@ const Table = ({
 }) => {
   return (
     <>
-      <div className="text-white bg-hackathon-blue-200 rounded-t-lg">
+      <div className="text-white bg-design-green-200 rounded-t-lg">
         {getHeaderGroups().map(({ headers, id }) => (
           <div key={id} className="flex items-center px-3 py-2">
             {headers.map(({ id, column, getContext }) => (
