@@ -27,16 +27,16 @@ const Filter = ({ value, status, isActive, setFilters }) => {
   return (
     <div className="flex justify-center" onClick={onClick}>
       <div
-        className={`rounded hover:opacity-70 duration-300 ${
+        className={`rounded-full hover:opacity-70 duration-300 font-regular ${
           isActive
-            ? "text-white bg-hackathon-blue-100"
-            : "text-hackathon-blue-100 bg-white"
+            ? "text-white bg-design-brown-200"
+            : "text-design-brown-300 bg-design-brown-100"
         } cursor-pointer flex items-center justify-between w-full`}
         data-cy={status + "-filter"}
       >
         <p className="my-0 mx-1 px-1 py-[2px] whitespace-nowrap">{status}</p>
         <TiPlus
-          className={`duration-300 mt-[2px] mr-2 hover:opacity-80 ${
+          className={`duration-300 mt-[2px] mr-2 hover:opacity-80 font-light ${
             isActive ? "-rotate-45" : ""
           }`}
         />
