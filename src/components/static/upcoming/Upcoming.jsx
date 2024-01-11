@@ -21,7 +21,7 @@ const Upcoming = () => {
       <div className="flex h-[68%] justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-300">
         <div className="flex md:-mb-12 -mb-8 items-end md:items-end">
           <Image
-            className="flex absolute w-7/12 -ml-24 md:-ml-8 md:w-[28%] 2xl:w-1/4 md:z-10"
+            className="flex absolute w-7/12 -ml-24 md:-ml-8 md:w-[28%] 2xl:w-1/4 md:z-20"
             src={Mushrooms2}
           />
         </div>
@@ -30,7 +30,7 @@ const Upcoming = () => {
             className="absolute flex w-6/12 sm:w-3/12 md:w-3/12 lg:w-3/12 2xl:w-2/12"
             src={Logo}
           />
-          <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-design-green-400/70 mt-16 md:mt-24 2xl:mt-32 flex-col">
+          <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-design-green-400/70 mt-16 md:mt-24 2xl:mt-32 flex-col z-10">
             <div className="flex text-white text-base md:text-2xl font-medium whitespace-normal mt-8 sm:mt-16 md:mt-20 ">
               <IoPin className="mr-0 md:mr-2 text-lg md:text-2xl" /> University
               of California Riverside
@@ -44,14 +44,14 @@ const Upcoming = () => {
               <CountDown />
             </div>
           </div>
-          <div className="mt-4 md:mt-8 grid grid-cols-2 lg:grid-cols-4 w-6/12 gap-2 md:gap-3">
+          <div className="mt-4 md:mt-8 grid grid-cols-2 lg:grid-cols-4 w-6/12 gap-2 md:gap-3 z-20">
             <Apply text="Interested" link="/form/interest" />
             <Apply text="Mentor" link="/form/mentor" />
             <Apply text="Volunteer" link="/form/volunteer" />
             <Apply text="Sponsor Us" link="/form/sponsor" />
           </div>
         </div>
-        <div className="flex flex-col justify-end md:justify-right items-end md:items-right z-0 md:z-10 md:-mr-8">
+        <div className="flex flex-col justify-end md:justify-right items-end md:items-right z-20 md:-mr-8">
           <Image
             className="hidden absolute md:block w-[27%] 2xl:w-3/12"
             src={Animals}
