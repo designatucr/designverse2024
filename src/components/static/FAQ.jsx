@@ -1,5 +1,5 @@
 import { QUESTIONS } from "@/data/static/FAQ";
-import Accordion from "react-bootstrap/Accordion";
+import { Accordion } from "react-bootstrap";
 import Item from "./Item";
 
 const FAQ = () => {

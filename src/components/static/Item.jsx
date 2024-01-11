@@ -1,6 +1,6 @@
 "use client";
 import { FaChevronDown } from "react-icons/fa6";
-import Accordion from "react-bootstrap/Accordion";
+import { Accordion } from "react-bootstrap";
 import { useState } from "react";
 
 const Item = ({ question, answer, index }) => {
