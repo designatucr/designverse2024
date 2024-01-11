@@ -27,7 +27,7 @@ const Upcoming = () => {
         </div>
         <div className="absolute w-full flex flex-col justify-start items-center md:justify-start md:items-center mt-14">
           <Image
-            className="absolute flex w-6/12 sm:w-3/12 md:w-3/12 lg:w-3/12 2xl:w-2/12"
+            className="absolute flex w-6/12 sm:w-3/12 md:w-3/12 lg:w-3/12 2xl:w-2/12 z-20"
             src={Logo}
           />
           <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-design-green-400/70 mt-16 md:mt-24 2xl:mt-32 flex-col z-10">
