@@ -56,7 +56,7 @@ describe("Radio", () => {
     cy.get("[data-cy=radio-button-Female]").should(
       "have.css",
       "background-color",
-      "rgb(87, 204, 153)"
+      "rgb(156, 198, 136)"
     );
 
     // Tests if Male button is not clicked
@@ -71,7 +71,7 @@ describe("Radio", () => {
     cy.get("[data-cy=radio-button-Male]").should(
       "have.css",
       "background-color",
-      "rgb(87, 204, 153)"
+      "rgb(156, 198, 136)"
     );
 
     // Tests if Female button is unselected
