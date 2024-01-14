@@ -1,6 +1,7 @@
 import Image from "next/image";
 import mushroomsLeft from "../../../public/svgs/mushroomsFooterLeft.svg";
 import mushroomsRight from "../../../public/svgs/mushroomsFooterRight.svg";
+import FooterWithoutEmoji from "../../../public/svgs/FooterWithoutEmoji.svg";
 import logo from "../../../public/svgs/whiteLogo.svg";
 import { FaHeart, FaLinkedinIn } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -12,6 +13,7 @@ const Footer = () => {
       <Image src={mushroomsLeft} className="w-4/12 md:w-3/12" />
       <div className="flex flex-col items-center justify-end w-3/12 md:w-full">
         <Image src={logo} width={100} />
+
         <div className="flex space-x-1 md:gap-5 w-full justify-center items-center mt-3">
           <Link href="mailto:designverseucr@gmail.com ">
             {" "}
@@ -34,6 +36,9 @@ const Footer = () => {
         </div>
       </div>
       <Image src={mushroomsRight} className="w-4/12 md:w-3/12" />
+      <div className=" flex w-full items-end h-72 absolute">
+        <Image src={FooterWithoutEmoji} />
+      </div>
     </div>
   );
 };
