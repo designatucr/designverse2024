@@ -54,7 +54,7 @@ const Select = ({
 
   return (
     <div ref={parent}>
-      <p className="mb-1 font-semibold font-workSans">
+      <p className="mb-1 font-workSans">
         {title}
         {required && <span className="text-design-orange">*</span>}
       </p>
@@ -106,7 +106,7 @@ const Select = ({
 
                 return (
                   <div
-                    className="absolute top-0 left-0 w-full hover:bg-design-green-light !bg-design-beige hover:cursor-pointer flex items-center px-2"
+                    className="absolute top-0 left-0 w-full hover:!bg-design-green-light !bg-design-beige hover:cursor-pointer flex items-center px-2"
                     key={virtualRow.index}
                     data-index={virtualRow.index}
                     ref={measureElement}

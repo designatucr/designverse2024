@@ -1,7 +1,9 @@
 export const TIERS = {
-  tier1: "Bronze",
-  tier2: "Silver",
-  tier3: "Gold",
+  tier1: "Seed",
+  tier2: "Sprout",
+  tier3: "Plant",
+  tier4: "Garden",
+  tier5: "Forest",
   other: "Other",
 };
 
