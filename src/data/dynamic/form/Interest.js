@@ -3,7 +3,8 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      "Welcome to HACKATHON_NAME. Thank you for taking interest in HACKATHON_NAME, we appreciate your efforts to help support HACKATHON_NAME. HACKATHON_NAME is a DESCRIPTION hackathon spanning HACKATHON_LENGTH on HACKATHON_DATE.",
+      "Welcome to DesignVerse. Thank you for taking interest in DesignVerse, we appreciate your efforts to help support DesignVerse.",
+      "DesignVerse is UCR’s first ever UI/UX Design-a-Thon! On May 11, 2024 over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
       "This is simply an interest form, once applications are released, you will be notified immediately and will be required to register again. We hope to see you there!",
     ],
   },

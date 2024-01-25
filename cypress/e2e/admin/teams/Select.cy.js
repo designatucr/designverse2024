@@ -15,7 +15,10 @@ describe("Teams Select", () => {
   it("Select All", () => {
     cy.get('[data-cy="header"]').find('[data-cy="checkbox"]').click();
     teams.forEach((team) => {
-      cy.get(`[data-cy="${team.uid}"]`).should("have.class", "bg-green-100");
+      cy.get(`[data-cy="${team.uid}"]`).should(
+        "have.class",
+        "bg-design-green-100/50"
+      );
     });
   });
 
@@ -25,7 +28,10 @@ describe("Teams Select", () => {
     );
     teams.forEach((team, index) => {
       if (index < 5)
-        cy.get(`[data-cy="${team.uid}"]`).should("have.class", "bg-green-100");
+        cy.get(`[data-cy="${team.uid}"]`).should(
+          "have.class",
+          "bg-design-green-100/50"
+        );
       else cy.get(`[data-cy="${team.uid}"]`).should("have.class", "bg-white");
     });
   });

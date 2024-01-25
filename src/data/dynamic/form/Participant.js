@@ -9,7 +9,8 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      "Welcome to HACKATHON_NAME. Thank you for considering to become a participant, we appreciate your enthusiasm to join HACKATHON_NAME. HACKATHON_NAME is a DESCRIPTION hackathon spanning HACKATHON_LENGTH on HACKATHON_DATE.",
+      "Welcome to DesignVerse. Thank you for considering to become a participant, we appreciate your enthusiasm to join DesignVerse.",
+      "DesignVerse is UCR’s first ever UI/UX Design-a-Thon! On May 11, 2024 over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
       "Participants are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
     ],
   },
@@ -134,9 +135,9 @@ export const FIELDS = {
     field: "requirements",
     required: true,
     options: [
-      "I have read the MLH code of conduct and agree to the terms and conditions listed",
+      "I have read the DesignVerse code of conduct and agree to the terms and conditions listed",
       "I consent to photographs being taken and being used for future marketing purposes",
-      "I consent to providing a safe space for hackers to learn and grow their interests in computing",
+      "I consent to providing a safe space for designers to learn and grow their interests in designing",
       "I consent to following the provided guidelines and rules instructed by the organizing team",
       "I understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event",
       "I understand this is an in person event taking place in UCR and I must attend in person in order to participate",

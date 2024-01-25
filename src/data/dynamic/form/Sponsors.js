@@ -1,9 +1,9 @@
 export const TIERS = {
-  tier1: "Bronze",
-  tier2: "Silver",
-  tier3: "Gold",
-  tier4: "Tier4",
-  tier5: "Tier5",
+  tier1: "Seed",
+  tier2: "Sprout",
+  tier3: "Plant",
+  tier4: "Garden",
+  tier5: "Forest",
   other: "Other",
 };
 
@@ -12,9 +12,10 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      "Welcome to HACKATHON_NAME. Thank you for being on the Sponsorship team, we appreciate your efforts to help support HACKATHON_NAME. HACKATHON_NAME is a DESCRIPTION hackathon spanning HACKATHON_LENGTH on HACKATHON_DATE. ",
-      "By sponsoring HACKATHON_NAME, you help advocate for SPONSOR_REASONS.",
-      "Sponsorship members are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
+      "Welcome to DesignVerse. Thank you for considering to become a sponsor, we appreciate your efforts to help support DesignVerse.",
+      "DesignVerse is UCR’s first ever UI/UX Design-a-Thon! On May 11, 2024 over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
+      "Supporting DesignVerse contributes significantly to the success of UCR's first annual Design-a-Thon, which ultimately advances our cause for design within the University of California, Riverside. This initiative directly benefits students across the university who have an interest in the field of web design, UI/UX, and design-like thinking. Your sponsorship not only strengthens this event but also provides valuable opportunities for designers, allowing both DesignVerse and Design at UCR to organize more impactful events in the future.      ",
+      "Sponsors are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
     ],
   },
   name: {
@@ -69,7 +70,7 @@ export const FIELDS = {
   },
   tier: {
     input: "radio",
-    text: "Sponsorship Tier (check sponsorship packet)",
+    text: "Sponsorship Tier (please check the sponsorship packet)",
     options: TIERS,
     field: "tier",
     width: 12,
@@ -90,13 +91,9 @@ export const FIELDS = {
     width: 12,
     field: "requirements",
     options: [
-      "I have read the MLH code of conduct and agree to the terms and conditions listed",
+      "I have read the DesignVerse Code of Conduct and agree to the terms and conditions listed",
       "I consent to photographs being taken and being used for future marketing purposes",
-      "I consent to providing a safe space for hackers to learn and grow their interests in computing",
-      "I consent to following the provided guidelines and rules instructed by the organizing team",
-      "I understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event",
-      "I understand this is an in person event taking place in UCR and I must attend in person in order to participate",
-      "I understand that I will be given access to private data and malicious intents and actions will be reported immediately.",
+      "I consent to following the provided guidelines and rules instructed by the organizing team and understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event",
     ],
     required: true,
   },

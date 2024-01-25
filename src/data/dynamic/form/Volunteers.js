@@ -5,10 +5,11 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      "Welcome to HACKATHON_NAME. Thank you for considering to become a volunteer, we appreciate your efforts to help support HACKATHON_NAME. HACKATHON_NAME is a DESCRIPTION hackathon spanning HACKATHON_LENGTH on HACKATHON_DATE.",
+      "Welcome to DesignVerse. Thank you for considering to become a volunteer, we appreciate your efforts to help support DesignVerse.",
+      "DesignVerse is UCR’s first ever UI/UX Design-a-Thon! On May 11, 2024 over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
       "Volunteers are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
       "Volunteer duties include but are not limited to setup, workshop organization, food handling, cleanup and more.",
-      "Note: Volunteers are not permitted to become participants for the hackathon.",
+      "Note: Volunteers are not permitted to become participants for the designathon.",
     ],
   },
   name: {
@@ -101,12 +102,10 @@ export const FIELDS = {
     field: "requirements",
     required: true,
     options: [
-      "I have read the MLH code of conduct and agree to the terms and conditions listed",
+      "I have read the DesignVerse Code of Conduct and agree to the terms and conditions listed",
       "I consent to photographs being taken and being used for future marketing purposes",
-      "I consent to providing a safe space for hackers to learn and grow their interests in computing",
-      "I consent to following the provided guidelines and rules instructed by the organizing team",
-      "I understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event",
-      "I understand this is an in person event taking place in UCR and I must attend in person in order to volunteer",
+      "I consent to following the provided guidelines and rules instructed by the organizing team and understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event",
+      "I understand this is an in-person event hosted at the University of California, Riverside, and I must attend in person to volunteer",
     ],
   },
 };
