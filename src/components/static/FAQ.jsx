@@ -2,7 +2,7 @@ import { QUESTIONS } from "@/data/static/FAQ";
 import { Accordion } from "react-bootstrap";
 import Item from "./Item";
 import Image from "next/image";
-import Waves from "../../../public/svgs/waves.svg";
+import Waves from "../../../public/svgs/landing/waves.svg";
 
 const FAQ = () => {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import leaves from "../../../public/svgs/mushroomWithLeaves.svg";
+import leaves from "../../../public/svgs/landing/mushroomWithLeaves.svg";
 
 const About = () => {
   return (

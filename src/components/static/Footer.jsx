@@ -1,8 +1,8 @@
 import Image from "next/image";
-import mushroomsLeft from "../../../public/svgs/mushroomsFooterLeft.svg";
-import mushroomsRight from "../../../public/svgs/mushroomsFooterRight.svg";
-import FooterWithoutEmoji from "../../../public/svgs/FooterWithoutEmoji.svg";
-import logo from "../../../public/svgs/whiteLogo.svg";
+import mushroomsLeft from "../../../public/svgs/footer/mushroomsFooterLeft.svg";
+import mushroomsRight from "../../../public/svgs/footer/mushroomsFooterRight.svg";
+import FooterWithoutEmoji from "../../../public/svgs/footer/FooterWithoutEmoji.svg";
+import logo from "../../../public/svgs/logos/whiteLogo.svg";
 import { FaHeart, FaLinkedinIn } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoIosMail } from "react-icons/io";
