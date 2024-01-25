@@ -3,10 +3,10 @@ import leaves from "../../../public/svgs/mushroomWithLeaves.svg";
 
 const About = () => {
   return (
-    <div className="bg-design-blue-200 flex">
-      <div className="text-white font-workSans flex justify-center items-center">
-        <div className="w-9/12">
-          <div className="flex justify-center md:justify-start font-bold text-3xl lg:text-5xl">
+    <div className="bg-design-blue-200 flex w-full pt-20">
+      <div className="text-white font-workSans flex justify-center items-center absolute w-6/12 left-20">
+        <div className=" ">
+          <div className="flex justify-center md:justify-start font-bold text-3xl lg:text-6xl">
             ABOUT US
           </div>
           <br />
@@ -29,7 +29,9 @@ const About = () => {
           </p>
         </div>
       </div>
-      <Image src={leaves} className="w-10/12 hidden md:block" />
+      <div className="flex justify-end items-end ml-32">
+        <Image src={leaves} className="w-11/12 hidden md:block " />
+      </div>
     </div>
   );
 };
