@@ -9,11 +9,11 @@ const DEV = {
       END: new Date("10/10/2024"),
     },
     LIVE: {
-      START: new Date("01/10/2024"),
+      START: new Date("10/10/2024"),
       END: new Date("10/10/2024"),
     },
     POSTLIVE: {
-      START: new Date("01/10/2024"),
+      START: new Date("10/10/2024"),
       END: new Date("10/10/2024"),
     },
   },

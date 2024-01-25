@@ -9,12 +9,12 @@ import { IoIosMail } from "react-icons/io";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <div className="flex justify-between bg-gradient-to-b from-[#BCD7B9] via-[#BCD7B9] bg-[#18836F] text-white py-20">
-      <Image src={mushroomsLeft} className="w-4/12 md:w-3/12" />
-      <div className="flex flex-col items-center justify-end w-3/12 md:w-full">
+    <div className="flex justify-between bg-gradient-to-b from-[#BCD7B9] via-[#BCD7B9] bg-[#18836F] text-white">
+      <Image src={mushroomsLeft} className="w-4/12 md:w-3/12 z-10" />
+      <div className="flex flex-col items-center justify-end w-3/12 md:w-full z-10">
         <Image src={logo} width={100} />
 
-        <div className="flex space-x-1 md:gap-5 w-full justify-center items-center mt-3">
+        <div className="flex space-x-1 md:gap-5 w-full justify-center items-center mt-4">
           <Link href="mailto:designverseucr@gmail.com ">
             {" "}
             <IoIosMail className="text-4xl hover:cursor-pointer text-white" />{" "}
@@ -35,9 +35,9 @@ const Footer = () => {
           &nbsp;by the DesignVerse Team 2024
         </div>
       </div>
-      <Image src={mushroomsRight} className="w-4/12 md:w-3/12" />
-      <div className=" flex w-full items-end h-72 absolute">
-        <Image src={FooterWithoutEmoji} />
+      <Image src={mushroomsRight} className="w-4/12 md:w-3/12 z-10" />
+      <div className=" flex w-full absolute mt-14 z-0 ">
+        <Image src={FooterWithoutEmoji} className="" />
       </div>
     </div>
   );
