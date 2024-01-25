@@ -9,7 +9,7 @@ import { IoIosMail } from "react-icons/io";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <div className="flex justify-between bg-gradient-to-b from-[#BCD7B9] via-[#BCD7B9] bg-[#18836F] text-white">
+    <div className="flex justify-between bg-design-blue-300 text-white">
       <Image src={mushroomsLeft} className="w-4/12 md:w-3/12 z-10" />
       <div className="flex flex-col items-center justify-end w-3/12 md:w-full z-10">
         <Image src={logo} width={100} />
