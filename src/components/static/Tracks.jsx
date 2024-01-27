@@ -1,6 +1,6 @@
-import left from "../../../public/svgs/tracks/left.svg";
-import middle from "../../../public/svgs/tracks/middle.svg";
-import right from "../../../public/svgs/tracks/right.svg";
+import left from "../../../public/tracks/left.svg";
+import middle from "../../../public/tracks/middle.svg";
+import right from "../../../public/tracks/right.svg";
 import Image from "next/image";
 
 const Track = () => {
