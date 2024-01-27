@@ -1,11 +1,11 @@
 import { GENDERS } from "./Information";
 import { SHIRTS } from "./Information";
 
-const AFFILIATIONS = [
-  { name: "Professor", hidden: false },
-  { name: "Student", hidden: false },
-  { name: "Industry", hidden: false },
-];
+export const AFFILIATIONS = {
+  professor: "Professor",
+  student: "Student",
+  industry: "Industry",
+};
 
 export const FIELDS = {
   description: {
@@ -67,11 +67,10 @@ export const FIELDS = {
   },
 
   affiliation: {
-    input: "select",
-    title: "Affiliation",
+    input: "radio",
+    text: "Affiliation",
     options: AFFILIATIONS,
     field: "affiliation",
-    placeholder: "ie. Student",
     width: 12,
     required: true,
   },
@@ -104,10 +103,9 @@ export const FIELDS = {
     options: [
       "I have read the DesignVerse code of conduct and agree to the terms and conditions listed",
       "I consent to photographs being taken and being used for future marketing purposes",
-      "I consent to providing a safe space for designers to learn and grow their interests in designing",
-      "I consent to following the provided guidelines and rules instructed by the organizing team",
-      "I understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event",
-      "I understand this is an in person event taking place in UCR and I must attend in person in order to judge",
+      "I consent to following the provided guidelines and rules instructed by the organizing team and understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event.",
+      "I understand that my attendance is required either virtually or in person",
+      "I understand that I must not uphold any biases or unfairness to participants",
     ],
   },
 };

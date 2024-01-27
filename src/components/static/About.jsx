@@ -1,13 +1,16 @@
 import Image from "next/image";
-import leaves from "../../../public/svgs/mushroomWithLeaves.svg";
+import leaves from "../../../public/svgs/landing/mushroomWithLeaves.svg";
 
 const About = () => {
   return (
-    <div className="bg-design-blue-200 flex">
-      <div className="text-white font-workSans flex justify-center items-center">
-        <div className="w-9/12">
-          <p className="font-bold text-5xl">ABOUT US</p>
-          <p className="text-lg">
+    <div className="bg-design-blue-200 flex w-full pt-20">
+      <div className="text-white font-workSans flex justify-center items-center absolute w-6/12 left-20">
+        <div className=" ">
+          <div className="flex justify-center md:justify-start font-bold text-3xl lg:text-6xl">
+            ABOUT US
+          </div>
+          <br />
+          <p className="lg:text-lg md:text-sm">
             DesignVerse is the first ever 24-hour beginner-friendly
             Design-a-Thon hosted by the University of California, Riverside.
             Designers are challenged to create the interface of an app or
@@ -26,7 +29,9 @@ const About = () => {
           </p>
         </div>
       </div>
-      <Image src={leaves} className="w-10/12" />
+      <div className="flex justify-end items-end ml-32">
+        <Image src={leaves} className="w-11/12 hidden md:block " />
+      </div>
     </div>
   );
 };
