@@ -15,7 +15,7 @@ const Checkbox = ({
     >
       <div
         data-cy="checkbox-bg"
-        className={`w-4 h-4 rounded-sm ${
+        className={`w-4 h-4 rounded-sm mr-2 ${
           toggle ? `${color ? color : "bg-design-beige"}` : "bg-design-beige "
         } flex items-center justify-center`}
       >
@@ -26,7 +26,7 @@ const Checkbox = ({
           } text-lg`}
         />
       </div>
-      {text && <p className="pl-3 my-0 pt-0">{text}</p>}
+      {text && <p className="my-0 pt-0">{text}</p>}
     </div>
   );
 };
