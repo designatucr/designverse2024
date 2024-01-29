@@ -3,7 +3,7 @@ import leaves from "../../../public/svgs/landing/mushroomWithLeaves.svg";
 
 const About = () => {
   return (
-    <div className="bg-design-blue-200 flex w-full pt-20">
+    <div className="h-[210%] md:h-[100%] bg-design-blue-200 relative flex w-full pt-20">
       <div className="text-white font-workSans flex justify-center items-center absolute w-6/12 left-20">
         <div className=" ">
           <div className="flex justify-center md:justify-start font-bold text-3xl lg:text-6xl">
