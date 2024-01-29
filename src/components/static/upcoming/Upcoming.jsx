@@ -93,8 +93,9 @@ const Upcoming = () => {
           />
         </div>
       </div>
-      <Tracks />
+
       <About />
+      <Tracks />
       <FAQ />
       <Footer />
     </div>
