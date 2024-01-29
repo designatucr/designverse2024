@@ -10,7 +10,7 @@ const FAQ = () => {
       <div className="absolute top-0 left-0 w-full h-full z-10">
         <Image src={Waves} alt="Waves" className="w-full h-full object-cover" />
       </div>
-      <div className="flex justify-center items-center flex-col w-10/12 md:w-1/2 relative z-20">
+      <div className="flex justify-center items-center flex-col w-10/12 md:w-8/12 relative z-20">
         <div className="text-3xl md:text-6xl font-bold text-white">FAQ</div>
         <Accordion className="w-full mt-8 text-sm md:text-base" alwaysOpen>
           {QUESTIONS.map(({ question, answer }, index) => (
