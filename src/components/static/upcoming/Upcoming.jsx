@@ -94,10 +94,11 @@ const Upcoming = () => {
           />
         </div>
       </div>
-      <Tracks />
+
       <About />
-      <Leads />
+      <Tracks />
       <FAQ />
+      <Leads />
       <Footer />
     </div>
   );
