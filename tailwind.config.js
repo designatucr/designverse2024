@@ -28,6 +28,7 @@ module.exports = {
           "brown-200": "#C5A687",
           "brown-300": "#AD7D5E",
           "brown-400": "#644539",
+          "brown-500": "#5F4B3D",
           "green-light": "#9CC688",
         },
         hackathon: {
