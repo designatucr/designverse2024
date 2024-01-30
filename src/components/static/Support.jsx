@@ -1,9 +1,12 @@
 import Apply from "./Apply";
+import river from "@/public/svgs/river.svg";
+import Image from "next/image";
 
 const Support = () => {
   return (
-    <div className="justify-center items-center flex w-10/12">
-      <div className="bg-design-green-100 flex w-10/12 font-workSans flex-col">
+    <div className="justify-center items-center flex flex-col w-full">
+      {/* <div className="w-10/12"> */}
+      <div className="bg-red-200  flex w-10/12 font-workSans flex-col">
         {/* <div className="font-workSans flex justify-center items-center"> */}
         {/* <div className="w-11/12"> */}
         <div className="flex  font-bold text-4xl lg:text-6xl text-white ">
@@ -45,6 +48,12 @@ const Support = () => {
         </div>
         {/* </div> */}
         {/* </div> */}
+      </div>
+
+      {/* </div> */}
+
+      <div className="w-full bg-yellow-200">
+        <Image src={river} />
       </div>
     </div>
   );
