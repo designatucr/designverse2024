@@ -99,9 +99,10 @@ const Upcoming = () => {
       <About />
 
       <Tracks />
+      <Leads />
       <Support />
       <FAQ />
-      <Leads />
+
       <Footer />
     </div>
   );
