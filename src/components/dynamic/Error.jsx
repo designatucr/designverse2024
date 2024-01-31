@@ -1,5 +1,5 @@
 import React from "react";
-import LillypadwithLotus from "../../../public/svgs/lotuswithpad.svg";
+import LillypadwithLotus from "../../../public/svgs/landing/lotuswithpad.svg";
 import Image from "next/image";
 const Error = ({ code, error, message, dev }) => {
   return (

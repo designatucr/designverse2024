@@ -1,5 +1,5 @@
 const Postlive = () => {
-  return <div>Postlive</div>;
+  return <div></div>;
 };
 
 export default Postlive;
