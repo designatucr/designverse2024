@@ -19,7 +19,7 @@ function Leads() {
             MEET THE TEAM
           </p>
           <br />
-          <div className="space-x-4 text-center text-design-brown-400 font-bold text-2xl lg:text-4xl">
+          <div className="space-x-4 text-center text-design-brown-400 font-bold text-2xl lg:text-5xl">
             <Image
               src={leadVine1}
               className="inline w-4/12 md:w-4/12 lg:w-5/12"
