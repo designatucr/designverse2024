@@ -8,7 +8,7 @@ const Supports = () => {
       <div className="bg-transparent flex w-9/12 absolute top-52 left-20 font-workSans flex-col ">
         {/* <div className="font-workSans flex justify-center items-center"> */}
         {/* <div className="w-11/12"> */}
-        <div className="flex  font-bold text-4xl lg:text-6xl text-white mb-8">
+        <div className="flex  font-bold text-3xl lg:text-5xl text-white mb-8">
           SUPPORT US
         </div>
         <div className="grid grid-cols-3  gap-x-4">
@@ -32,6 +32,11 @@ const Supports = () => {
               description="Need experience or just want to help our organization come to life? Volunteer to help the Designathon happen!"
               form="volunteer"
             />
+          </div>
+        </div>
+        <div className=" flex relative  w-screen justify-center top-32 h-screen  right-48 font-workSans flex-col">
+          <div className="flex  font-bold text-3xl lg:text-5xl text-white mb-8 justify-end ">
+            RESOURCES
           </div>
         </div>
 
