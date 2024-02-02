@@ -17,6 +17,7 @@ import Support from "../Support";
 import Leads from "../Leads";
 import FAQ from "../FAQ";
 import Tracks from "../Tracks";
+import Schedule from "@/components/dynamic/Schedule";
 
 const Upcoming = () => {
   return (
@@ -95,9 +96,8 @@ const Upcoming = () => {
           />
         </div>
       </div>
-
       <About />
-
+      <Schedule />
       <Tracks />
       <Leads />
       <Support />
