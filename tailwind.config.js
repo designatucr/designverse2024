@@ -17,6 +17,8 @@ module.exports = {
           orange: "#DF673E",
           "blue-100": "#69CDBA",
           "blue-200": "#4DB5A2",
+          "blue-300": "#18836F",
+          "blue-400": "#57C0AC",
           white: "#FAF8F3",
           beige: "#DDD5C9",
           "green-100": "#B2CDAF",
@@ -27,6 +29,8 @@ module.exports = {
           "brown-200": "#C5A687",
           "brown-300": "#AD7D5E",
           "brown-400": "#644539",
+          "brown-500": "#5F4B3D",
+          "brown-600": "#A28967",
           "green-light": "#9CC688",
         },
         hackathon: {

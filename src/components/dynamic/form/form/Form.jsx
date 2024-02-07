@@ -8,7 +8,7 @@ import Confirmation from "./Confirmation";
 import Button from "../../Button";
 import { signOut } from "next-auth/react";
 import Link from "next/link";
-import Logo from "@/public/svgs/FormLogo.svg";
+import Logo from "@/public/svgs/logos/FormLogo.svg";
 const Form = ({
   object,
   setObject,

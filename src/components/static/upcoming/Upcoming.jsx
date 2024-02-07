@@ -1,19 +1,22 @@
 import CountDown from "../Countdown";
 import Image from "next/image";
 import Apply from "../Apply";
-import Animals from "../../../../public/svgs/animals.svg";
-import Mushrooms2 from "../../../../public/svgs/mushrooms2.svg";
-import Waterline from "../../../../public/svgs/waterline.svg";
-import OnlyFrog from "../../../../public/svgs/onlyFrog.svg";
-import Lillypad from "../../../../public/svgs/lillypad.svg";
-import Lotus from "../../../../public/svgs/lotus.svg";
-import LillypadwithLotus from "../../../../public/svgs/lotuswithpad.svg";
+import Animals from "../../../../public/svgs/landing/animals.svg";
+import Mushrooms2 from "../../../../public/svgs/landing/mushrooms2.svg";
+import Waterline from "../../../../public/svgs/landing/waterline.svg";
+import OnlyFrog from "../../../../public/svgs/landing/onlyFrog.svg";
+import Lillypad from "../../../../public/svgs/landing/lillypad.svg";
+import Lotus from "../../../../public/svgs/landing/lotus.svg";
+import LillypadwithLotus from "../../../../public/svgs/landing/lotuswithpad.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
-import Logo from "../../../../public/svgs/BigLogo.svg";
+import Logo from "../../../../public/svgs/logos/BigLogo.svg";
 import Footer from "../Footer";
 import About from "../About";
+import Support from "../Supports";
+import Leads from "../Leads";
 import FAQ from "../FAQ";
+import Tracks from "../Tracks";
 
 const Upcoming = () => {
   return (
@@ -92,8 +95,14 @@ const Upcoming = () => {
           />
         </div>
       </div>
+
       <About />
+
+      <Tracks />
+      <Leads />
+      <Support />
       <FAQ />
+
       <Footer />
     </div>
   );
