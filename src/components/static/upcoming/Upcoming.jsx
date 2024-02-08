@@ -16,6 +16,7 @@ import About from "../About";
 import Support from "../Support";
 import FAQ from "../FAQ";
 import Tracks from "../Tracks";
+import Committees from "../Committees";
 
 const Upcoming = () => {
   return (
@@ -99,6 +100,7 @@ const Upcoming = () => {
 
       <Tracks />
       <Support />
+      <Committees />
       <FAQ />
       <Footer />
     </div>
