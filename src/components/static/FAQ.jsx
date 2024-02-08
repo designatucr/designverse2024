@@ -6,7 +6,7 @@ import Waves from "../../../public/svgs/landing/waves.svg";
 
 const FAQ = () => {
   return (
-    <section
+    <div
       id="faq"
       className="relative  bg-gradient-to-b from-design-blue-200 via-design-blue-200 to-design-blue-300 flex justify-center w-full py-24 md:py-48"
     >
@@ -26,7 +26,7 @@ const FAQ = () => {
           ))}
         </Accordion>
       </div>
-    </section>
+    </div>
   );
 };
 
