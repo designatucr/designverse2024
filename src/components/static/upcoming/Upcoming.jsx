@@ -21,7 +21,10 @@ import Tracks from "../Tracks";
 
 const Upcoming = () => {
   return (
-    <div className="w-full h-screen overflow-x-hidden relative font-workSans">
+    <section
+      id="home"
+      className="w-full h-screen overflow-x-hidden relative font-workSans"
+    >
       <Navigation />
       <div className="flex h-[68%] justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-300">
         <div className="flex md:-mb-12 -mb-8 items-end md:items-end">
@@ -106,7 +109,7 @@ const Upcoming = () => {
       <FAQ />
 
       <Footer />
-    </div>
+    </section>
   );
 };
 

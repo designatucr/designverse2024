@@ -2,7 +2,7 @@ import Apply from "./Apply";
 
 const Support = () => {
   return (
-    <div className="justify-center items-center flex w-10/12">
+    <section id="support" className="justify-center items-center flex w-10/12">
       <div className="bg-design-green-100 flex w-10/12 font-workSans flex-col">
         {/* <div className="font-workSans flex justify-center items-center"> */}
         {/* <div className="w-11/12"> */}
@@ -46,7 +46,7 @@ const Support = () => {
         {/* </div> */}
         {/* </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -5,7 +5,10 @@ import Image from "next/image";
 
 const Track = () => {
   return (
-    <div className="bg-design-green-100 flex justify-between pb-28">
+    <section
+      id="tracks"
+      className="bg-design-green-100 flex justify-between pb-28"
+    >
       <div className="flex justify-center items-center flex-col w-full mt-8">
         <div className="text-6xl font-bold text-white">TRACKS</div>
         <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center text-white text-3xl font-bold mt-5 gap-4">
@@ -23,7 +26,7 @@ const Track = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

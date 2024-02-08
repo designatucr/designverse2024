@@ -7,37 +7,50 @@ import { FaTools } from "react-icons/fa";
 export const items = [
   {
     name: "Home",
-    link: "home",
+    id: "home",
+    link: "/#",
     icon: <IoHomeSharp />,
   },
   {
     name: "Schedule",
-    link: "schedule",
+    id: "schedule",
+    link: "/#schedule",
     icon: <BsCalendar3 />,
   },
   {
     name: "About Us",
-    link: "about",
+    id: "about",
+    link: "/#about",
     icon: <IoMdInformationCircle />,
   },
   {
+    name: "Tracks",
+    id: "tracks",
+    link: "/#tracks",
+    icon: <BsCalendar3 />,
+  },
+  {
     name: "Meet The Team",
-    link: "team",
+    id: "team",
+    link: "/#team",
     icon: <IoIosPeople />,
   },
   {
     name: "Support",
-    link: "support",
+    id: "support",
+    link: "/#support",
     icon: <BiSolidDonateHeart />,
   },
   {
     name: "Resources",
-    link: "resources",
+    id: "resource",
+    link: "/#resources",
     icon: <FaTools />,
   },
   {
     name: "FAQ",
-    link: "faq",
+    id: "faq",
+    link: "/#faq",
     icon: <BsFillQuestionCircleFill />,
   },
 ];
