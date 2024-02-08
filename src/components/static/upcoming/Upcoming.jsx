@@ -13,7 +13,7 @@ import { BsCalendar3 } from "react-icons/bs";
 import Logo from "../../../../public/svgs/logos/BigLogo.svg";
 import Footer from "../Footer";
 import About from "../About";
-import Support from "../Support";
+import Support from "../Supports";
 import Leads from "../Leads";
 import FAQ from "../FAQ";
 import Navigation from "../Navigation";
@@ -21,7 +21,7 @@ import Tracks from "../Tracks";
 
 const Upcoming = () => {
   return (
-    <section
+    <div
       id="home"
       className="w-full h-screen overflow-x-hidden relative font-workSans"
     >
@@ -109,7 +109,7 @@ const Upcoming = () => {
       <FAQ />
 
       <Footer />
-    </section>
+    </div>
   );
 };
 
