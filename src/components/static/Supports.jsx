@@ -34,7 +34,7 @@ const Supports = () => {
             />
           </div>
         </div>
-        <div className=" flex relative  w-screen justify-center top-32 h-screen  right-48 font-workSans flex-col">
+        <div className=" flex relative  w-screen justify-center top-32 h-full  right-48 font-workSans flex-col">
           <div className="flex  font-bold text-3xl lg:text-5xl text-white mb-8 justify-end ">
             RESOURCES
           </div>
