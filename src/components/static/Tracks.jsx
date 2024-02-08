@@ -1,10 +1,11 @@
-import left from "../../../public//svgs/tracks/left.svg";
+import left from "../../../public/svgs/tracks/left.svg";
 import middle from "../../../public/svgs/tracks/middle.svg";
 import right from "../../../public/svgs/tracks/right.svg";
 import Image from "next/image";
-
+import top from "../../../public/svgs/tracks/track.svg";
 const Track = () => {
   return (
+
     <section
       id="tracks"
       className="bg-design-green-100 flex justify-between pb-28"
@@ -16,13 +17,13 @@ const Track = () => {
             <Image src={left} alt="left" />
             <p className="flex justify-center md:ml-10">Sustainability</p>
           </div>
-          <div className="flex flex-col mt-2">
-            <Image src={middle} alt="middle" className="mt-4" />
-            <p className="flex justify-center md:mr-8 mt-0 ">Sustainability</p>
+          <div className="flex justify-center items-center flex-col  h-full">
+            <Image className="w-10/12  " src={middle} alt="middle" />
+            <p className="flex justify-center ">Sustainability</p>
           </div>
-          <div className="flex flex-col">
-            <Image src={right} alt="right" />
-            <p className="flex justify-center md:mr-12">Sustainability</p>
+          <div className="flex justify-center items-center flex-col h-full ">
+            <Image className="w-10/12  " src={right} alt="right" />
+            <p className="flex justify-center">Sustainability</p>
           </div>
         </div>
       </div>
