@@ -29,8 +29,6 @@ const Schedule = () => {
   }, [selectedDay]);
   const randomXPositions = [10, 16, 20, 28, 36, 44, 52, 60, 72, 90];
   const randomXPositions2 = [10, 14, 24, 32, 40, 48, 56, 64, 80];
-
-  console.log("EVENTS:", events);
   return (
     <div className="bg-design-blue-200 pt-10 relative">
       <div className="w-9/12 flex mx-auto text-white font-workSans items-center">
@@ -58,47 +56,54 @@ const Schedule = () => {
               ))}
             </div>
             <div className="mt-6 h-[1200px] relative">
-              {events &&
-                events.map((event, index) => {
-                  const randomX1 = getRandomFromArray(randomXPositions);
-                  const randomX2 = getRandomFromArray(randomXPositions2);
-
-                  return (
-                    <div key={index}>
-                      <Image
-                        src={twiggy2}
-                        className="w-6 h-6 relative top-2"
-                        style={{ left: `${randomX1}%` }}
-                      />
-                      <div className="flex w-full">
+              <div className="relative">
+                <div
+                  className={`absolute w-2 h-full bg-design-brown-400 rounded-lg left-24 z-[-1]`}
+                />
+                <div
+                  className={`absolute w-2 h-full bg-design-brown-400 rounded-lg right-24 z-[-1]`}
+                />
+                {events &&
+                  events.map((event, index) => {
+                    const randomX1 = getRandomFromArray(randomXPositions);
+                    const randomX2 = getRandomFromArray(randomXPositions2);
+                    return (
+                      <div key={index}>
                         <Image
-                          src={LOGSTART}
-                          className="w-[13.3px] md:w-[16.6px] flex relative"
-                          alt="Log"
+                          src={twiggy2}
+                          className="w-6 h-6 relative top-2"
+                          style={{ left: `${randomX1}%` }}
                         />
-                        <div
-                          key={event.name}
-                          className="w-full flex justify-between bg-[#695546]"
-                        >
-                          <p className="text-xs md:text-lg m-0 py-3 pl-6 lg:pl-16">{`${event.TIME}`}</p>
-                          <p className="text-xs md:text-lg m-0 py-3">{`${event.EVENT}`}</p>
-                          <p className="text-xs md:text-lg m-0 py-3">{`${event.TYPE}`}</p>
-                          <p className="text-xs md:text-lg m-0 py-3 pr-6 lg:pr-16">{`${event.LOCATION}`}</p>
+                        <div className="flex w-full">
+                          <Image
+                            src={LOGSTART}
+                            className="w-[13.3px] md:w-[16.6px] flex relative"
+                            alt="Log"
+                          />
+                          <div
+                            key={event.name}
+                            className="w-full flex justify-between bg-[#695546]"
+                          >
+                            <p className="text-xs md:text-lg m-0 py-3 pl-6 lg:pl-16">{`${event.TIME}`}</p>
+                            <p className="text-xs md:text-lg m-0 py-3">{`${event.EVENT}`}</p>
+                            <p className="text-xs md:text-lg m-0 py-3">{`${event.TYPE}`}</p>
+                            <p className="text-xs md:text-lg m-0 py-3 pr-6 lg:pr-16">{`${event.LOCATION}`}</p>
+                          </div>
+                          <Image
+                            src={LOGEND}
+                            className="w-[6.53px] md:w-[8.15px] flex relative"
+                            alt="Log"
+                          />
                         </div>
                         <Image
-                          src={LOGEND}
-                          className="w-[6.53px] md:w-[8.15px] flex relative"
-                          alt="Log"
+                          src={twiggy1}
+                          className="w-6 h-6 relative bottom-2 rotate-180"
+                          style={{ left: `${randomX2}%` }}
                         />
                       </div>
-                      <Image
-                        src={twiggy1}
-                        className="w-6 h-6 relative bottom-2 rotate-180"
-                        style={{ left: `${randomX2}%` }}
-                      />
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+              </div>
             </div>
           </div>
         </div>
