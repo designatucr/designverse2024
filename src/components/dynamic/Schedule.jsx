@@ -48,7 +48,7 @@ const Schedule = () => {
                   key={day}
                   className={`flex py-2 px-3 justify-between rounded focus:outline-none text-white ${
                     selectedDay === day
-                      ? "bg-design-blue-400"
+                      ? "bg-design-blue-500"
                       : "bg-transparent"
                   }`}
                   onClick={() => setSelectedDay(day)}
