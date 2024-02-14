@@ -18,7 +18,7 @@ const Committees = () => {
           Committee Members
         </div>
       </div>
-      <div className="overflow-hidden mb-12">
+      <div className="overflow-hidden mb-16">
         <Image
           className="w-1/2 h-1/2 absolute left-[-20%]"
           src={commMushroomL}
