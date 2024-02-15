@@ -1,11 +1,17 @@
 import river from "@/public/svgs/river.svg";
 import Image from "next/image";
 import Support from "./Support";
+import Resource from "./Resource";
+import Betty from "../../../public/svgs/board/Betty.svg";
+import resource1 from "../../../public/svgs/support/resource1.svg";
+import resource2 from "../../../public/svgs/support/resource2.svg";
+import resource3 from "../../../public/svgs/support/resource3.svg";
+
 const Supports = () => {
   return (
     <div className="justify-center items-center flex flex-col w-full relative">
       {/* <div className="w-10/12"> */}
-      <div className="bg-transparent flex w-9/12 absolute top-52 left-20 font-workSans flex-col ">
+      <div className=" bg-transparent flex w-9/12 absolute top-52 left-20 font-workSans flex-col ">
         {/* <div className="font-workSans flex justify-center items-center"> */}
         {/* <div className="w-11/12"> */}
         <div className="flex  font-bold text-3xl lg:text-5xl text-white mb-8">
@@ -34,9 +40,22 @@ const Supports = () => {
             />
           </div>
         </div>
-        <div className=" flex relative  w-screen justify-center top-32 h-screen  right-48 font-workSans flex-col">
-          <div className="flex  font-bold text-3xl lg:text-5xl text-white mb-8 justify-end ">
+        <div className="flex relative justify-center items-center w-screen top-32 h-screen font-workSans flex-col">
+          <div className=" flex font-bold text-3xl lg:text-5xl text-black mb-8 justify-end">
             RESOURCES
+          </div>
+          <div className="grid grid-cols-3 gap-32">
+            <Resource
+              image={resource1}
+              title="Figma"
+              description="Figma desc"
+            />
+            <Resource
+              image={resource2}
+              title="Dribble"
+              description="Dribble desc"
+            />{" "}
+            <Resource image={resource3} title="Miro" description="Miro desc" />
           </div>
         </div>
 
@@ -46,8 +65,8 @@ const Supports = () => {
 
       {/* </div> */}
 
-      <div className="w-full bg-design-green-100">
-        <Image src={river} />
+      <div className="w-screen bg-design-green-100">
+        <Image src={river} className="w-screen" />
       </div>
     </div>
   );
