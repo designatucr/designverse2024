@@ -2,7 +2,6 @@ import river from "@/public/svgs/river.svg";
 import Image from "next/image";
 import Support from "./Support";
 import Resource from "./Resource";
-import Betty from "../../../public/svgs/board/Betty.svg";
 import resource1 from "../../../public/svgs/support/resource1.svg";
 import resource2 from "../../../public/svgs/support/resource2.svg";
 import resource3 from "../../../public/svgs/support/resource3.svg";
