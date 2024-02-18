@@ -6,7 +6,7 @@ import Waves from "../../../public/svgs/landing/waves.svg";
 
 const FAQ = () => {
   return (
-    <div className="relative  bg-gradient-to-b from-design-blue-200 via-design-blue-200 to-design-blue-300 flex justify-center w-full py-24 md:py-48">
+    <div className="relative  bg-gradient-to-b from-design-blue-400 via-design-blue-200 to-design-blue-300 flex justify-center w-full py-24 md:py-48">
       <div className="absolute top-0 left-0 w-full h-full z-10">
         <Image src={Waves} alt="Waves" className="w-full h-full object-cover" />
       </div>
