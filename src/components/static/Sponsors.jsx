@@ -11,19 +11,21 @@ const Sponsors = () => {
     <div className="bg-[#4AB9A4] flex flex-col justify-between mb-20 relative">
       <Image src={top} className="bg-design-green-100" />
       <div className="flex justify-center items-center flex-col w-full">
-        <div className="text-5xl font-bold text-white mt-8">SPONSORSHIPS</div>
+        <div className="text-3xl md:text-5xl font-bold text-white mt-8">
+          SPONSORSHIPS
+        </div>
       </div>
       <div className="absolute left-0 w-full h-full z-0 ">
         <Image src={Waves} alt="Waves" className="w-full h-full object-cover" />
       </div>
-      <div className="absolute left-0 z-0 top-20">
+      <div className="absolute hidden md:block left-0 z-0 top-0">
         <Image
           src={Lilly1}
           alt="Waves"
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="absolute right-0 z-0 bottom-32">
+      <div className="absolute hidden md:block right-0 z-0 bottom-32">
         <Image
           src={Lilly2}
           alt="Waves"
@@ -63,7 +65,7 @@ const Sponsors = () => {
               }`}
             >
               {row.map((image, index) => (
-                <div key={index} className="flex-grow items-stretch mx-4">
+                <div key={index} className="flex-grow items-stretch lg:mx-4">
                   <Image src={image} alt="carousel" className="w-10/12" />
                 </div>
               ))}
@@ -76,7 +78,7 @@ const Sponsors = () => {
               }`}
             >
               {row.map((image, index) => (
-                <div key={index} className="flex-grow items-stretch mx-4">
+                <div key={index} className="flex-grow items-stretch lg:mx-4">
                   <Image src={image} alt="carousel" className="w-10/12" />
                 </div>
               ))}

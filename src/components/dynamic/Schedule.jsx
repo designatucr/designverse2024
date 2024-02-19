@@ -1,42 +1,48 @@
-"use client";
-import { useState, useEffect } from "react";
-import MockSchedule from "@/data/MockSchedule";
+// "use client";
+// import { useState, useEffect } from "react";
+// import MockSchedule from "@/data/MockSchedule";
 import Image from "next/image";
-import LOGEND from "@/public/svgs/schedule/logEnd.svg";
-import LOGSTART from "@/public/svgs/schedule/logStart.svg";
-import WAVES from "@/public/svgs/wave.svg";
-import LILYPAD from "@/public/svgs/landing/lillypad.svg";
-import FROG from "@/public/svgs/landing/onlyFrog.svg";
-import twiggy1 from "@/public/svgs/schedule/twiggy1.svg";
-import twiggy2 from "@/public/svgs/schedule/twiggy2.svg";
-
-const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-function getRandomFromArray(array) {
-  return array[Math.floor(Math.random() * array.length)];
-}
+// import LOGEND from "@/public/svgs/schedule/logEnd.svg";
+// import LOGSTART from "@/public/svgs/schedule/logStart.svg";
+import WAVES from "@/public/svgs/schedule/wave.svg";
+// import LILYPAD from "@/public/svgs/landing/lillypad.svg";
+// import FROG from "@/public/svgs/landing/onlyFrog.svg";
+// import twiggy1 from "@/public/svgs/schedule/twiggy1.svg";
+// import twiggy2 from "@/public/svgs/schedule/twiggy2.svg";
+import temp from "@/public/svgs/schedule/temp.svg";
+// const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+// function getRandomFromArray(array) {
+//   return array[Math.floor(Math.random() * array.length)];
+// }
 
 const Schedule = () => {
-  const [events, setEvents] = useState([]);
-  const [selectedDay, setSelectedDay] = useState("SUN");
+  // const [events, setEvents] = useState([]);
+  // const [selectedDay, setSelectedDay] = useState("SUN");
 
-  useEffect(() => {
-    if (selectedDay && selectedDay in MockSchedule) {
-      const selectedDayEvents = MockSchedule[selectedDay].events;
-      setEvents(selectedDayEvents);
-    } else {
-      setEvents([]);
-    }
-  }, [selectedDay]);
-  const randomXPositions = [10, 16, 20, 28, 36, 44, 52, 60, 72, 90];
-  const randomXPositions2 = [10, 14, 24, 32, 40, 48, 56, 64, 80];
+  // useEffect(() => {
+  //   if (selectedDay && selectedDay in MockSchedule) {
+  //     const selectedDayEvents = MockSchedule[selectedDay].events;
+  //     setEvents(selectedDayEvents);
+  //   } else {
+  //     setEvents([]);
+  //   }
+  // }, [selectedDay]);
+  // const randomXPositions = [10, 16, 20, 28, 36, 44, 52, 60, 72, 90];
+  // const randomXPositions2 = [10, 14, 24, 32, 40, 48, 56, 64, 80];
   return (
-    <div className="bg-design-blue-200 pt-10 relative">
-      <div className="w-9/12 flex mx-auto text-white font-workSans items-center">
-        <div className="w-full text-center z-1">
+    <div className="bg-design-blue-200 pt-10 py-4 flex justify-center items-center lg:py-10">
+      <div className="w-9/12 flex  text-white font-workSans justify-center items-center">
+        <div className="w-full text-center z-1 flex flex-col">
           <p className="text-3xl lg:text-5xl font-bold inline-block">
             SCHEDULE
           </p>
-          <p className="text-sm md:text-base font-light">
+          <p className="text-xl lg:text-2xl font-semibold inline-block">
+            Coming Soon
+          </p>
+          <p className="text-xl lg:text-2xl font-semibold inline-block">
+            Check Back Spring 2024!
+          </p>
+          {/* <p className="text-sm md:text-base font-light">
             Pacific Standard Time (PST)
           </p>
           <div className="mt-4">
@@ -105,34 +111,40 @@ const Schedule = () => {
                   })}
               </div>
             </div>
-          </div>
+          </div> */}
+          <Image src={temp} className=" z-0 top-16 " alt="Waves" />
+          <Image
+            src={WAVES}
+            className="absolute w-screen -z-10 left-0"
+            alt="Waves"
+          />
         </div>
       </div>
-      <Image
+      {/* <Image
         src={WAVES}
         className="absolute w-90 margin-auto z-0 top-16 flex-none"
         alt="Waves"
-      />
-      <Image
+      /> */}
+      {/* <Image
         src={WAVES}
         className="absolute min-w-96 z-0 bottom-32 md:bottom-16 rotate-180"
         alt="Waves"
-      />
-      <Image
+      /> */}
+      {/* <Image
         src={LILYPAD}
         className="absolute w-screen flex z-0 h-16 top-[30%] left-[47%] transform -scale-x-100"
         alt=""
-      />
+      /> */}
       {/* <Image
         src={LOTUSLILY}
         className="absolute w-screen flex z-0 w-32 bottom-96  left-[-2%]"
         alt="Lotus on lilypad"
       /> */}
-      <Image
+      {/* <Image
         src={FROG}
         className="absolute w-screen flex z-0 h-24 bottom-4 left-[42%]"
         alt="Frog on lilypad"
-      />
+      /> */}
     </div>
   );
 };
