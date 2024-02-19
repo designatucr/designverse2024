@@ -1,5 +1,6 @@
 import Image from "next/image";
 import top from "../../../public/svgs/tracks/track.svg";
+import TrackCards from "./TrackCards";
 // import TrackCards from "./TrackCards";
 // import track1front from "../../../public/svgs/tracks/track1Front.svg";
 // import track2front from "../../../public/svgs/tracks/track2Front.svg";
@@ -15,9 +16,7 @@ const Track = () => {
       <Image src={top} className="bg-design-blue-200" />
       <div className="flex justify-center items-center flex-col w-full">
         <div className="text-5xl font-bold text-white">TRACKS</div>
-        <div className="flex w-11/12 mt-5 justify-center items-center">
-          <p>track cards go here</p>
-        </div>
+        <TrackCards />
       </div>
     </div>
   );
