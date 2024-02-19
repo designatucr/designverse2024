@@ -1,5 +1,7 @@
 import { GENDERS } from "./Information";
 import { SHIRTS } from "./Information";
+import { METADATA } from "@/data/Config";
+import { phone } from "@/data/dynamic/form/Regex";
 
 export const AFFILIATIONS = {
   professor: "Professor",
@@ -12,8 +14,8 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      "Welcome to DesignVerse. Thank you for considering to become a judge, we appreciate your efforts to help support DesignVerse.",
-      "DesignVerse is UCR’s first ever UI/UX Design-a-Thon! On May 11, 2024 over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
+      `Welcome to ${METADATA.name}. Thank you for being on the organizing team, we appreciate your efforts to help support ${METADATA.name}.`,
+      `${METADATA.name} is ${METADATA.description} On ${METADATA.date} over the course of ${METADATA.length}, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!`,
       "Judges are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
       "Judge duties include but are not limited to visiting various teams to access teams on their idea, technical complexities and overall presentation after which they will decide the winners.",
       "Note: Judges are not permitted to become participants for the designathon.",
@@ -48,6 +50,7 @@ export const FIELDS = {
     maxLength: 50,
     width: 12,
     required: true,
+    regex: phone,
   },
   gender: {
     input: "radio",
@@ -80,7 +83,7 @@ export const FIELDS = {
     name: "title",
     type: "text",
     title: "Title",
-    placeholder: "ie. Graduate Student",
+    placeholder: "ie. Hackathon Director",
     maxLength: 50,
     width: 12,
     required: true,
@@ -96,7 +99,7 @@ export const FIELDS = {
   },
   requirements: {
     text: "Terms and Conditions",
-    input: "checkboxes",
+    input: "terms",
     width: 12,
     field: "requirements",
     required: true,

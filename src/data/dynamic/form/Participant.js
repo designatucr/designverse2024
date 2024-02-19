@@ -3,14 +3,16 @@ import { GRADES } from "./Information";
 import { GENDERS } from "./Information";
 import { SHIRTS } from "./Information";
 import { SCHOOLS } from "./Schools";
+import { METADATA } from "@/data/Config";
+import { phone } from "@/data/dynamic/form/Regex";
 
 export const FIELDS = {
   description: {
     input: "description",
     width: 12,
     texts: [
-      "Welcome to DesignVerse. Thank you for considering to become a participant, we appreciate your enthusiasm to join DesignVerse.",
-      "DesignVerse is UCR’s first ever UI/UX Design-a-Thon! On May 11, 2024 over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
+      `Welcome to ${METADATA.name}. Thank you for being on the organizing team, we appreciate your efforts to help support ${METADATA.name}.`,
+      `${METADATA.name} is ${METADATA.description} On ${METADATA.date} over the course of ${METADATA.length}, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!`,
       "Participants are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
     ],
   },
@@ -43,6 +45,7 @@ export const FIELDS = {
     maxLength: 50,
     width: 12,
     required: true,
+    regex: phone,
   },
   discord: {
     input: "input",
@@ -130,7 +133,7 @@ export const FIELDS = {
   },
   requirements: {
     text: "Terms and Conditions",
-    input: "checkboxes",
+    input: "terms",
     width: 12,
     field: "requirements",
     required: true,

@@ -4,6 +4,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/data/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/utils/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -17,16 +18,22 @@ module.exports = {
           orange: "#DF673E",
           "blue-100": "#69CDBA",
           "blue-200": "#4DB5A2",
+          "blue-300": "#18836F",
+          "blue-400": "#57C0AC",
+          "blue-500": "#2F9482",
           white: "#FAF8F3",
           beige: "#DDD5C9",
           "green-100": "#B2CDAF",
           "green-200": "#61934A",
           "green-300": "#7CA677",
           "green-400": "#334E26",
+          "green-500": "#7DA878",
           "brown-100": "#E8D9C6",
           "brown-200": "#C5A687",
           "brown-300": "#AD7D5E",
           "brown-400": "#644539",
+          "brown-500": "#5F4B3D",
+          "brown-600": "#A28967",
           "green-light": "#9CC688",
         },
         hackathon: {
@@ -68,8 +75,29 @@ module.exports = {
         wiggle1: "wiggle1 5s ease-in-out infinite",
         wiggle2: "wiggle2 5s ease-in-out infinite",
         wiggle3: "wiggle3 12.5s ease-in-out infinite",
+        marquee: "marquee 30s linear infinite",
+        "reverse-marquee": "reverse-marquee 30s linear infinite",
+        "marquee-continuation": "marquee-continuation 30s linear infinite",
+        "reverse-marquee-continuation":
+          "reverse-marquee-continuation 30s linear infinite",
       },
       keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        "marquee-continuation": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        "reverse-marquee": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        "reverse-marquee-continuation": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
         wiggle1: {
           "0% 100%": {
             translate: "25px",

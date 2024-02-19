@@ -8,7 +8,7 @@ import Confirmation from "./Confirmation";
 import Button from "../../Button";
 import { signOut } from "next-auth/react";
 import Link from "next/link";
-import Logo from "@/public/svgs/FormLogo.svg";
+import Logo from "@/public/svgs/logos/FormLogo.svg";
 const Form = ({
   object,
   setObject,
@@ -20,6 +20,7 @@ const Form = ({
   packet = false,
 }) => {
   const [loading, setLoading] = useState(false);
+
   const [state, setState] = useState(
     typeof object.roles[object.form] !== "undefined" && !bypass ? 0 : 1
   );

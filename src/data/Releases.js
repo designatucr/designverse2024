@@ -9,11 +9,11 @@ const DEV = {
       END: new Date("10/10/2024"),
     },
     LIVE: {
-      START: new Date("01/10/2024"),
+      START: new Date("10/10/2024"),
       END: new Date("10/10/2024"),
     },
     POSTLIVE: {
-      START: new Date("01/10/2024"),
+      START: new Date("10/10/2024"),
       END: new Date("10/10/2024"),
     },
   },
@@ -91,7 +91,7 @@ const PRODUCTION = {
     "/form/admin": new Date("10/01/2023"),
     "/form/committee": new Date("10/01/2023"),
     "/form/sponsor": new Date("10/01/2023"),
-    "/form/feedback": new Date("01/20/2024"),
+    "/form/feedback": new Date("05/20/2024"),
     "/form/interest": new Date("10/01/2023"),
 
     "/user/checkin": new Date("01/20/2024"),

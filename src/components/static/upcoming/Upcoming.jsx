@@ -1,19 +1,27 @@
 import CountDown from "../Countdown";
 import Image from "next/image";
 import Apply from "../Apply";
-import Animals from "../../../../public/svgs/animals.svg";
-import Mushrooms2 from "../../../../public/svgs/mushrooms2.svg";
-import Waterline from "../../../../public/svgs/waterline.svg";
-import OnlyFrog from "../../../../public/svgs/onlyFrog.svg";
-import Lillypad from "../../../../public/svgs/lillypad.svg";
-import Lotus from "../../../../public/svgs/lotus.svg";
-import LillypadwithLotus from "../../../../public/svgs/lotuswithpad.svg";
+import Animals from "../../../../public/svgs/landing/animals.svg";
+import Mushrooms2 from "../../../../public/svgs/landing/mushrooms2.svg";
+import Waterline from "../../../../public/svgs/landing/waterline.svg";
+import OnlyFrog from "../../../../public/svgs/landing/onlyFrog.svg";
+import Lillypad from "../../../../public/svgs/landing/lillypad.svg";
+import Lotus from "../../../../public/svgs/landing/lotus.svg";
+import LillypadwithLotus from "../../../../public/svgs/landing/lotuswithpad.svg";
 import { IoPin } from "react-icons/io5";
 import { BsCalendar3 } from "react-icons/bs";
-import Logo from "../../../../public/svgs/BigLogo.svg";
+import Logo from "../../../../public/svgs/logos/BigLogo.svg";
 import Footer from "../Footer";
 import About from "../About";
+import Support from "../Supports";
+import Leads from "../Leads";
 import FAQ from "../FAQ";
+import Tracks from "../Tracks";
+
+import Schedule from "@/components/dynamic/Schedule";
+
+import Committees from "../Committees";
+import Sponsors from "../Sponsors";
 
 const Upcoming = () => {
   return (
@@ -44,11 +52,11 @@ const Upcoming = () => {
               <CountDown />
             </div>
           </div>
-          <div className="mt-4 md:mt-8 grid grid-cols-2 lg:grid-cols-4 w-6/12 gap-2 md:gap-3 z-20">
-            <Apply text="Interested" link="/form/interest" />
-            <Apply text="Mentor" link="/form/mentor" />
+          <div className="mt-4 md:mt-8 justify-center items-center w-4/12 lg:w-2/12 gap-2 md:gap-3 z-20">
+            <Apply text="Apply Now" link="/form/participant" />
+            {/* <Apply text="Mentor" link="/form/mentor" />
             <Apply text="Volunteer" link="/form/volunteer" />
-            <Apply text="Sponsor Us" link="/form/sponsor" />
+            <Apply text="Sponsor Us" link="/form/sponsor" /> */}
           </div>
         </div>
         <div className="flex flex-col justify-end md:justify-right items-end md:items-right z-20 md:-mr-8">
@@ -93,7 +101,14 @@ const Upcoming = () => {
         </div>
       </div>
       <About />
+      <Schedule />
+      <Tracks />
+      <Sponsors />
+      <Leads />
+      <Committees />
+      <Support />
       <FAQ />
+
       <Footer />
     </div>
   );

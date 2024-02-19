@@ -14,6 +14,13 @@ export const MANIFEST = {
   start_url: "/",
 };
 
+export const METADATA = {
+  name: "DesignVerse",
+  description: "UCR’s first ever UI/UX Design-a-Thon!",
+  length: "24 hours",
+  date: "May 11, 2024",
+};
+
 export const SITEMAP = {
   domain: "https://www.designverseucr.com",
 };
