@@ -1,7 +1,6 @@
 import React from "react";
 import { BOARD } from "@/data/static/Board";
 import Profile from "./Profile";
-import Betty from "../../../public/svgs/board/Betty.svg";
 import Image from "next/image";
 import leadVine1 from "../../../public/svgs/team/leadVine1.svg";
 import leadVine2 from "../../../public/svgs/team/leadVine2.svg";
@@ -38,7 +37,7 @@ function Leads() {
           {BOARD[0].map((item, index) => (
             <Profile
               key={index}
-              image={Betty}
+              image={item.pic}
               name={item.name}
               position={item.position}
             />
@@ -48,7 +47,7 @@ function Leads() {
           {BOARD[1].map((item, index) => (
             <Profile
               key={index}
-              image={Betty}
+              image={item.pic}
               name={item.name}
               position={item.position}
             />

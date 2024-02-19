@@ -5,9 +5,9 @@ import Image from "next/image";
 import top from "../../../public/svgs/tracks/track.svg";
 const Track = () => {
   return (
-    <div className="bg-design-green-100 flex flex-col justify-between">
+    <div className="bg-design-green-100 flex flex-col justify-between mb-20">
       <Image src={top} className="bg-design-blue-200" />
-      <div className="flex justify-center items-center flex-col w-full my-8">
+      <div className="flex justify-center items-center flex-col w-full">
         <div className="text-5xl font-bold text-white">TRACKS</div>
         <div className="grid grid-cols-1 md:grid-cols-3 w-11/12  text-white text-2xl font-bold mt-5 ">
           <div className="flex flex-col justify-center items-center h-full ">
