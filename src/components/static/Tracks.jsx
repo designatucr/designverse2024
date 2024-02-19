@@ -11,9 +11,9 @@ import top from "../../../public/svgs/tracks/track.svg";
 // import track4Back from "../../../public/svgs/tracks/track4Back.svg";
 const Track = () => {
   return (
-    <div className="bg-design-green-100 flex flex-col justify-between">
+    <div className="bg-design-green-100 flex flex-col justify-between mb-20">
       <Image src={top} className="bg-design-blue-200" />
-      <div className="flex justify-center items-center flex-col w-full my-8">
+      <div className="flex justify-center items-center flex-col w-full">
         <div className="text-5xl font-bold text-white">TRACKS</div>
         <div className="flex w-11/12 mt-5 justify-center items-center">
           <p>track cards go here</p>
