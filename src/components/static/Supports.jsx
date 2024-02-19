@@ -9,13 +9,13 @@ const Supports = () => {
   return (
     <div className="justify-center items-center flex flex-col w-full relative">
       {/* <div className="w-10/12"> */}
-      <div className="bg-transparent flex w-9/12 absolute top-52 left-20 font-workSans flex-col">
+      <div className="bg-transparent flex w-10/12 lg:w-9/12 absolute top-8 lg:top-52 left-0 lg:left-20 font-workSans flex-col">
         {/* <div className="font-workSans flex justify-center items-center"> */}
         {/* <div className="w-11/12"> */}
-        <div className="flex  font-bold text-3xl lg:text-5xl text-white mb-8">
+        <div className="flex  font-bold text-2xl lg:text-5xl text-white lg:mb-8">
           SUPPORT US
         </div>
-        <div className="grid grid-cols-3  gap-x-4">
+        <div className="grid grid-cols-3 gap-x-1 lg:gap-x-4">
           <div>
             <Support
               title="Become a Mentor"
@@ -42,11 +42,11 @@ const Supports = () => {
         {/* </div> */}
         {/* </div> */}
       </div>
-      <div className=" flex absolute  right-10 w-8/12 justify-end items-end bottom-96 font-workSans flex-col ">
-        <div className="flex  font-bold text-3xl lg:text-5xl text-white mb-8 justify-end items-end">
+      <div className=" flex absolute  right-0 lg:right-10 w-9/12 lg:w-8/12 justify-end items-end bottom-32 lg:bottom-96 font-workSans flex-col ">
+        <div className="flex font-bold text-2xl lg:text-5xl text-white lg:mb-8 justify-end items-end">
           RESOURCES
         </div>
-        <div className="grid grid-cols-3 justify-center gap-x-4 items-end ">
+        <div className="grid grid-cols-3 justify-center gap-x-1 lg:gap-x-4 items-end ">
           <div>
             <Resource
               title="Figma"

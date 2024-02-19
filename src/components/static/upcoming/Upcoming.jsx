@@ -17,8 +17,12 @@ import Support from "../Supports";
 import Leads from "../Leads";
 import FAQ from "../FAQ";
 import Tracks from "../Tracks";
+
+import Schedule from "@/components/dynamic/Schedule";
+
 import Committees from "../Committees";
 import Sponsors from "../Sponsors";
+
 const Upcoming = () => {
   return (
     <div className="w-full h-screen overflow-x-hidden relative font-workSans">
@@ -96,9 +100,8 @@ const Upcoming = () => {
           />
         </div>
       </div>
-
       <About />
-
+      <Schedule />
       <Tracks />
       <Sponsors />
       <Leads />
