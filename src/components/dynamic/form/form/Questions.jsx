@@ -57,7 +57,7 @@ const Questions = ({
   };
 
   return (
-    <div className="flex flex-col w-full gap-5 font-normal font-workSans">
+    <div className="flex flex-col w-full  font-normal font-workSans">
       {Object.values(fields).map((field, index) => (
         <div key={index}>
           {field.input === "description" &&
@@ -202,7 +202,7 @@ const Questions = ({
           )}
         </div>
       ))}
-      <div className="font-regular">Resources</div>
+      <div className="font-regular mt-3">Resources</div>
       <Link
         href="/files/DesignVerseCodeofConduct.pdf"
         target="_blank"
