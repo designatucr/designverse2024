@@ -12,15 +12,17 @@ const Track = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 w-11/12  text-white text-2xl font-bold mt-5 ">
           <div className="flex flex-col justify-center items-center h-full ">
             <Image className="w-10/12 " src={left} alt="left" />
-            <p className="flex justify-center">Sustainability</p>
+            <p className="flex justify-center">Smart and Sustainable</p>
           </div>
           <div className="flex justify-center items-center flex-col  h-full">
             <Image className="w-10/12  " src={middle} alt="middle" />
-            <p className="flex justify-center ">Sustainability</p>
+            <p className="flex justify-center ">
+              Shaping the Minds of Tommorrow
+            </p>
           </div>
           <div className="flex justify-center items-center flex-col h-full ">
             <Image className="w-10/12  " src={right} alt="right" />
-            <p className="flex justify-center">Sustainability</p>
+            <p className="flex justify-center">All-Inclusive Design</p>
           </div>
         </div>
       </div>
