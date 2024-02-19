@@ -17,7 +17,11 @@ import Support from "../Supports";
 import Leads from "../Leads";
 import FAQ from "../FAQ";
 import Tracks from "../Tracks";
+
 import Schedule from "@/components/dynamic/Schedule";
+
+import Committees from "../Committees";
+import Sponsors from "../Sponsors";
 
 const Upcoming = () => {
   return (
@@ -99,7 +103,9 @@ const Upcoming = () => {
       <About />
       <Schedule />
       <Tracks />
+      <Sponsors />
       <Leads />
+      <Committees />
       <Support />
       <FAQ />
 

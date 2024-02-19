@@ -55,6 +55,6 @@ export const QUESTIONS = [
   },
   {
     question: "My question is not here.",
-    answer: "Feel free to email us at designatucr@gmail.com",
+    answer: "Feel free to email us at designverseucr@gmail.com",
   },
 ];
