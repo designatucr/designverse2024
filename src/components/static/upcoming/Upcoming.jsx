@@ -101,8 +101,8 @@ const Upcoming = () => {
 
       <Tracks />
       <Leads />
-      <Support />
       <Committees />
+      <Support />
       <FAQ />
 
       <Footer />
