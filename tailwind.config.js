@@ -72,8 +72,29 @@ module.exports = {
         wiggle1: "wiggle1 5s ease-in-out infinite",
         wiggle2: "wiggle2 5s ease-in-out infinite",
         wiggle3: "wiggle3 12.5s ease-in-out infinite",
+        marquee: "marquee 30s linear infinite",
+        "reverse-marquee": "reverse-marquee 30s linear infinite",
+        "marquee-continuation": "marquee-continuation 30s linear infinite",
+        "reverse-marquee-continuation":
+          "reverse-marquee-continuation 30s linear infinite",
       },
       keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        "marquee-continuation": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        "reverse-marquee": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        "reverse-marquee-continuation": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
         wiggle1: {
           "0% 100%": {
             translate: "25px",
