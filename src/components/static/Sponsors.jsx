@@ -8,8 +8,11 @@ import Lilly1 from "@/public/svgs/sponsors/lillypad1.svg";
 import Lilly2 from "@/public/svgs/sponsors/lillypad2.svg";
 const Sponsors = () => {
   return (
-    <div className="bg-[#4AB9A4] flex flex-col justify-between mb-20 relative">
-      <Image src={top} className="bg-design-green-100" />
+    <div
+      id="sponsor"
+      className="bg-[#4AB9A4] flex flex-col justify-between mb-20 relative"
+    >
+      <Image src={top} className="bg-design-green-100" alt="top" />
       <div className="flex justify-center items-center flex-col w-full">
         <div className="text-3xl md:text-5xl font-bold text-white mt-8">
           SPONSORSHIPS
@@ -58,28 +61,31 @@ const Sponsors = () => {
     </div> */}
       <div className="my-10">
         {SPONSORS.map((row, rowIndex) => (
-          <div key={rowIndex} className="relative flex overflow-hidden my-2">
+          <div
+            key={rowIndex}
+            className="relative flex overflow-x-hidden w-screen justify-evenly my-2"
+          >
             <div
               className={`flex ${
-                rowIndex === 1 ? "animate-reverse-marquee" : "animate-marquee"
-              }`}
+                rowIndex === 1 ? "animate-marquee-reverse" : "animate-marquee"
+              } flex justify-evenly w-full`}
             >
               {row.map((image, index) => (
-                <div key={index} className="flex-grow items-stretch lg:mx-4">
-                  <Image src={image} alt="carousel" className="w-10/12" />
+                <div key={index}>
+                  <Image src={image} alt="carousel" className="w-full" />
                 </div>
               ))}
             </div>
             <div
               className={`flex absolute ${
                 rowIndex === 1
-                  ? "animate-reverse-marquee-continuation"
+                  ? "animate-marquee-continuation-reverse"
                   : "animate-marquee-continuation"
-              }`}
+              } flex justify-between w-full absolute h-full`}
             >
               {row.map((image, index) => (
-                <div key={index} className="flex-grow items-stretch lg:mx-4">
-                  <Image src={image} alt="carousel" className="w-10/12" />
+                <div key={index}>
+                  <Image src={image} alt="carousel" className="w-full" />
                 </div>
               ))}
             </div>

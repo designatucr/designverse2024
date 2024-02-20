@@ -11,8 +11,8 @@ import leadBear from "../../../public/svgs/team/leadBear.svg";
 
 function Leads() {
   return (
-    <div className="bg-design-green-100 relative">
-      <div className=" bg-design-green-100 md:h-2/6 flex flex-col items-center w-10/12 mx-auto">
+    <section id="team" className="bg-design-green-100 relative">
+      <div className="h-1/6 bg-design-green-100 md:h-2/6 flex flex-col items-center w-10/12 mx-auto">
         <div className="text-white flex-col font-workSans flex w-full h-2/6">
           <p className="text-center justify-center md:justify-start md:items-start font-bold text-3xl md:text-5xl lg:text-5xl mb-0">
             MEET THE TEAM
@@ -76,7 +76,7 @@ function Leads() {
         className="absolute hidden md:block right-0 bottom-0 w-4/12 md:w-2/12"
         alt="leadBear"
       />
-    </div>
+    </section>
   );
 }
 

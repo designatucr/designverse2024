@@ -5,7 +5,7 @@ import notion from "@/public/svgs/sponsors/notion.svg";
 import ucr from "@/public/svgs/sponsors/ucr.svg";
 
 export const SPONSORS = [
-  [avgpc, design, ucr],
-  [redbull, notion, ucr],
-  [design, notion, redbull],
+  [avgpc, design, ucr, redbull, notion],
+  [redbull, notion, ucr, design, avgpc],
+  [design, notion, redbull, avgpc, ucr],
 ];
