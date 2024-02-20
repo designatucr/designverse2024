@@ -21,8 +21,8 @@ import Tracks from "../Tracks";
 
 const Upcoming = () => {
   return (
-    <div
-      id="home"
+    <section
+      // id="home"
       className="w-full h-screen overflow-x-hidden relative font-workSans"
     >
       <Navigation />
@@ -109,7 +109,7 @@ const Upcoming = () => {
       <FAQ />
 
       <Footer />
-    </div>
+    </section>
   );
 };
 

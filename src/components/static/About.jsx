@@ -3,7 +3,7 @@ import leaves from "../../../public/svgs/landing/mushroomWithLeaves.svg";
 
 const About = () => {
   return (
-    <div
+    <section
       id="about"
       className="h-4/6 bg-design-blue-200 md:h-5/6 relative flex w-full md:pt-20 justify-center"
     >
@@ -35,7 +35,7 @@ const About = () => {
       <div className="flex justify-end items-end ml-32">
         <Image src={leaves} className="w-11/12 hidden md:block " />
       </div>
-    </div>
+    </section>
   );
 };
 

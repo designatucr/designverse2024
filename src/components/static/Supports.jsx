@@ -3,7 +3,7 @@ import Image from "next/image";
 import Support from "./Support";
 const Supports = () => {
   return (
-    <div
+    <section
       id="support"
       className="justify-center items-center flex flex-col w-full relative"
     >
@@ -42,17 +42,12 @@ const Supports = () => {
             RESOURCES
           </div>
         </div>
-
-        {/* </div> */}
-        {/* </div> */}
       </div>
-
-      {/* </div> */}
 
       <div className="w-full bg-design-green-100">
         <Image src={river} />
       </div>
-    </div>
+    </section>
   );
 };
 

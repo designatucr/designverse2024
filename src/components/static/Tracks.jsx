@@ -5,7 +5,7 @@ import Image from "next/image";
 import top from "../../../public/svgs/tracks/track.svg";
 const Track = () => {
   return (
-    <div
+    <section
       id="tracks"
       className="bg-design-green-100 flex flex-col justify-between"
     >
@@ -27,7 +27,7 @@ const Track = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
