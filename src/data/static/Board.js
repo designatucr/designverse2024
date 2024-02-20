@@ -1,18 +1,18 @@
-import Rania from "../../../public/svgs/board/rania.jpg";
-import Tiana from "../../../public/svgs/board/tiana.jpg";
-import Josalyn from "../../../public/svgs/board/josalyn.jpg";
-import Betty from "../../../public/svgs/board/betty.jpg";
-import Divyank from "../../../public/svgs/board/divyank.jpg";
-import Raidah from "../../../public/svgs/board/raidah.jpg";
-import Menthy from "../../../public/svgs/board/menthy.jpg";
-import Ashley from "../../../public/svgs/board/ashley.jpg";
-import Stephanie from "../../../public/svgs/board/stephanie.jpg";
-import Natalie from "../../../public/svgs/board/natalie.jpg";
-import Reanna from "../../../public/svgs/board/reanna.jpg";
-import Sarah from "../../../public/svgs/board/sarah.jpg";
-import Falak from "../../../public/svgs/board/falak.jpg";
-import Anjali from "../../../public/svgs/board/anjali.jpg";
-import Ashna from "../../../public/svgs/board/ashna.jpg";
+import Rania from "../../../public/svgs/board/rania.webp";
+import Tiana from "../../../public/svgs/board/tiana.webp";
+import Josalyn from "../../../public/svgs/board/josalyn.webp";
+import Betty from "../../../public/svgs/board/betty.webp";
+import Divyank from "../../../public/svgs/board/divyank.webp";
+import Raidah from "../../../public/svgs/board/raidah.webp";
+import Menthy from "../../../public/svgs/board/menthy.webp";
+import Ashley from "../../../public/svgs/board/ashley.webp";
+import Stephanie from "../../../public/svgs/board/stephanie.webp";
+import Natalie from "../../../public/svgs/board/natalie.webp";
+import Reanna from "../../../public/svgs/board/reanna.webp";
+import Sarah from "../../../public/svgs/board/sarah.webp";
+import Falak from "../../../public/svgs/board/falak.webp";
+import Anjali from "../../../public/svgs/board/anjali.webp";
+import Ashna from "../../../public/svgs/board/ashna.webp";
 
 export const BOARD = [
   [
