@@ -8,7 +8,10 @@ import Lilly1 from "@/public/svgs/sponsors/lillypad1.svg";
 import Lilly2 from "@/public/svgs/sponsors/lillypad2.svg";
 const Sponsors = () => {
   return (
-    <div className="bg-[#4AB9A4] flex flex-col justify-between mb-20 relative">
+    <div
+      id="sponsor"
+      className="bg-[#4AB9A4] flex flex-col justify-between mb-20 relative"
+    >
       <Image src={top} className="bg-design-green-100" alt="top" />
       <div className="flex justify-center items-center flex-col w-full">
         <div className="text-3xl md:text-5xl font-bold text-white mt-8">
