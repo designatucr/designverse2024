@@ -1,15 +1,7 @@
 import Image from "next/image";
 import top from "../../../public/svgs/tracks/track.svg";
 import TrackCards from "./TrackCards";
-// import TrackCards from "./TrackCards";
-// import track1front from "../../../public/svgs/tracks/track1Front.svg";
-// import track2front from "../../../public/svgs/tracks/track2Front.svg";
-// import track3front from "../../../public/svgs/tracks/track3Front.svg";
-// import track4front from "../../../public/svgs/tracks/track4Front.svg";
-// import track1Back from "../../../public/svgs/tracks/track1Back.svg";
-// import track2Back from "../../../public/svgs/tracks/track2Back.svg";
-// import track3Back from "../../../public/svgs/tracks/track3Back.svg";
-// import track4Back from "../../../public/svgs/tracks/track4Back.svg";
+
 const Track = () => {
   return (
     <div className="bg-design-green-100 flex flex-col justify-between mb-20">

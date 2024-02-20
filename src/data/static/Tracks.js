@@ -1,11 +1,11 @@
-import track1 from "../../../public/svgs/tracks/track1Front.svg";
-import track2 from "../../../public/svgs/tracks/track2Front.svg";
-import track3 from "../../../public/svgs/tracks/track3Front.svg";
-import track4 from "../../../public/svgs/tracks/track4Front.svg";
-import track1Back from "../../../public/svgs/tracks/track1Back.svg";
-import track2Back from "../../../public/svgs/tracks/track2Back.svg";
-import track3Back from "../../../public/svgs/tracks/track3Back.svg";
-import track4Back from "../../../public/svgs/tracks/track4Back.svg";
+import track1 from "@/public/svgs/tracks/track2Front.svg";
+import track2 from "@/public/svgs/tracks/track2Front.svg";
+import track3 from "@/public/svgs/tracks/track3Front.svg";
+import track4 from "@/public/svgs/tracks/track4Front.svg";
+import track1Back from "@/public/svgs/tracks/track1Back.svg";
+import track2Back from "@/public/svgs/tracks/track2Back.svg";
+import track3Back from "@/public/svgs/tracks/track3Back.svg";
+import track4Back from "@/public/svgs/tracks/track4Back.svg";
 
 export const TRACKS = [
   {
