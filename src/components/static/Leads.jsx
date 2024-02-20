@@ -33,7 +33,7 @@ function Leads() {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center text-white w-full  ">
+        <div className="flex flex-wrap items-center justify-center">
           {BOARD[0].map((item, index) => (
             <Profile
               key={index}
@@ -43,7 +43,7 @@ function Leads() {
             />
           ))}
         </div>
-        <div className="flex flex-wrap items-center justify-center text-white w-full">
+        <div className="flex flex-wrap items-center justify-center">
           {BOARD[1].map((item, index) => (
             <Profile
               key={index}

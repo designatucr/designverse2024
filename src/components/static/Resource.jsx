@@ -4,7 +4,11 @@ import Image from "next/image";
 const Resource = ({ title, description, image }) => {
   return (
     <div className=" flex flex-col items-center justify-center  text-white font-workSans ">
-      <Image src={image} className="w-2/5 lg:w-1/2" />
+      <Image
+        src={image}
+        className="w-2/5 lg:w-1/2 rounded-full"
+        alt="Resource"
+      />
       <div className="text-center text-design-brown-400 text-sm md:text-3xl font-bold whitespace-nowrap lg:my-3">
         {title}
       </div>

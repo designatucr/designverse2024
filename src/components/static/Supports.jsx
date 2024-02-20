@@ -2,9 +2,9 @@ import river from "@/public/svgs/river.svg";
 import Image from "next/image";
 import Support from "./Support";
 import Resource from "./Resource";
-import resource1 from "@/public/svgs/support/resource1.svg";
-import resource2 from "@/public/svgs/support/resource2.svg";
-import resource3 from "@/public/svgs/support/resource3.svg";
+import resource1 from "@/public/svgs/support/figma.png";
+import resource2 from "@/public/svgs/support/dribble.jpeg";
+import resource3 from "@/public/svgs/support/miro.png";
 const Supports = () => {
   return (
     <div className="justify-center items-center flex flex-col w-full relative">
@@ -73,8 +73,8 @@ const Supports = () => {
 
       {/* </div> */}
 
-      <div className="w-full bg-design-green-100">
-        <Image src={river} />
+      <div className="w-screen bg-design-green-100">
+        <Image src={river} alt="river" />
       </div>
     </div>
   );

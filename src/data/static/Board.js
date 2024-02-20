@@ -1,18 +1,18 @@
-import Rania from "../../../public/svgs/board/Rania.svg";
-import Tiana from "../../../public/svgs/board/Tiana.svg";
-import Josalyn from "../../../public/svgs/board/Josalyn.svg";
-import Betty from "../../../public/svgs/board/Betty.svg";
-import Divyank from "../../../public/svgs/board/Divyank.svg";
-import Raidah from "../../../public/svgs/board/Raidah.svg";
-import Menthy from "../../../public/svgs/board/Menthy.svg";
-import Ashley from "../../../public/svgs/board/Ashley.svg";
-import Stephanie from "../../../public/svgs/board/Stephanie.svg";
-import Natalie from "../../../public/svgs/board/Natalie.svg";
-import Reanna from "../../../public/svgs/board/Reanna.svg";
-import Sarah from "../../../public/svgs/board/Sarah.svg";
-import Falak from "../../../public/svgs/board/Falak.svg";
-import Anjali from "../../../public/svgs/board/Anjali.svg";
-import Ashna from "../../../public/svgs/board/Ashna.svg";
+import Rania from "../../../public/svgs/board/rania.webp";
+import Tiana from "../../../public/svgs/board/tiana.webp";
+import Josalyn from "../../../public/svgs/board/josalyn.webp";
+import Betty from "../../../public/svgs/board/betty.webp";
+import Divyank from "../../../public/svgs/board/divyank.webp";
+import Raidah from "../../../public/svgs/board/raidah.webp";
+import Menthy from "../../../public/svgs/board/menthy.webp";
+import Ashley from "../../../public/svgs/board/ashley.webp";
+import Stephanie from "../../../public/svgs/board/stephanie.webp";
+import Natalie from "../../../public/svgs/board/natalie.webp";
+import Reanna from "../../../public/svgs/board/reanna.webp";
+import Sarah from "../../../public/svgs/board/sarah.webp";
+import Falak from "../../../public/svgs/board/falak.webp";
+import Anjali from "../../../public/svgs/board/anjali.webp";
+import Ashna from "../../../public/svgs/board/ashna.webp";
 
 export const BOARD = [
   [
@@ -37,21 +37,6 @@ export const BOARD = [
       name: "Betty Hoang",
       position: "UI/UX",
       pic: Betty,
-    },
-    {
-      name: "Divyank Shah",
-      position: "Software Engineering",
-      pic: Divyank,
-    },
-    {
-      name: "Raidah Fairooz",
-      position: "Software Engineering",
-      pic: Raidah,
-    },
-    {
-      name: "Menthy Wu",
-      position: "Software Engineering",
-      pic: Menthy,
     },
     {
       name: "Ashley Tsai",
@@ -87,6 +72,21 @@ export const BOARD = [
       name: "Anjali Vaddepaty",
       position: "Public Relations",
       pic: Anjali,
+    },
+    {
+      name: "Raidah Fairooz",
+      position: "Software Engineering",
+      pic: Raidah,
+    },
+    {
+      name: "Menthy Wu",
+      position: "Software Engineering",
+      pic: Menthy,
+    },
+    {
+      name: "Divyank Shah",
+      position: "Software Engineering",
+      pic: Divyank,
     },
     {
       name: "Ashna Pradhan",

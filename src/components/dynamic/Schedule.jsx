@@ -30,18 +30,18 @@ const Schedule = () => {
   // const randomXPositions = [10, 16, 20, 28, 36, 44, 52, 60, 72, 90];
   // const randomXPositions2 = [10, 14, 24, 32, 40, 48, 56, 64, 80];
   return (
-    <div className="bg-design-blue-200 pt-10 py-4 flex justify-center items-center lg:py-10">
+    <div className="bg-design-blue-200 pt-10 py-10 flex justify-center items-center">
       <div className="w-9/12 flex  text-white font-workSans justify-center items-center">
         <div className="w-full text-center z-1 flex flex-col">
-          <p className="text-3xl lg:text-5xl font-bold inline-block">
+          <div className="text-3xl lg:text-5xl font-bold inline-block">
             SCHEDULE
-          </p>
-          <p className="text-xl lg:text-2xl font-semibold inline-block">
-            Coming Soon
-          </p>
-          <p className="text-xl lg:text-2xl font-semibold inline-block">
+          </div>
+          <div className="text-xl lg:text-2xl font-semibold inline-block mt-4 mb-2">
+            Coming Soon . . .
+          </div>
+          <div className="text-xl lg:text-2xl font-semibold inline-block">
             Check Back Spring 2024!
-          </p>
+          </div>
           {/* <p className="text-sm md:text-base font-light">
             Pacific Standard Time (PST)
           </p>
