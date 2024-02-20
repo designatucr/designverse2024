@@ -7,7 +7,10 @@ import resource2 from "@/public/svgs/support/dribble.jpeg";
 import resource3 from "@/public/svgs/support/miro.png";
 const Supports = () => {
   return (
-    <div className="justify-center items-center flex flex-col w-full relative">
+    <div
+      id="support"
+      className="justify-center items-center flex flex-col w-full relative"
+    >
       <div className="bg-transparent flex w-10/12 lg:w-9/12 absolute top-8 lg:top-52 left-0 lg:left-20 font-workSans flex-col">
         <div className="flex  font-bold text-2xl lg:text-5xl text-white lg:mb-8">
           SUPPORT US
@@ -57,7 +60,7 @@ const Supports = () => {
           </div>
           <div>
             <Resource
-              title="Micro"
+              title="Mico"
               description="A tool to do this and that and whatever you want, example example example, very useful."
               image={resource3}
             />
