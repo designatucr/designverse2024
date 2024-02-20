@@ -37,7 +37,7 @@ const Form = ({
       </div>
       <div className="text-black font-extrabold text-2xl md:text-4xl mt-5">
         <Link href="/">
-          <Image className="w-auto h-auto py-4 px-3" src={Logo} alt="Logo" />
+          <Image className="w-auto h-auto py-4 px-3" src={Logo} />
         </Link>
         <div className="flex justify-center">DESIGN VERSE</div>
         <div className="flex justify-center text-xl md:text-2xl ">2024</div>

@@ -13,14 +13,12 @@ import TrackCards from "./TrackCards";
 const Track = () => {
   return (
     <div className="bg-design-green-100 flex flex-col justify-between mb-20">
-      <Image src={top} className="bg-design-blue-200" alt="top" />
+      <Image src={top} className="bg-design-blue-200" />
       <div className="flex justify-center items-center flex-col w-full">
         <div className="text-3xl lg:text-5xl font-bold text-white lg:mb-10">
           TRACKS
         </div>
-        <div className=" flex justify-center items-center w-full">
-          <TrackCards />
-        </div>
+        <TrackCards />
       </div>
     </div>
   );
