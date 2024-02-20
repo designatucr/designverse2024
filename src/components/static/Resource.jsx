@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const Resource = ({ title, description, image }) => {
   return (
-    <div className=" flex flex-col items-center justify-center  text-white font-workSans ">
+    <section
+      id="resources"
+      className=" flex flex-col items-center justify-center  text-white font-workSans "
+    >
       <Image
         src={image}
         className="w-2/5 lg:w-1/2 rounded-full"
@@ -15,7 +18,7 @@ const Resource = ({ title, description, image }) => {
       <div className="text-center text-design-brown-400 leading-3 text-[10px] lg:text-lg lg:mb-4">
         {description}
       </div>
-    </div>
+    </section>
   );
 };
 

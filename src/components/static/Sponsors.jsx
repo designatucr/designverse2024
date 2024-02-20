@@ -66,7 +66,7 @@ const Sponsors = () => {
             >
               {row.map((image, index) => (
                 <div key={index} className="flex-grow items-stretch lg:mx-4">
-                  <Image src={image} alt="carousel" className="w-10/12" />
+                  <Image src={image} alt="carousel" className="w-full" />
                 </div>
               ))}
             </div>
@@ -79,7 +79,7 @@ const Sponsors = () => {
             >
               {row.map((image, index) => (
                 <div key={index} className="flex-grow items-stretch lg:mx-4">
-                  <Image src={image} alt="carousel" className="w-10/12" />
+                  <Image src={image} alt="carousel" className="w-full" />
                 </div>
               ))}
             </div>

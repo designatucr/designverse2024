@@ -1,4 +1,7 @@
 // "use client";
+
+// DO NOT REMOVE COMMENTED CODE IN THIS FILE
+
 // import { useState, useEffect } from "react";
 // import MockSchedule from "@/data/MockSchedule";
 import Image from "next/image";
@@ -30,7 +33,10 @@ const Schedule = () => {
   // const randomXPositions = [10, 16, 20, 28, 36, 44, 52, 60, 72, 90];
   // const randomXPositions2 = [10, 14, 24, 32, 40, 48, 56, 64, 80];
   return (
-    <div className="bg-design-blue-200 pt-10 py-10 flex justify-center items-center">
+    <div
+      id="schedule"
+      className="bg-design-blue-200 pt-10 py-10 flex justify-center items-center"
+    >
       <div className="w-9/12 flex  text-white font-workSans justify-center items-center">
         <div className="w-full text-center z-1 flex flex-col">
           <div className="text-3xl lg:text-5xl font-bold inline-block">
