@@ -12,7 +12,7 @@ import TrackCards from "./TrackCards";
 // import track4Back from "../../../public/svgs/tracks/track4Back.svg";
 const Track = () => {
   return (
-    <div
+    <section
       id="tracks"
       className="bg-design-green-100 flex flex-col justify-between mb-20"
     >
@@ -25,7 +25,7 @@ const Track = () => {
           <TrackCards />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

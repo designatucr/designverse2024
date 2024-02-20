@@ -7,7 +7,7 @@ import resource2 from "@/public/svgs/support/dribble.jpeg";
 import resource3 from "@/public/svgs/support/miro.png";
 const Supports = () => {
   return (
-    <div
+    <section
       id="support"
       className="justify-center items-center flex flex-col w-full relative"
     >
@@ -41,9 +41,6 @@ const Supports = () => {
             />
           </div>
         </div>
-
-        {/* </div> */}
-        {/* </div> */}
       </div>
       <div className=" flex absolute  right-0 lg:right-10 w-9/12 lg:w-8/12 justify-end items-end bottom-32 lg:bottom-96 font-workSans flex-col ">
         <div className="flex font-bold text-2xl lg:text-5xl text-white lg:mb-8 justify-end items-end">
@@ -79,7 +76,7 @@ const Supports = () => {
       <div className="w-screen bg-design-green-100">
         <Image src={river} />
       </div>
-    </div>
+    </section>
   );
 };
 
