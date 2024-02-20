@@ -87,7 +87,7 @@ const Sponsors = () => {
         ))}
       </div>
 
-      <Image src={bottom} className="bg-design-blue-200" />
+      <Image src={bottom} className="bg-design-blue-200" alt="bottom" />
     </div>
   );
 };
