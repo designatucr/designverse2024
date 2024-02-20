@@ -74,7 +74,7 @@ const Supports = () => {
       {/* </div> */}
 
       <div className="w-screen bg-design-green-100">
-        <Image src={river} />
+        <Image src={river} alt="river" />
       </div>
     </div>
   );
