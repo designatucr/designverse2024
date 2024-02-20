@@ -9,7 +9,7 @@ import Lilly2 from "@/public/svgs/sponsors/lillypad2.svg";
 const Sponsors = () => {
   return (
     <div className="bg-[#4AB9A4] flex flex-col justify-between mb-20 relative">
-      <Image src={top} className="bg-design-green-100" alt="top" />
+      <Image src={top} className="bg-design-green-100" />
       <div className="flex justify-center items-center flex-col w-full">
         <div className="text-3xl md:text-5xl font-bold text-white mt-8">
           SPONSORSHIPS
@@ -87,7 +87,7 @@ const Sponsors = () => {
         ))}
       </div>
 
-      <Image src={bottom} className="bg-design-blue-200" alt="bottom" />
+      <Image src={bottom} className="bg-design-blue-200" />
     </div>
   );
 };
