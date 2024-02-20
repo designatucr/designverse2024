@@ -36,12 +36,14 @@ const Upcoming = () => {
           <Image
             className="flex absolute w-7/12 -ml-24 md:-ml-8 md:w-[28%] 2xl:w-1/4 md:z-20"
             src={Mushrooms2}
+            alt="Mushrooms2"
           />
         </div>
         <div className="absolute w-full flex flex-col justify-start items-center md:justify-start md:items-center mt-14">
           <Image
             className="absolute flex w-6/12 sm:w-3/12 md:w-3/12 lg:w-3/12 2xl:w-2/12 z-20"
             src={Logo}
+            alt="Logo"
           />
           <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-design-green-400/70 mt-16 md:mt-24 2xl:mt-32 flex-col z-10">
             <div className="flex text-white text-base md:text-2xl font-medium whitespace-normal mt-8 sm:mt-16 md:mt-20 ">
@@ -68,27 +70,35 @@ const Upcoming = () => {
           <Image
             className="hidden absolute md:block w-[27%] 2xl:w-3/12"
             src={Animals}
+            alt="Animals"
           />
         </div>
       </div>
-      <Image className="bg-design-green-300 w-full border-0" src={Waterline} />
+      <Image
+        className="bg-design-green-300 w-full border-0"
+        src={Waterline}
+        alt="Waterline"
+      />
       <div className=" h-[32%] flex w-full bg-design-blue-200 relative">
         <div className="w-4/12 md:w-1/6 2xl:w-2/12 justify-start absolute">
           <Image
             className="md:w-full -mt-2 md:-mt-10 md:ml-0 ml-16 2xl:-mt-32 animate-wiggle3"
             src={OnlyFrog}
+            alt="OnlyFrog"
           />
         </div>
         <div className="w-11/12 md:w-4/12 2xl:w-3/12 absolute bottom-2 2xl:bottom-20">
           <Image
             className="w-full ml-40 md:ml-80 2xl:ml-96 p-24 animate-wiggle2"
             src={Lillypad}
+            alt="Lillypad"
           />
         </div>
         <div className="md:w-1/4 2xl:w-2/12 absolute -bottom-2 2xl:bottom-4">
           <Image
             className="hidden md:block w-full ml-60 2xl:ml-96 p-24 animate-wiggle2"
             src={Lotus}
+            alt="Lotus"
           />
         </div>
 
@@ -102,6 +112,7 @@ const Upcoming = () => {
           <Image
             className="hidden md:block w-full p-24 ml-32 animate-wiggle2"
             src={LillypadwithLotus}
+            alt="LillypadwithLotus"
           />
         </div>
       </div>

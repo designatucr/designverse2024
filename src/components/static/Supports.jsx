@@ -67,6 +67,7 @@ const Supports = () => {
           </div>
         </div>
       </div>
+
       <Image
         src={river}
         className="w-screen"
