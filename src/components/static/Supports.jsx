@@ -7,14 +7,8 @@ import resource2 from "@/public/svgs/support/dribble.jpeg";
 import resource3 from "@/public/svgs/support/miro.png";
 const Supports = () => {
   return (
-    <section
-      id="support"
-      className="justify-center items-center flex flex-col w-full relative"
-    >
-      {/* <div className="w-10/12"> */}
+    <div className="justify-center items-center flex flex-col w-full relative">
       <div className="bg-transparent flex w-10/12 lg:w-9/12 absolute top-8 lg:top-52 left-0 lg:left-20 font-workSans flex-col">
-        {/* <div className="font-workSans flex justify-center items-center"> */}
-        {/* <div className="w-11/12"> */}
         <div className="flex  font-bold text-2xl lg:text-5xl text-white lg:mb-8">
           SUPPORT US
         </div>
@@ -70,13 +64,12 @@ const Supports = () => {
           </div>
         </div>
       </div>
-
-      {/* </div> */}
-
-      <div className="w-screen bg-design-green-100">
-        <Image src={river} />
-      </div>
-    </section>
+      <Image
+        src={river}
+        className="w-screen"
+        alt="River for Support and Resources"
+      />
+    </div>
   );
 };
 
