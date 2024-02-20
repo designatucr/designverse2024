@@ -50,21 +50,21 @@ const Supports = () => {
           <div>
             <Resource
               title="Figma"
-              description="A tool to do this and that and whatever you want, example example example, very useful."
+              description="A tool to design and prototype user interface."
               image={resource1}
             />
           </div>
           <div>
             <Resource
               title="Dribble"
-              description="A tool to do this and that and whatever you want, example example example, very useful."
+              description="An online platform for designers to find and share inspirations!"
               image={resource2}
             />
           </div>
           <div>
             <Resource
-              title="Micro"
-              description="A tool to do this and that and whatever you want, example example example, very useful."
+              title="Miro"
+              description="A remote collaboration tool to build large scale design projects."
               image={resource3}
             />
           </div>
