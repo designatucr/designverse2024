@@ -38,7 +38,7 @@ const Navigation = () => {
           } bg-design-green-200 p-2 ml-0 -mt-10 grid grid-col rounded-xl drop-shadow-lg `}
         >
           <button onClick={closeNavbar}>
-            <FaChevronLeft className="flex text-white text-xl items-center justify-start my-1 ml-1" />
+            <FaChevronLeft className=" text-white text-xl my-1 ml-1" />
           </button>
 
           {items.map((item, index) => (

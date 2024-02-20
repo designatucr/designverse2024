@@ -61,14 +61,17 @@ const Sponsors = () => {
     </div> */}
       <div className="my-10">
         {SPONSORS.map((row, rowIndex) => (
-          <div key={rowIndex} className="relative flex overflow-hidden my-2">
+          <div
+            key={rowIndex}
+            className="relative flex overflow-x-hidden w-screen justify-evenly my-2"
+          >
             <div
               className={`flex ${
-                rowIndex === 1 ? "animate-reverse-marquee" : "animate-marquee"
-              }`}
+                rowIndex === 1 ? "animate-marquee-reverse" : "animate-marquee"
+              } flex justify-evenly w-full`}
             >
               {row.map((image, index) => (
-                <div key={index} className="flex-grow items-stretch lg:mx-4">
+                <div key={index}>
                   <Image src={image} alt="carousel" className="w-full" />
                 </div>
               ))}
@@ -76,12 +79,12 @@ const Sponsors = () => {
             <div
               className={`flex absolute ${
                 rowIndex === 1
-                  ? "animate-reverse-marquee-continuation"
+                  ? "animate-marquee-continuation-reverse"
                   : "animate-marquee-continuation"
-              }`}
+              } flex justify-between w-full absolute h-full`}
             >
               {row.map((image, index) => (
-                <div key={index} className="flex-grow items-stretch lg:mx-4">
+                <div key={index}>
                   <Image src={image} alt="carousel" className="w-full" />
                 </div>
               ))}
