@@ -18,7 +18,9 @@ const Track = () => {
         <div className="text-3xl lg:text-5xl font-bold text-white lg:mb-10">
           TRACKS
         </div>
-        <TrackCards />
+        <div className=" flex justify-center items-center w-full">
+          <TrackCards />
+        </div>
       </div>
     </div>
   );
