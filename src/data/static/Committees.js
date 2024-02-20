@@ -10,7 +10,6 @@ export const COMMITTEES = {
     "Ricky Wen",
     "Fiona Nguyen",
   ],
-  "Public Relations": [],
   Operations: [],
   "Software Engineering": [
     "Jonathan Trujillo",
