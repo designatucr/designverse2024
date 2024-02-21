@@ -27,7 +27,7 @@ import Sponsors from "../Sponsors";
 const Upcoming = () => {
   return (
     <section
-      // id="home"
+      id="home"
       className="w-full h-screen overflow-x-hidden relative font-workSans"
     >
       <Navigation />
@@ -113,7 +113,6 @@ const Upcoming = () => {
       <Committees />
       <Support />
       <FAQ />
-
       <Footer />
     </section>
   );
