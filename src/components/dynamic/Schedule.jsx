@@ -39,15 +39,15 @@ const Schedule = () => {
     >
       <div className="w-9/12 flex  text-white font-workSans justify-center items-center">
         <div className="w-full text-center z-1 flex flex-col">
-          <p className="text-3xl lg:text-5xl font-bold inline-block">
+          <div className="text-3xl lg:text-5xl font-bold inline-block">
             SCHEDULE
-          </p>
-          <p className="text-xl lg:text-2xl font-semibold inline-block">
-            Coming Soon
-          </p>
-          <p className="text-xl lg:text-2xl font-semibold inline-block">
+          </div>
+          <div className="text-xl lg:text-2xl font-semibold inline-block mt-4 mb-2">
+            Coming Soon . . .
+          </div>
+          <div className="text-xl lg:text-2xl font-semibold inline-block">
             Check Back Spring 2024!
-          </p>
+          </div>
           {/* <p className="text-sm md:text-base font-light">
             Pacific Standard Time (PST)
           </p>
