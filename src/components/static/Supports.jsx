@@ -11,11 +11,11 @@ const Supports = () => {
       id="support"
       className="justify-center items-center flex flex-col w-full relative"
     >
-      <div className="bg-transparent flex w-10/12 lg:w-9/12 absolute top-8 lg:top-52 left-0 lg:left-20 font-workSans flex-col">
-        <div className="flex  font-bold text-2xl lg:text-5xl text-white lg:mb-8">
+      <div className="bg-transparent flex w-10/12 lg:w-9/12 absolute top-12 lg:top-52 left-0 lg:left-20 font-workSans flex-col">
+        <div className="flex  font-bold text-2xl lg:text-5xl text-white ">
           SUPPORT US
         </div>
-        <div className="grid grid-cols-3 gap-x-1 lg:gap-x-4">
+        <div className="grid grid-cols-3 gap-x-1 lg:gap-x-4 mt-3">
           <div>
             <Support
               title="Become a Mentor"
@@ -40,10 +40,10 @@ const Supports = () => {
         </div>
       </div>
       <div className=" flex absolute  right-0 lg:right-10 w-9/12 lg:w-8/12 justify-end items-end bottom-36 lg:bottom-[30rem] font-workSans flex-col ">
-        <div className="flex font-bold text-2xl lg:text-5xl text-white lg:mb-8 justify-end items-end">
+        <div className="flex font-bold text-2xl lg:text-5xl text-white justify-end items-end">
           RESOURCES
         </div>
-        <div className="grid grid-cols-3 justify-center gap-x-1 lg:gap-x-4 items-end ">
+        <div className="grid grid-cols-3 justify-center gap-x-1 lg:gap-x-4 items-end mt-3">
           <div>
             <Resource
               title="Figma"
