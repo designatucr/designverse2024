@@ -14,15 +14,15 @@ import Logo from "../../../../public/svgs/logos/BigLogo.svg";
 import Footer from "../Footer";
 import About from "../About";
 import Support from "../Supports";
-import Leads from "../Leads";
+// import Leads from "../Leads";
 import FAQ from "../FAQ";
-import Navigation from "../Navigation";
-import Tracks from "../Tracks";
+// import Navigation from "../Navigation";
+// import Tracks from "../Tracks";
 
 import Schedule from "@/components/dynamic/Schedule";
 
-import Committees from "../Committees";
-import Sponsors from "../Sponsors";
+// import Committees from "../Committees";
+// import Sponsors from "../Sponsors";
 
 const Upcoming = () => {
   return (
@@ -30,7 +30,7 @@ const Upcoming = () => {
       // id="home"
       className="w-full h-screen overflow-x-hidden relative font-workSans"
     >
-      <Navigation />
+      {/* <Navigation /> */}
       <div className="flex h-[68%] justify-between bg-gradient-to-b from-design-green-100 via-design-green-100 to-design-green-300">
         <div className="flex md:-mb-12 -mb-8 items-end md:items-end">
           <Image
@@ -118,10 +118,10 @@ const Upcoming = () => {
       </div>
       <About />
       <Schedule />
-      <Tracks />
-      <Sponsors />
-      <Leads />
-      <Committees />
+      {/* <Tracks />
+      <Sponsors /> */}
+      {/* <Leads /> */}
+      {/* <Committees /> */}
       <Support />
       <FAQ />
 

@@ -39,7 +39,7 @@ const Supports = () => {
           </div>
         </div>
       </div>
-      <div className=" flex absolute  right-0 lg:right-10 w-9/12 lg:w-8/12 justify-end items-end bottom-32 lg:bottom-96 font-workSans flex-col ">
+      <div className=" flex absolute  right-0 lg:right-10 w-9/12 lg:w-8/12 justify-end items-end bottom-36 lg:bottom-[30rem] font-workSans flex-col ">
         <div className="flex font-bold text-2xl lg:text-5xl text-white lg:mb-8 justify-end items-end">
           RESOURCES
         </div>
@@ -47,21 +47,21 @@ const Supports = () => {
           <div>
             <Resource
               title="Figma"
-              description="A tool to do this and that and whatever you want, example example example, very useful."
+              description="A tool for designing and building prototypes for user interfaces."
               image={resource1}
             />
           </div>
           <div>
             <Resource
               title="Dribble"
-              description="A tool to do this and that and whatever you want, example example example, very useful."
+              description="An online platform for designers to find and share inspirations!"
               image={resource2}
             />
           </div>
           <div>
             <Resource
               title="Mico"
-              description="A tool to do this and that and whatever you want, example example example, very useful."
+              description="A remote collaboration tool to build large scale design projects."
               image={resource3}
             />
           </div>
