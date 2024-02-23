@@ -14,10 +14,11 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      `Welcome to ${METADATA.name}. Thank you for considering to become a judge, we appreciate your efforts to help support ${METADATA.name}. ${METADATA.name} is a ${METADATA.description} hackathon spanning ${METADATA.length} on ${METADATA.date}.`,
+      `Welcome to ${METADATA.name}. Thank you for being on the organizing team, we appreciate your efforts to help support ${METADATA.name}.`,
+      `${METADATA.name} is ${METADATA.description} On ${METADATA.date} over the course of ${METADATA.length}, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!`,
       "Judges are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
-      "Judge duties include but are not limited to visiting various teams to assess teams on their idea, technical complexities, and overall presentation after which they will decide the winners.",
-      "Note: Judges are not permitted to become participants for the hackathon.",
+      "Judge duties include but are not limited to visiting various teams to access teams on their idea, technical complexities and overall presentation after which they will decide the winners.",
+      "Note: Judges are not permitted to become participants for the designathon.",
     ],
   },
   name: {
@@ -103,12 +104,11 @@ export const FIELDS = {
     field: "requirements",
     required: true,
     options: [
-      "I have read the MLH code of conduct and agree to the terms and conditions listed",
+      "I have read the DesignVerse code of conduct and agree to the terms and conditions listed",
       "I consent to photographs being taken and being used for future marketing purposes",
-      "I consent to providing a safe space for hackers to learn and grow their interests in computing",
-      "I consent to following the provided guidelines and rules instructed by the organizing team",
-      "I understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event",
-      "I understand this is an in person event taking place in UCR and I must attend in person in order to judge",
+      "I consent to following the provided guidelines and rules instructed by the organizing team and understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event.",
+      "I understand that my attendance is required either virtually or in person",
+      "I understand that I must not uphold any biases or unfairness to participants",
     ],
   },
 };

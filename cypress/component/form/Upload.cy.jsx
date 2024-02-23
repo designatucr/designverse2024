@@ -22,7 +22,7 @@ describe("Forms Upload", () => {
     cy.mount(<Parent />);
 
     cy.contains("Upload Resume");
-    cy.get('[data-cy="upload"]').contains("Upload from my computer");
+    cy.get('[data-cy="upload"]').contains("Upload From My Computer");
     cy.get('[data-cy="upload-input"]')
       .find("input[type=file]")
       .selectFile("cypress/fixtures/files/" + file, { force: true });
@@ -49,7 +49,7 @@ describe("Forms Upload", () => {
     cy.mount(<Parent />);
 
     cy.contains("Upload Resume");
-    cy.get('[data-cy="upload"]').contains("Upload from my computer");
+    cy.get('[data-cy="upload"]').contains("Upload From My Computer");
     cy.get('[data-cy="upload-input"]')
       .find("input[type=file]")
       .selectFile("cypress/fixtures/files/" + file, { force: true });
@@ -78,7 +78,7 @@ describe("Forms Upload", () => {
     cy.mount(<Parent />);
 
     cy.contains("Upload Photo");
-    cy.get('[data-cy="upload"]').contains("Upload from my computer");
+    cy.get('[data-cy="upload"]').contains("Upload From My Computer");
     cy.get('[data-cy="upload-input"]')
       .find("input[type=file]")
       .selectFile("cypress/fixtures/files/" + file, { force: true });
@@ -105,7 +105,7 @@ describe("Forms Upload", () => {
     cy.mount(<Parent />);
 
     cy.contains("Upload Photo");
-    cy.get('[data-cy="upload"]').contains("Upload from my computer");
+    cy.get('[data-cy="upload"]').contains("Upload From My Computer");
     cy.get('[data-cy="upload-input"]')
       .find("input[type=file]")
       .selectFile("cypress/fixtures/files/" + file, { force: true });
@@ -134,7 +134,7 @@ describe("Forms Upload", () => {
     cy.mount(<Parent />);
 
     cy.contains("Upload Photo");
-    cy.get('[data-cy="upload"]').contains("Upload from my computer");
+    cy.get('[data-cy="upload"]').contains("Upload From My Computer");
     cy.get('[data-cy="upload-input"]')
       .find("input[type=file]")
       .selectFile("cypress/fixtures/files/" + file, { force: true });
@@ -161,7 +161,7 @@ describe("Forms Upload", () => {
     cy.mount(<Parent />);
 
     cy.contains("Upload Photo");
-    cy.get('[data-cy="upload"]').contains("Upload from my computer");
+    cy.get('[data-cy="upload"]').contains("Upload From My Computer");
     cy.get('[data-cy="upload-input"]')
       .find("input[type=file]")
       .selectFile("cypress/fixtures/files/" + file, { force: true });
@@ -190,7 +190,7 @@ describe("Forms Upload", () => {
     cy.mount(<Parent />);
 
     cy.contains("Upload Photo");
-    cy.get('[data-cy="upload"]').contains("Upload from my computer");
+    cy.get('[data-cy="upload"]').contains("Upload From My Computer");
     cy.get('[data-cy="upload-input"]')
       .find("input[type=file]")
       .selectFile("cypress/fixtures/files/" + file, { force: true });

@@ -8,7 +8,7 @@ export const FIELDS = {
     input: "description",
     width: 12,
     texts: [
-      `Hello! Thank you for your participation in ${CONFIG.name}. We hope you enjoyed and learned new things from this ${CONFIG.name}. Please fill out this anonymous feedback form below!`,
+      `Hello! Thank you for your participation in ${CONFIG.name}. We hope you enjoyed and learned new things from this designathon. Please fill out this anonymous feedback form below!`,
     ],
   },
   helpful: {
@@ -33,14 +33,15 @@ export const FIELDS = {
     input: "textarea",
     name: "notBenficial",
     rows: 4,
-    title: `Was there anything that you did not find beneficial about ${CONFIG.name}?`,
+    title:
+      "Was there anything that you did not find beneficial about the designathon?",
     placeholder: "N/A",
     width: 12,
     required: true,
   },
   rating: {
     input: "radio",
-    text: `Please rate ${CONFIG.name} on a scale of 1 - 10. 1 being the worst experience and 10 being the best experience`,
+    text: "Please rate the designathon on a scale of 1 - 10. 1 being the worst experience and 10 being the best experience",
     options: RATE,
     field: "rating",
     width: 12,
