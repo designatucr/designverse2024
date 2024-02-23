@@ -47,10 +47,6 @@ export const SOURCES = [
 ];
 
 export const AVAILABILITY = [
-  "Friday Morning",
-  "Friday Afternoon",
-  "Friday Evening",
-  "Friday Night",
   "Saturday Morning",
   "Saturday Afternoon",
   "Saturday Evening",

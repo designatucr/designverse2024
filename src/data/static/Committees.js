@@ -1,0 +1,27 @@
+export const COMMITTEES = {
+  Marketing: ["Priya Iyer"],
+  "UI/UX": [
+    "Randall Nguyen",
+    "Charleen Chen",
+    "Subah Awal",
+    "Ashna Pradhan",
+    "Angelia Tran",
+    "Allison Pham",
+    "Ricky Wen",
+    "Fiona Nguyen",
+  ],
+  Operations: [],
+  "Software Engineering": [
+    "Jonathan Trujillo",
+    "Fardin Zaman",
+    "Fuyuki Malahom",
+    "Rohan Buch",
+    "Sharan Singh",
+    "Theo Fernandez",
+    "Sean Quiambao",
+    "Val Wong",
+    "Garman Zhen",
+    "Byron Bhuiyan",
+  ],
+  Sponsorship: [],
+};

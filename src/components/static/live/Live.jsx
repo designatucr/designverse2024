@@ -1,5 +1,5 @@
 const Live = () => {
-  return <div>Live</div>;
+  return <div></div>;
 };
 
 export default Live;
