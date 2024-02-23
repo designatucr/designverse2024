@@ -4,6 +4,7 @@ import {
   BsBarChartFill,
   BsGlobe2,
   BsBoxArrowInRight,
+  BsPersonRaisedHand,
 } from "react-icons/bs";
 import { MdVolunteerActivism, MdFeedback } from "react-icons/md";
 import { BiSolidHelpCircle } from "react-icons/bi";
@@ -18,7 +19,7 @@ import {
 import { AiOutlineQrcode } from "react-icons/ai";
 import { signOut } from "next-auth/react";
 import { SiHandshake } from "react-icons/si";
-
+import { IoIosPeople } from "react-icons/io";
 const iconStyle = "mr-2";
 
 export const TABS = {
@@ -69,6 +70,11 @@ export const TABS = {
           icon: <GoSponsorTiers className={iconStyle} />,
         },
         {
+          name: "panels",
+          link: "/admin/panels",
+          icon: <IoIosPeople className={iconStyle} />,
+        },
+        {
           name: "interests",
           link: "/admin/interests",
           icon: <FaExclamation className={iconStyle} />,
@@ -77,6 +83,11 @@ export const TABS = {
           name: "feedback",
           link: "/admin/feedback",
           icon: <MdFeedback className={iconStyle} />,
+        },
+        {
+          name: "leads",
+          link: "/admin/leads",
+          icon: <BsPersonRaisedHand className={iconStyle} />,
         },
       ],
     },

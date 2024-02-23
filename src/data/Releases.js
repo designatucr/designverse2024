@@ -26,6 +26,7 @@ const DEV = {
     "/admin/admins": new Date("10/01/2023"),
     "/admin/committees": new Date("10/01/2023"),
     "/admin/sponsors": new Date("10/01/2023"),
+    "/admin/panels": new Date("10/01/2023"),
     "/admin/feedback": new Date("10/01/2023"),
     "/admin/calendar": new Date("10/01/2023"),
     "/admin/contacts": new Date("10/01/2023"),
@@ -40,6 +41,7 @@ const DEV = {
     "/form/admin": new Date("10/01/2023"),
     "/form/committee": new Date("10/01/2023"),
     "/form/sponsor": new Date("10/01/2023"),
+    "/form/panel": new Date("10/01/2023"),
     "/form/feedback": new Date("10/01/2023"),
     "/form/interest": new Date("10/01/2023"),
 
@@ -77,6 +79,7 @@ const PRODUCTION = {
     "/admin/admins": new Date("10/01/2023"),
     "/admin/committees": new Date("10/01/2023"),
     "/admin/sponsors": new Date("10/01/2023"),
+    "/admin/panels": new Date("10/01/2023"),
     "/admin/feedback": new Date("10/01/2023"),
     "/admin/calendar": new Date("10/01/2023"),
     "/admin/contacts": new Date("10/01/2023"),
@@ -91,6 +94,7 @@ const PRODUCTION = {
     "/form/admin": new Date("10/01/2023"),
     "/form/committee": new Date("10/01/2023"),
     "/form/sponsor": new Date("10/01/2023"),
+    "/form/panel": new Date("10/01/2023"),
     "/form/feedback": new Date("05/20/2024"),
     "/form/interest": new Date("10/01/2023"),
 
