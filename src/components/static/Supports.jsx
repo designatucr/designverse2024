@@ -2,9 +2,9 @@ import river from "@/public/svgs/river.svg";
 import Image from "next/image";
 import Support from "./Support";
 import Resource from "./Resource";
-import resource1 from "@/public/svgs/support/figma.png";
-import resource2 from "@/public/svgs/support/dribble.jpeg";
-import resource3 from "@/public/svgs/support/miro.png";
+import resource1 from "@/public/svgs/support/figma.webp";
+import resource2 from "@/public/svgs/support/dribble.webp";
+import resource3 from "@/public/svgs/support/miro.webp";
 const Supports = () => {
   return (
     <div
