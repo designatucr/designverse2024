@@ -37,7 +37,7 @@ jobs:
             git checkout -b sync-template origin/sync-template
             git merge template/dev
             git commit -m "Merge changes from $current_date"
-            git push origin sync-tamplate
+            git push origin sync-template
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
 
