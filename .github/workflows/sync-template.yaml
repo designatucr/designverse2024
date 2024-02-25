@@ -38,6 +38,7 @@ jobs:
             git merge template/dev
             git commit -m "Merge changes from $current_date"
             git push origin sync-template
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
 
