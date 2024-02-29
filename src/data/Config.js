@@ -1,26 +1,27 @@
 export const CONFIG = {
-  name: "Hackathon",
-  email: "contact.acmucr@gmail.com",
+  name: "DesignVerse",
+  email: "designatucr@gmail.com",
   year: "2024",
-  date: new Date("November 4, 2023 9:00:00"),
-  packet: "",
+  date: new Date("May 11, 2024 8:00:00"),
+  packet: "/files/DesignVerseSponsorshipPacket.pdf",
   devpost: "https://devpost.com/",
 };
 
 export const MANIFEST = {
-  name: "Hackathon Site",
-  short_name: "Hackathon Site",
-  description: "Hackathon Site",
+  name: "DesignVerse",
+  short_name: "DesignVerse",
+  description:
+    "DesignVerse is UCR’s UI/UX Design-a-Thon! Over the course of 24 hours, you’ll be able to challenge your problem solving skills, create innovative prototypes, and engage with a panel of industry experts!",
   start_url: "/",
 };
 
 export const METADATA = {
-  name: "HACKATHON_NAME",
-  description: "DESCRIPTION",
-  length: "HACKATHON_LENGTH",
-  date: "HACKATHON_DATE",
+  name: "DesignVerse",
+  description: "UCR’s first ever UI/UX Design-a-Thon!",
+  length: "24 hours",
+  date: "May 11, 2024",
 };
 
 export const SITEMAP = {
-  domain: "https://www.placeholder.com",
+  domain: "https://www.designverseucr.com",
 };
