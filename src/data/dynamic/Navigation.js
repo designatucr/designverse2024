@@ -16,10 +16,13 @@ import {
   FaCalendarDay,
   FaExclamation,
 } from "react-icons/fa";
+import { FaGear } from "react-icons/fa6";
 import { AiOutlineQrcode } from "react-icons/ai";
 import { signOut } from "next-auth/react";
-import { SiHandshake } from "react-icons/si";
+import { SiDevpost, SiHandshake } from "react-icons/si";
 import { IoIosPeople } from "react-icons/io";
+import { CONFIG } from "@/data/Config";
+
 const iconStyle = "mr-2";
 
 export const TABS = {
@@ -120,9 +123,19 @@ export const TABS = {
           link: "/admin/statistics",
           icon: <BsBarChartFill className={iconStyle} />,
         },
+        {
+          name: "settings",
+          link: "/admin/settings",
+          icon: <FaGear className={iconStyle} />,
+        },
       ],
     },
     " ": [
+      {
+        name: "devpost",
+        link: CONFIG.devpost,
+        icon: <SiDevpost className={iconStyle} />,
+      },
       {
         name: "website",
         link: "/",
@@ -158,6 +171,11 @@ export const TABS = {
       ],
     },
     " ": [
+      {
+        name: "devpost",
+        link: CONFIG.devpost,
+        icon: <SiDevpost className={iconStyle} />,
+      },
       {
         name: "website",
         link: "/",
