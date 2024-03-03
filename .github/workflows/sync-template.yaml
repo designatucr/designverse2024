@@ -27,7 +27,7 @@ jobs:
       - name: Checkout and push Template Dev Branch
         working-directory: ${{ github.repository }}
         run: |
-          branch_exists=$(git branch --list --remote | { grep -F "origin/sync-template || true; }")
+          branch_exists=$(git branch --list --remote | { grep -F "origin/sync-template" || true; } )
           if [ -z "$branch_exists" ]
           then
             git checkout -b sync-template template/dev
