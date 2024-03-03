@@ -4,6 +4,7 @@ export const CONFIG = {
   year: "2024",
   date: new Date("May 11, 2024 8:00:00"),
   packet: "/files/DesignVerseSponsorshipPacket.pdf",
+  devpost: "https://devpost.com/",
 };
 
 export const MANIFEST = {
