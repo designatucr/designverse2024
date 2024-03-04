@@ -2,7 +2,7 @@ name: Sync Changes from Template
 on:
   schedule:
     # Run at 6:00 AM every two days
-    - cron: "0 6 * * *"
+    - cron: "0 14 * * *"
 
 jobs:
   sync-from-template:
@@ -37,5 +37,6 @@ jobs:
             git checkout -b sync-template origin/sync-template
             git pull template dev
             git push
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
