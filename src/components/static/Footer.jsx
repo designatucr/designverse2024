@@ -7,9 +7,10 @@ import { FaHeart, FaLinkedinIn } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoIosMail } from "react-icons/io";
 import Link from "next/link";
+
 const Footer = () => {
   return (
-    <div className="flex justify-between bg-design-blue-300 text-white relative">
+    <div className="flex justify-between bg-newdesign-cyan-200 text-white relative">
       <Image
         src={mushroomsLeft}
         className="w-4/12 md:w-3/12 z-10"
