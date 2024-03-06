@@ -12,6 +12,24 @@ module.exports = {
         workSans: ["var(--font-work_sans)"],
       },
       colors: {
+        track: {
+          blue: "#20A4AC",
+          red: "#C87C6A",
+          green: "#639A4F",
+          yellow: "#E2A64A",
+        },
+        newdesign: {
+          "blue-100": "#ABD0DC",
+          "blue-200": "#78BFCE",
+          "blue-300": "#71ADC7",
+          "cyan-100": "#32BEC7",
+          "cyan-200": "#034444",
+          "green-100": "#336C18",
+          "green-200": "#294C19",
+          "red-100": "#E88050",
+          "red-200": "#C16134",
+        },
+
         design: {
           // "brown-100": "#BCA07D",
           // "brown-200": "#8D7454",
