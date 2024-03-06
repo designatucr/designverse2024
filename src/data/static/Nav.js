@@ -10,7 +10,7 @@ export const items = [
   {
     name: "Home",
     id: "home",
-    link: "/#",
+    link: "/#home",
     icon: <IoHomeSharp />,
   },
   {
