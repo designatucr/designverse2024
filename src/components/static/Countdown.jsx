@@ -11,14 +11,14 @@ const Digits = ({ value, text }) => {
     >
       <div className="flex justify-center w-full ">
         {value >= 100 && (
-          <div className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-4xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
+          <div className="bg-newdesign-cyan-200/70 mb-0 h-10 md:h-16 text-lg md:text-4xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
             {Math.floor(value / 100)}
           </div>
         )}
-        <div className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-4xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
+        <div className="bg-newdesign-cyan-200/70 mb-0 h-10 md:h-16 text-lg md:text-4xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
           {Math.floor(value / 10) % 10}
         </div>
-        <div className="bg-design-green-100/80 mb-0 h-10 md:h-16 text-lg md:text-4xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md">
+        <div className="bg-newdesign-cyan-200/70 mb-0 h-10 md:h-16 text-lg md:text-4xl font-bold w-8 md:w-12 flex items-center justify-center rounded-lg drop-shadow-md">
           {value % 10}
         </div>
       </div>
