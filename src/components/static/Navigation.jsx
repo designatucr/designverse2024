@@ -18,11 +18,11 @@ const Navigation = () => {
   };
 
   return (
-    <div className="w-full ml-3 py-2">
+    <div className="w-full">
       <div className="fixed group z-50">
         <button
           onClick={toggleDropdown}
-          className={`${
+          className={`m-3 ${
             isDropdownOpen
               ? "opacity-0 duration-300"
               : "opacity-100 bg-design-green-200 duration-300"
