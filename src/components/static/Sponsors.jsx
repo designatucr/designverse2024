@@ -26,7 +26,7 @@ const Sponsors = () => {
                   className="bg-newdesign-cyan-200 w-[10%] aspect-square rounded-full flex items-center justify-center"
                 >
                   <Image
-                    src={SPONSORS[Math.floor((index + 1) / 2 + idx)]}
+                    src={SPONSORS[Math.floor(((index + 1) / 2) * index) + idx]}
                     alt="carousel"
                     className="w-full"
                   />

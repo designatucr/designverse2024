@@ -1,16 +1,3 @@
-import CountDown from "../Countdown";
-import Image from "next/image";
-import Apply from "../Apply";
-import Animals from "../../../../public/svgs/landing/animals.svg";
-import Mushrooms2 from "../../../../public/svgs/landing/mushrooms2.svg";
-import Waterline from "../../../../public/svgs/landing/waterline.svg";
-import OnlyFrog from "../../../../public/svgs/landing/onlyFrog.svg";
-import Lillypad from "../../../../public/svgs/landing/lillypad.svg";
-import Lotus from "../../../../public/svgs/landing/lotus.svg";
-import LillypadwithLotus from "../../../../public/svgs/landing/lotuswithpad.svg";
-import { IoPin } from "react-icons/io5";
-import { BsCalendar3 } from "react-icons/bs";
-import Logo from "../../../../public/svgs/logos/BigLogo.svg";
 import Footer from "../Footer";
 import About from "../About";
 import Support from "../Supports";
@@ -18,111 +5,17 @@ import Leads from "../Leads";
 import FAQ from "../FAQ";
 import Navigation from "../Navigation";
 import Tracks from "../Tracks";
-
 import Schedule from "@/components/dynamic/Schedule";
-
 import Committees from "../Committees";
 import Sponsors from "../Sponsors";
 import Resources from "../Resources";
+import Landing from "../Landing";
 
 const Upcoming = () => {
   return (
-    <section
-      id="home"
-      className="w-full h-screen overflow-x-hidden relative font-workSans"
-    >
+    <div className="w-full h-screen overflow-x-hidden relative font-workSans">
       <Navigation />
-      <div
-        className="flex h-[68%] justify-between"
-        style={{
-          background:
-            "linear-gradient(to bottom, #78bfce 0%, #b2d8e3 17%, #e9f2f5 40.85%, #bce0eb 45.27%, #336c18 65.14%, #2a4c19 90%)",
-        }}
-      >
-        <div className="flex md:-mb-12 -mb-8 items-end md:items-end">
-          <Image
-            className="flex absolute w-7/12 -ml-24 md:-ml-8 md:w-[28%] 2xl:w-1/4 md:z-20"
-            src={Mushrooms2}
-            alt="Mushrooms2"
-          />
-        </div>
-        <div className="absolute w-full flex flex-col justify-start items-center md:justify-start md:items-center mt-14">
-          <Image
-            className="absolute flex w-6/12 sm:w-3/12 md:w-3/12 lg:w-3/12 2xl:w-2/12 z-20"
-            src={Logo}
-            alt="Logo"
-          />
-          <div className="flex w-5/6 md:w-3/5 rounded-3xl items-center md:items-center bg-newdesign-blue-300/70 mt-16 md:mt-24 2xl:mt-32 flex-col z-10">
-            <div className="flex text-white text-base md:text-2xl font-medium whitespace-normal mt-8 sm:mt-16 md:mt-20 ">
-              <IoPin className="mr-0 md:mr-2 text-lg md:text-2xl" /> University
-              of California Riverside
-            </div>
-            <div className="flex mt-2 text-white text-base md:text-2xl font-medium whitespace-nowrap">
-              <BsCalendar3 className="mr-1 md:mr-2 md:mt-1 text-lg md:text-xl" />
-              May 11 - 12, 2024
-            </div>
-
-            <div className="flex justify-center md:justify-start m-8">
-              <CountDown />
-            </div>
-          </div>
-          <div className="mt-4 md:mt-8 justify-center items-center w-4/12 lg:w-2/12 gap-2 md:gap-3 z-20">
-            <Apply text="Apply Now" link="/form/participant" />
-            {/* <Apply text="Mentor" link="/form/mentor" />
-            <Apply text="Volunteer" link="/form/volunteer" />
-            <Apply text="Sponsor Us" link="/form/sponsor" /> */}
-          </div>
-        </div>
-        <div className="flex flex-col justify-end md:justify-right items-end md:items-right z-20 md:-mr-8">
-          <Image
-            className="hidden absolute md:block w-[27%] 2xl:w-3/12"
-            src={Animals}
-            alt="Animals"
-          />
-        </div>
-      </div>
-      <Image
-        className="bg-newdesign-green-200 w-full border-0 -mb-1"
-        src={Waterline}
-        alt="Waterline"
-      />
-      <div className=" h-[32%] flex w-full bg-newdesign-cyan-100 relative">
-        <div className="w-4/12 md:w-1/6 2xl:w-2/12 justify-start absolute">
-          <Image
-            className="md:w-full -mt-2 md:-mt-10 md:ml-0 ml-16 2xl:-mt-32 animate-wiggle3"
-            src={OnlyFrog}
-            alt="OnlyFrog"
-          />
-        </div>
-        <div className="w-11/12 md:w-4/12 2xl:w-3/12 absolute bottom-2 2xl:bottom-20">
-          <Image
-            className="w-full ml-40 md:ml-80 2xl:ml-96 p-24 animate-wiggle2"
-            src={Lillypad}
-            alt="Lillypad"
-          />
-        </div>
-        <div className="md:w-1/4 2xl:w-2/12 absolute -bottom-2 2xl:bottom-4">
-          <Image
-            className="hidden md:block w-full ml-60 2xl:ml-96 p-24 animate-wiggle2"
-            src={Lotus}
-            alt="Lotus"
-          />
-        </div>
-
-        {/* <div className="md:w-3/12 absolute -bottom-5 -right-2">
-          <Image
-            className="hidden md:block w-full p-24 animate-wiggle2"
-            src={Lotus}
-          />
-        </div> */}
-        <div className="md:w-3/12 2xl:w-2/12 absolute bottom-24 -right-2">
-          <Image
-            className="hidden md:block w-full p-24 ml-32 animate-wiggle2"
-            src={LillypadwithLotus}
-            alt="LillypadwithLotus"
-          />
-        </div>
-      </div>
+      <Landing />
       <About />
       <Support />
       <Schedule />
@@ -133,7 +26,7 @@ const Upcoming = () => {
       <Resources />
       <FAQ />
       <Footer />
-    </section>
+    </div>
   );
 };
 

@@ -2,7 +2,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
 import Link from "next/link";
-// import { Link } from "react-scroll";
 import { useState } from "react";
 import { items } from "@/data/static/Nav.js";
 import { FaChevronLeft } from "react-icons/fa";
@@ -43,15 +42,9 @@ const Navigation = () => {
 
           {items.map((item, index) => (
             <Link
-              // activeClass="active"
               key={index}
-              // to={item.id}
               onClick={() => console.log(`Clicked on ${item.name}`)}
               href={item.link}
-              // spy={true}
-              // smooth={true}
-              // offset={0}
-              // duration={250}
               className="flex px-2 py-1.5 text-white text-lg flex-cols gap-3 justify-start items-center no-underline hover:cursor-pointer hover:bg-design-green-300 duration-500"
             >
               {item.icon}
