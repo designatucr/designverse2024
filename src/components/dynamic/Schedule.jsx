@@ -118,10 +118,10 @@ const Schedule = () => {
               </div>
             </div>
           </div> */}
-          <Image src={temp} className=" z-0 top-16 " alt="Waves" />
+          <Image src={temp} className="z-0 top-16 " alt="Waves" />
           <Image
             src={WAVES}
-            className="absolute w-screen -z-10 left-0"
+            className="absolute w-screen -z-10 left-0 animate-wave scale-[200%]"
             alt="Waves"
           />
         </div>

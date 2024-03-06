@@ -90,31 +90,19 @@ module.exports = {
         },
       },
       animation: {
+        wave: "wave 30s ease-in-out infinite",
         wiggle1: "wiggle1 5s ease-in-out infinite",
         wiggle2: "wiggle2 5s ease-in-out infinite",
         wiggle3: "wiggle3 12.5s ease-in-out infinite",
-        marquee: "marquee 30s linear infinite",
-        "marquee-continuation": "marquee-continuation 30s linear infinite",
-        "marquee-reverse": "marquee-reverse 30s linear infinite",
-        "marquee-continuation-reverse":
-          "marquee-continuation-reverse 30s linear infinite",
       },
       keyframes: {
-        marquee: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
-        },
-        "marquee-continuation": {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0%)" },
-        },
-        "marquee-reverse": {
-          "0%": { transform: "translateX(-100%)" },
-          "100%": { transform: "translateX(0%)" },
-        },
-        "marquee-continuation-reverse": {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(100%)" },
+        wave: {
+          "0% 100%": {
+            translate: "0%",
+          },
+          "50%": {
+            translate: "-50%",
+          },
         },
         wiggle1: {
           "0% 100%": {
