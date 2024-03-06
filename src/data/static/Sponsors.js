@@ -1,4 +1,4 @@
-import avgpc from "@/public/svgs/sponsors/avgpc.png";
+import avgpc from "@/public/svgs/sponsors/avgpc.webp";
 import design from "@/public/svgs/sponsors/design.svg";
 import redbull from "@/public/svgs/sponsors/redbull.svg";
 import notion from "@/public/svgs/sponsors/notion.svg";

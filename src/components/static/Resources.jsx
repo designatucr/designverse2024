@@ -1,8 +1,8 @@
 import React from "react";
 import Resource from "./Resource";
-import resource1 from "@/public/svgs/support/figma.png";
-import resource2 from "@/public/svgs/support/dribble.jpeg";
-import resource3 from "@/public/svgs/support/miro.png";
+import resource1 from "@/public/svgs/support/figma.webp";
+import resource2 from "@/public/svgs/support/dribble.webp";
+import resource3 from "@/public/svgs/support/miro.webp";
 import Image from "next/image";
 import river from "@/public/svgs/river.svg";
 
