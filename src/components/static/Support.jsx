@@ -3,7 +3,7 @@ import Link from "./Link";
 
 const Support = ({ title, description, form }) => {
   return (
-    <div className="grid lg:grid-rows-4 lg:h-full lg:w-full lg:gap-4 ">
+    <div className="grid lg:grid-rows-4 lg:h-full lg:w-full lg:gap-4 my-12">
       <div className=" justify-center font-bold text-sm lg:text-3xl text-white whitespace-nowrap grid row-span-1">
         {title}
       </div>

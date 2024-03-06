@@ -14,7 +14,7 @@ const Resources = () => {
         <div className="flex font-bold text-2xl lg:text-5xl text-white lg:mb-8 justify-end items-end">
           RESOURCES
         </div>
-        <div className="grid grid-cols-3 justify-center gap-x-1 lg:gap-x-4 w-9/12 text-white">
+        <div className="grid grid-cols-3 justify-center w-8/12 text-white mt-12 gap-8">
           <Resource
             title="Figma"
             description="A tool for designing and building prototypes for user interfaces."
