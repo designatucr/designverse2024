@@ -6,7 +6,7 @@ const Apply = ({ text, link }) => {
     <Link
       href={link}
       target="_blank"
-      className="no-underline flex whitespace-nowrap min-w-fit justify-center hover:-translate-y-1 hover:bg-design-brown-400/80 duration-150 bg-design-brown-400 rounded-full"
+      className="no-underline flex whitespace-nowrap min-w-fit justify-center hover:-translate-y-1 hover:bg-newdesign-red-200 duration-150 bg-newdesign-red-100 rounded-full"
     >
       <div className="text-xs md:text-lg font-workSans font-regular flex items-center text-white py-1 px-2 md:px-0">
         {text}
