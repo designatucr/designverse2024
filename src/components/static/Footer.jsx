@@ -32,7 +32,7 @@ const Footer = () => {
           {/* <RiFacebookBoxFill className="text-3xl hover:cursor-pointer" /> */}
           {/* <FaDiscord className="text-3xl hover:cursor-pointer" /> */}
         </div>
-        <div className="flex items-center text-sm md:text-lg font-workSans font-light mt-2 whitespace-nowrap">
+        <div className="flex items-center text-sm md:text-lg font-workSans font-light my-3 whitespace-nowrap">
           Made with&nbsp;
           <FaHeart className="mx-1" />
           &nbsp;by the DesignVerse Team 2024

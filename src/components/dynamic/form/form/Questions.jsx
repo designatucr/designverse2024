@@ -67,7 +67,7 @@ const Questions = ({
                   {description.split(" ").map((word, key) =>
                     word.includes("DesignVerse") ? (
                       <span
-                        className="font-workSans text-design-brown-400 font-semibold"
+                        className="font-workSans text-newdesign-blue-300 font-semibold"
                         key={key}
                       >
                         {word}{" "}
@@ -146,7 +146,7 @@ const Questions = ({
                         : [...object[field.field], option],
                     })
                   }
-                  color="bg-design-green-light"
+                  color="bg-newdesign-blue-200"
                 />
               ))}
               <br />
@@ -206,7 +206,7 @@ const Questions = ({
       <Link
         href="/files/DesignVerseCodeofConduct.pdf"
         target="_blank"
-        className="no-underline flex items-center text-design-orange"
+        className="no-underline flex items-center text-newdesign-blue-200"
       >
         DesignVerse Code Of Conduct
         <FaLink className="mx-2" />
@@ -216,7 +216,7 @@ const Questions = ({
           text="submit"
           onClick={handleSubmit}
           loading={loading}
-          color="green"
+          color="form"
         />
       </div>
     </div>

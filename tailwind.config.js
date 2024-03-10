@@ -19,6 +19,7 @@ module.exports = {
           yellow: "#E2A64A",
         },
         newdesign: {
+          "blue-50": "#E9F2F5",
           "blue-100": "#ABD0DC",
           "blue-200": "#78BFCE",
           "blue-300": "#71ADC7",
@@ -31,8 +32,6 @@ module.exports = {
         },
 
         design: {
-          // "brown-100": "#BCA07D",
-          // "brown-200": "#8D7454",
           orange: "#DF673E",
           "blue-100": "#69CDBA",
           "blue-200": "#4DB5A2",

@@ -9,7 +9,7 @@ const Supports = () => {
       <div className="flex  font-bold text-2xl lg:text-5xl text-white lg:mb-8">
         SUPPORT US
       </div>
-      <div className="grid grid-cols-3 gap-x-1 lg:gap-x-4 w-3/4 py-8">
+      <div className="grid grid-cols-3 gap-x-1 lg:gap-x-4 w-3/4 py-8 z-10">
         <div>
           <Support
             title="Become a Mentor"

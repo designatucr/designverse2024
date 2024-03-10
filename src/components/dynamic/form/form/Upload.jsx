@@ -44,10 +44,10 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
         {!file && (
           <label
             htmlFor="dropzone-file"
-            className="flex flex-col items-center justify-center w-full h-fit border-2 border-gray-300 rounded-lg cursor-pointer bg-design-white hover:bg-design-beige/50"
+            className="flex flex-col items-center justify-center w-full h-fit rounded-lg cursor-pointer bg-newdesign-blue-50 hover:opacity-70"
           >
             <div className="flex flex-col items-center justify-center pt-4">
-              <FaUpload className="text-3xl mb-2 text-design-green-light" />
+              <FaUpload className="text-3xl mb-2 text-newdesign-blue-200" />
               <p className="text-sm font-normal text-gray-500">
                 Upload From My Computer
               </p>
@@ -65,7 +65,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
         )}
         {file && (
           <div
-            className="flex items-center justify-between w-full my-2 bg-design-beige px-2 py-2"
+            className="flex items-center justify-between w-full my-2 bg-newdesign-blue-50 px-2 py-2"
             data-cy="upload-success"
           >
             <div className="flex items-center">

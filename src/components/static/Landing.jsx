@@ -42,11 +42,11 @@ const Landing = () => {
               <CountDown />
             </div>
           </div>
-          <div className="mt-4 md:mt-8 justify-center items-center w-4/12 lg:w-2/12 gap-2 md:gap-3 z-20">
-            <Apply text="Apply Now" link="/form/participant" />
-            {/* <Apply text="Mentor" link="/form/mentor" />
-    <Apply text="Volunteer" link="/form/volunteer" />
-    <Apply text="Sponsor Us" link="/form/sponsor" /> */}
+          <div className="mt-4 md:mt-8 flex justify-center items-center w-4/12 lg:w-2/12 gap-3 md:gap-3 z-20">
+            <Apply text="Register" link="/form/participant" />
+            <Apply text="Mentor" link="/form/mentor" />
+            <Apply text="Volunteer" link="/form/volunteer" />
+            <Apply text="Sponsor" link="/form/sponsor" />
           </div>
         </div>
         <Image
