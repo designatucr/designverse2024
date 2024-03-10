@@ -10,7 +10,7 @@ const Support = ({ title, description, form }) => {
       <div className="grid text-[10px] leading-3 lg:text-lg md:text-sm text-center text-white row-span-2 lg:mb-0 mb-1">
         {description}
       </div>
-      <div className=" items-end justify-center grid row-span-1">
+      <div className=" mt-2 lg:mt-0 items-end justify-center grid row-span-1">
         <Link text={form} link={`/form/${form}`} />
       </div>
     </div>

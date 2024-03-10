@@ -32,7 +32,7 @@ const About = () => {
         {/* </div> */}
       </div>
       <div className="flex justify-end items-end ml-32">
-        <Image src={leaves} className="w-11/12 hidden md:block " alt="leaves" />
+        <Image src={leaves} className="w-11/12 hidden md:block " />
       </div>
     </section>
   );

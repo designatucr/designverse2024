@@ -1,7 +1,7 @@
 import Footer from "../Footer";
 import About from "../About";
 import Support from "../Supports";
-import Leads from "../Leads";
+// import Leads from "../Leads";
 import FAQ from "../FAQ";
 import Navigation from "../Navigation";
 import Tracks from "../Tracks";
