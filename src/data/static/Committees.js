@@ -1,5 +1,15 @@
 export const COMMITTEES = {
-  Marketing: ["Priya Iyer"],
+  Marketing: [
+    "Priya Iyer",
+    "Maliaka Iscandari",
+    "Emiko Naepflin",
+    "Arielle Haryanto",
+    "Fiona Nguyen",
+    "Saanvi Dalal",
+    "Subah Awal",
+    "Linh Nguyen",
+    "Allison Pham",
+  ],
   "UI/UX": [
     "Randall Nguyen",
     "Charleen Chen",
@@ -10,7 +20,6 @@ export const COMMITTEES = {
     "Ricky Wen",
     "Fiona Nguyen",
   ],
-  Operations: [],
   "Software Engineering": [
     "Jonathan Trujillo",
     "Fardin Zaman",
@@ -23,5 +32,6 @@ export const COMMITTEES = {
     "Garman Zhen",
     "Byron Bhuiyan",
   ],
-  Sponsorship: [],
+  Operations: ["Ryan Yang"],
+  // Sponsorship: [],
 };

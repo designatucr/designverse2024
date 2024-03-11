@@ -5,10 +5,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-3/6 bg-design-blue-200 md:h-5/6 relative flex w-full md:py-20 justify-center"
+      className="h-3/6 bg-gradient-to-b from-newdesign-cyan-100 to-newdesign-cyan-200 md:h-5/6 relative flex w-full md:py-20 justify-center"
     >
       <div className="text-white  flex-col font-workSans flex absolute md:w-6/12 w-10/12 md:left-20">
-        {/* <div className=" "> */}
         <div className="flex justify-center md:justify-start md:items-start font-bold text-3xl lg:text-5xl">
           ABOUT US
         </div>

@@ -1,11 +1,8 @@
-import avgpc from "@/public/svgs/sponsors/avgpc.svg";
-import design from "@/public/svgs/sponsors/design.svg";
+import avgpc from "@/public/svgs/sponsors/avgpc.webp";
+import design from "@/public/svgs/sponsors/design.webp";
 import redbull from "@/public/svgs/sponsors/redbull.svg";
-import notion from "@/public/svgs/sponsors/notion.svg";
-import ucr from "@/public/svgs/sponsors/ucr.svg";
+import notion from "@/public/svgs/sponsors/notion.webp";
+import acm from "@/public/svgs/sponsors/acm.webp";
+import glico from "@/public/svgs/sponsors/glico.webp";
 
-export const SPONSORS = [
-  [avgpc, design, ucr, redbull, notion],
-  [redbull, notion, ucr, design, avgpc],
-  [design, notion, redbull, avgpc, ucr],
-];
+export const SPONSORS = [avgpc, notion, design, acm, glico, redbull];

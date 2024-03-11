@@ -7,10 +7,14 @@ import Image from "next/image";
 
 const Committees = () => {
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-center items-center text-newdesign-cyan-200 flex-col bg-newdesign-blue-100">
       <div className="flex items-center space-x-4">
-        <Image className="w-4/12 md:w-4/12 lg:w-4/12" src={commVine1} />
-        <div className="text-2xl lg:text-4xl text-center font-bold text-design-brown-500 lg:whitespace-nowrap">
+        <Image
+          className="w-4/12 md:w-4/12 lg:w-4/12"
+          src={commVine1}
+          alt="commVine1"
+        />
+        <div className="text-2xl lg:text-4xl text-center font-bold lg:whitespace-nowrap">
           Committee Members
         </div>
         <Image className="w-4/12 md:w-4/12 lg:w-4/12" src={commVine2} />
@@ -27,10 +31,7 @@ const Committees = () => {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {Object.entries(COMMITTEES).map(([key, values], index) => (
-          <div
-            className="text-design-brown-500 whitespace-nowrap text-center"
-            key={index}
-          >
+          <div className="whitespace-nowrap text-center" key={index}>
             <p className="text-base lg:text-2xl font-semibold">{key}</p>
             {values.map((name, index) => (
               <div key={index} className="text-sm lg:text-base">

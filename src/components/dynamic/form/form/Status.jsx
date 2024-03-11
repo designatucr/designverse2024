@@ -8,13 +8,11 @@ const Status = ({ object, statuses, setState }) => {
       <div>
         Hello <b>{object.name}</b>, your status is currently
       </div>
-      <br />
       <Tag
         color={COLORS[object.roles[object.form]]}
         text={statuses[object.roles[object.form]]}
-        classes="mb-2"
+        classes="my-2"
       />
-      <br />
       <div className="text-center">
         You have already filled out the form. If you wish to change any
         information, please fill out the form again. Note that your status will
@@ -25,7 +23,7 @@ const Status = ({ object, statuses, setState }) => {
         immediately.
       </div>
 
-      <Button text="Apply Again" onClick={() => setState(1)} color="green" />
+      <Button text="Apply Again" onClick={() => setState(1)} color="form" />
     </div>
   );
 };

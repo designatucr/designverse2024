@@ -7,10 +7,15 @@ import { FaHeart, FaLinkedinIn } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoIosMail } from "react-icons/io";
 import Link from "next/link";
+
 const Footer = () => {
   return (
-    <div className="flex justify-between bg-design-blue-300 text-white relative">
-      <Image src={mushroomsLeft} className="w-4/12 md:w-3/12 z-10" />
+    <div className="flex justify-between bg-newdesign-cyan-200 text-white relative">
+      <Image
+        src={mushroomsLeft}
+        className="w-4/12 md:w-3/12 z-10"
+        alt="mushroomsLeft"
+      />
       <div className="flex flex-col items-center justify-end w-3/12 md:w-full z-10">
         <Image src={logo} width={100} />
 
@@ -29,7 +34,7 @@ const Footer = () => {
           {/* <RiFacebookBoxFill className="text-3xl hover:cursor-pointer" /> */}
           {/* <FaDiscord className="text-3xl hover:cursor-pointer" /> */}
         </div>
-        <div className="flex items-center text-sm md:text-lg font-workSans font-light mt-2 whitespace-nowrap">
+        <div className="flex items-center text-sm md:text-lg font-workSans font-light my-3 whitespace-nowrap">
           Made with&nbsp;
           <FaHeart className="mx-1" />
           &nbsp;by the DesignVerse Team 2024

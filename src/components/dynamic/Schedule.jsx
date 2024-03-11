@@ -35,7 +35,7 @@ const Schedule = () => {
   return (
     <div
       id="schedule"
-      className="bg-design-blue-200 pt-10 py-10 flex justify-center items-center"
+      className="bg-newdesign-cyan-200 pt-10 py-10 flex justify-center items-center"
     >
       <div className="w-9/12 flex  text-white font-workSans justify-center items-center">
         <div className="w-full text-center z-1 flex flex-col">
@@ -118,10 +118,10 @@ const Schedule = () => {
               </div>
             </div>
           </div> */}
-          <Image src={temp} className=" z-0 top-16 " alt="Waves" />
+          <Image src={temp} className="z-0 top-16 " alt="Waves" />
           <Image
             src={WAVES}
-            className="absolute w-screen -z-10 left-0"
+            className="absolute w-screen -z-10 left-0 animate-wave scale-[200%]"
             alt="Waves"
           />
         </div>

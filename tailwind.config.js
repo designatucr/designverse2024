@@ -12,9 +12,26 @@ module.exports = {
         workSans: ["var(--font-work_sans)"],
       },
       colors: {
+        track: {
+          blue: "#20A4AC",
+          red: "#C87C6A",
+          green: "#639A4F",
+          yellow: "#E2A64A",
+        },
+        newdesign: {
+          "blue-50": "#E9F2F5",
+          "blue-100": "#ABD0DC",
+          "blue-200": "#78BFCE",
+          "blue-300": "#71ADC7",
+          "cyan-100": "#32BEC7",
+          "cyan-200": "#034444",
+          "green-100": "#336C18",
+          "green-200": "#294C19",
+          "red-100": "#E88050",
+          "red-200": "#C16134",
+        },
+
         design: {
-          // "brown-100": "#BCA07D",
-          // "brown-200": "#8D7454",
           orange: "#DF673E",
           "blue-100": "#69CDBA",
           "blue-200": "#4DB5A2",
@@ -72,31 +89,19 @@ module.exports = {
         },
       },
       animation: {
+        wave: "wave 30s ease-in-out infinite",
         wiggle1: "wiggle1 5s ease-in-out infinite",
         wiggle2: "wiggle2 5s ease-in-out infinite",
         wiggle3: "wiggle3 12.5s ease-in-out infinite",
-        marquee: "marquee 30s linear infinite",
-        "marquee-continuation": "marquee-continuation 30s linear infinite",
-        "marquee-reverse": "marquee-reverse 30s linear infinite",
-        "marquee-continuation-reverse":
-          "marquee-continuation-reverse 30s linear infinite",
       },
       keyframes: {
-        marquee: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
-        },
-        "marquee-continuation": {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0%)" },
-        },
-        "marquee-reverse": {
-          "0%": { transform: "translateX(-100%)" },
-          "100%": { transform: "translateX(0%)" },
-        },
-        "marquee-continuation-reverse": {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(100%)" },
+        wave: {
+          "0% 100%": {
+            translate: "0%",
+          },
+          "50%": {
+            translate: "-50%",
+          },
         },
         wiggle1: {
           "0% 100%": {
@@ -125,5 +130,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
