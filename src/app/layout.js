@@ -19,7 +19,7 @@ const workSans = Work_Sans({
 export default function RootLayout({ children, session }) {
   const color = RegExp(/\/form\//).test(usePathname())
     ? "bg-design-white"
-    : "bg-design-green-100";
+    : "bg-white";
   return (
     <html lang="en" className="h-full">
       <body

@@ -35,7 +35,7 @@ const Schedule = () => {
   return (
     <div
       id="schedule"
-      className="bg-newdesign-cyan-200 pt-10 py-10 flex justify-center items-center"
+      className="bg-newdesign-cyan-200 py-24 flex justify-center items-center"
     >
       <div className="w-9/12 flex  text-white font-workSans justify-center items-center">
         <div className="w-full text-center z-1 flex flex-col">

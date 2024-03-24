@@ -8,9 +8,9 @@ import river from "@/public/svgs/river.svg";
 
 const Resources = () => {
   return (
-    <div className="flex font-workSans flex-col bg-newdesign-blue-100 relative">
-      <Image src={river} alt="river" className=" w-full" />
-      <div className="flex flex-col items-center justify-center absolute bottom-0">
+    <div className="flex font-workSans flex-col bg-[#D3E6EC] relative">
+      <Image src={river} alt="river" className=" w-screen " />
+      <div className="flex flex-col items-center justify-center absolute bottom-0 bg-gradient-to-b from-[#0D6F73] to-[#034444]">
         <div className="flex font-bold text-2xl lg:text-5xl text-white lg:mb-8 justify-end items-end">
           RESOURCES
         </div>

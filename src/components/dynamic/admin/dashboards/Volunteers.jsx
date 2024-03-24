@@ -9,7 +9,7 @@ import Table from "./dashboard/Dashboard";
 
 const Volunteers = () => {
   return (
-    <div className="h-full font-poppins flex flex-col py-4 gap-3">
+    <div className="h-full font-workSans flex flex-col py-4 gap-3">
       <Table
         title="Volunteers"
         columns={COLUMNS}

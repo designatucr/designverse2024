@@ -46,7 +46,7 @@ const Sponsors = () => {
               .map((_, idx) => (
                 <div
                   key={idx}
-                  className="bg-newdesign-cyan-200 w-[10%] aspect-square rounded-full flex items-center justify-cente p-3"
+                  className="bg-newdesign-cyan-200 w-[10%] aspect-square rounded-full flex items-center justify-center p-3"
                 >
                   <Image
                     src={SPONSORS[Math.floor(((index + 1) / 2) * index) + idx]}

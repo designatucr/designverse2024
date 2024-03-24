@@ -20,6 +20,12 @@ export const items = [
     icon: <IoMdInformationCircle />,
   },
   {
+    name: "Support",
+    id: "support",
+    link: "/#support",
+    icon: <BiSolidDonateHeart />,
+  },
+  {
     name: "Schedule",
     id: "schedule",
     link: "/#schedule",
@@ -42,12 +48,6 @@ export const items = [
     id: "team",
     link: "/#team",
     icon: <IoIosPeople />,
-  },
-  {
-    name: "Support",
-    id: "support",
-    link: "/#support",
-    icon: <BiSolidDonateHeart />,
   },
   {
     name: "Resources",
