@@ -49,6 +49,9 @@ const ProtectedPage = ({ children, restrictions, title }) => {
   }, [status]);
 
   const navigation = RegExp(/user\/|admin\//).test(pathName);
+  const widthVar = RegExp(/\/form\//).test(usePathname())
+    ? "w-full"
+    : "w-11/12";
 
   return (
     <>
@@ -57,8 +60,8 @@ const ProtectedPage = ({ children, restrictions, title }) => {
         <>
           <title>{title}</title>
           {navigation && <Navigation />}
-          <div className="flex justify-center items-start w-full bg-design-white py-12 h-screen overflow-x-hidden lg:pt-0 z-0">
-            <div className="w-11/12 h-full">{children}</div>
+          <div className="flex justify-center items-start w-full bg-design-white h-screen overflow-x-hidden py-12 lg:py-0 z-0">
+            <div className={` ${widthVar} w-11/12 h-full`}>{children}</div>
           </div>
         </>
       )}

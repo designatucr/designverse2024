@@ -18,7 +18,7 @@ const Track = () => {
           <TrackCards />
         </div>
       </div>
-      <Image src={wave} className="w-full" alt="wave" />
+      <Image src={wave} className="w-full mt-28 lg:mt-10" alt="wave" />
     </section>
   );
 };

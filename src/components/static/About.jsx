@@ -1,18 +1,20 @@
 import Image from "next/image";
 import leaves from "../../../public/svgs/landing/mushroomWithLeaves.svg";
+import fox from "../../../public/svgs/landing/aboutFox.svg";
+import pads from "../../../public/svgs/landing/aboutPads.svg";
 
 const About = () => {
   return (
     <section
       id="about"
-      className="h-3/6 bg-gradient-to-b from-newdesign-cyan-100 to-newdesign-cyan-200 md:h-5/6 relative flex w-full md:py-20 justify-center"
+      className="h-4/6 bg-gradient-to-b from-newdesign-cyan-100 to-newdesign-cyan-200 lg:h-5/6 relative flex-col lg:flex-row flex w-full md:py-20 "
     >
-      <div className="text-white flex-col font-workSans flex absolute md:w-5/12 w-10/12 md:mt-10 md:left-64 ">
+      <div className="text-white flex-col font-workSans flex lg:absolute lg:w-5/12 w-full md:mt-10 md:left-64 justify-center items-center lg:justify-start lg:items-start">
         <div className="flex justify-center md:justify-start md:items-start font-bold text-3xl lg:text-5xl">
           ABOUT US
         </div>
         <br />
-        <p className="lg:text-base text-sm">
+        <p className="lg:text-base text-sm w-10/12 lg:w-full">
           DesignVerse is the first ever 24-hour beginner-friendly Design-a-Thon
           hosted by the University of California, Riverside. Designers are
           challenged to create the interface of an app or website through a
@@ -33,6 +35,10 @@ const About = () => {
       </div>
       <div className="flex justify-end items-end ml-32 scale-125">
         <Image src={leaves} className="w-full hidden md:block " />
+      </div>
+      <div className="flex justify-center items-center w-full  md:hidden ">
+        <Image src={fox} />
+        <Image src={pads} className=" mt-20" />
       </div>
     </section>
   );

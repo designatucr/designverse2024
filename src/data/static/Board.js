@@ -38,24 +38,23 @@ export const BOARD = [
       position: "UI/UX",
       pic: Betty,
     },
+    {
+      name: "Raidah Fairooz",
+      position: "Software Engineering",
+      pic: Raidah,
+    },
 
     {
       name: "Menthy Wu",
-      position: " SWE",
+      position: "Software Engineering",
       pic: Menthy,
     },
-    {
-      name: "Raidah Fairooz",
-      position: "SWE",
-      pic: Raidah,
-    },
+
     {
       name: "Divyank Shah",
-      position: " SWE",
+      position: " Software Engineering",
       pic: Divyank,
     },
-  ],
-  [
     {
       name: "Ashley Tsai",
       position: "Sponsorship",

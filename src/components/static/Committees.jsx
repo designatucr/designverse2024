@@ -8,7 +8,7 @@ import Image from "next/image";
 const Committees = () => {
   return (
     <div className="flex justify-center items-center text-newdesign-cyan-200 flex-col bg-gradient-to-b from-newdesign-blue-100 via-newdesign-blue-100 to-[#D3E6EC] py-24">
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-0 lg:space-x-4">
         <Image
           className="w-4/12 md:w-4/12 lg:w-4/12"
           src={commVine1}

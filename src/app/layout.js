@@ -18,12 +18,12 @@ const workSans = Work_Sans({
 
 export default function RootLayout({ children, session }) {
   const color = RegExp(/\/form\//).test(usePathname())
-    ? "bg-design-white"
-    : "bg-white";
+    ? "bg-newdesign-blue-50"
+    : "bg-[#78bfce]";
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${workSans.variable} flex flex-col lg:flex-row ${color} h-full w-full`}
+        className={`${workSans.variable} flex flex-col ${color} lg:flex-row 78bfce h-full w-full`}
       >
         <Session session={session} refetchInterval={5 * 60} className="h-full">
           <div className="flex w-full">
