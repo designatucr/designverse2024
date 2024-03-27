@@ -39,6 +39,23 @@ export const BOARD = [
       pic: Betty,
     },
     {
+      name: "Raidah Fairooz",
+      position: "Software Engineering",
+      pic: Raidah,
+    },
+
+    {
+      name: "Menthy Wu",
+      position: "Software Engineering",
+      pic: Menthy,
+    },
+
+    {
+      name: "Divyank Shah",
+      position: " Software Engineering",
+      pic: Divyank,
+    },
+    {
       name: "Ashley Tsai",
       position: "Sponsorship",
       pic: Ashley,
@@ -63,6 +80,8 @@ export const BOARD = [
       position: "Operations",
       pic: Sarah,
     },
+  ],
+  [
     {
       name: "Falak Tulsi",
       position: "Operations",
@@ -73,21 +92,7 @@ export const BOARD = [
       position: "Public Relations",
       pic: Anjali,
     },
-    {
-      name: "Raidah Fairooz",
-      position: "Software Engineering",
-      pic: Raidah,
-    },
-    {
-      name: "Menthy Wu",
-      position: "Software Engineering",
-      pic: Menthy,
-    },
-    {
-      name: "Divyank Shah",
-      position: "Software Engineering",
-      pic: Divyank,
-    },
+
     {
       name: "Ashna Pradhan",
       position: "Special Events Intern",

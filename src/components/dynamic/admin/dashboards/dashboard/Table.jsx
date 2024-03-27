@@ -27,7 +27,7 @@ const Table = ({
 
   return (
     <>
-      <div className="bg-white h-[75vh] overflow-y-scroll flex flex-col justify-between">
+      <div className="bg-design-white h-[75vh] overflow-y-scroll flex flex-col justify-between ">
         <div>
           <div className="text-white bg-design-green-200 rounded-t-lg">
             {getHeaderGroups().map(({ headers, id }) => (
@@ -91,7 +91,7 @@ const Table = ({
           </>
         </div>
       </div>
-      <div className="flex justify-end items-center p-4 text-lg bg-white w-full rounded-b-lg">
+      <div className="flex justify-end items-center p-4 text-lg bg-design-white w-full rounded-b-lg">
         <div className="mx-2">{getRowModel().rows.length} row(s)</div>
         <Link
           href={`/admin/${page}?direction=prev&index=${

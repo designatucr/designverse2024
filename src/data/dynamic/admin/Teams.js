@@ -63,7 +63,11 @@ export const COLUMNS = [
     cell: ({ getValue }) => (
       <div>
         {getValue().map(({ name, link }, index) => (
-          <Link key={index} href={link} className="mx-2 inline-flex">
+          <Link
+            key={index}
+            href={link}
+            className="mx-2 inline-flex text-design-orange"
+          >
             {ICONS[name]}
           </Link>
         ))}

@@ -15,12 +15,14 @@ const Item = ({ question, answer, index }) => {
         className="after:!bg-none !text-white !bg-transparent !shadow-none"
         onClick={() => setState(!state)}
       >
-        <div className="flex justify-between items-center w-full">
+        <div className="flex justify-between  items-center w-full">
           {question}
-          <FaChevronDown
-            className={`${state && "rotate-180"} duration-200 ml-2 text-2xl`}
-          />
         </div>
+        <FaChevronDown
+          className={`${
+            state && "rotate-180"
+          } duration-200 ml-2 text-xl lg:text-2xl`}
+        />
       </Accordion.Button>
       <Accordion.Body className="!border-none">{answer}</Accordion.Body>
     </Accordion.Item>

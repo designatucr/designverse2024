@@ -16,7 +16,7 @@ const Contacts = () => {
   const [disabled, setDisabled] = useState(false);
 
   return (
-    <div className="h-full font-poppins flex flex-col py-4 gap-3">
+    <div className="h-full font-workSans flex flex-col py-4 gap-3">
       <Title title="Contacts" />
       {contacts.map((role, index) => (
         <Contact
