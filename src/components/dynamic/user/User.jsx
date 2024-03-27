@@ -14,6 +14,7 @@ import Button from "../Button";
 import Checkbox from "../Checkbox";
 import { api } from "@/utils/api";
 import toaster from "@/utils/toaster";
+import { phone } from "@/data/dynamic/form/Regex";
 
 const User = ({ user, setUser, edit, setEdit }) => {
   const handleEdit = () => {
@@ -137,7 +138,7 @@ const User = ({ user, setUser, edit, setEdit }) => {
       </div>
       <div className="w-full flex justify-center">
         {edit && (
-          <Button color="green" size="xl" text="done" onClick={handleSave} />
+          <Button color="green" size="xl" text="save" onClick={handleSave} />
         )}
         {!edit && (
           <Button color="green" size="xl" text="edit" onClick={handleEdit} />

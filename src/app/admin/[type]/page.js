@@ -1,3 +1,4 @@
+"use client";
 import ProtectedPage from "@/components/dynamic/ProtectedPage";
 import Admins from "@/components/dynamic/admin/dashboards/Admins";
 import Events from "@/components/dynamic/admin/services/calendar/Events";
@@ -11,7 +12,7 @@ import Mentors from "@/components/dynamic/admin/dashboards/Mentors";
 import Contacts from "@/components/dynamic/admin/services/contacts/Contacts";
 import Participants from "@/components/dynamic/admin/dashboards/Participants";
 import Sponsors from "@/components/dynamic/admin/dashboards/Sponsors";
-import Panels from "@/components/dynamic/admin/dashboards/Panels";
+import Panelists from "@/components/dynamic/admin/dashboards/Panelists";
 import Statistics from "@/components/dynamic/admin/services/statistics/Statistics";
 import Teams from "@/components/dynamic/admin/dashboards/Teams";
 import Volunteers from "@/components/dynamic/admin/dashboards/Volunteers";
@@ -19,26 +20,26 @@ import Leads from "@/components/dynamic/admin/dashboards/Leads";
 import Fault from "@/utils/error";
 import Settings from "@/components/dynamic/admin/services/settings/Settings";
 
-const Page = ({ params }) => {
+const Page = ({ params, searchParams }) => {
   const components = {
-    admins: <Admins />,
+    admins: <Admins searchParams={searchParams} />,
     calendar: <Events />,
     checkin: <CheckIn />,
-    committees: <Committees />,
-    feedback: <Feedback />,
-    interests: <Interests />,
-    judges: <Judges />,
+    committees: <Committees searchParams={searchParams} />,
+    feedback: <Feedback searchParams={searchParams} />,
+    interests: <Interests searchParams={searchParams} />,
+    judges: <Judges searchParams={searchParams} />,
     judging: <Judging />,
-    mentors: <Mentors />,
+    mentors: <Mentors searchParams={searchParams} />,
     contacts: <Contacts />,
-    participants: <Participants />,
+    participants: <Participants searchParams={searchParams} />,
     settings: <Settings />,
-    sponsors: <Sponsors />,
-    panels: <Panels />,
+    sponsors: <Sponsors searchParams={searchParams} />,
+    panelists: <Panelists searchParams={searchParams} />,
     statistics: <Statistics />,
-    teams: <Teams />,
-    volunteers: <Volunteers />,
-    leads: <Leads />,
+    teams: <Teams searchParams={searchParams} />,
+    volunteers: <Volunteers searchParams={searchParams} />,
+    leads: <Leads searchParams={searchParams} />,
   };
 
   const capitalizeFirstLetter = (word) => {

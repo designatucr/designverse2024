@@ -8,7 +8,7 @@ import Mushrooms2 from "@/public/svgs/landing/mushrooms2.svg";
 import Waterline from "@/public/svgs/landing/waterline.svg";
 import Image from "next/image";
 import OnlyFrog from "@/public/svgs/landing/onlyFrog.svg";
-import Lillypad from "@/public/svgs/landing/lillypad.svg";
+// import Lillypad from "@/public/svgs/landing/lillypad.svg";
 import Lotus from "@/public/svgs/landing/lotus.svg";
 import LillypadwithLotus from "@/public/svgs/landing/lotuswithpad.svg";
 
@@ -20,7 +20,7 @@ const Landing = () => {
         className="flex h-[50%] md:h-[68%] justify-between relative"
         style={{
           background:
-            "linear-gradient(to bottom, #78bfce 0%, #b2d8e3 17%, #e9f2f5 40.85%, #bce0eb 45.27%, #336c18 65.14%, #2a4c19 90%)",
+            "linear-gradient(to bottom, #78bfce 0%, #b2d8e3 17%, #e9f2f5 40.85%, #bce0eb 45.27%, #336c18 80.14%, #2a4c19 95%)",
         }}
       >
         <div className="absolute w-full flex flex-col justify-start items-center md:justify-start md:items-center mt-14">
@@ -42,20 +42,17 @@ const Landing = () => {
               <CountDown />
             </div>
           </div>
-          <div className="mt-4 md:mt-8 flex justify-center items-center w-4/12 lg:w-2/12 gap-3 md:gap-3 z-20">
-            <Apply text="Register" link="/form/participant" />
-            <Apply text="Mentor" link="/form/mentor" />
-            <Apply text="Volunteer" link="/form/volunteer" />
-            <Apply text="Sponsor" link="/form/sponsor" />
+          <div className="mt-4 md:mt-8 flex justify-center items-center w-4/12 lg:w-2/12 z-20">
+            <Apply text="Apply Now" link="/form/participant" />
           </div>
         </div>
         <Image
-          className="left-0 hidden absolute md:block w-7/12 -ml-24 md:-ml-8 md:w-[28%] 2xl:w-1/4 md:z-20 top-1/2 -translate-y-1/3 z-10"
+          className="left-0 hidden absolute md:block w-7/12 md:w-[25%] 2xl:w-1/4 md:z-20 top-1/2 -translate-y-1/3 z-10"
           src={Mushrooms2}
           alt="Mushrooms2"
         />
         <Image
-          className="hidden absolute md:block w-[27%] 2xl:w-3/12 right-0 top-1/2 -translate-y-1/3 z-10"
+          className="hidden absolute md:block w-[26%] 2xl:w-3/12 right-0 top-1/2 -translate-y-1/3 z-10"
           src={Animals}
           alt="Animals"
         />
@@ -71,18 +68,18 @@ const Landing = () => {
           src={OnlyFrog}
           alt="OnlyFrog"
         />
-        <Image
+        {/* <Image
           className="hidden md:block w-6/12 md:w-3/12 xl:w-2/12 absolute bottom-12 2xl:bottom-20 right-1/2 animate-wiggle2"
           src={Lillypad}
           alt="Lillypad"
-        />
+        /> */}
         <Image
-          className="hidden md:block w-6/12 md:w-2/12 xl:w-1/12 absolute bottom-20 2xl:bottom-28 right-1/2 animate-wiggle2"
+          className="hidden md:block w-2/12 absolute bottom-0 2xl:bottom-28 right-1/2 animate-wiggle2"
           src={Lotus}
           alt="Lotus"
         />
         <Image
-          className="md:w-2/12 2xl:w-1/12 absolute top-0 -right-2 hidden md:block w-full animate-wiggle2"
+          className="md:w-1/12 2xl:w-1/12 absolute top-0 -right-2 hidden md:block w-full animate-wiggle2"
           src={LillypadwithLotus}
           alt="LillypadwithLotus"
         />

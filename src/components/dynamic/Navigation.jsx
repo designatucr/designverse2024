@@ -37,10 +37,10 @@ const Navigation = () => {
         }`}
       >
         <div className="bg-design-green-400 h-full flex flex-col justify-between items-center w-full">
-          <div className="hidden lg:flex items-center my-3">
+          <div className="hidden lg:flex items-center justify-center my-2">
             <Image
               src={LOGO}
-              className="w-11/12 mx-2"
+              className="w-7/12 mx-2"
               alt={`${CONFIG.name} Logo`}
             />
           </div>
@@ -95,6 +95,7 @@ const Navigation = () => {
               <Link
                 key={index}
                 href={tab.link}
+                target="_blank"
                 onClick={() => tab.onClick()}
                 className="no-underline w-full"
               >

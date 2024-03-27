@@ -32,6 +32,6 @@ export const COMMITTEES = {
     "Garman Zhen",
     "Byron Bhuiyan",
   ],
-  Operations: ["Ryan Yang"],
-  // Sponsorship: [],
+  Operations: ["Ryan Yang", "Safy Tesfay", "Matt Dimandaal", "Sneha Panda"],
+  Sponsorship: ["Janna Abuda", "Allison Pham", "Natalie Oropeza"],
 };

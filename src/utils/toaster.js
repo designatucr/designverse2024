@@ -1,6 +1,6 @@
 import { toast } from "react-hot-toast";
-import { MdError } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
+import { MdError } from "react-icons/md";
 
 const toaster = (message, type) => {
   switch (type) {

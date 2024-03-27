@@ -1,182 +1,44 @@
 const MockSchedule = {
-  SUN: {
+  Monday: {
     events: [
       {
         NAME: "EVENT1",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT2",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT3",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT4",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT5",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT6",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT7",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT8",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT9",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT10",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
+        TIME: "4:30 PM",
+        EVENT: "Design 101: Intro to UIUX + Figma Basics",
+        TYPE: "Workshop",
         LOCATION: "SSC 116",
       },
     ],
   },
-  MON: {
+  Tuesday: {
     events: [
       {
-        NAME: "EVENT1",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
         NAME: "EVENT2",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
+        TIME: "6:30 PM",
+        EVENT: "Figma Basics Part 2 + Prototyping",
+        TYPE: "Workshop",
         LOCATION: "SSC 116",
       },
     ],
   },
-  TUE: {
+  Wednesday: {
     events: [
       {
         NAME: "EVENT3",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
+        TIME: "4:00 PM",
+        EVENT: "Design Thinking Principles",
+        TYPE: "Lecture",
         LOCATION: "SSC 116",
       },
+    ],
+  },
+  Thursday: {
+    events: [
       {
         NAME: "EVENT4",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-    ],
-  },
-  WED: {
-    events: [
-      {
-        NAME: "EVENT5",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT6",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-    ],
-  },
-  THU: {
-    events: [
-      {
-        NAME: "EVENT7",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT8",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-    ],
-  },
-  FRI: {
-    events: [
-      {
-        NAME: "EVENT9",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT10",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-    ],
-  },
-  SAT: {
-    events: [
-      {
-        NAME: "EVENT1",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
-        LOCATION: "SSC 116",
-      },
-      {
-        NAME: "EVENT2",
-        TIME: "9:00 AM",
-        EVENT: "Check In",
-        TYPE: "General",
+        TIME: "4:00 PM",
+        EVENT: "DesignVerse Q&A + Team Building Activities",
+        TYPE: "Social",
         LOCATION: "SSC 116",
       },
     ],

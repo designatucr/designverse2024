@@ -7,22 +7,27 @@ import {
   FaSortAlphaDown,
   FaSortAlphaUp,
 } from "react-icons/fa";
+import Loading from "@/components/dynamic/Loading";
+import Link from "next/link";
 
 const Table = ({
   getHeaderGroups,
   getRowModel,
-  getState,
-  previousPage,
-  getCanPreviousPage,
-  nextPage,
-  getCanNextPage,
-  getPageCount,
   Dropdown,
   empty,
+  loading,
+  meta,
+  searchParams,
+  page,
 }) => {
+  const index = parseInt(searchParams.index ?? 1);
+  const size = parseInt(searchParams.size ?? 10);
+
+  const { first, last, total } = meta;
+
   return (
     <>
-      <div className="bg-white h-[75vh] overflow-y-scroll flex flex-col justify-between">
+      <div className="bg-design-white h-[75vh] overflow-y-scroll flex flex-col justify-between ">
         <div>
           <div className="text-white bg-design-green-200 rounded-t-lg">
             {getHeaderGroups().map(({ headers, id }) => (
@@ -63,42 +68,55 @@ const Table = ({
             ))}
           </div>
           <>
-            {getRowModel().rows.length === 0 && (
-              <p className="w-full text-center py-8 bg-white">{empty}</p>
-            )}
-            {getRowModel().rows.map(
-              ({ id, getVisibleCells, original, getIsSelected }) => (
-                <Body
-                  getIsSelected={getIsSelected}
-                  key={id}
-                  getVisibleCells={getVisibleCells}
-                  Dropdown={Dropdown}
-                  original={original}
-                />
-              )
+            {loading ? (
+              <Loading />
+            ) : (
+              <>
+                {getRowModel().rows.length === 0 && (
+                  <p className="w-full text-center py-8 bg-white">{empty}</p>
+                )}
+                {getRowModel().rows.map(
+                  ({ id, getVisibleCells, original, getIsSelected }) => (
+                    <Body
+                      getIsSelected={getIsSelected}
+                      key={id}
+                      getVisibleCells={getVisibleCells}
+                      Dropdown={Dropdown}
+                      original={original}
+                    />
+                  )
+                )}
+              </>
             )}
           </>
         </div>
       </div>
-      <div className="flex justify-end items-center p-4 text-lg bg-white w-full rounded-b-lg">
+      <div className="flex justify-end items-center p-4 text-lg bg-design-white w-full rounded-b-lg">
         <div className="mx-2">{getRowModel().rows.length} row(s)</div>
-        <button
-          onClick={() => previousPage()}
-          disabled={!getCanPreviousPage()}
-          className="mx-2 disabled:text-hackathon-gray-200"
+        <Link
+          href={`/admin/${page}?direction=prev&index=${
+            index - 1
+          }&size=${size}&first=${first}&last=${last}`}
+          className={`mx-2 ${
+            index <= 1 && "pointer-events-none text-hackathon-gray-200"
+          }`}
         >
           <FaChevronLeft />
-        </button>
+        </Link>
         <div>
-          Page {getState().pagination.pageIndex + 1} of {getPageCount()}
+          Page {index} of {Math.ceil(total / size)}
         </div>
-        <button
-          onClick={() => nextPage()}
-          disabled={!getCanNextPage()}
-          className="mx-2 disabled:text-hackathon-gray-200"
+        <Link
+          href={`/admin/${page}?direction=next&index=${
+            index + 1
+          }&size=${size}&first=${first}&last=${last}`}
+          className={`mx-2 ${
+            index >= Math.ceil(total / size) &&
+            "pointer-events-none text-hackathon-gray-200"
+          }`}
         >
           <FaChevronRight />
-        </button>
+        </Link>
       </div>
     </>
   );
