@@ -58,7 +58,7 @@ const Landing = () => {
         />
       </section>
       <Image
-        className="bg-newdesign-green-200 w-full border-0 -mb-1"
+        className="bg-newdesign-green-200 w-screen border-0 -mb-1"
         src={Waterline}
         alt="Waterline"
       />

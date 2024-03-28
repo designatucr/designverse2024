@@ -11,10 +11,10 @@ const Navigation = () => {
 
   return (
     <div className="w-full">
-      <div className="fixed z-50">
+      <div className="fixed z-[1000] top-2">
         <button
           onClick={() => setDropdownOpen(!isDropdownOpen)}
-          className={`m-3 ${
+          className={`m-3  ${
             isDropdownOpen
               ? "opacity-0 duration-300"
               : "opacity-100 bg-design-green-200 duration-300"
