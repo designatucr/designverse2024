@@ -49,6 +49,7 @@ function Leads() {
               image={item.pic}
               name={item.name}
               position={item.position}
+              linkedin={item.linkedin}
             />
           ))}
         </div>
@@ -59,6 +60,7 @@ function Leads() {
               image={item.pic}
               name={item.name}
               position={item.position}
+              linkedin={item.linkedin}
             />
           ))}
         </div>
@@ -69,6 +71,7 @@ function Leads() {
               image={item.pic}
               name={item.name}
               position={item.position}
+              linkedin={item.linkedin}
             />
           ))}
         </div>

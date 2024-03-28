@@ -8,12 +8,12 @@ import Image from "next/image";
 import LOGEND from "@/public/svgs/schedule/logEnd.svg";
 import LOGSTART from "@/public/svgs/schedule/logStart.svg";
 import WAVES from "@/public/svgs/schedule/wave.svg";
-// import LILYPAD from "@/public/svgs/landing/lillypad.svg";
-// import FROG from "@/public/svgs/landing/onlyFrog.svg";
+import LILYPAD from "@/public/svgs/landing/lillypad.svg";
+import LOTUS from "@/public/svgs/landing/lotus.svg";
 import twiggy1 from "@/public/svgs/schedule/twiggy1.svg";
 import twiggy2 from "@/public/svgs/schedule/twiggy2.svg";
 // import temp from "@/public/svgs/schedule/temp.svg";
-import pads from "../../../public/svgs/landing/aboutPads.svg";
+// import pads from "../../../public/svgs/landing/aboutPads.svg";
 const days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
 function getRandomFromArray(array) {
   return array[Math.floor(Math.random() * array.length)];
@@ -49,11 +49,11 @@ const Schedule = () => {
           <div className="text-xl lg:text-2xl font-semibold inline-block">
             Check Back Spring 2024!
           </div> */}
-          <p className="text-base md:text-lg mt-2 ont-light">
+          <p className="text-base md:text-lg mt-2 font-extralight">
             Pacific Standard Time (PST)
           </p>
           <div className="mt-4 flex flex-col justify-center items-center w-full">
-            <div className="text-sm md:text-base lg:w-6/12 justify-between items-center mx-auto flex bg-[#0B5E5E] rounded">
+            <div className="text-sm md:text-base z-30 lg:w-6/12 justify-between items-center mx-auto flex bg-[#0B5E5E] rounded">
               {days.map((day) => (
                 <button
                   key={day}
@@ -66,7 +66,7 @@ const Schedule = () => {
                 </button>
               ))}
             </div>
-            <div className="mt-6 h-full relative w-11/12">
+            <div className="mt-6 h-full relative w-11/12 z-10">
               <div className="relative">
                 {/* <div
                   className={`absolute w-2 h-full bg-[#695546] rounded-lg left-24 z-[-1]`}
@@ -85,26 +85,18 @@ const Schedule = () => {
                           className="w-6 h-6 relative top-2"
                           style={{ left: `${randomX1}%` }}
                         />
-                        <div className="flex w-full">
-                          <Image
-                            src={LOGSTART}
-                            className="w-[18.3px] md:w-[20px] flex relative"
-                            alt="Log"
-                          />
+                        <div className="flex ">
+                          <Image src={LOGSTART} className="" alt="Log" />
                           <div
                             key={event.name}
-                            className="w-full flex justify-between items-center font-semibold font-workSans bg-gradient-to-b from-[#695546_50%] to-[#5b4739_50%]"
+                            className="w-full lg:pt-3 flex justify-between text-xs lg:text-lg items-center font-semibold font-workSans bg-gradient-to-b lg:px-4 from-[#695546_50%] to-[#5b4739_50%] "
                           >
-                            <p className="text-xs md:text-lg m-0 py-3 pl-6 lg:pl-16">{`${event.TIME}`}</p>
-                            <p className="text-xs md:text-lg m-0 py-3">{`${event.EVENT}`}</p>
-                            <p className="text-xs md:text-lg m-0 py-3">{`${event.TYPE}`}</p>
-                            <p className="text-xs md:text-lg m-0 py-3 pr-6 lg:pr-16">{`${event.LOCATION}`}</p>
+                            <p>{`${event.TIME}`}</p>
+                            <p>{`${event.EVENT}`}</p>
+                            <p>{`${event.TYPE}`}</p>
+                            <p c>{`${event.LOCATION}`}</p>
                           </div>
-                          <Image
-                            src={LOGEND}
-                            className="w-[8.90px] md:w-[9.8px] flex relative"
-                            alt="Log"
-                          />
+                          <Image src={LOGEND} className=" flex " alt="Log" />
                         </div>
                         <Image
                           src={twiggy1}
@@ -120,7 +112,7 @@ const Schedule = () => {
           {/* <Image src={temp} className="z-0 top-16 " alt="Waves" /> */}
           <Image
             src={WAVES}
-            className="absolute w-screen -z-10 left-0 animate-wave scale-[200%]"
+            className="absolute w-screen  -z-20 left-0 animate-wave scale-[200%]"
             alt="Waves"
           />
         </div>
@@ -145,16 +137,18 @@ const Schedule = () => {
         className="absolute w-screen flex z-0 h-24 bottom-4 left-[42%]"
         alt="Frog on lilypad"
       /> */}
-      <Image
-        src={pads}
-        className="absolute w-2/12 flex z-0 left-[-2%]"
-        alt="Lotus on lilypad"
-      />
-      <Image
-        src={pads}
-        className="absolute w-2/12 flex z-0 right-[-2%]"
-        alt="Lotus on lilypad"
-      />
+      <div className=" w-full flex justify-between">
+        <Image
+          src={LILYPAD}
+          className=" flex z-0 lg:-ml-10 w-3/12 mt-20 lg:w-2/12 animate-wiggle3"
+          alt="Lotus on lilypad"
+        />
+        <Image
+          src={LOTUS}
+          className=" flex  w-3/12 lg:w-2/12 lg:-mr-10 z-0 animate-wiggle2 "
+          alt="Lotus on lilypad"
+        />
+      </div>
     </div>
   );
 };
