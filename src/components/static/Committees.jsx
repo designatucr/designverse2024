@@ -21,15 +21,15 @@ const Committees = () => {
       </div>
       <div className="overflow-hidden hidden md:block">
         <Image
-          className="w-1/2 h-1/2 absolute left-[-20%]"
+          className="w-1/2 h-1/2 absolute left-[-20%] z-0"
           src={commMushroomL}
         />
         <Image
-          className="w-1/2 h-1/2 absolute right-[-20%]"
+          className="w-1/2 h-1/2 absolute right-[-20%] z-0"
           src={commMushroomR}
         />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 z-10">
         {Object.entries(COMMITTEES).map(([key, values], index) => (
           <div className="whitespace-nowrap text-center" key={index}>
             <p className="text-base lg:text-2xl font-semibold">{key}</p>
