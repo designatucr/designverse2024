@@ -36,8 +36,8 @@ const About = () => {
         <Image src={leaves} className="w-full hidden md:block z-0" />
       </div>
       <div className="flex justify-center items-center w-full md:hidden ">
-        <Image src={fox} className="bg-purple-500" />
-        <Image src={pads} className=" mt-20 bg-blue-500" />
+        <Image src={fox} />
+        <Image src={pads} className=" mt-20 " />
       </div>
     </section>
   );

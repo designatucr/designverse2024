@@ -11,7 +11,7 @@ const Navigation = () => {
 
   return (
     <div className="w-full">
-      <div className="fixed z-[1000] top-2">
+      <div className="fixed z-[1000] top-2 ">
         <button
           onClick={() => setDropdownOpen(!isDropdownOpen)}
           className={`m-3  ${
@@ -26,7 +26,7 @@ const Navigation = () => {
           className={`${
             isDropdownOpen
               ? "transition-all duration-300 ease-out transform translate-y-0 opacity-100"
-              : "transition-all duration-300 ease-in transform -translate-x-96 opacity-0"
+              : "transition-all duration-300 ease-in transform -translate-x-96 hidden"
           } bg-design-green-200 p-2 -mt-10 grid grid-col rounded-xl drop-shadow-lg ml-5`}
         >
           <button onClick={() => setDropdownOpen(false)}>
