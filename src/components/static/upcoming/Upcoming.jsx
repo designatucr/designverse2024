@@ -5,7 +5,7 @@ import Leads from "../Leads";
 import FAQ from "../FAQ";
 import Navigation from "../Navigation";
 import Tracks from "../Tracks";
-import Schedule from "@/components/dynamic/Schedule";
+import Schedule from "../schedule/Schedule";
 import Committees from "../Committees";
 import Sponsors from "../Sponsors";
 import Resources from "../Resources";
