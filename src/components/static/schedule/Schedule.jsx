@@ -8,11 +8,18 @@ const Schedule = async () => {
   });
 
   items.forEach((event) => {
-    event.start = new Date(event.start.dateTime);
-    event.end = new Date(event.end.dateTime);
-  });
+    event.start = new Date(
+      new Date(event.start.dateTime).toLocaleString("en-US", {
+        timeZone: "America/Los_Angeles",
+      })
+    );
 
-  console.log(items);
+    event.end = new Date(
+      new Date(event.end.dateTime).toLocaleString("en-US", {
+        timeZone: "America/Los_Angeles",
+      })
+    );
+  });
 
   const totalDays = [...new Set(items.map(({ start }) => start.getDay()))];
 
