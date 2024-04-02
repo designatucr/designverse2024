@@ -79,7 +79,7 @@ const Events = ({ events, totalDays }) => {
                           <Image src={LOGSTART} alt="Log" />
                           <div className="w-full lg:pt-3 flex justify-between text-xs lg:text-lg items-center font-semibold font-workSans bg-gradient-to-b lg:px-4 from-[#695546_50%] to-[#5b4739_50%] ">
                             <p>
-                              {start.toLocaleTimeString("en-US", {
+                              {start.toTimeString("en-US", {
                                 hour: "2-digit",
                                 minute: "2-digit",
                                 // timeZone: "America/Los_Angeles",
