@@ -12,6 +12,8 @@ const Schedule = async () => {
     event.end = new Date(event.end.dateTime);
   });
 
+  console.log(items);
+
   const totalDays = [...new Set(items.map(({ start }) => start.getDay()))];
 
   return <Events events={items} totalDays={totalDays} />;
