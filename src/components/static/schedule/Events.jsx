@@ -82,6 +82,7 @@ const Events = ({ events, totalDays }) => {
                               {start.toLocaleTimeString("en-US", {
                                 hour: "2-digit",
                                 minute: "2-digit",
+                                timeZone: "America/Los_Angeles",
                               })}
                             </p>
                             <p>{summary}</p>
