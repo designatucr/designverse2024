@@ -11,7 +11,6 @@ const Radio = ({
     if (field === "tier" || field === "affiliation" || field === "panelist") {
       setUser({ ...user, [field]: optionKey });
     } else {
-      console.log(option);
       setUser({ ...user, [field]: option });
     }
   };

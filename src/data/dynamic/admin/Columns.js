@@ -41,24 +41,13 @@ export const generateStatus = (statuses) => ({
     <Tag text={statuses[getValue()]} color={COLORS[getValue()]} />
   ),
 });
-// export const generateTiers = (tiers) => ({
-//   accessorKey: "tier",
-//   header: "Tier",
-//   width: "w-1/12",
-//   cell: ({ getValue }) => (
-//     <Tag text={tiers[getValue()]} color={COLORS[getValue()]} />
-//   ),
-// });
 
 export const generateTiers = (tiers) => ({
   accessorKey: "tier",
   header: "Tier",
   width: "w-1/12",
   cell: ({ getValue }) => {
-    // Log the tier value
     const tierValue = getValue();
-    console.log("Tier value:", tierValue);
-
     return <Tag text={tiers[tierValue]} color={COLORS[tierValue]} />;
   },
 });

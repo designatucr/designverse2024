@@ -36,7 +36,6 @@ const Navigation = () => {
           {items.map((item, index) => (
             <Link
               key={index}
-              onClick={() => console.log(`Clicked on ${item.name}`)}
               href={item.link}
               className="flex px-2 py-1.5 text-white text-lg flex-cols gap-3 justify-start items-center no-underline hover:cursor-pointer hover:bg-design-green-300 duration-500"
             >
