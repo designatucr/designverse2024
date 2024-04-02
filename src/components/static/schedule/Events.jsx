@@ -63,11 +63,11 @@ const Events = ({ events, totalDays }) => {
                 {events
                   .filter(
                     ({ start }) =>
-                      new Date(start)
-                        .toLocaleString("en-US", {
+                      new Date(
+                        new Date(start).toLocaleString("en-US", {
                           timeZone: "America/Los_Angeles",
                         })
-                        .getDay() === selectedDay
+                      ).getDay() === selectedDay
                   )
                   .map((event, index) => {
                     const randomX1 = getRandomFromArray(randomXPositions);
