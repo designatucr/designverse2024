@@ -8,17 +8,8 @@ const Schedule = async () => {
   });
 
   items.forEach((event) => {
-    event.start = new Date(
-      new Date(event.start.dateTime).toLocaleString("en-US", {
-        timeZone: "America/Los_Angeles",
-      })
-    );
-
-    event.end = new Date(
-      new Date(event.end.dateTime).toLocaleString("en-US", {
-        timeZone: "America/Los_Angeles",
-      })
-    );
+    event.start = new Date(event.start.dateTime);
+    event.end = new Date(event.end.dateTime);
   });
 
   console.log(items);

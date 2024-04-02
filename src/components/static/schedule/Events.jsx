@@ -61,7 +61,14 @@ const Events = ({ events, totalDays }) => {
             <div className="mt-6 h-full relative w-11/12 z-10">
               <div className="relative">
                 {events
-                  .filter(({ start }) => start.getDay() === selectedDay)
+                  .filter(
+                    ({ start }) =>
+                      new Date(start)
+                        .toLocaleString("en-US", {
+                          timeZone: "America/Los_Angeles",
+                        })
+                        .getDay() === selectedDay
+                  )
                   .map((event, index) => {
                     const randomX1 = getRandomFromArray(randomXPositions);
                     const randomX2 = getRandomFromArray(randomXPositions2);
@@ -79,10 +86,10 @@ const Events = ({ events, totalDays }) => {
                           <Image src={LOGSTART} alt="Log" />
                           <div className="w-full lg:pt-3 flex justify-between text-xs lg:text-lg items-center font-semibold font-workSans bg-gradient-to-b lg:px-4 from-[#695546_50%] to-[#5b4739_50%] ">
                             <p>
-                              {start.toTimeString("en-US", {
+                              {start.toLocaleTimeString("en-US", {
                                 hour: "2-digit",
                                 minute: "2-digit",
-                                // timeZone: "America/Los_Angeles",
+                                timeZone: "America/Los_Angeles",
                               })}
                             </p>
                             <p>{summary}</p>
