@@ -9,23 +9,18 @@ import LOTUS from "@/public/svgs/landing/lotus.svg";
 import twiggy1 from "@/public/svgs/schedule/twiggy1.svg";
 import twiggy2 from "@/public/svgs/schedule/twiggy2.svg";
 
-const DAYS = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
 const getRandomFromArray = (array) => {
   return array[Math.floor(Math.random() * array.length)];
 };
 
 const Events = ({ events, totalDays }) => {
   const [selectedDay, setSelectedDay] = useState(
-    new Date() > events[0].start ? new Date().getDay() : 1
+    new Date() > new Date(events[0].start)
+      ? new Date().toLocaleString("en-US", {
+          timeZone: "America/Los_Angeles",
+          weekday: "long",
+        })
+      : "Monday"
   );
 
   const randomXPositions = [10, 16, 20, 28, 36, 44, 52, 60, 72, 90];
@@ -54,7 +49,7 @@ const Events = ({ events, totalDays }) => {
                   }`}
                   onClick={() => setSelectedDay(day)}
                 >
-                  {DAYS[day]}
+                  {day}
                 </button>
               ))}
             </div>
@@ -62,7 +57,12 @@ const Events = ({ events, totalDays }) => {
               <div className="relative">
                 {events
                   .filter(({ start }) => {
-                    return new Date(start).getDay() === selectedDay;
+                    return (
+                      start.toLocaleString("en-US", {
+                        timeZone: "America/Los_Angeles",
+                        weekday: "long",
+                      }) === selectedDay
+                    );
                   })
                   .map((event, index) => {
                     const randomX1 = getRandomFromArray(randomXPositions);
@@ -81,7 +81,7 @@ const Events = ({ events, totalDays }) => {
                           <Image src={LOGSTART} alt="Log" />
                           <div className="w-full lg:pt-3 flex justify-between text-xs lg:text-lg items-center font-semibold font-workSans bg-gradient-to-b lg:px-4 from-[#695546_50%] to-[#5b4739_50%] ">
                             <p>
-                              {start.toLocaleTimeString("en-US", {
+                              {new Date(start).toLocaleTimeString("en-US", {
                                 hour: "2-digit",
                                 minute: "2-digit",
                                 timeZone: "America/Los_Angeles",
