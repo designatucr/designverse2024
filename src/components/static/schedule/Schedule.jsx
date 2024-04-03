@@ -10,20 +10,13 @@ const Schedule = async () => {
   items.forEach((event) => {
     event.start = new Date(event.start.dateTime);
     event.end = new Date(event.end.dateTime);
+    event.day = event.start.toLocaleString("en-US", {
+      timeZone: "America/Los_Angeles",
+      weekday: "long",
+    });
   });
 
-  const totalDays = [
-    ...new Set(
-      items.map(({ start }) =>
-        start.toLocaleString("en-US", {
-          timeZone: "America/Los_Angeles",
-          weekday: "long",
-        })
-      )
-    ),
-  ];
-
-  console.log(items, totalDays);
+  const totalDays = [...new Set(items.map(({ day }) => day))];
 
   return <Events events={items} totalDays={totalDays} />;
 };

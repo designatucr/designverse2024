@@ -56,14 +56,7 @@ const Events = ({ events, totalDays }) => {
             <div className="mt-6 h-full relative w-11/12 z-10">
               <div className="relative">
                 {events
-                  .filter(({ start }) => {
-                    return (
-                      start.toLocaleString("en-US", {
-                        timeZone: "America/Los_Angeles",
-                        weekday: "long",
-                      }) === selectedDay
-                    );
-                  })
+                  .filter(({ day }) => day === selectedDay)
                   .map((event, index) => {
                     const randomX1 = getRandomFromArray(randomXPositions);
                     const randomX2 = getRandomFromArray(randomXPositions2);
@@ -91,7 +84,7 @@ const Events = ({ events, totalDays }) => {
                             <p>{description.split("\n")[0].substr(1)}</p>
                             <p>{location}</p>
                           </div>
-                          <Image src={LOGEND} className=" flex " alt="Log" />
+                          <Image src={LOGEND} className="flex" alt="Log" />
                         </div>
                         <Image
                           src={twiggy1}
