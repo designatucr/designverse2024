@@ -17,6 +17,13 @@ export const GENDERS = ["Female", "Male", "Transgender", "Nonbinary", "Other"];
 export const AGES = ["<16", "16", "17", "18", "19", "20", "21", "22", "23+"];
 
 export const MAJORS = [
+  "Art",
+  "Anthropology",
+  "Business Admin",
+  "Business Analytics",
+  "Media and Cultural Studies",
+  "Psychology",
+  "Sociology",
   "Computer Science",
   "Computer Science with Business Applications",
   "Computer Engineering",
