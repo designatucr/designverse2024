@@ -1,5 +1,4 @@
 /* eslint-disable new-cap */
-"use client";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 // eslint-disable-next-line camelcase
@@ -16,6 +15,12 @@ const workSans = Work_Sans({
   variable: "--font-work_sans",
 });
 
+export const metadata = {
+  title: "DesignVerse UCR",
+  description:
+    "DesignVerse is the first ever 24-hour beginner-friendly Design-a-Thon hosted by the University of California, Riverside.",
+};
+
 export default function RootLayout({ children, session }) {
   const color = RegExp(/\/form\//).test(usePathname())
     ? "bg-newdesign-blue-50"
@@ -25,7 +30,7 @@ export default function RootLayout({ children, session }) {
       <body
         className={`${workSans.variable} flex flex-col ${color} lg:flex-row 78bfce h-full w-full`}
       >
-        <Session session={session} refetchInterval={5 * 60} className="h-full">
+        <Session session={session}>
           <div className="flex w-full">
             <Toaster />
             {children}
