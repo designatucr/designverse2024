@@ -60,7 +60,7 @@ const ProtectedPage = ({ children, restrictions, title }) => {
         <>
           <title>{title}</title>
           {navigation && <Navigation />}
-          <div className="flex justify-center items-start w-full bg-design-white h-screen overflow-x-hidden py-12 lg:py-0 z-0">
+          <div className="flex justify-center items-start w-full bg-design-white h-screen overflow-x-hidden lg:py-0 z-0">
             <div className={` ${widthVar} w-11/12 h-full`}>{children}</div>
           </div>
         </>
