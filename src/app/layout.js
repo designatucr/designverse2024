@@ -1,4 +1,3 @@
-// "use client"
 /* eslint-disable new-cap */
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -6,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Work_Sans } from "next/font/google";
 import Session from "@/components/dynamic/Session";
 import { Toaster } from "react-hot-toast";
-// import { usePathname } from "next/navigation";
+import Page from "@/components/dynamic/Page";
 
 // eslint-disable-next-line camelcase
 const workSans = Work_Sans({
@@ -23,21 +22,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children, session }) {
-  // const color = RegExp(/\/form\//).test(usePathname())
-  //   ? "bg-newdesign-blue-50"
-  //   : "bg-[#78bfce]";
   return (
     <html lang="en" className="h-full">
-      <body
-        className={`${workSans.variable} flex flex-col bg-[#78bfce] lg:flex-row h-full w-full`}
-      >
+      <Page className={`${workSans.variable}`}>
         <Session session={session}>
           <div className="flex w-full">
             <Toaster />
             {children}
           </div>
         </Session>
-      </body>
+      </Page>
     </html>
   );
 }
