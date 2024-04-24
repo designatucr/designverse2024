@@ -23,7 +23,7 @@ export const BOARD = [
       linkedin: "https://www.linkedin.com/in/rania-saber/",
     },
     {
-      name: "Tiana Ngyuen",
+      name: "Tiana Nguyen",
       position: "Director",
       pic: Tiana,
       linkedin: "https://www.linkedin.com/in/tiana-nguyen-b19bba287/",
