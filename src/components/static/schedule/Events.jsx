@@ -39,6 +39,7 @@ const Events = ({ events, totalDays }) => {
           <p className="text-base md:text-lg mt-2 font-extralight">
             Pacific Standard Time (PST)
           </p>
+          <p className="text-sm lg:text-xl">DESIGN WEEK MAY 6th - 9th</p>
           <div className="mt-4 flex flex-col justify-center items-center w-full">
             <div className="text-sm md:text-base z-30 lg:w-6/12 justify-between items-center mx-auto flex bg-[#0B5E5E] rounded">
               {totalDays.map((day) => (

@@ -4,7 +4,7 @@ import { SPONSORS } from "@/data/static/Sponsors";
 import bear from "@/public/svgs/sponsors/bear.svg";
 import chicken from "@/public/svgs/sponsors/chicken.svg";
 import cloud from "@/public/svgs/sponsors/cloud.svg";
-
+import Link from "next/link";
 const Sponsors = () => {
   return (
     <div
@@ -41,19 +41,22 @@ const Sponsors = () => {
             key={index}
             className="flex items-center justify-center space-x-4 lg:space-x-24 w-full mb-12"
           >
-            {Array(index + 1)
+            {Array(index === 2 ? 4 : index + 1)
               .fill()
               .map((_, idx) => (
-                <div
+                <Link
                   key={idx}
-                  className="bg-newdesign-cyan-200 w-[25%] lg:w-[10%] aspect-square rounded-full flex items-center justify-center p-3"
+                  href={SPONSORS[index].link}
+                  className="bg-newdesign-cyan-200 w-[25%] lg:w-[10%] aspect-square rounded-full flex items-center justify-center p-3 hover:cursor-pointer hover:scale-105"
                 >
                   <Image
-                    src={SPONSORS[Math.floor(((index + 1) / 2) * index) + idx]}
+                    src={
+                      SPONSORS[Math.floor(((index + 1) / 2) * index) + idx].pic
+                    }
                     alt="carousel"
                     className="w-full"
                   />
-                </div>
+                </Link>
               ))}
           </div>
         ))}

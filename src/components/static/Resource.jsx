@@ -4,7 +4,10 @@ import Link from "next/link";
 const Resource = ({ link, title, description, image }) => {
   return (
     <div className=" flex flex-col  items-center justify-center  text-white font-workSans ">
-      <Link href={link} className="w-2/5 lg:w-1/2 hover:cursor-pointer">
+      <Link
+        href={link}
+        className="w-2/5 lg:w-1/2 hover:cursor-pointer hover:scale-105"
+      >
         <Image src={image} className=" rounded-full " alt="Resource" />
       </Link>
 

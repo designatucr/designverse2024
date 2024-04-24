@@ -39,7 +39,8 @@ export const TRACKS = [
   {
     title: "Visionary's Challenge",
     front: track4,
-    describe: "Broadening Horizons in a Real-World Context",
+    describe:
+      "Broadening horizons in a real-world context through visual design principles and functionality",
     back: track4Back,
     bg: "bg-track-yellow",
     text: "text-track-yellow",
