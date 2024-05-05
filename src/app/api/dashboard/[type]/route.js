@@ -19,8 +19,10 @@ import {
   limitToLast,
 } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
-import { AUTH, ATTRIBUTES } from "@/data/dynamic/admin/Dashboard";
+import { AUTH, ATTRIBUTES } from "@/data/admin/Dashboard";
 import send from "@/utils/email";
+import data from "@/data/Config";
+
 const types = new Set([
   "admins",
   "committees",
@@ -33,7 +35,8 @@ const types = new Set([
   "panels",
   "leads",
 ]);
-export async function POST(req, { params }) {
+
+export const POST = async (req, { params }) => {
   const res = NextResponse;
   const { auth, message, user } = await authenticate(AUTH.POST);
 
@@ -43,13 +46,13 @@ export async function POST(req, { params }) {
       { status: auth }
     );
   }
-  const data = await req.json();
+  const body = await req.json();
 
   try {
     if (types.has(params.type)) {
       const element = {};
       ATTRIBUTES[params.type].forEach((attribute) => {
-        element[attribute] = data[attribute];
+        element[attribute] = body[attribute];
       });
       await updateDoc(doc(db, "users", user.id), {
         ...element,
@@ -62,9 +65,11 @@ export async function POST(req, { params }) {
 
       await send({
         email: user.email,
-        id: process.env.EMAIL_CONFIRMATION_TEMPLATE,
+        id: "confirmation",
         name: user.name,
-        position: params.type.slice(0, -1).toUpperCase(),
+        position: params.type.slice(0, -1),
+        subject: `[${data.name}] Thank you for applying!`,
+        preview: `Thank you for applying to ${data.name}`,
       });
     }
 
@@ -75,9 +80,9 @@ export async function POST(req, { params }) {
       { status: 500 }
     );
   }
-}
+};
 
-export async function GET(req, { params }) {
+export const GET = async (req, { params }) => {
   const direction = req.nextUrl.searchParams.get("direction");
   const index = req.nextUrl.searchParams.get("index");
   const size = req.nextUrl.searchParams.get("size");
@@ -178,9 +183,9 @@ export async function GET(req, { params }) {
       { status: 500 }
     );
   }
-}
+};
 
-export async function PUT(req, { params }) {
+export const PUT = async (req, { params }) => {
   const res = NextResponse;
   const { objects, status } = await req.json();
   const { auth, message } = await authenticate(AUTH.PUT);
@@ -198,15 +203,28 @@ export async function PUT(req, { params }) {
           await updateDoc(doc(db, "users", object.uid), {
             [`roles.${params.type}`]: status,
           });
+
+          const id = status === 1 ? "acceptance" : "rejection";
+
+          const preview =
+            id === "acceptance"
+              ? "You have been accepted!"
+              : "Thank you for applying!";
+
+          const subject =
+            id === "acceptance"
+              ? "🎉 Congratulations 🎉"
+              : "Application Status Update";
+
           await send({
             email: object.email,
-            id:
-              status === 1
-                ? process.env.EMAIL_ACCEPTANCE_TEMPLATE
-                : process.env.EMAIL_REJECTION_TEMPLATE,
+            id: id,
             name: object.name,
-            position: params.type.slice(0, -1).toUpperCase(),
+            position: params.type.slice(0, -1),
+            subject: `[${data.name}] ${subject}`,
+            preview: preview,
           });
+
           status === 1 &&
             (await updateDoc(doc(db, "statistics", "statistics"), {
               [`${params.type}.1`]: increment(1),
@@ -228,9 +246,9 @@ export async function PUT(req, { params }) {
       { status: 500 }
     );
   }
-}
+};
 
-export async function DELETE(req, { params }) {
+export const DELETE = async (req, { params }) => {
   const res = NextResponse;
   const { auth, message } = await authenticate(AUTH.DELETE);
   const objects = req.nextUrl.searchParams.get("remove").split(",");
@@ -263,4 +281,4 @@ export async function DELETE(req, { params }) {
       { status: 500 }
     );
   }
-}
+};

@@ -1,13 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-import Button from "@/components/dynamic/Button";
+import Button from "@/components/Button";
 import { useRouter } from "next/navigation";
 import toaster from "@/utils/toaster";
 import { useSession } from "next-auth/react";
 import Fault from "@/utils/error";
 import { api } from "@/utils/api";
 
-export default function Page({ params }) {
+const Page = ({ params }) => {
   const [team, setTeam] = useState(null);
   const router = useRouter();
   const { update: sessionUpdate } = useSession();
@@ -79,4 +79,6 @@ export default function Page({ params }) {
       )}
     </div>
   );
-}
+};
+
+export default Page;
