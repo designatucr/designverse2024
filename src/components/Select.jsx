@@ -54,9 +54,9 @@ const Select = ({
 
   return (
     <div ref={parent}>
-      <p className="mb-1 font-semibold">
+      <p className="mb-1 font-workSans">
         {title}
-        {required && <span className="text-red-500">*</span>}
+        {required && <span className="text-design-orange">*</span>}
       </p>
       <button
         disabled={!editable}
@@ -78,14 +78,14 @@ const Select = ({
         <div className="relative">
           <div
             ref={ref}
-            className="absolute overflow-y-scroll bg-hackathon-green-100 w-full h-fit max-h-[35vh]"
+            className="absolute overflow-y-scroll bg-newdesign-blue-50 w-full h-fit max-h-[35vh]"
             data-cy="select-menu"
           >
             {searchable && (
               <input
                 value={input}
                 autoFocus
-                className="my-1 w-full ring-0 outline-none px-2 py-2 bg-hackathon-green-100 sticky top-0 left-0 z-10"
+                className="mb-1 mt-2 w-full ring-0 outline-none px-2 py-2 bg-hackathon-green-light sticky top-0 left-0 z-10"
                 placeholder="search"
                 onChange={handleInput}
               />
@@ -106,7 +106,7 @@ const Select = ({
 
                 return (
                   <div
-                    className="absolute top-0 left-0 w-full hover:bg-hackathon-green-200 hover:cursor-pointer flex items-center px-2"
+                    className="absolute top-0 left-0 w-full hover:!bg-newdesign-blue-200 !bg-newdesign-blue-50 hover:cursor-pointer flex items-center px-2"
                     key={virtualRow.index}
                     data-index={virtualRow.index}
                     ref={measureElement}

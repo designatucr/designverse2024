@@ -9,9 +9,50 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["var(--font-poppins)"],
+        workSans: ["var(--font-work_sans)"],
       },
       colors: {
+        track: {
+          blue: "#20A4AC",
+          red: "#C87C6A",
+          green: "#639A4F",
+          yellow: "#E2A64A",
+        },
+        newdesign: {
+          "blue-50": "#E9F2F5",
+          "blue-100": "#ABD0DC",
+          "blue-200": "#78BFCE",
+          "blue-300": "#71ADC7",
+          "cyan-100": "#32BEC7",
+          "cyan-200": "#034444",
+          "green-100": "#336C18",
+          "green-200": "#294C19",
+          "red-100": "#E88050",
+          "red-200": "#C16134",
+        },
+
+        design: {
+          orange: "#DF673E",
+          "blue-100": "#69CDBA",
+          "blue-200": "#4DB5A2",
+          "blue-300": "#18836F",
+          "blue-400": "#57C0AC",
+          "blue-500": "#2F9482",
+          white: "#FAF8F3",
+          beige: "#DDD5C9",
+          "green-100": "#B2CDAF",
+          "green-200": "#61934A",
+          "green-300": "#7CA677",
+          "green-400": "#334E26",
+          "green-500": "#7DA878",
+          "brown-100": "#E8D9C6",
+          "brown-200": "#C5A687",
+          "brown-300": "#AD7D5E",
+          "brown-400": "#644539",
+          "brown-500": "#5F4B3D",
+          "brown-600": "#A28967",
+          "green-light": "#9CC688",
+        },
         hackathon: {
           "blue-100": "#38A3A5",
           "blue-200": "#22577A",
@@ -25,12 +66,12 @@ module.exports = {
           "gray-300": "#525252",
           page: "#F5F5F5",
           tags: {
-            "red-bg": "#FFE9E2",
-            "red-text": "#F07167",
-            "yellow-bg": "#FFF0BC",
-            "yellow-text": "#FFB81C",
-            "green-bg": "#CFEDEA",
-            "green-text": "#00AFB9",
+            "red-bg": "#F5C1B3",
+            "red-text": "#C35927",
+            "yellow-bg": "#FEF2CA",
+            "yellow-text": "#DFA719",
+            "green-bg": "#B7E4DC",
+            "green-text": "#538B70",
             "gray-bg": "#E9E9E9",
             "gray-text": "#969696",
             "purple-bg": "#E6DFF6",
@@ -39,11 +80,51 @@ module.exports = {
             "grayblue-text": "#22577A",
             "teal-bg": "#D7EDED",
             "teal-text": "#38A3A5",
-            "lightgreen-bg": "#DDF5EB",
-            "lightgreen-text": "#57CC99",
+            "lightgreen-bg": "#D9E7C2",
+            "lightgreen-text": "#61934A",
             "pink-bg": "#FFE3FB",
             "pink-text": "#F583F1",
             white: "#fff",
+          },
+        },
+      },
+      animation: {
+        wave: "wave 30s ease-in-out infinite",
+        wiggle1: "wiggle1 5s ease-in-out infinite",
+        wiggle2: "wiggle2 5s ease-in-out infinite",
+        wiggle3: "wiggle3 12.5s ease-in-out infinite",
+      },
+      keyframes: {
+        wave: {
+          "0% 100%": {
+            translate: "0%",
+          },
+          "50%": {
+            translate: "-50%",
+          },
+        },
+        wiggle1: {
+          "0% 100%": {
+            translate: "25px",
+          },
+          "50%": {
+            translate: "-25px",
+          },
+        },
+        wiggle2: {
+          "0% 100%": {
+            translate: "10px",
+          },
+          "50%": {
+            translate: "-10px",
+          },
+        },
+        wiggle3: {
+          "0% 100%": {
+            translate: "-17.5px",
+          },
+          "50%": {
+            translate: "17.5px",
           },
         },
       },

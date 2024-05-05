@@ -16,10 +16,13 @@ const Radio = ({
   };
 
   return (
-    <div data-cy={`radio-${field}`} className="flex flex-col">
-      <p className="mb-1 font-semibold">
+    <div
+      data-cy={`radio-${field}`}
+      className="flex flex-col mb-4 font-workSans"
+    >
+      <p className="mb-1 font-regular">
         {text}
-        {required && <span className="text-red-500">*</span>}
+        {required && <span className="text-design-orange">*</span>}
       </p>
       {!editable && (
         <div data-cy={`radio-${field}-default`} className="pl-3">
@@ -40,7 +43,7 @@ const Radio = ({
                   data-cy={`radio-button-${option}`}
                   className={`rounded-full w-full aspect-square duration-100 ${
                     user[field] === option || user[field] === optionKey
-                      ? "bg-hackathon-green-300"
+                      ? "bg-newdesign-blue-200"
                       : "bg-transparent"
                   }`}
                 />

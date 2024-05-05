@@ -1,27 +1,37 @@
 /* eslint-disable new-cap */
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import "bootstrap/dist/css/bootstrap.min.css";
+// eslint-disable-next-line camelcase
+import { Work_Sans } from "next/font/google";
 import Session from "@/components/Session";
 import { Toaster } from "react-hot-toast";
+import Page from "@/components/Page";
 
-const poppins = Poppins({
+// eslint-disable-next-line camelcase
+const workSans = Work_Sans({
   subsets: ["latin"],
   display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-poppins",
+  variable: "--font-work_sans",
 });
 
-export const RootLayout = ({ children, session }) => {
+export const metadata = {
+  title: "DesignVerse UCR",
+  description:
+    "DesignVerse is the first ever 24-hour beginner-friendly Design-a-Thon hosted by the University of California, Riverside.",
+};
+
+const RootLayout = ({ children, session }) => {
   return (
     <html lang="en" className="h-full">
-      <body className={`${poppins.variable} flex flex-col lg:flex-row h-full`}>
-        <div className="flex w-full h-full">
-          <Session session={session} refetchInterval={5 * 60}>
+      <Page className={`${workSans.variable}`}>
+        <Session session={session}>
+          <div className="flex w-full">
             <Toaster />
             {children}
-          </Session>
-        </div>
-      </body>
+          </div>
+        </Session>
+      </Page>
     </html>
   );
 };

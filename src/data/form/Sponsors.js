@@ -2,11 +2,11 @@ import data from "@/data/Config";
 import { phone } from "@/data/form/Regex";
 
 export const TIERS = {
-  tier1: "Bronze",
-  tier2: "Silver",
-  tier3: "Gold",
-  tier4: "Tier4",
-  tier5: "Tier5",
+  tier1: "Seed",
+  tier2: "Sprout",
+  tier3: "Plant",
+  tier4: "Garden",
+  tier5: "Forest",
   other: "Other",
 };
 
@@ -73,7 +73,7 @@ export const FIELDS = {
   },
   tier: {
     input: "radio",
-    text: "Sponsorship Tier (check sponsorship packet)",
+    text: "Sponsorship Tier (please check the sponsorship packet)",
     options: TIERS,
     field: "tier",
     width: 12,
@@ -94,7 +94,7 @@ export const FIELDS = {
     width: 12,
     field: "requirements",
     options: [
-      "I have read the MLH code of conduct and agree to the terms and conditions listed",
+      "I have read the DesignVerse Code of Conduct and agree to the terms and conditions listed",
       "I consent to photographs being taken and being used for future marketing purposes",
       "I consent to providing a safe space for hackers to learn and grow their interests in computing",
       "I consent to following the provided guidelines and rules instructed by the organizing team",

@@ -18,7 +18,7 @@ export const FIELDS = {
     texts: [
       `Welcome to ${data.name}. Thank you for being on the organizing team, we appreciate your efforts to help support ${data.name}. ${data.name} is a ${data.description} hackathon spanning ${data.length} on ${data.date}.`,
       "Admins are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
-      "Note: Admins are not permitted to become participants for the hackathon.",
+      "Note: Admins are not permitted to become participants for the designathon.",
     ],
   },
   name: {
@@ -101,9 +101,9 @@ export const FIELDS = {
     width: 12,
     field: "requirements",
     options: [
-      "I have read the MLH code of conduct and agree to the terms and conditions listed",
+      "I have read the DesignVerse code of conduct and agree to the terms and conditions listed",
       "I consent to photographs being taken and being used for future marketing purposes",
-      "I consent to providing a safe space for hackers to learn and grow their interests in computing",
+      "I consent to providing a safe space for designers to learn and grow their interests in designing",
       "I consent to following the provided guidelines and rules instructed by the organizing team",
       "I understand that failure to comply with guidelines or creating an unsafe space will result in my removal from the event",
       "I understand this is an in person event taking place in UCR and I must attend in person in order to participate",

@@ -8,7 +8,6 @@ import Upload from "@/components/form/form/Upload";
 import toaster from "@/utils/toaster";
 import Link from "next/link";
 import { FaLink } from "react-icons/fa";
-import data from "@/data/Config";
 import Terms from "./Terms";
 
 const Questions = ({
@@ -57,19 +56,44 @@ const Questions = ({
   };
 
   return (
-    <div className="flex flex-col w-full gap-5">
+    <div className="flex flex-col w-full  font-normal font-workSans">
       {Object.values(fields).map((field, index) => (
         <div key={index}>
           {field.input === "description" &&
             field.texts.map((description, index) => (
               <div key={index}>
-                <p>{description}</p> <br />
+                <div>
+                  {description.split(" ").map((word, key) =>
+                    word.includes("DesignVerse") ? (
+                      <span
+                        className="font-workSans text-newdesign-blue-300 font-semibold"
+                        key={key}
+                      >
+                        {word}{" "}
+                      </span>
+                    ) : (
+                      <span key={key}>{word} </span>
+                    )
+                  )}
+                </div>
+                &nbsp;
                 {index === field.texts.length - 1 && (
-                  <p>
+                  <div>
+                    {packet && (
+                      <Link
+                        href={data.packet}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="no-underline flex items-center text-design-orange mb-2"
+                      >
+                        Sponsorship Packet
+                        <FaLink className="mx-2" />
+                      </Link>
+                    )}
                     Fields with
-                    <span className="text-red-500"> * </span>
+                    <span className="text-design-orange"> * </span>
                     are required.
-                  </p>
+                  </div>
                 )}
               </div>
             ))}
@@ -102,9 +126,11 @@ const Questions = ({
           )}
           {field.input === "checkboxes" && (
             <>
-              <p className="mb-1 font-semibold">
+              <p className="mb-2 font-regular">
                 {field.text}
-                {field.required && <span className="text-red-500">*</span>}
+                {field.required && (
+                  <span className="text-design-orange">*</span>
+                )}
               </p>
               {field.options.map((option, i) => (
                 <Checkbox
@@ -119,9 +145,10 @@ const Questions = ({
                         : [...object[field.field], option],
                     })
                   }
-                  color="bg-hackathon-green-300"
+                  color="bg-newdesign-blue-200"
                 />
               ))}
+              <br />
             </>
           )}
           {field.input === "terms" && (
@@ -174,48 +201,21 @@ const Questions = ({
           )}
         </div>
       ))}
-      <p className="font-semibold mt-3">Resources</p>
+      <div className="font-regular mt-3">Resources</div>
       <Link
-        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+        href="/files/DesignVerseCodeofConduct.pdf"
         target="_blank"
-        className="no-underline flex items-center text-hackathon-green-300"
+        className="no-underline flex items-center text-newdesign-blue-200"
       >
-        MLH Code of Conduct
+        DesignVerse Code Of Conduct
         <FaLink className="mx-2" />
       </Link>
-      <Link
-        href="https://mlh.io/privacy"
-        target="_blank"
-        className="no-underline flex items-center text-hackathon-green-300"
-      >
-        MLH Privacy Policy
-        <FaLink className="mx-2" />
-      </Link>
-      <Link
-        href="https://github.com/MLH/mlh-policies/blob/main/contest-terms.md"
-        target="_blank"
-        className="no-underline flex items-center text-hackathon-green-300"
-      >
-        MLH Contest Terms and Conditions
-        <FaLink className="mx-2" />
-      </Link>
-      {packet && (
-        <Link
-          href={data.packet}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="no-underline flex items-center"
-        >
-          Sponsorship Packet
-          <FaLink className="mx-2" />
-        </Link>
-      )}
       <div className="flex justify-center">
         <Button
-          text="Submit"
+          text="submit"
           onClick={handleSubmit}
           loading={loading}
-          color="green"
+          color="form"
         />
       </div>
     </div>

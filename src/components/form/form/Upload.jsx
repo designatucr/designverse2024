@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsUpload } from "react-icons/bs";
+import { FaUpload } from "react-icons/fa";
 import { FaFilePdf, FaImage, FaTimes, FaEye } from "react-icons/fa";
 import toaster from "@/utils/toaster";
 import { BYTES } from "@/data/Bytes";
@@ -35,21 +35,21 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
   };
 
   return (
-    <div className="flex flex-col">
-      <p className="mb-0 font-semibold">
+    <div className="flex flex-col mb-4 font-workSans">
+      <p className="mb-2 font-normal">
         {text}
-        {required && <span className="text-red-500">*</span>}
+        {required && <span className="text-design-orange">*</span>}
       </p>
       <div className="flex items-center w-full flex-col" data-cy="upload">
         {!file && (
           <label
             htmlFor="dropzone-file"
-            className="flex flex-col items-center justify-center w-full h-fit border-2 border-gray-300 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100"
+            className="flex flex-col items-center justify-center w-full h-fit rounded-lg cursor-pointer bg-newdesign-blue-50 hover:opacity-70"
           >
             <div className="flex flex-col items-center justify-center pt-4">
-              <BsUpload className=" text-3xl mb-2 text-hackathon-green-300" />
-              <p className="text-sm text-gray-500 font-semibold">
-                Upload from my computer
+              <FaUpload className="text-3xl mb-2 text-newdesign-blue-200" />
+              <p className="text-sm font-normal text-gray-500">
+                Upload From My Computer
               </p>
             </div>
             <div className="w-full" data-cy="upload-input">
@@ -65,7 +65,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
         )}
         {file && (
           <div
-            className="flex items-center justify-between w-full my-2 bg-gray-200 px-2 py-2"
+            className="flex items-center justify-between w-full my-2 bg-newdesign-blue-50 px-2 py-2"
             data-cy="upload-success"
           >
             <div className="flex items-center">

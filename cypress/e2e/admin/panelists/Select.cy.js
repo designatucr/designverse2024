@@ -3,7 +3,7 @@ import response from "../../../fixtures/panelists.json";
 const panelists = response.items;
 const five = panelists.slice(0, 5);
 
-describe("Mentor Select", () => {
+describe("Panelist Select", () => {
   beforeEach(() => {
     cy.fetch({
       role: "admins",
@@ -17,7 +17,7 @@ describe("Mentor Select", () => {
     panelists.forEach((panelist) => {
       cy.get(`[data-cy="${panelist.uid}"]`).should(
         "have.class",
-        "bg-green-100"
+        "bg-design-green-100/50"
       );
     });
   });
@@ -30,7 +30,7 @@ describe("Mentor Select", () => {
       if (index < 5)
         cy.get(`[data-cy="${panelist.uid}"]`).should(
           "have.class",
-          "bg-green-100"
+          "bg-design-green-100/50"
         );
       else
         cy.get(`[data-cy="${panelist.uid}"]`).should("have.class", "bg-white");
