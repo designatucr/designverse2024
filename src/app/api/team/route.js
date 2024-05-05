@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import { db } from "../../../utils/firebase";
 import { doc, getDoc, updateDoc, addDoc, collection } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
-import { AUTH } from "@/data/dynamic/user/Team";
+import { AUTH } from "@/data/user/Team";
 
-export async function POST(req) {
+export const POST = async (req) => {
   const res = NextResponse;
   const { auth, message, user } = await authenticate(AUTH.POST);
   const { team } = await req.json();
@@ -50,9 +50,9 @@ export async function POST(req) {
       { status: 500 }
     );
   }
-}
+};
 
-export async function PUT(req) {
+export const PUT = async (req) => {
   const res = NextResponse;
   const { auth, user } = await authenticate(AUTH.PUT);
 
@@ -82,9 +82,9 @@ export async function PUT(req) {
       { status: 500 }
     );
   }
-}
+};
 
-export async function GET(req) {
+export const GET = async (req) => {
   const res = NextResponse;
   const { auth, message } = await authenticate(AUTH.GET);
 
@@ -121,4 +121,4 @@ export async function GET(req) {
       { status: 500 }
     );
   }
-}
+};

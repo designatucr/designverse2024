@@ -3,9 +3,9 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 // eslint-disable-next-line camelcase
 import { Work_Sans } from "next/font/google";
-import Session from "@/components/dynamic/Session";
+import Session from "@/components/Session";
 import { Toaster } from "react-hot-toast";
-import Page from "@/components/dynamic/Page";
+import Page from "@/components/Page";
 
 // eslint-disable-next-line camelcase
 const workSans = Work_Sans({
@@ -21,7 +21,7 @@ export const metadata = {
     "DesignVerse is the first ever 24-hour beginner-friendly Design-a-Thon hosted by the University of California, Riverside.",
 };
 
-export default function RootLayout({ children, session }) {
+const RootLayout = ({ children, session }) => {
   return (
     <html lang="en" className="h-full">
       <Page className={`${workSans.variable}`}>
@@ -34,4 +34,6 @@ export default function RootLayout({ children, session }) {
       </Page>
     </html>
   );
-}
+};
+
+export default RootLayout;
