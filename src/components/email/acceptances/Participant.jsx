@@ -14,7 +14,7 @@ const Participant = ({ name, preview }) => {
         first Designathon. We are delighted to have you be part of our event!
       </Text>
       <Text>
-        With this event coming up on May 10th and 11th, here are a few details
+        With this event coming up on May 11th and 12th, here are a few details
         to note!
       </Text>
       <Text>
