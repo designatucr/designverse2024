@@ -11,6 +11,7 @@ import {
   Section,
   Text,
   Tailwind,
+  Link,
 } from "@react-email/components";
 
 const Template = ({ children, name, preview }) => {
@@ -20,16 +21,20 @@ const Template = ({ children, name, preview }) => {
       <Preview>{preview}</Preview>
       <Tailwind>
         <Body className="bg-white my-auto mx-auto font-sans px-2">
-          <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto p-[20px] max-w-[465px]">
+          <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto p-[20px] max-w-[465px] bg-[#BBDEE6]">
             <Section className="mt-[32px]">
               <Img
-                src="https://www.bearhack.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.473367c8.webp&w=3840&q=75"
-                width="40"
-                height="37"
-                alt="Vercel"
+                src="https://media.discordapp.net/attachments/1092027859394105426/1236792335556149339/image.png?ex=66394c1f&is=6637fa9f&hm=f92a258ea94d7b6688ebc79779ca59131f4d23ac0e1358c8f35f6699d523821b&=&format=png&quality=lossless&width=1182&height=482"
+                width="150"
+                height="70"
+                alt="Logo"
                 className="my-0 mx-auto"
               />
+              <Text className="text-[#64922E] text-[14px] leading-[24px] text-right font-bold">
+                May 11-12, 2024
+              </Text>
             </Section>
+
             <Heading className="text-black text-[24px] font-normal text-center p-0 my-[30px] mx-0">
               Thank you for applying!
             </Heading>
@@ -40,18 +45,40 @@ const Template = ({ children, name, preview }) => {
             <Text>
               - {data.name} Team {data.heart}
             </Text>
-            <Hr className="border border-solid border-[#eaeaea] my-[26px] mx-0 w-full" />
+            <Hr className="border border-solid border-white my-[26px] mx-0 w-full" />
             <Text>
-              Visit {data.domain} for more information about {data.name} and
-              follow us on {data.instagram} and {data.linkedin} for up to date
-              information and announcements.
+              Visit{" "}
+              <Link href={data.domain} className="text-[#64922E] font-semibold">
+                designverseucr.org
+              </Link>{" "}
+              for more information about {data.name} and follow us on{" "}
+              <Link
+                href={data.instagram}
+                className="text-[#64922E] font-semibold"
+              >
+                Instagram
+              </Link>{" "}
+              and{" "}
+              <Link
+                href={data.linkedin}
+                className="text-[#64922E] font-semibold"
+              >
+                Linkedin
+              </Link>{" "}
+              for up to date information and announcements.
             </Text>
-            <Text className="text-[#666666] text-xs leading-[24px]">
+            <Text className="text-black text-xs leading-[24px]">
               This invitation was intended for{" "}
-              <span className="text-black">{name}</span>. If you were not
-              expecting this email, you can ignore this email. If you are
-              concerned about your account&apos;s safety, please contact{" "}
-              {data.email} to get in touch with us.
+              <span className="text-[#64922E] font-semibold">{name}</span>. If
+              you were not expecting this email, you can ignore this email. If
+              you are concerned about your account&apos;s safety, please contact{" "}
+              <Link
+                href={`mailto:${data.email}`}
+                className="text-[#64922E] font-semibold"
+              >
+                designverseucr@gmail.com
+              </Link>{" "}
+              to get in touch with us.
             </Text>
           </Container>
         </Body>

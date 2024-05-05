@@ -17,7 +17,7 @@ const data = {
   instagram: "https://www.instagram.com/designverseucr/",
   linkedin: "https://www.linkedin.com/company/designverseucr",
   discord: "https://discord.gg/Vck5zFjz6m",
-  heart: "🤎",
+  heart: "💚",
 };
 
 export default data;

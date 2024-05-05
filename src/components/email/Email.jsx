@@ -1,4 +1,4 @@
-import Acceptance from "./Acceptance";
+import Acceptance from "./acceptances/Acceptance";
 import Confirmation from "./Confirmation";
 import Rejection from "./Rejection";
 
