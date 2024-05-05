@@ -6,7 +6,7 @@ import acm from "@/public/svgs/sponsors/acm.webp";
 import glico from "@/public/svgs/sponsors/glico.webp";
 import chick from "@/public/svgs/sponsors/chickfila.webp";
 import figma from "@/public/svgs/sponsors/figma.webp";
-import adobe from "@/public/svgs/sponsors/adobe.png";
+import adobe from "@/public/svgs/sponsors/adobe.webp";
 
 export const SPONSORS = [
   [
