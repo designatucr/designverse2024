@@ -73,17 +73,21 @@ const Events = ({ events, totalDays }) => {
                         />
                         <div className="flex">
                           <Image src={LOGSTART} alt="Log" />
-                          <div className="w-full lg:pt-3 flex justify-between text-xs lg:text-lg items-center font-semibold font-workSans bg-gradient-to-b lg:px-4 from-[#695546_50%] to-[#5b4739_50%] ">
-                            <p>
+                          <div className="w-full lg:pt-3 flex justify-between gap-20 text-xs lg:text-lg items-center font-semibold font-workSans bg-gradient-to-b lg:px-4 from-[#695546_50%] to-[#5b4739_50%] ">
+                            <p className="w-1/5">
                               {new Date(start).toLocaleTimeString("en-US", {
                                 hour: "2-digit",
                                 minute: "2-digit",
                                 timeZone: "America/Los_Angeles",
                               })}
                             </p>
-                            <p>{summary}</p>
-                            <p>{description.split("\n")[0].substr(1)}</p>
-                            <p>{location}</p>
+                            <p className="w-full flex justify-start">
+                              {summary}
+                            </p>
+                            <p className="w-1/6 flex justify-start">
+                              {description.split(" ")[0]}
+                            </p>
+                            <p className="w-1/3">{location}</p>
                           </div>
                           <Image src={LOGEND} className="flex" alt="Log" />
                         </div>
