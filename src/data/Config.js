@@ -2,7 +2,7 @@ const data = {
   name: "DesignVerse",
   email: "designverseucr@gmail.com",
   year: "2024",
-  date: new Date("May 11, 2024 8:00:00"),
+  date: new Date("May 11, 2024 9:00:00"),
   packet: "/files/DesignVerseSponsorshipPacket.pdf",
   short_name: "DesignVerse",
   description:
@@ -11,7 +11,7 @@ const data = {
   description: "UCR’s first ever UI/UX Design-a-Thon!",
   length: "24 hours",
   domain: "https://www.designverseucr.com",
-  end: "April 12th 2024 13:20:00",
+  end: "May 12th 2024 9:00:00",
   packet: "/files/DesignVerseSponsorshipPacket.pdf",
   devpost: "https://devpost.com/",
   instagram: "https://www.instagram.com/designverseucr/",

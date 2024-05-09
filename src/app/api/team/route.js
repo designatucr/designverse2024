@@ -19,9 +19,7 @@ export const POST = async (req) => {
   try {
     const newTeam = {
       links: {
-        github: "",
         devpost: "",
-        figma: "",
       },
       name: team.name,
       members: [{ discord: user.discord, name: user.name, uid: user.id }],
@@ -35,9 +33,7 @@ export const POST = async (req) => {
       {
         message: "OK",
         items: {
-          github: newTeam.links.github,
           devpost: newTeam.links.devpost,
-          figma: newTeam.links.figma,
           members: newTeam.members,
           id: docRef.id,
         },
@@ -63,14 +59,12 @@ export const PUT = async (req) => {
     );
   }
 
-  const { github, figma, devpost, members, name } = await req.json();
+  const { devpost, members, name } = await req.json();
 
   try {
     await updateDoc(doc(db, "teams", user.team), {
       name: name,
       links: {
-        github: github,
-        figma: figma,
         devpost: devpost,
       },
       members: members,
@@ -101,16 +95,16 @@ export const GET = async (req) => {
     const snapshot = await getDoc(doc(db, "teams", team));
     if (!snapshot.exists())
       return res.json({ message: "Invalid Team ID" }, { status: 500 });
-    const { links, members, name } = snapshot.data();
+    const { links, members, name, table } = snapshot.data();
+
     return res.json(
       {
         message: "OK",
         items: {
-          github: links.github,
           devpost: links.devpost,
-          figma: links.figma,
           members: members,
           name: name,
+          table: table,
         },
       },
       { status: 200 }

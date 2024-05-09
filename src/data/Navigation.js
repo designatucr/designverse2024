@@ -21,6 +21,7 @@ import { AiOutlineQrcode } from "react-icons/ai";
 import { signOut } from "next-auth/react";
 import { SiDevpost, SiHandshake } from "react-icons/si";
 import { IoIosPeople } from "react-icons/io";
+import { RiTeamFill } from "react-icons/ri";
 import data from "@/data/Config";
 
 const iconStyle = "mr-2";
@@ -162,6 +163,11 @@ export const TABS = {
           name: "checkin",
           link: "/user/checkin",
           icon: <AiOutlineQrcode className={iconStyle} />,
+        },
+        {
+          name: "team",
+          link: "/user/team",
+          icon: <RiTeamFill className={iconStyle} />,
         },
       ],
     },
