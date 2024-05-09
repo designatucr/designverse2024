@@ -39,14 +39,14 @@ const Sponsors = () => {
       {SPONSORS.map((tiers, index) => (
         <div
           key={index}
-          className="flex items-center justify-center space-x-4 lg:space-x-24 w-full mb-12"
+          className="flex items-center flex-wrap justify-center gap-4 lg:space-x-12 w-full mb-12"
         >
           {tiers.map(({ link, pic }, i) => (
             <Link
               key={i}
               href={link}
               className={`bg-newdesign-cyan-200 w-[25%] ${
-                index === 0 || index === 1 ? "lg:w-[12%]" : "lg:w-[9%]"
+                index === 0 || index === 1 ? "lg:w-[12%]" : "lg:w-[10%]"
               }  aspect-square rounded-full flex items-center justify-center p-3 hover:cursor-pointer hover:scale-105`}
             >
               <Image src={pic} alt="carousel" className="w-full" />
