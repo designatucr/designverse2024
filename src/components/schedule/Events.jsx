@@ -46,7 +46,7 @@ const Events = ({ events, totalDays }) => {
               {totalDays.map((day) => (
                 <button
                   key={day}
-                  className={`flex py-2 px-3 justify-between rounded focus:outline-none text-white ${
+                  className={`flex justify-center p-2 rounded focus:outline-none text-white ${
                     selectedDay === day ? "bg-[#15929A]" : "bg-transparent"
                   }`}
                   onClick={() => setSelectedDay(day)}
@@ -75,7 +75,7 @@ const Events = ({ events, totalDays }) => {
                         <div className="flex">
                           <Image src={LOGSTART} alt="Log" />
                           {/* <div className="w-full lg:pt-3 flex justify-between gap-20 text-xs lg:text-lg items-center font-semibold font-workSans bg-gradient-to-b lg:px-4 from-[#695546_50%] to-[#5b4739_50%] "> */}
-                          <div className="text-xs lg:text-base w-full lg:pt-3 font-semibold font-workSans bg-gradient-to-b lg:px-4 from-[#695546_50%] to-[#5b4739_50%] grid grid-cols-4 justify-center items-center">
+                          <div className="text-xs lg:text-lg w-full lg:pt-3 font-semibold font-workSans bg-gradient-to-b lg:px-4 from-[#695546_50%] to-[#5b4739_50%] grid grid-cols-4 justify-center items-center">
                             <p className="">
                               {new Date(start).toLocaleTimeString("en-US", {
                                 hour: "2-digit",

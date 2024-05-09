@@ -21,7 +21,7 @@ const CheckinPage = () => {
   return (
     <div className="flex w-full flex-col h-[calc(100vh-48px)]">
       <div className="pb-3 pt-4">
-        <Title title="Check In" />
+        <Title title="🌱 Check In" />
       </div>
       <div className="flex flex-col h-full lg:flex-row">
         <div className="flex flex-col items-center m-auto">
@@ -35,7 +35,7 @@ const CheckinPage = () => {
           <p className="text-2xl font-bold">{session.user.name}</p>
           <p className="text-base">{session.user.email}</p>
         </div>
-        <div className="bg-white w-2/3 h-1/3 lg:h-5/6 flex justify-center items-center flex-col rounded-lg m-auto">
+        <div className="bg-design-green-300 w-2/3 h-1/3 lg:h-5/6 flex justify-center items-center flex-col rounded-3xl m-auto border-4 border-design-green-200">
           <QRCodeSVG
             value={`${session.user.id}&${date.toISOString()}&${
               session.user.name

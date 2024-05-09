@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import LOGO from "@/app/favicon.ico";
+import LOGO from "@/public/svgs/logos/BigLogo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { TABS } from "@/data/Navigation";
@@ -21,12 +21,8 @@ const Navigation = () => {
           className="flex items-center hover:cursor-pointer"
           onClick={() => setExpand(!expand)}
         >
-          <Image
-            src={LOGO}
-            className="w-10 h-10 mx-2"
-            alt={`${data.name} Logo`}
-          />
-          <div className="text-white text-xl font-semibold">
+          <Image src={LOGO} className="w-3/12 m-2" alt={`${data.name} Logo`} />
+          <div className="text-black text-xl font-semibold">
             {pathName.split("/")[2]}
           </div>
         </div>
@@ -37,10 +33,10 @@ const Navigation = () => {
         }`}
       >
         <div className="overflow-y-scroll bg-design-green-400 h-full flex flex-col justify-between items-center w-full">
-          <div className="hidden lg:flex items-center my-3">
+          <div className="hidden lg:flex items-center justify-center my-3">
             <Image
               src={LOGO}
-              className="w-10 h-10 mx-2"
+              className="lg:w-10/12"
               alt={`${data.name} Logo`}
             />
           </div>

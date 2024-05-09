@@ -20,14 +20,14 @@ const Digits = ({ value, unit }) => {
           .split("")
           .map((digit, index) => (
             <div
-              className="text-lg lg:text-3xl font-bold text-white bg-white bg-opacity-40 p-3 lg:min-w-11 lg:p-3 rounded-lg"
+              className="text-lg lg:text-3xl font-bold text-white bg-newdesign-cyan-200/70 p-3 lg:min-w-11 lg:p-3 rounded-lg"
               key={index}
             >
               {digit}
             </div>
           ))}
       </div>
-      <div className="text-white m-2 mt-0 text-xs ">{unit}</div>
+      <div className=" m-2 mt-0 text-sm  text-newdesign-cyan-200">{unit}</div>
     </div>
   );
 };
@@ -57,8 +57,10 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className=" rounded-lg inline-flex-col inline-block bg-hackathon-green-300 mb-3 shadow-xl w-full text-center">
-      <div className="font-bold text-white m-2 mb-0">HACKING ENDS IN</div>
+    <div className=" rounded-lg inline-flex-col inline-block bg-newdesign-blue-300/40 mb-3 shadow-xl w-full text-center">
+      <div className="font-bold text-newdesign-cyan-200 text-xl m-2 mb-0">
+        DESIGNING ENDS IN
+      </div>
       <div className="inline-flex font-bold">
         {Object.entries(countdown).map(([unit, value], index) => (
           <Digits key={index} unit={unit} value={value} />
