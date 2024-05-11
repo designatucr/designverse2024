@@ -25,6 +25,7 @@ export const COMMITTEES = {
     "Fardin Zaman",
     "Fuyuki Malahom",
     "Rohan Buch",
+    "Andrew Khadder",
     "Sharan Singh",
     "Theo Fernandez",
     "Sean Quiambao",

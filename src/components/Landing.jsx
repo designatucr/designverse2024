@@ -42,13 +42,15 @@ const Landing = () => {
               <CountDown />
             </div>
           </div>
-          <div className="mt-4 md:mt-8 flex justify-center items-center w-4/12 lg:w-2/12 z-20">
-            <Apply text="Apply Now" link="/form/participant" />
-          </div>
-          {/* Change Buttons the morning of */}
-          {/* <div className="mt-4 md:mt-8 flex justify-center items-center w-4/12 lg:w-2/12 z-20">
-          <Apply text="Participant Portal" link="/user" />
-          </div> */}
+          {new Date().getDate() > 11 ? (
+            <div className="mt-4 md:mt-8 flex justify-center items-center w-4/12 lg:w-2/12 z-20">
+              <Apply text="Participant Portal" link="/user" />
+            </div>
+          ) : (
+            <div className="mt-4 md:mt-8 flex justify-center items-center w-4/12 lg:w-2/12 z-20">
+              <Apply text="Apply Now" link="/form/participant" />
+            </div>
+          )}
         </div>
         <Image
           className="left-0 hidden absolute md:block w-7/12 md:w-[25%] 2xl:w-1/4 md:z-20 top-1/2 -translate-y-1/3 z-10"

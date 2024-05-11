@@ -1,5 +1,13 @@
 const Rooms = () => {
-  const rooms = ["HUB 260", "HUB 367", "HUB 379", "WCH 129", "WCH 136"];
+  const rooms = [
+    "HUB 260",
+    "HUB 367",
+    "HUB 379",
+    "WCH 110",
+    "WCH 127",
+    "WCH 129",
+    "WCH 136",
+  ];
 
   return (
     <div className="font-bold p-3 rounded-lg mt-3 mb-3 bg-white shadow-xl">
