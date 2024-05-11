@@ -28,8 +28,9 @@ const About = () => {
           networking events.
           <br />
           <br />
-          We welcome both undergraduate and high school students for a lively
-          weekend filled with creativity, networking, mentorship, and more!
+          We welcome all undergraduate, graduate and high school students for a
+          lively weekend filled with creativity, networking, mentorship, and
+          more!
         </p>
       </div>
       <div className="flex justify-end items-end ml-32 scale-125">

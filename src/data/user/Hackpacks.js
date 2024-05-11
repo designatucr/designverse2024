@@ -6,8 +6,8 @@ import { BiLogoCPlusPlus, BiLogoMongodb } from "react-icons/bi";
 export const TECHSTACKS = {
   JavaScript: <RiJavascriptFill />,
   "Next.js": <SiNextdotjs />,
-  firebase: <IoLogoFirebase />,
-  tailwind: <SiTailwindcss />,
+  Firebase: <IoLogoFirebase />,
+  Tailwind: <SiTailwindcss />,
   MongoDB: <BiLogoMongodb />,
   Arduino: <SiArduino />,
   "C++": <BiLogoCPlusPlus />,
@@ -16,12 +16,12 @@ export const HACKPACKS = [
   {
     link: "https://github.com",
     text: "Full Stack Web App",
-    techs: ["Javascript", "Next.js", "Firebase", "Tailwind"],
+    techs: ["JavaScript", "Next.js", "Firebase", "Tailwind"],
   },
   {
     link: "https://github.com",
     text: "Full Stack Web App",
-    techs: ["Javascript", "Next.js", "MongoDB", "Tailwind"],
+    techs: ["JavaScript", "Next.js", "MongoDB", "Tailwind"],
   },
   { link: "https://github.com", text: "Hardware", techs: ["Arduino", "C++"] },
 ];
