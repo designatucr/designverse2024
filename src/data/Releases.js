@@ -72,7 +72,7 @@ const PRODUCTION = {
   "/form/committee": new Date("10/01/2023"),
   "/form/sponsor": new Date("10/01/2023"),
   "/form/panel": new Date("10/01/2023"),
-  "/form/feedback": new Date("05/13/2024"),
+  "/form/feedback": new Date("05/11/2024"),
   "/form/interest": new Date("10/01/2023"),
 
   "/user/checkin": new Date("10/01/2023"),
