@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import data from "@/data/Config";
+import { data as CONFIG } from "@/data/Config";
 
 const Digits = ({ value, text }) => {
   return (
@@ -37,7 +37,7 @@ const Countdown = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const diff = data.date - new Date();
+      const diff = Math.max(CONFIG.dateObject.getTime() - Date.now(), 0);
 
       setTime({
         days: Math.ceil(diff / (1000 * 60 * 60 * 24)),
