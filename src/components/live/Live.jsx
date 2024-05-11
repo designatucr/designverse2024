@@ -10,7 +10,7 @@ import Committees from "../Committees";
 import Sponsors from "../Sponsors";
 import Resources from "../Resources";
 import Landing from "../Landing";
-
+import Judges from "../Judges";
 const Live = () => {
   return (
     <div className="w-full h-screen overflow-x-hidden relative font-workSans">
@@ -21,6 +21,7 @@ const Live = () => {
       <Schedule />
       <Tracks />
       <Sponsors />
+      <Judges />
       <Leads />
       <Committees />
       <Resources />
