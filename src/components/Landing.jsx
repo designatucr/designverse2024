@@ -43,7 +43,7 @@ const Landing = () => {
             </div>
           </div>
 
-          {new Date().getDate() > 11 ? (
+          {new Date().getDate() > 10 ? (
             <div className="flex justify-center items-center  flex-col">
               <div className="mt-4 md:mt-8 flex justify-center items-center w-4/12 lg:w-2/12 z-20">
                 <Apply text="Participant Portal" link="/user" />

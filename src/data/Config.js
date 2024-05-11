@@ -13,7 +13,7 @@ const data = {
   domain: "https://www.designverseucr.com",
   end: "May 12th 2024 9:00:00",
   packet: "/files/DesignVerseSponsorshipPacket.pdf",
-  devpost: "https://devpost.com/",
+  devpost: "https://designverseucr.devpost.com",
   instagram: "https://www.instagram.com/designverseucr/",
   linkedin: "https://www.linkedin.com/company/designverseucr",
   discord: "https://discord.gg/Vck5zFjz6m",
