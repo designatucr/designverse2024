@@ -74,8 +74,8 @@ const Navigation = () => {
                           onClick={() => setExpand(false)}
                           className={`w-full flex [&>*]:text-white items-center justify-start py-1 pl-[10%] ${
                             pathName.endsWith(tab.link)
-                              ? "bg-hackathon-blue-100"
-                              : "[&>*]:hover:text-hackathon-blue-100"
+                              ? "bg-design-orange"
+                              : "[&>*]:hover:text-design-orange"
                           }`}
                         >
                           {tab.icon}
@@ -100,7 +100,7 @@ const Navigation = () => {
                   className={`w-full flex [&>*]:text-white items-center justify-start pl-[10%] py-1 ${
                     pathName.endsWith(tab.link)
                       ? "bg-design-white"
-                      : "[&>*]:hover:text-design-green-light"
+                      : "[&>*]:hover:text-design-orange"
                   }`}
                 >
                   {tab.icon}

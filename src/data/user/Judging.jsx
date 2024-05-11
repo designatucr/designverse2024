@@ -1,6 +1,6 @@
 export const JUDGING = [
-  "You may not submit a project that has already been submitted or started before our designathon period.",
-  "Your project must be an original and not copied from someone else's work.",
-  "Teams of 1-4 are required.",
-  "We will not judge any late projects.",
+  "After soft deadline for submission, at 8:45 am, your team will be given a number on the portal",
+  "Join the zoom link 10 minutes before your given time slot",
+  "Join your breakout room, all judges will be there",
+  "You have 5 minutes to present your project and 3 minutes for Q/A with judges",
 ];
