@@ -1,8 +1,8 @@
-import Naheel from "@/public/svgs/judges/Naheel.png";
-import Robin from "@/public/svgs/judges/Robin.png";
-import Antonio from "@/public/svgs/judges/Antonio.png";
-import Amanda from "@/public/svgs/judges/Amanda.jpg";
-import Evelyn from "@/public/svgs/judges/Evelyn.png";
+import Naheel from "@/public/svgs/judges/Naheel.webp";
+import Robin from "@/public/svgs/judges/Robin.webp";
+import Antonio from "@/public/svgs/judges/Antonio.webp";
+import Amanda from "@/public/svgs/judges/Amanda.webp";
+import Evelyn from "@/public/svgs/judges/Evelyn.webp";
 
 export const JUDGES = [
   [
