@@ -156,17 +156,18 @@ const Details = () => {
           <div>
             <p className="mb-1 font-semibold">Members</p>
             {team.members.map((member, index) => (
-              <p className="pl-3 m-0 flex items-center" key={index}>
+              <p
+                className="pl-3 m-0 flex items-center text-[#65717d]"
+                key={index}
+              >
                 {member.name}
-                <span className="ml-3 text-sm text-hackathon-green-300">
-                  {member.email}
-                </span>
+                <span className="ml-3 text-[#65717d]">{member.discord}</span>
               </p>
             ))}
           </div>
           <div className="mt-3 pt-2 flex-grow">
             <p className="mb-1 font-semibold">Team ID</p>
-            <p className="pl-3 mb-0 flex items-center">
+            <p className="pl-3 mb-0 flex items-center text-[#65717d]">
               {user.team}
               <BiSolidCopy
                 onClick={handleCopy}
