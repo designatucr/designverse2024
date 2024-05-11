@@ -170,17 +170,17 @@ const Details = () => {
               {user.team}
               <BiSolidCopy
                 onClick={handleCopy}
-                className="text-lg text-gray-400 ml-2 hover:cursor-pointer hover:text-hackathon-blue-100"
+                className="text-lg text-gray-400 ml-2 hover:cursor-pointer hover:text-design-orange"
               />
               <BiLink
                 onClick={handleCopyLink}
-                className="text-lg text-gray-400 ml-2 hover:cursor-pointer hover:text-hackathon-blue-100"
+                className="text-lg text-gray-400 ml-2 hover:cursor-pointer hover:text-design-orange"
               />
             </p>
           </div>
           <div className="flex items-center justify-center gap-4">
             <Button
-              color="green"
+              color="greenEdit"
               size="lg"
               text={edit ? "done" : "edit"}
               onClick={edit ? handleSave : handleEdit}

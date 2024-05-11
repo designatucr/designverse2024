@@ -12,8 +12,8 @@ const endDate = new Date(year, monthIndex - 1, day, sec[0], sec[1], sec[2]);
 
 const Digits = ({ value, unit }) => {
   return (
-    <div className="flex flex-col items-center gap-4 last:hidden  sm:last:flex">
-      <div className="flex gap-1 m-3 mb-0 lg:!gap-1">
+    <div className="flex flex-col items-center gap-2 last:hidden  sm:last:flex">
+      <div className="flex gap-1 mt-3 mx-3 lg:!gap-1 ">
         {value
           .toString()
           .padStart(2, "0")
@@ -27,7 +27,7 @@ const Digits = ({ value, unit }) => {
             </div>
           ))}
       </div>
-      <div className=" m-2 mt-0 text-sm  text-newdesign-cyan-200">{unit}</div>
+      <div className=" pb-4 text-sm  text-newdesign-cyan-200">{unit}</div>
     </div>
   );
 };
@@ -57,7 +57,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className=" rounded-lg inline-flex-col inline-block bg-newdesign-blue-300/40 mb-3 shadow-xl w-full text-center">
+    <div className=" rounded-lg inline-flex-col inline-block bg-white mb-3 shadow-xl w-full text-center">
       <div className="font-bold text-newdesign-cyan-200 text-xl m-2 mb-0">
         DESIGNING ENDS IN
       </div>
