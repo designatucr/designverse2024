@@ -9,7 +9,7 @@ import leadLeafL from "@/public/svgs/team/leadLeafL.svg";
 import cloud from "@/public/svgs/sponsors/cloud.svg";
 const Judges = () => {
   return (
-    <section id="team" className="bg-newdesign-blue-100 relative pt-24">
+    <section id="judges" className="bg-newdesign-blue-100 relative pt-24">
       <Image
         src={cloud}
         className="w-1/6 absolute left-0 -translate-x-1/2 bottom-2/3"
@@ -25,7 +25,7 @@ const Judges = () => {
           <div className="flex space-x-2 w-full lg:space-x-4 text-center text-newdesign-cyan-200 font-bold text-2xl lg:text-4xl">
             <Image
               src={leadVine1}
-              className="inline w-4/12 md:w-4/12 lg:w-3/12"
+              className=" w-4/12 md:w-4/12 lg:w-3/12 hidden lg:block"
               alt="leadVine1"
             />
             <p className="text-center justify-center md:justify-start md:items-start font-bold text-3xl md:text-5xl lg:text-5xl mb-0 ">
@@ -33,13 +33,13 @@ const Judges = () => {
             </p>
             <Image
               src={leadVine2}
-              className="inline w-4/12 md:w-4/12 lg:w-3/12"
+              className=" hidden lg:block w-4/12 md:w-4/12 lg:w-3/12"
               alt="leadVine2"
             />
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-4  my-2 lg:my-0">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4  my-2 lg:my-0">
           {JUDGES[0].map((item, index) => (
             <Profile
               key={index}
@@ -50,7 +50,7 @@ const Judges = () => {
             />
           ))}
         </div>
-        <div className="grid grid-cols-2 gap-4  my-2 lg:my-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4  my-2 lg:my-0">
           {JUDGES[1].map((item, index) => (
             <Profile
               key={index}

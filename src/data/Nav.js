@@ -5,6 +5,7 @@ import { BiSolidDonateHeart } from "react-icons/bi";
 import { FaTools } from "react-icons/fa";
 import { RiGuideFill } from "react-icons/ri";
 import { FaShieldHeart } from "react-icons/fa6";
+import { FaChalkboardTeacher } from "react-icons/fa";
 
 export const items = [
   {
@@ -42,6 +43,12 @@ export const items = [
     id: "sponsor",
     link: "/#sponsor",
     icon: <FaShieldHeart />,
+  },
+  {
+    name: "Judges",
+    id: "judges",
+    link: "/#judges",
+    icon: <FaChalkboardTeacher />,
   },
   {
     name: "Meet The Team",

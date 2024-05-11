@@ -4,6 +4,11 @@ export const COLORS = {
     text: "text-design-green-200",
     border: "border-design-green-200 border-3",
   },
+  greenEdit: {
+    bg: "bg-design-green-200",
+    text: "text-white",
+    border: "border-0",
+  },
   grayOutline: {
     bg: "bg-white",
     text: "text-gray-400",
