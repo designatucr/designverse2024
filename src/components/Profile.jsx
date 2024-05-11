@@ -6,7 +6,7 @@ const Profile = ({ linkedin, image, name, position }) => {
       <Link href={linkedin}>
         <Image
           src={image}
-          className="object-cover w-28 h-28 lg:w-40 lg:h-40 rounded-full border-[6px] border-newdesign-cyan-200"
+          className="object-cover w-28 h-28 lg:w-40 lg:h-40 rounded-full border-[6px] border-newdesign-cyan-200 hover:scale-105"
           alt="Profile Photo"
         />
       </Link>
