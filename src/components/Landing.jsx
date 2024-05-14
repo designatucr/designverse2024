@@ -7,6 +7,7 @@ import Animals from "@/public/svgs/landing/animals.svg";
 import Mushrooms2 from "@/public/svgs/landing/mushrooms2.svg";
 import Waterline from "@/public/svgs/landing/waterline.svg";
 import Image from "next/image";
+import data from "@/data/Config";
 import OnlyFrog from "@/public/svgs/landing/onlyFrog.svg";
 // import Lillypad from "@/public/svgs/landing/lillypad.svg";
 import Lotus from "@/public/svgs/landing/lotus.svg";
@@ -42,8 +43,16 @@ const Landing = () => {
               <CountDown />
             </div>
           </div>
+          <div className="grid grid-cols-1 space-y-4 lg:space-y-0 lg:grid-cols-2  mt-8">
+            <div className="flex justify-center items-center z-20">
+              <Apply text="Feedback" link="/form/feedback" />
+            </div>
+            <div className="flex justify-center items-center z-20">
+              <Apply text="Winners" link={data.devpost} />
+            </div>
+          </div>
 
-          {new Date().getDate() > 10 ? (
+          {/* {new Date().getDate() > 10 ? (
             <div className="flex justify-center items-center  flex-col">
               <div className="mt-4 md:mt-8 flex justify-center items-center w-4/12 lg:w-2/12 z-20">
                 <Apply text="Participant Portal" link="/user" />
@@ -56,7 +65,7 @@ const Landing = () => {
             <div className="mt-4 md:mt-8 flex justify-center items-center w-4/12 lg:w-2/12 z-20">
               <Apply text="Apply Now" link="/form/participant" />
             </div>
-          )}
+          )} */}
         </div>
         <Image
           className="left-0 hidden absolute md:block w-7/12 md:w-[25%] 2xl:w-1/4 md:z-20 top-1/2 -translate-y-1/3 z-10"
