@@ -1,8 +1,8 @@
 import React from "react";
-import Resource from "./Resource";
-import resource1 from "@/public/svgs/support/figma.webp";
-import resource2 from "@/public/svgs/support/dribble.webp";
-import resource3 from "@/public/svgs/support/miro.webp";
+// import Resource from "./Resource";
+// import resource1 from "@/public/svgs/support/figma.webp";
+// import resource2 from "@/public/svgs/support/dribble.webp";
+// import resource3 from "@/public/svgs/support/miro.webp";
 import Image from "next/image";
 import river from "@/public/svgs/river.svg";
 
@@ -10,7 +10,7 @@ const Resources = () => {
   return (
     <div className="flex font-workSans flex-col bg-[#D3E6EC] relative">
       <Image src={river} alt="river" className=" w-screen " />
-      <div
+      {/* <div
         id="resources"
         className="flex flex-col items-center justify-center bg-gradient-to-b from-[#0D6F73] to-[#034444]"
       >
@@ -37,7 +37,7 @@ const Resources = () => {
             image={resource3}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
