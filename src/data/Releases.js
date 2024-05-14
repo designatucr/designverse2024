@@ -1,7 +1,7 @@
 const DEV = {
   LIVE: {
     START: new Date("10/01/2023"),
-    END: new Date("10/10/2024"),
+    END: new Date("5/12/2024"),
   },
   POSTLIVE: {
     START: new Date("10/01/2023"),
@@ -42,7 +42,7 @@ const DEV = {
 const PRODUCTION = {
   LIVE: {
     START: new Date("10/01/2023"),
-    END: new Date("10/10/2024"),
+    END: new Date("5/12/2024"),
   },
   POSTLIVE: {
     START: new Date("10/01/2023"),

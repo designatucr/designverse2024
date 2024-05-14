@@ -7,7 +7,7 @@ const FAQ = () => {
   return (
     <section
       id="faq"
-      className="relative  bg-newdesign-cyan-200 flex justify-center w-full py-24 md:py-48"
+      className="relative  bg-gradient-to-b from-[#0D6F73] to-[#034444] flex justify-center w-full py-12 md:py-16"
     >
       <div className="flex justify-center items-center flex-col w-10/12 md:w-8/12 relative z-20">
         <div className="text-3xl lg:text-6xl font-bold text-white">FAQ</div>
